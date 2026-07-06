@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Guitar</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Guitar</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org9c8875e">1. General</a></li>
+<li><a href="#orge3a9dbb">2. Western Music</a>
+<ul>
+<li><a href="#org7d5428d">2.1. Variants</a>
+<ul>
+<li><a href="#org320126f">2.1.1. Acoustic</a></li>
+<li><a href="#org5e28622">2.1.2. 12 String</a></li>
+<li><a href="#orgdca81a5">2.1.3. Double Neck</a></li>
+<li><a href="#org0503be5">2.1.4. Electric</a></li>
+</ul>
+</li>
+<li><a href="#org724f597">2.2. Artists</a>
+<ul>
+<li><a href="#orgb426837">2.2.1. John McLaughlin</a></li>
+<li><a href="#orgccb128f">2.2.2. Paco De Lucia</a></li>
+<li><a href="#orge1e44ac">2.2.3. Al De Meola</a></li>
+<li><a href="#org19b39cb">2.2.4. Frank Zappa</a></li>
+<li><a href="#org08ee483">2.2.5. Jaco Pastorius</a></li>
+<li><a href="#orgcc43677">2.2.6. Stanley Clarke</a></li>
+<li><a href="#orgd6c9839">2.2.7. Ry Cooder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgcabd95f">3. Hindustani Classical Music</a>
+<ul>
+<li><a href="#org15c5e6c">3.1. General</a></li>
+<li><a href="#org09a88aa">3.2. Brij Bhushan Kabra</a>
+<ul>
+<li><a href="#org3a6a57d">3.2.1. General</a></li>
+<li><a href="#orgd05db94">3.2.2. Worldly Matters</a></li>
+<li><a href="#org2ebc86b">3.2.3. Core</a></li>
+<li><a href="#org55b7512">3.2.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7effbcc">3.3. Vishwa Mohan Bhatt</a>
+<ul>
+<li><a href="#org2f165ce">3.3.1. General</a></li>
+<li><a href="#org7135549">3.3.2. Worldly Matters</a></li>
+<li><a href="#orgc97edad">3.3.3. Core</a></li>
+<li><a href="#orgb48be4b">3.3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org004f546">3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd107eb0">4. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org9c8875e" class="outline-2">
+<h2 id="org9c8875e"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>R. Denyer, I. Guillory, and A. M. Crawford, <i>The Guitar Handbook.</i> A. A. Knopf, 1992.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge3a9dbb" class="outline-2">
+<h2 id="orge3a9dbb"><span class="section-number-2">2.</span> Western Music</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7d5428d" class="outline-3">
+<h3 id="org7d5428d"><span class="section-number-3">2.1.</span> Variants</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org320126f" class="outline-4">
+<h4 id="org320126f"><span class="section-number-4">2.1.1.</span> Acoustic</h4>
+</div>
+<div id="outline-container-org5e28622" class="outline-4">
+<h4 id="org5e28622"><span class="section-number-4">2.1.2.</span> 12 String</h4>
+</div>
+<div id="outline-container-orgdca81a5" class="outline-4">
+<h4 id="orgdca81a5"><span class="section-number-4">2.1.3.</span> Double Neck</h4>
+</div>
+<div id="outline-container-org0503be5" class="outline-4">
+<h4 id="org0503be5"><span class="section-number-4">2.1.4.</span> Electric</h4>
+<div class="outline-text-4" id="text-2-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="org2024bf0"></a>Fender S<br /></li>
+<li><a id="org74d316f"></a>Gibson L P<br /></li>
+<li><a id="org0f7d803"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-4-3">
+<ul class="org-ul">
+<li>J.-P. Herbst and A. P. Vallejo, “Rock Guitar Virtuosos: Advances in Electric Guitar Playing, Technology, and Culture,” Elements in Popular Music, Nov. 2023, doi: 10.1017/9781009052962.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org724f597" class="outline-3">
+<h3 id="org724f597"><span class="section-number-3">2.2.</span> Artists</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-orgb426837" class="outline-4">
+<h4 id="orgb426837"><span class="section-number-4">2.2.1.</span> John McLaughlin</h4>
+<div class="outline-text-4" id="text-2-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge0466dc"></a>General<br />
+<div class="outline-text-5" id="text-2-2-1-1">
+<ul class="org-ul">
+<li>“John McLaughlin (musician),” Wikipedia. Jul. 25, 2024. Accessed: Aug. 01, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=John_McLaughlin_(musician)&amp;oldid=1236498418">https://en.wikipedia.org/w/index.php?title=John_McLaughlin_(musician)&amp;oldid=1236498418</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgea6e8b0"></a>Discography<br />
+<ol class="org-ol">
+<li><a id="orgb927af2"></a>Bands<br />
+<div class="outline-text-6" id="text-2-2-1-2-1">
+<ul class="org-ul">
+<li>“Mahavishnu Orchestra,” Discogs. Accessed: Aug. 02, 2024. [Online]. Available: <a href="https://www.discogs.com/artist/70826-Mahavishnu-Orchestra">https://www.discogs.com/artist/70826-Mahavishnu-Orchestra</a></li>
+<li>“Shakti (2),” Discogs. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.discogs.com/artist/262879-Shakti-2">https://www.discogs.com/artist/262879-Shakti-2</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgab1a42b"></a>Misc<br />
+<div class="outline-text-6" id="text-2-2-1-2-2">
+<ul class="org-ul">
+<li>“John McLaughlin,” Discogs. Accessed: Aug. 03, 2024. [Online]. Available: <a href="https://www.discogs.com/artist/136179-John-McLaughlin">https://www.discogs.com/artist/136179-John-McLaughlin</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgc991a06"></a>Recordings<br /></li>
+<li><a id="orgba372fe"></a>Misc<br />
+<div class="outline-text-5" id="text-2-2-1-4">
+<ul class="org-ul">
+<li>W. Kolosky, Power, Passion and Beauty: The Story of the Legendary Mahavishnu Orchestra. Independently Published, 2024.</li>
+<li>W. Kolosky and C. Corea, Follow Your Heart - John McLaughlin song by song : A Listener’s Guide.</li>
+<li>W. Kolosky and G. Husband, Mahavishnu Memories: The Remarkable Tour History of the Legendary Mahavishnu Orchestra. Independently Published, 2024.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgccb128f" class="outline-4">
+<h4 id="orgccb128f"><span class="section-number-4">2.2.2.</span> Paco De Lucia</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li>“Paco de Lucía,” Wikipedia. Jun. 20, 2024. Accessed: Aug. 01, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Paco_de_Luc%C3%ADa&amp;oldid=1230044394">https://en.wikipedia.org/w/index.php?title=Paco_de_Luc%C3%ADa&amp;oldid=1230044394</a></li>
+
+<li>“Paco De Lucía,” Discogs. Accessed: Aug. 03, 2024. [Online]. Available: <a href="https://www.discogs.com/artist/20184-Paco-De-Luc%C3%ADa">https://www.discogs.com/artist/20184-Paco-De-Luc%C3%ADa</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge1e44ac" class="outline-4">
+<h4 id="orge1e44ac"><span class="section-number-4">2.2.3.</span> Al De Meola</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<ul class="org-ul">
+<li>“Al Di Meola,” Discogs. Accessed: Aug. 03, 2024. [Online]. Available: <a href="https://www.discogs.com/artist/257120-Al-Di-Meola">https://www.discogs.com/artist/257120-Al-Di-Meola</a></li>
+
+<li>“jazzAlDiMeola | Community Playlist on Prime Music.” Accessed: Aug. 04, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/20ad9f92e4ba420ca11b41dd29eff401i8n0">https://music.amazon.in/user-playlists/20ad9f92e4ba420ca11b41dd29eff401i8n0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org19b39cb" class="outline-4">
+<h4 id="org19b39cb"><span class="section-number-4">2.2.4.</span> Frank Zappa</h4>
+<div class="outline-text-4" id="text-2-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="orge9b80c3"></a>General<br />
+<div class="outline-text-5" id="text-2-2-4-1">
+<ul class="org-ul">
+<li>“Frank Zappa - Wikipedia.” Accessed: May 03, 2026. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Frank_Zappa">https://en.wikipedia.org/wiki/Frank_Zappa</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org68ac656"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org64884b8"></a>Orgs<br /></li>
+<li><a id="orgb4a1b19"></a>Texts<br />
+<div class="outline-text-6" id="text-2-2-4-2-2">
+<ul class="org-ul">
+<li>F. Zappa and P. Ochiogrosso, The Real Frank Zappa Book. New York: Poseidon Press, 1989.</li>
+<li>P. Butcher, Freak Out! My Life with Frank Zappa: Laurel Canyon 1968 – 1971. London: Plexus Publishing, 2022.</li>
+
+<li>B. Morgan and J. Richey, Frank Zappa’s America. Baton Rouge: LSU Press, 2025.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgcc00c9c"></a>Core<br />
+<ol class="org-ol">
+<li><a id="org9a68fc5"></a>Discography<br />
+<div class="outline-text-6" id="text-2-2-4-3-1">
+<ul class="org-ul">
+<li>“Frank Zappa,” Discogs. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/artist/92623-Frank-Zappa">https://www.discogs.com/artist/92623-Frank-Zappa</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5acf371"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orga6942ff"></a>Solo<br />
+<ul class="org-ul">
+<li><a id="org63d6768"></a>Instrumental Music<br />
+<div class="outline-text-8" id="text-org63d6768">
+<ul class="org-ul">
+<li>“Frank Zappa - Peaches En Regalia (Visualizer) - YouTube.” Accessed: May 03, 2026. [Online]. Available: <a href="https://www.youtube.com/watch?v=FoYdeEDdtK4&amp;list=PL9uPsSPltFiyDpnq0KKBIDuQKef-vLKZx">https://www.youtube.com/watch?v=FoYdeEDdtK4&amp;list=PL9uPsSPltFiyDpnq0KKBIDuQKef-vLKZx</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbdb440c"></a>Women, Misc<br />
+<div class="outline-text-8" id="text-orgbdb440c">
+<ul class="org-ul">
+<li>Frank Zappa, Frank Zappa - Twinkle Tits (Visualizer), (Jul. 14, 2023). Accessed: May 03, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Lx6fvgYfBzk">https://www.youtube.com/watch?v=Lx6fvgYfBzk</a></li>
+
+<li>Frank Zappa, Frank Zappa - Catholic Girls (Visualizer), (Aug. 18, 2023). Accessed: May 03, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=K0zEX8h17eA">https://www.youtube.com/watch?v=K0zEX8h17eA</a></li>
+<li>Frank Zappa, Frank Zappa - Jewish Princess (Visualizer), (Nov. 25, 2022). Accessed: May 03, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BJd6zcLnuBs">https://www.youtube.com/watch?v=BJd6zcLnuBs</a></li>
+
+<li>Frank Zappa, Frank Zappa - Lucille Has Messed My Mind Up (Visualizer), (Aug. 22, 2023). Accessed: May 03, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GFjj63LJTHY">https://www.youtube.com/watch?v=GFjj63LJTHY</a></li>
+<li>Frank Zappa, Frank Zappa - Crew Slut (Visualizer), (Aug. 18, 2023). Accessed: May 03, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=X-JTHu_kax4">https://www.youtube.com/watch?v=X-JTHu_kax4</a></li>
+<li>Frank Zappa, Frank Zappa, Moon Zappa - Valley Girl, (Sep. 16, 2022). Accessed: May 03, 2026. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=R5Q1yVLSR3I">https://www.youtube.com/watch?v=R5Q1yVLSR3I</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb184659"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org2485b09"></a>Compilations<br />
+<div class="outline-text-7" id="text-org2485b09">
+<ul class="org-ul">
+<li>Frank Zappa - ZAPPAtite (Frank Zappa’s Tastiest Tracks). 2016. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/9089557-Frank-Zappa-ZAPPAtite-Frank-Zappas-Tastiest-Tracks">https://www.discogs.com/release/9089557-Frank-Zappa-ZAPPAtite-Frank-Zappas-Tastiest-Tracks</a></li>
+
+<li>Frank Zappa - 200 Motels. 1971. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/545054-Frank-Zappa-200-Motels">https://www.discogs.com/release/545054-Frank-Zappa-200-Motels</a></li>
+<li>Zappa - Greasy Love Songs. 2010. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/2262903-Zappa-Greasy-Love-Songs">https://www.discogs.com/release/2262903-Zappa-Greasy-Love-Songs</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org022860a"></a>Albums<br />
+<div class="outline-text-7" id="text-org022860a">
+<ul class="org-ul">
+<li>Frank Zappa - We’re Only In It For The Money / Lumpy Gravy. 1985. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/236971-Frank-Zappa-Were-Only-In-It-For-The-Money-Lumpy-Gravy">https://www.discogs.com/release/236971-Frank-Zappa-Were-Only-In-It-For-The-Money-Lumpy-Gravy</a></li>
+<li>Frank Zappa - Waka / Jawaka - Hot Rats. 1972. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/1378139-Frank-Zappa-Waka-Jawaka-Hot-Rats">https://www.discogs.com/release/1378139-Frank-Zappa-Waka-Jawaka-Hot-Rats</a></li>
+<li>Frank Zappa - Hot Rats. 1969. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/584013-Frank-Zappa-Hot-Rats">https://www.discogs.com/release/584013-Frank-Zappa-Hot-Rats</a></li>
+<li>Frank Zappa And The Mothers - Over-nite Sensation. 1973. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/23517020-Frank-Zappa-And-The-Mothers-Over-nite-Sensation">https://www.discogs.com/release/23517020-Frank-Zappa-And-The-Mothers-Over-nite-Sensation</a></li>
+<li>Frank Zappa - Apostrophe ('). 1974. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/4951944-Frank-Zappa-Apostrophe">https://www.discogs.com/release/4951944-Frank-Zappa-Apostrophe</a>-</li>
+<li>Frank Zappa - Jazz From Hell. 1986. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/233102-Frank-Zappa-Jazz-From-Hell">https://www.discogs.com/release/233102-Frank-Zappa-Jazz-From-Hell</a></li>
+<li>Frank Zappa / The Mothers Of Invention - Weasels Ripped My Flesh. 1990. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/6482841-Frank-Zappa-The-Mothers-Of-Invention-Weasels-Ripped-My-Flesh">https://www.discogs.com/release/6482841-Frank-Zappa-The-Mothers-Of-Invention-Weasels-Ripped-My-Flesh</a></li>
+<li>Frank Zappa - Dance Me This. 2015. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/7163317-Frank-Zappa-Dance-Me-This">https://www.discogs.com/release/7163317-Frank-Zappa-Dance-Me-This</a></li>
+<li>Zappa - Joe’s Garage Acts I, II &amp; III. 1987. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/723252-Zappa-Joes-Garage-Acts-I-II-III">https://www.discogs.com/release/723252-Zappa-Joes-Garage-Acts-I-II-III</a>
+<ul class="org-ul">
+<li>“Joe’s Garage Acts I, II &amp; III (Album Playlist) - YouTube.” Accessed: May 03, 2026. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PL9uPsSPltFizH8EC1P70PPQ73A1nFD-Gr">https://www.youtube.com/playlist?list=PL9uPsSPltFizH8EC1P70PPQ73A1nFD-Gr</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Frank Zappa - Understanding America. 2012. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/4230845-Frank-Zappa-Understanding-America">https://www.discogs.com/release/4230845-Frank-Zappa-Understanding-America</a></li>
+<li>Frank Zappa - Frank Zappa For President. 2016. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/8779897-Frank-Zappa-Frank-Zappa-For-President">https://www.discogs.com/release/8779897-Frank-Zappa-Frank-Zappa-For-President</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga40b354"></a>Orchestra, Instrumental Music<br />
+<div class="outline-text-7" id="text-orga40b354">
+<ul class="org-ul">
+<li>Frank Zappa And The Mothers - The Grand Wazoo. 1972. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/7227677-Frank-Zappa-And-The-Mothers-The-Grand-Wazoo">https://www.discogs.com/release/7227677-Frank-Zappa-And-The-Mothers-The-Grand-Wazoo</a></li>
+
+<li>Francis Vincent Zappa Conducts The Abnuceals Emuukha Electric Symphony Orchestra &amp; Chorus - Lumpy Gravy. 1968. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/1360805-Francis-Vincent-Zappa-Conducts-The-Abnuceals-Emuukha-Electric-Symphony-Orchestra-Chorus-Lumpy-Gravy">https://www.discogs.com/release/1360805-Francis-Vincent-Zappa-Conducts-The-Abnuceals-Emuukha-Electric-Symphony-Orchestra-Chorus-Lumpy-Gravy</a></li>
+
+<li>Frank Zappa And The Mothers - The Grand Wazoo. 1972. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/7227677-Frank-Zappa-And-The-Mothers-The-Grand-Wazoo">https://www.discogs.com/release/7227677-Frank-Zappa-And-The-Mothers-The-Grand-Wazoo</a></li>
+<li>“Frank Zappa - The Grand Wazoo - YouTube.” Accessed: May 03, 2026. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PL9uPsSPltFiw8nMKjjFo-VFNoR_dIvCFj">https://www.youtube.com/playlist?list=PL9uPsSPltFiw8nMKjjFo-VFNoR_dIvCFj</a></li>
+
+<li>London Symphony Orchestra - Zappa Conducted By Kent Nagano - Zappa - Vol. I &amp; II. 1995. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/382122-London-Symphony-Orchestra-Zappa-Conducted-By-Kent-Nagano-Zappa-Vol-I-II">https://www.discogs.com/release/382122-London-Symphony-Orchestra-Zappa-Conducted-By-Kent-Nagano-Zappa-Vol-I-II</a></li>
+<li>Zappa / The London Symphony Orchestra Conducted By Kent Nagano - The London Symphony Orchestra - Zappa Vol. 1. 1983. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/786066-Zappa-The-London-Symphony-Orchestra-Conducted-By-Kent-Nagano-The-London-Symphony-Orchestra-Zappa-Vol">https://www.discogs.com/release/786066-Zappa-The-London-Symphony-Orchestra-Conducted-By-Kent-Nagano-The-London-Symphony-Orchestra-Zappa-Vol</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8f4aedc"></a>Live<br />
+<div class="outline-text-7" id="text-org8f4aedc">
+<ul class="org-ul">
+<li>Frank Zappa - Does Humor Belong In Music? 1985. Accessed: May 03, 2026. [Online]. Available: <a href="https://www.discogs.com/release/2088172-Frank-Zappa-Does-Humor-Belong-In-Music">https://www.discogs.com/release/2088172-Frank-Zappa-Does-Humor-Belong-In-Music</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfece607"></a>YouTube Videos<br />
+<div class="outline-text-7" id="text-orgfece607">
+<ul class="org-ul">
+<li>“Frank Zappa - YouTube.” Accessed: May 03, 2026. [Online]. Available: <a href="https://www.youtube.com/channel/UCj-Qb2d6dJJJtNL4rgr3FNw">https://www.youtube.com/channel/UCj-Qb2d6dJJJtNL4rgr3FNw</a></li>
+
+<li>“Frank Zappa - YouTube.” Accessed: May 03, 2026. [Online]. Available: <a href="https://www.youtube.com/@zappa/videos">https://www.youtube.com/@zappa/videos</a></li>
+<li>“Frank Zappa - YouTube.” Accessed: May 03, 2026. [Online]. Available: <a href="https://www.youtube.com/@zappa/playlists">https://www.youtube.com/@zappa/playlists</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orge07d83e"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org08ee483" class="outline-4">
+<h4 id="org08ee483"><span class="section-number-4">2.2.5.</span> Jaco Pastorius</h4>
+<div class="outline-text-4" id="text-2-2-5">
+<ul class="org-ul">
+<li>“Jaco Pastorius,” Wikipedia. Jun. 22, 2024. Accessed: Aug. 01, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jaco_Pastorius&amp;oldid=1230391777">https://en.wikipedia.org/w/index.php?title=Jaco_Pastorius&amp;oldid=1230391777</a>
+<ul class="org-ul">
+<li>“Weather Report,” Wikipedia. Apr. 18, 2026. Accessed: May 03, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Weather_Report&amp;oldid=1349776117">https://en.wikipedia.org/w/index.php?title=Weather_Report&amp;oldid=1349776117</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcc43677" class="outline-4">
+<h4 id="orgcc43677"><span class="section-number-4">2.2.6.</span> Stanley Clarke</h4>
+<div class="outline-text-4" id="text-2-2-6">
+<ul class="org-ul">
+<li>“Stanley Clarke,” Wikipedia. Apr. 23, 2026. Accessed: May 03, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Stanley_Clarke&amp;oldid=1350680040">https://en.wikipedia.org/w/index.php?title=Stanley_Clarke&amp;oldid=1350680040</a>
+<ul class="org-ul">
+<li>“Return to Forever,” Wikipedia. Feb. 21, 2026. Accessed: May 03, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Return_to_Forever&amp;oldid=1339680989">https://en.wikipedia.org/w/index.php?title=Return_to_Forever&amp;oldid=1339680989</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd6c9839" class="outline-4">
+<h4 id="orgd6c9839"><span class="section-number-4">2.2.7.</span> Ry Cooder</h4>
+<div class="outline-text-4" id="text-2-2-7">
+<ul class="org-ul">
+<li>“Ry Cooder,” Wikipedia. Jul. 25, 2024. Accessed: Aug. 01, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ry_Cooder&amp;oldid=1236621949">https://en.wikipedia.org/w/index.php?title=Ry_Cooder&amp;oldid=1236621949</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcabd95f" class="outline-2">
+<h2 id="orgcabd95f"><span class="section-number-2">3.</span> Hindustani Classical Music</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org15c5e6c" class="outline-3">
+<h3 id="org15c5e6c"><span class="section-number-3">3.1.</span> General</h3>
+</div>
+<div id="outline-container-org09a88aa" class="outline-3">
+<h3 id="org09a88aa"><span class="section-number-3">3.2.</span> Brij Bhushan Kabra</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org3a6a57d" class="outline-4">
+<h4 id="org3a6a57d"><span class="section-number-4">3.2.1.</span> General</h4>
+</div>
+<div id="outline-container-orgd05db94" class="outline-4">
+<h4 id="orgd05db94"><span class="section-number-4">3.2.2.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org1ceda7d"></a>Biographies<br />
+<div class="outline-text-5" id="text-3-2-2-1">
+<ul class="org-ul">
+<li>Brij Bhushan Kabra | Guitarist &amp; Musician | Radio Autobiography | Part -4, (Sep. 25, 2022). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=f9yqhfKY1-o">https://www.youtube.com/watch?v=f9yqhfKY1-o</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2a53e13"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org2ebc86b" class="outline-4">
+<h4 id="org2ebc86b"><span class="section-number-4">3.2.3.</span> Core</h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org19dfd92"></a>Discography<br />
+<div class="outline-text-5" id="text-3-2-3-1">
+<ul class="org-ul">
+<li>“Brij Bhushan Kabra,” Discogs. Accessed: Aug. 03, 2024. [Online]. Available: <a href="https://www.discogs.com/artist/869794-Brij-Bhushan-Kabra">https://www.discogs.com/artist/869794-Brij-Bhushan-Kabra</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5710518"></a>Recordings<br />
+<div class="outline-text-5" id="text-3-2-3-2">
+<ul class="org-ul">
+<li>Suprabhat | Pt. Brij Bhushan Kabra | Raga - Bhairavi, (Mar. 31, 2021). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FyrokgXjJ4M">https://www.youtube.com/watch?v=FyrokgXjJ4M</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Pt. Brij Bhushan Kabra Slide Guitar Magic | Raga Mishra Maand | Indian Classical Instrumental Music, (Oct. 06, 2023). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BbI41LAkDvE">https://www.youtube.com/watch?v=BbI41LAkDvE</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org55b7512" class="outline-4">
+<h4 id="org55b7512"><span class="section-number-4">3.2.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org7effbcc" class="outline-3">
+<h3 id="org7effbcc"><span class="section-number-3">3.3.</span> Vishwa Mohan Bhatt</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org2f165ce" class="outline-4">
+<h4 id="org2f165ce"><span class="section-number-4">3.3.1.</span> General</h4>
+</div>
+<div id="outline-container-org7135549" class="outline-4">
+<h4 id="org7135549"><span class="section-number-4">3.3.2.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-3-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org7d620df"></a>Biographies<br /></li>
+<li><a id="orgdf5f864"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgc97edad" class="outline-4">
+<h4 id="orgc97edad"><span class="section-number-4">3.3.3.</span> Core</h4>
+<div class="outline-text-4" id="text-3-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org8a21440"></a>Discography<br />
+<div class="outline-text-5" id="text-3-3-3-1">
+<ul class="org-ul">
+<li>“Vishwa Mohan Bhatt,” Discogs. Accessed: Aug. 03, 2024. [Online]. Available: <a href="https://www.discogs.com/artist/581819-Vishwa-Mohan-Bhatt">https://www.discogs.com/artist/581819-Vishwa-Mohan-Bhatt</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org34f3bfb"></a>Recordings<br />
+<ol class="org-ol">
+<li><a id="org6a52f06"></a>Hindustani Classical Music<br />
+<div class="outline-text-6" id="text-3-3-3-2-1">
+<ul class="org-ul">
+<li>Mohan Veena || Part-01 || By Padma Bhushan Pt. Vishwa Mohan Bhatt (Grammy Awardee) || DD Tripura, (Jun. 19, 2023). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CpBRdP2SD1Q">https://www.youtube.com/watch?v=CpBRdP2SD1Q</a></li>
+
+<li>Guitar Recital by Pandit Vishwa Mohan Bhatt II National Programme of Music, (Oct. 28, 2023). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8wB2_2O8TtI">https://www.youtube.com/watch?v=8wB2_2O8TtI</a></li>
+<li>Guitar Recital by Pandit Vishwa Mohan Bhatt II National Programme of Music, (Oct. 28, 2023). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XOupbHx93yw">https://www.youtube.com/watch?v=XOupbHx93yw</a></li>
+
+<li>Duet Raga Gorakh kalyan - Pt Vishwa Mohan Bhatt (Album: Jugalbandi: A Spontaneous Instrumental Duet), (Dec. 11, 2015). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=w3m5vpR-6YU">https://www.youtube.com/watch?v=w3m5vpR-6YU</a></li>
+<li>The Best Of Jugalbandi | Audio Jukebox | Instrumental | Classical | Pandit Vishwa Mohan Bhatt, (Aug. 27, 2015). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uGcdSoK595o">https://www.youtube.com/watch?v=uGcdSoK595o</a></li>
+<li>Duet Raga Yaman - Pt Vishwa Mohan Bhatt (Album: Jugalbandi: A Spontaneous Instrumental Duet), (Dec. 11, 2015). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2pPKPC1D4VI">https://www.youtube.com/watch?v=2pPKPC1D4VI</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Mand Dhun | Pandit Vishwa Mohan Bhatt (Album: Romantic Raga) Music Today, (Mar. 02, 2016). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2ezekWTb4yA">https://www.youtube.com/watch?v=2ezekWTb4yA</a></li>
+<li>Pandit Vishwa Mohan Bhatt | Gawati | Mohan Veena, (Aug. 21, 2021). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GO6v2XzWf-w">https://www.youtube.com/watch?v=GO6v2XzWf-w</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org078fa01"></a>Easy Listening<br />
+<div class="outline-text-6" id="text-3-3-3-2-2">
+<ul class="org-ul">
+<li>Music For Relaxation | Audio Jukebox | Instrumental | World Music | Pandit Vishwa Mohan Bhatt, (Sep. 02, 2015). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wiPJKzCGtik">https://www.youtube.com/watch?v=wiPJKzCGtik</a>
+<ul class="org-ul">
+<li>Happiness Together | Pandit Vishwa Mohan Bhatt (Album: Music For Relaxation) Music Today, (Mar. 09, 2016). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=4fk_J4C_alA">https://www.youtube.com/watch?v=4fk_J4C_alA</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org46e6d01"></a>Misc<br />
+<div class="outline-text-6" id="text-3-3-3-2-3">
+<ul class="org-ul">
+<li>Sounds of the Strings - Vishwa Mohan Bhatt | Audio Jukebox | Instrumental | Classical Music Today, (Sep. 01, 2015). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ilThXiJsNM4">https://www.youtube.com/watch?v=ilThXiJsNM4</a></li>
+<li>Strings Therapy | Pt. Vishwa Mohan Bhatt | Hindustani | Classical Instrumental | HD Audio Jukebox, (Jun. 30, 2017). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=MQnKfe8-1b0">https://www.youtube.com/watch?v=MQnKfe8-1b0</a></li>
+<li>Music For Soul | Audio Jukebox | Instrumental | World Music | Pandit Vishwa Mohan Bhatt Music Today, (Aug. 28, 2015). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_5l0iXJYcXU">https://www.youtube.com/watch?v=_5l0iXJYcXU</a></li>
+<li>The Iconic Mohan Veena | Pandit Vishwa Mohan Bhatt | Audio Jukebox | Music Today, (Nov. 30, 2018). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=36wvaZMx9OQ">https://www.youtube.com/watch?v=36wvaZMx9OQ</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb48be4b" class="outline-4">
+<h4 id="orgb48be4b"><span class="section-number-4">3.3.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org004f546" class="outline-3">
+<h3 id="org004f546"><span class="section-number-3">3.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>M. BANERJEE, “Instrument of change,” The Hindu, Apr. 19, 2018. Accessed: Jul. 06, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/music/instrument-of-change/article23604586.ece">https://www.thehindu.com/entertainment/music/instrument-of-change/article23604586.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd107eb0" class="outline-2">
+<h2 id="orgd107eb0"><span class="section-number-2">4.</span> Misc</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>“How to paint with sound, by a virtuoso classical guitarist | Aeon Essays.” Accessed: Nov. 29, 2025. [Online]. Available: <a href="https://aeon.co/essays/how-to-paint-with-sound-by-a-virtuoso-classical-guitarist">https://aeon.co/essays/how-to-paint-with-sound-by-a-virtuoso-classical-guitarist</a></li>
+
+<li>EuroArtsChannel, Sharon Isbin - Troubadour, (Feb. 22, 2016). Accessed: Aug. 10, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=5fbMEX61jhA">https://www.youtube.com/watch?v=5fbMEX61jhA</a></li>
+<li>“Sharon Isbin,” Wikipedia. Jul. 26, 2024. Accessed: Aug. 05, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sharon_Isbin&amp;oldid=1236795949">https://en.wikipedia.org/w/index.php?title=Sharon_Isbin&amp;oldid=1236795949</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Humble Book Bundle: Guitars for Dummies by Wiley,” Humble Bundle. Accessed: Apr. 26, 2024. [Online]. Available: <a href="https://www.humblebundle.com/books/guitars-for-dummies-wiley-books">https://www.humblebundle.com/books/guitars-for-dummies-wiley-books</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:10</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bengal - Music</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bengal - Music</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf50b344">1. General</a></li>
+<li><a href="#org183a733">2. Internet Resources</a></li>
+<li><a href="#org9af65e6">3. Genres</a>
+<ul>
+<li><a href="#orge88c764">3.1. Folk Music</a></li>
+<li><a href="#org41282d0">3.2. Baul Music</a>
+<ul>
+<li><a href="#orgc760d81">3.2.1. General</a></li>
+<li><a href="#org361ea62">3.2.2. Recordings</a></li>
+<li><a href="#orge0b6bb8">3.2.3. Special Topics</a></li>
+<li><a href="#org1280ac2">3.2.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgba692d7">3.3. Hindustani Classical Music</a>
+<ul>
+<li><a href="#org17e6c85">3.3.1. Dhrupad</a></li>
+<li><a href="#org38486ec">3.3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf4764ca">3.4. Fusion Music</a></li>
+</ul>
+</li>
+<li><a href="#orgf56e6ba">4. Artists</a>
+<ul>
+<li><a href="#orge8a9fb2">4.1. Lalon</a></li>
+<li><a href="#orgc2c82cc">4.2. Jnanendra Prasad Goswamy</a>
+<ul>
+<li><a href="#org97e7942">4.2.1. General</a></li>
+<li><a href="#org378e8f1">4.2.2. Recordings</a></li>
+<li><a href="#org7c1a583">4.2.3. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org176cd11">5. Special Topics</a>
+<ul>
+<li><a href="#orgf99a41d">5.1. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#org1380a5f">5.1.1. Krishna</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8cee3cc">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgf50b344" class="outline-2">
+<h2 id="orgf50b344"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Music of West Bengal,” Wikipedia. Dec. 08, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Music_of_West_Bengal&amp;oldid=1261940284">https://en.wikipedia.org/w/index.php?title=Music_of_West_Bengal&amp;oldid=1261940284</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org183a733" class="outline-2">
+<h2 id="org183a733"><span class="section-number-2">2.</span> Internet Resources</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>“Saregama Bengali - YouTube.” <a href="https://www.youtube.com/user/SaregamaBengali">https://www.youtube.com/user/SaregamaBengali</a> (accessed Jul. 22, 2022).</li>
+<li>“Coke Studio Bangla,” YouTube. Accessed: Jan. 04, 2025. [Online]. Available: <a href="https://www.youtube.com/channel/UCIB65_E_7XEScU2NB135wDw">https://www.youtube.com/channel/UCIB65_E_7XEScU2NB135wDw</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9af65e6" class="outline-2">
+<h2 id="org9af65e6"><span class="section-number-2">3.</span> Genres</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orge88c764" class="outline-3">
+<h3 id="orge88c764"><span class="section-number-3">3.1.</span> Folk Music</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Saregama Bengali, Top 50 Bengali Folk Songs | ৫০টি সেরা বাঙলা লোক সঙ্গীত  | Audio Jukebox, (Jun. 12, 2017). Accessed: Mar. 17, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=UEPEyhwW14I">https://www.youtube.com/watch?v=UEPEyhwW14I</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org41282d0" class="outline-3">
+<h3 id="org41282d0"><span class="section-number-3">3.2.</span> Baul Music</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orgc760d81" class="outline-4">
+<h4 id="orgc760d81"><span class="section-number-4">3.2.1.</span> General</h4>
+</div>
+<div id="outline-container-org361ea62" class="outline-4">
+<h4 id="org361ea62"><span class="section-number-4">3.2.2.</span> Recordings</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org46f4895"></a>Solo<br /></li>
+<li><a id="org2355fc0"></a>Collections<br />
+<ol class="org-ol">
+<li><a id="org80c1c8d"></a>Playlists<br /></li>
+<li><a id="org2dafa9c"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgc2f09bc"></a>Misc<br />
+<div class="outline-text-5" id="text-3-2-2-3">
+<ul class="org-ul">
+<li>Saregama Bengali, Purnadas Baul | Tui Amare Pagal Karli Re | Bengali Folk Song Audio Jukebox | Baul Sangeet, (Dec. 20, 2013). Accessed: Mar. 21, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2nUEnAtG-p0">https://www.youtube.com/watch?v=2nUEnAtG-p0</a></li>
+<li>Mystical Poetry of the Bauls, presented by Parvathy Baul, (Oct. 16, 2020). Accessed: Jun. 23, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ROSQkzMl-8k">https://www.youtube.com/watch?v=ROSQkzMl-8k</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orge0b6bb8" class="outline-4">
+<h4 id="orge0b6bb8"><span class="section-number-4">3.2.3.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orge7ad739"></a>People's Archive of Rural India<br />
+<div class="outline-text-5" id="text-3-2-3-1">
+<ul class="org-ul">
+<li>“Basudeb Baul: singing the ballads of Bengal,” People’s Archive of Rural India. Accessed: Jun. 15, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/basudeb-baul-singing-the-ballads-of-bengal/">https://ruralindiaonline.org/en/articles/basudeb-baul-singing-the-ballads-of-bengal/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org1280ac2" class="outline-4">
+<h4 id="org1280ac2"><span class="section-number-4">3.2.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgba692d7" class="outline-3">
+<h3 id="orgba692d7"><span class="section-number-3">3.3.</span> Hindustani Classical Music</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org17e6c85" class="outline-4">
+<h4 id="org17e6c85"><span class="section-number-4">3.3.1.</span> Dhrupad</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ul class="org-ul">
+<li>“Bishnupur gharana - Wikipedia.” Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Bishnupur_gharana">https://en.wikipedia.org/wiki/Bishnupur_gharana</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org38486ec" class="outline-4">
+<h4 id="org38486ec"><span class="section-number-4">3.3.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgf4764ca" class="outline-3">
+<h3 id="orgf4764ca"><span class="section-number-3">3.4.</span> Fusion Music</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>Coke Studio India, “Moner Manush” - Anupam Roy Feat. Satyaki Banerjee &amp; Babul Supriyo - Coke Studio@MTV Season 4, (Oct. 04, 2015). Accessed: Jan. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=o5iNbmDbViA">https://www.youtube.com/watch?v=o5iNbmDbViA</a></li>
+<li>Coke Studio Bangla, Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita, (Apr. 14, 2022). Accessed: Jan. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9c1NIrAqXe4">https://www.youtube.com/watch?v=9c1NIrAqXe4</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf56e6ba" class="outline-2">
+<h2 id="orgf56e6ba"><span class="section-number-2">4.</span> Artists</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge8a9fb2" class="outline-3">
+<h3 id="orge8a9fb2"><span class="section-number-3">4.1.</span> Lalon</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>“Lalon - Wikipedia.” Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Lalon">https://en.wikipedia.org/wiki/Lalon</a></li>
+
+<li>“Moner Manush,” Wikipedia. Dec. 02, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Moner_Manush&amp;oldid=1260839404">https://en.wikipedia.org/w/index.php?title=Moner_Manush&amp;oldid=1260839404</a></li>
+<li>Coke Studio India, “Moner Manush” - Anupam Roy Feat. Satyaki Banerjee &amp; Babul Supriyo - Coke Studio@MTV Season 4, (Oct. 04, 2015). Accessed: Jan. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=o5iNbmDbViA">https://www.youtube.com/watch?v=o5iNbmDbViA</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc2c82cc" class="outline-3">
+<h3 id="orgc2c82cc"><span class="section-number-3">4.2.</span> Jnanendra Prasad Goswamy</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org97e7942" class="outline-4">
+<h4 id="org97e7942"><span class="section-number-4">4.2.1.</span> General</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>“Jnanendra Prasad Goswamy,” Wikipedia. Nov. 06, 2024. Accessed: Jun. 02, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jnanendra_Prasad_Goswamy&amp;oldid=1255740496">https://en.wikipedia.org/w/index.php?title=Jnanendra_Prasad_Goswamy&amp;oldid=1255740496</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org378e8f1" class="outline-4">
+<h4 id="org378e8f1"><span class="section-number-4">4.2.2.</span> Recordings</h4>
+<div class="outline-text-4" id="text-4-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org628b4a4"></a>Solo<br /></li>
+<li><a id="org655d134"></a>Collections<br />
+<ol class="org-ol">
+<li><a id="org4102657"></a>Playlists<br /></li>
+<li><a id="org9a2863e"></a>Misc<br />
+<div class="outline-text-6" id="text-4-2-2-2-2">
+<ul class="org-ul">
+<li>Hindusthan Record, Best Of Jnanendra Prasad Goswami Songs | Superhit Bengali Classical Vocal | Raga Bhairavi | Desh, (Oct. 22, 2016). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=f78v0G7PpWk">https://www.youtube.com/watch?v=f78v0G7PpWk</a></li>
+<li>Hindusthan Record, 11 Best Bengali Classical Songs Collection | Jnanendra Prasad Goswami | Chinmoy Lahiri | Others, (Jul. 16, 2016). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=D-0SDMfDbTc">https://www.youtube.com/watch?v=D-0SDMfDbTc</a></li>
+<li>Hindusthan Record, Top 10 Bengali Classical Songs | Best Bengali Songs of Jnanendra Prasad Goswami, (Jul. 14, 2016). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KFUkCbdgFUU">https://www.youtube.com/watch?v=KFUkCbdgFUU</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgfa7a3a5"></a>Misc<br />
+<div class="outline-text-5" id="text-4-2-2-3">
+<ul class="org-ul">
+<li>Saregama Bengali, Ma Go Chinmoyee Rup Dhore Aay | Matribandana | Jnanendraprasad Goswami | Audio, (May 09, 2022). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ga5WVooZrHM">https://www.youtube.com/watch?v=ga5WVooZrHM</a></li>
+<li>Saregama Bengali, Aaji Nanda-Dulal Mukhachanda| Abismaraniyo Kazi Nazrul Islam Volume1| Jnanendraprasad Goswami| Audio, (Nov. 15, 2021). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=LEEO7oGk7ug">https://www.youtube.com/watch?v=LEEO7oGk7ug</a></li>
+<li>Saregama Bengali, Mamo Madhur Minati Shuno Ghanashyam (Jaunpuri) | Jnanendraprasad Goswami, Bratati Banerjee | Audio, (Oct. 26, 2021). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=AipNLdVNbGA">https://www.youtube.com/watch?v=AipNLdVNbGA</a></li>
+<li>Jaha Kichhu Mamo Achhe | যাহা কিছু মম আছে | Jnanendraprasad Goswami |Kazi Nazrul Islam |Nazrul Geeti. Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=609rm608EnU">https://www.youtube.com/watch?v=609rm608EnU</a></li>
+<li>Saregama Bengali, Ki Dasha Hoechhe Moder | Aagamoni Gaan | Jnanendraprasad Goswami | Audio, (Jun. 27, 2022). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=00CHtbkJMWk">https://www.youtube.com/watch?v=00CHtbkJMWk</a></li>
+<li>Saregama Bengali, Mamo Madhur Minati Shuno Ghanashyam (Jaunpuri) | Jnanendra Prasad Goswami | Audio, (Jan. 26, 2022). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=SdySlFdFglM">https://www.youtube.com/watch?v=SdySlFdFglM</a></li>
+<li>Saregama Bengali, Amay Bolo Na Bhulite | আমায় বলনা ভুলিতে | Jnanendraprasad Goswami | Bangla Classical Song |বাংলা গান, (Mar. 08, 2025). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=7XaYJffEKcc">https://www.youtube.com/watch?v=7XaYJffEKcc</a></li>
+<li>Saregama Bengali, Joy Bigalito-Karuna-Rupini Gange |Sunao A Buke Pakhi Mor Phire Aai | Jnanendraprasad Goswami | Audio, (Dec. 03, 2021). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=eQWY3GTcRIA">https://www.youtube.com/watch?v=eQWY3GTcRIA</a></li>
+<li>Saregama Bengali, Madhur Nupur Rumujhumu Baje | Bengali Classical Songs | Jnanendra Prasad Goswami | Audio, (Aug. 30, 2021). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3GctyPvraDs">https://www.youtube.com/watch?v=3GctyPvraDs</a></li>
+<li>Saregama Bengali, Amar Shyama Mayer Kole Chore | Jnanendra Prasad Goswami | Audio, (Jan. 03, 2022). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wDCmCsEhO7U">https://www.youtube.com/watch?v=wDCmCsEhO7U</a></li>
+<li>Saregama Bengali, Shashane Jagichhe Shyama | Bengali Classical Songs | Jnanendraprasad Goswami | Audio, (Sep. 22, 2021). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tCpbS-WeFAo">https://www.youtube.com/watch?v=tCpbS-WeFAo</a></li>
+<li>Saregama Bengali, Dinatarini Bole Go Maa Daki Tomay (Chhayanat) | Aaji Nijhum Raate | Jnanendraprasad Goswami | Audio, (Nov. 21, 2021). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=prsb4SZawg4">https://www.youtube.com/watch?v=prsb4SZawg4</a></li>
+<li>Hindusthan Record, Best Of Jnanendra Prasad Goswami | Oi Elo Phagun Elo Holi | Bengali Audio Jukebox, (Dec. 26, 2022). Accessed: Jun. 02, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ujPGuFVI-zs">https://www.youtube.com/watch?v=ujPGuFVI-zs</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7c1a583" class="outline-4">
+<h4 id="org7c1a583"><span class="section-number-4">4.2.3.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org176cd11" class="outline-2">
+<h2 id="org176cd11"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgf99a41d" class="outline-3">
+<h3 id="orgf99a41d"><span class="section-number-3">5.1.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org1380a5f" class="outline-4">
+<h4 id="org1380a5f"><span class="section-number-4">5.1.1.</span> Krishna</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>Hindusthan Record, Best of Krishna Songs | Bengali Devotional Songs | Kirtan, (Dec. 02, 2014). Accessed: Jun. 03, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Z1Uom-8ads8">https://www.youtube.com/watch?v=Z1Uom-8ads8</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8cee3cc" class="outline-2">
+<h2 id="org8cee3cc"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>“Bhatiali,” Wikipedia. Nov. 05, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bhatiali&amp;oldid=1255627713">https://en.wikipedia.org/w/index.php?title=Bhatiali&amp;oldid=1255627713</a></li>
+
+<li>“Atul Prasad Sen,” Wikipedia. Oct. 22, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Atul_Prasad_Sen&amp;oldid=1252606714">https://en.wikipedia.org/w/index.php?title=Atul_Prasad_Sen&amp;oldid=1252606714</a></li>
+
+<li>“Shyama Sangeet,” Wikipedia. Nov. 09, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Shyama_Sangeet&amp;oldid=1256303260">https://en.wikipedia.org/w/index.php?title=Shyama_Sangeet&amp;oldid=1256303260</a></li>
+
+<li>“Ramprasad Sen,” Wikipedia. Dec. 22, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ramprasad_Sen&amp;oldid=1264619964">https://en.wikipedia.org/w/index.php?title=Ramprasad_Sen&amp;oldid=1264619964</a></li>
+
+<li>“Tarapada Chakraborty,” Wikipedia. Sep. 29, 2024. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Tarapada_Chakraborty&amp;oldid=1248357516">https://en.wikipedia.org/w/index.php?title=Tarapada_Chakraborty&amp;oldid=1248357516</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

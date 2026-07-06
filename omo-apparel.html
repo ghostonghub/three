@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apparel</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Apparel</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org118f6f9">1. General</a></li>
+<li><a href="#orgec32039">2. STEMM</a>
+<ul>
+<li><a href="#org90d40c3">2.1. CSE</a>
+<ul>
+<li><a href="#orgd045121">2.1.1. Everyday Computing</a></li>
+<li><a href="#org0c41ac3">2.1.2. Artificial Intelligence</a></li>
+<li><a href="#org5f9adfa">2.1.3. BlockChain</a></li>
+<li><a href="#org7b9b06e">2.1.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc084330">2.2. Environment</a>
+<ul>
+<li><a href="#org6b66dec">2.2.1. General</a></li>
+<li><a href="#orgcd91e2e">2.2.2. Products</a></li>
+<li><a href="#org5d1abd2">2.2.3. Special Topics</a></li>
+<li><a href="#org925f315">2.2.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd403018">2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org106c6f4">3. Worldly Matters</a>
+<ul>
+<li><a href="#org5d37dbd">3.1. Special Groups</a>
+<ul>
+<li><a href="#orgae55e4d">3.1.1. Women</a></li>
+<li><a href="#orgcc99791">3.1.2. Kids</a></li>
+<li><a href="#org1375c82">3.1.3. Senior Citizens</a></li>
+</ul>
+</li>
+<li><a href="#orgd3f402c">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org1222ae9">4. Core</a>
+<ul>
+<li><a href="#orgbb2ff8c">4.1. Education</a>
+<ul>
+<li><a href="#orgf4c6745">4.1.1. Courses</a></li>
+<li><a href="#org65f7ecf">4.1.2. Humble Book Bundles</a></li>
+</ul>
+</li>
+<li><a href="#orga409baa">4.2. Handloom</a></li>
+<li><a href="#orgaedf69f">4.3. Fast Fashion</a></li>
+<li><a href="#org0a83a22">4.4. Khadi</a></li>
+<li><a href="#orgfc4b815">4.5. Cotton</a></li>
+<li><a href="#orgbfa5752">4.6. Laundry</a></li>
+</ul>
+</li>
+<li><a href="#org0272824">5. Special Topics</a></li>
+<li><a href="#org46296c2">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org118f6f9" class="outline-2">
+<h2 id="org118f6f9"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-orgec32039" class="outline-2">
+<h2 id="orgec32039"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org90d40c3" class="outline-3">
+<h3 id="org90d40c3"><span class="section-number-3">2.1.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgd045121" class="outline-4">
+<h4 id="orgd045121"><span class="section-number-4">2.1.1.</span> Everyday Computing</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgf7aaa35"></a>India<br />
+<ol class="org-ol">
+<li><a id="orgfb430c5"></a>Apps<br />
+<ul class="org-ul">
+<li><a id="orgcac5dd3"></a>Traditional<br />
+<div class="outline-text-7" id="text-orgcac5dd3">
+<ul class="org-ul">
+<li>“‎Fabindia Online Shopping,” App Store, Jun. 27, 2023. <a href="https://apps.apple.com/in/app/fabindia-online-shopping/id1479713062">https://apps.apple.com/in/app/fabindia-online-shopping/id1479713062</a> (accessed Jul. 03, 2023).</li>
+
+<li>“‎eKhadi India,” App Store, Apr. 18, 2023. <a href="https://apps.apple.com/in/app/ekhadi-india/id1548746830">https://apps.apple.com/in/app/ekhadi-india/id1548746830</a> (accessed Jul. 03, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org5701bd7"></a>Misc<br />
+<div class="outline-text-7" id="text-org5701bd7">
+<ul class="org-ul">
+<li>“‎M&amp;S India,” App Store, Jun. 08, 2023. <a href="https://apps.apple.com/in/app/m-s-india/id1493509178">https://apps.apple.com/in/app/m-s-india/id1493509178</a> (accessed Jul. 03, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‎Tata CLiQ Luxury Shopping App,” App Store, Jun. 22, 2023. <a href="https://apps.apple.com/in/app/tata-cliq-luxury-shopping-app/id1281494666">https://apps.apple.com/in/app/tata-cliq-luxury-shopping-app/id1281494666</a> (accessed Jul. 03, 2023).</li>
+<li>“‎Tata CLiQ Online Shopping App,” App Store, Jun. 28, 2023. <a href="https://apps.apple.com/in/app/tata-cliq-online-shopping-app/id1101619385">https://apps.apple.com/in/app/tata-cliq-online-shopping-app/id1101619385</a> (accessed Jul. 03, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‎Myntra - Fashion Shopping App,” App Store, Jun. 30, 2023. <a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059">https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059</a> (accessed Jul. 03, 2023).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org368d55f"></a>Misc<br />
+<div class="outline-text-6" id="text-2-1-1-1-2">
+<ul class="org-ul">
+<li>A. B. World Rest of World &amp;. Kunal Purohit, Rest of, “Shein power does little to help Reliance crack e-commerce,” Scroll.in. Accessed: Jun. 03, 2025. [Online]. Available: <a href="https://scroll.in/article/1082915/shein-power-does-little-to-help-reliance-crack-e-commerce">https://scroll.in/article/1082915/shein-power-does-little-to-help-reliance-crack-e-commerce</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgece8a14"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li>“Temu,” Wikipedia. Aug. 22, 2024. Accessed: Aug. 25, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Temu&amp;oldid=1241597536">https://en.wikipedia.org/w/index.php?title=Temu&amp;oldid=1241597536</a></li>
+<li>“Shein,” Wikipedia. Aug. 16, 2024. Accessed: Aug. 25, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Shein&amp;oldid=1240684813">https://en.wikipedia.org/w/index.php?title=Shein&amp;oldid=1240684813</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0c41ac3" class="outline-4">
+<h4 id="org0c41ac3"><span class="section-number-4">2.1.2.</span> Artificial Intelligence</h4>
+</div>
+<div id="outline-container-org5f9adfa" class="outline-4">
+<h4 id="org5f9adfa"><span class="section-number-4">2.1.3.</span> BlockChain</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<ul class="org-ul">
+<li>S. S. Muthu, Ed., Blockchain Technologies in the Textile and Fashion Industry, 1st ed. 2022 edition. Springer Verlag, Singapore, 2023.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7b9b06e" class="outline-4">
+<h4 id="org7b9b06e"><span class="section-number-4">2.1.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<ul class="org-ul">
+<li>“Embroidery and resilient software freedom in 2025,” Software Freedom Conservancy. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://sfconservancy.org/blog/2025/jan/06/embroidery-and-resilient-software-freedom-in-2025/">https://sfconservancy.org/blog/2025/jan/06/embroidery-and-resilient-software-freedom-in-2025/</a></li>
+
+<li>J. P. World Rest of, “Automation and surveillance in Bangladesh garment factories cuts wages, pushes out women workers,” Scroll.in. Accessed: Mar. 16, 2025. [Online]. Available: <a href="https://scroll.in/article/1080135/automation-and-surveillance-in-bangladesh-garment-factories-cuts-wages-pushes-out-women-workers">https://scroll.in/article/1080135/automation-and-surveillance-in-bangladesh-garment-factories-cuts-wages-pushes-out-women-workers</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc084330" class="outline-3">
+<h3 id="orgc084330"><span class="section-number-3">2.2.</span> Environment</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org6b66dec" class="outline-4">
+<h4 id="org6b66dec"><span class="section-number-4">2.2.1.</span> General</h4>
+</div>
+<div id="outline-container-orgcd91e2e" class="outline-4">
+<h4 id="orgcd91e2e"><span class="section-number-4">2.2.2.</span> Products</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li>“Earth’s Favorite™ Clothing Company,” Wear PACT. Accessed: Jan. 04, 2025. [Online]. Available: <a href="https://wearpact.com">https://wearpact.com</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5d1abd2" class="outline-4">
+<h4 id="org5d1abd2"><span class="section-number-4">2.2.3.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-2-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgf396daf"></a>Animals<br />
+<div class="outline-text-5" id="text-2-2-3-1">
+<ul class="org-ul">
+<li>“Wear Your Own Skin | peta2,” Wear Your Own Skin. Accessed: Mar. 21, 2025. [Online]. Available: <a href="https://wearyourownskin.peta2.com/">https://wearyourownskin.peta2.com/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Animals Used for Clothing Factsheets,” PETA. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://www.peta.org/issues/animals-used-for-clothing/animals-used-clothing-factsheets/">https://www.peta.org/issues/animals-used-for-clothing/animals-used-clothing-factsheets/</a></li>
+<li>“Leather, Wool, and Other Clothing Made From Animals,” PETA. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://www.peta.org/issues/animals-used-for-clothing/">https://www.peta.org/issues/animals-used-for-clothing/</a></li>
+<li>“How to Wear Vegan Clothes and Vegan Shoes | PETA.org,” How To Wear Vegan. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://how-to-wear-vegan.peta.org/">https://how-to-wear-vegan.peta.org/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org925f315" class="outline-4">
+<h4 id="org925f315"><span class="section-number-4">2.2.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="org1b27f69"></a>Misc<br />
+<div class="outline-text-5" id="text-2-2-4-1">
+<ul class="org-ul">
+<li>“Leather Destroys the Planet: Wear Vegan Clothes Instead,” PETA. Accessed: Sep. 16, 2025. [Online]. Available: <a href="https://www.peta.org/features/leather-is-killing-animals-and-our-planet/">https://www.peta.org/features/leather-is-killing-animals-and-our-planet/</a></li>
+<li>Elena, “PETA x Miomojo Inspired Emmy® Stars to Wear Vegan | Blog,” PETA. Accessed: Sep. 16, 2025. [Online]. Available: <a href="https://www.peta.org/news/peta-x-miomojo/">https://www.peta.org/news/peta-x-miomojo/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Manocha, “The Wool Industry’s Dirty Secret: What the ‘Ethical’ Brands Don’t Want You to Know - Blog,” PETA India. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/the-wool-industrys-dirty-secret-what-the-ethical-brands-dont-want-you-to-know/">https://www.petaindia.com/blog/the-wool-industrys-dirty-secret-what-the-ethical-brands-dont-want-you-to-know/</a></li>
+
+<li>D. T. E. Staff, “Cocoons of hope: Where wild silk meets tribal hands,” Down To Earth. Accessed: Jun. 06, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/forests/cocoons-of-hope-where-wild-silk-meets-tribal-hands">https://www.downtoearth.org.in/forests/cocoons-of-hope-where-wild-silk-meets-tribal-hands</a></li>
+<li>S. Chacko, “Fashion brands, part of high-emitting industry, hide decarbonisation plans,” Down To Earth. Accessed: Aug. 10, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/climate-change/fashion-brands-part-of-high-emitting-industry-hide-decarbonisation-plans">https://www.downtoearth.org.in/climate-change/fashion-brands-part-of-high-emitting-industry-hide-decarbonisation-plans</a></li>
+
+<li>R. Honeyman, “Circularity Lessons from Patagonia and Upcycled Foods: A Conversation with Nellie Cohen and Dan…,” Medium. Accessed: Jan. 08, 2025. [Online]. Available: <a href="https://bthechange.com/circularity-lessons-from-patagonia-and-upcycled-foods-a-conversation-with-nellie-cohen-and-dan-e14a46fb4f8b">https://bthechange.com/circularity-lessons-from-patagonia-and-upcycled-foods-a-conversation-with-nellie-cohen-and-dan-e14a46fb4f8b</a></li>
+<li>D. T. E. Staff, “OECD paper urges governments to adopt extended producer responsibility to tackle textile waste,” Down To Earth. Accessed: Dec. 17, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/oecd-paper-urges-governments-to-adopt-extended-producer-responsibility-to-tackle-textile-waste">https://www.downtoearth.org.in/waste/oecd-paper-urges-governments-to-adopt-extended-producer-responsibility-to-tackle-textile-waste</a></li>
+<li>K. Pandey, “Innovating with deadstock: From dump yards to designer racks,” Mongabay-India. Accessed: Aug. 22, 2024. [Online]. Available: <a href="https://india.mongabay.com/2024/08/innovating-with-deadstock-from-dump-yards-to-designer-racks/">https://india.mongabay.com/2024/08/innovating-with-deadstock-from-dump-yards-to-designer-racks/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1fe51e2"></a>PETA<br />
+<div class="outline-text-5" id="text-2-2-4-2">
+<ul class="org-ul">
+<li>“Leather Destroys the Planet: Wear Vegan Clothes Instead,” PETA. Accessed: Jun. 27, 2025. [Online]. Available: <a href="https://www.peta.org/features/leather-is-killing-animals-and-our-planet/">https://www.peta.org/features/leather-is-killing-animals-and-our-planet/</a></li>
+<li>Elena, “Wear Cactus, Not Cows! Sofía Sisniega Bares All for World Environment Day,” PETA. Accessed: Jun. 19, 2025. [Online]. Available: <a href="https://www.peta.org/blog/sofia-sisniega-bares-the-naked-truth/">https://www.peta.org/blog/sofia-sisniega-bares-the-naked-truth/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9ba289f"></a>Organic Consumers Association<br />
+<div class="outline-text-5" id="text-2-2-4-3">
+<ul class="org-ul">
+<li>Paco, “Indigenous-Owned Alberta Company Making Better Building Blocks — With Hemp,” Organic Consumers. Accessed: Mar. 30, 2025. [Online]. Available: <a href="https://organicconsumers.org/indigenous-owned-alberta-company-making-better-building-blocks-with-hemp/">https://organicconsumers.org/indigenous-owned-alberta-company-making-better-building-blocks-with-hemp/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org06636c6"></a>GreenPeace International<br />
+<div class="outline-text-5" id="text-2-2-4-4">
+<ul class="org-ul">
+<li>“4 reasons why fast fashion will never be green,” Greenpeace International. Accessed: Mar. 18, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/story/73504/4-reasons-why-fast-fashion-will-never-be-green/">https://www.greenpeace.org/international/story/73504/4-reasons-why-fast-fashion-will-never-be-green/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org32630f7"></a>Vikalp Sangam, Misc<br />
+<div class="outline-text-5" id="text-2-2-4-5">
+<ul class="org-ul">
+<li>“The Kutchi Weave: A district’s inter-woven response to complex crises,” Vikalp Sangam. Accessed: Mar. 09, 2025. [Online]. Available: <a href="https://vikalpsangam.org/article/the-kutchi-weave-a-districts-inter-woven-response-to-complex-crises/">https://vikalpsangam.org/article/the-kutchi-weave-a-districts-inter-woven-response-to-complex-crises/</a></li>
+<li>“Slow Fiber: Shaping a Conscious Relationship with Fashion,” Radical Ecological Democracy. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://radicalecologicaldemocracy.org/slow-fiber-shaping-a-conscious-relationship-with-fashion/">https://radicalecologicaldemocracy.org/slow-fiber-shaping-a-conscious-relationship-with-fashion/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3ceb6fd"></a>Texts<br />
+<div class="outline-text-5" id="text-2-2-4-6">
+<ul class="org-ul">
+<li>L. Norris, Recycling Indian Clothing: Global Contexts of Reuse and Value. Indiana University Press, 2010.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd403018" class="outline-3">
+<h3 id="orgd403018"><span class="section-number-3">2.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>A. King, “Beer yeast leftovers spun into a promising sustainable yarn 50% stronger than wool,” Chemistry World. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://www.chemistryworld.com/news/beer-yeast-leftovers-spun-into-a-promising-sustainable-yarn-50-stronger-than-wool/4022459.article">https://www.chemistryworld.com/news/beer-yeast-leftovers-spun-into-a-promising-sustainable-yarn-50-stronger-than-wool/4022459.article</a></li>
+
+<li>R. Trager, “A greener approach to finishing fabrics,” Chemistry World. Accessed: Sep. 02, 2025. [Online]. Available: <a href="https://www.chemistryworld.com/news/a-greener-approach-to-finishing-fabrics/4022063.article">https://www.chemistryworld.com/news/a-greener-approach-to-finishing-fabrics/4022063.article</a></li>
+
+<li>“IIT-Delhi develops breakthrough method to recycle denim into high-quality garments,” The Tribune. Accessed: Aug. 11, 2025. [Online]. Available: <a href="https://www.tribuneindia.com/news/delhi/iit-delhi-develops-breakthrough-method-to-recycle-denim-into-high-quality-garments/">https://www.tribuneindia.com/news/delhi/iit-delhi-develops-breakthrough-method-to-recycle-denim-into-high-quality-garments/</a></li>
+
+<li>P. F. / T. Conversation, “The dirty truth about what’s in your socks,” Popular Science. Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://theconversation.com/the-dirty-truth-about-whats-in-your-socks-bacteria-fungi-and-whatever-lives-between-your-toes-261580">https://theconversation.com/the-dirty-truth-about-whats-in-your-socks-bacteria-fungi-and-whatever-lives-between-your-toes-261580</a></li>
+
+<li>“Humble Book Bundle: The Ultimate Cosplay Library,” Humble Bundle. Accessed: Apr. 20, 2025. [Online]. Available: <a href="https://www.humblebundle.com/books/ultimate-cosplay-library-books">https://www.humblebundle.com/books/ultimate-cosplay-library-books</a></li>
+
+<li>“VIDEO: How to DIY a Birkin Bag (If You Can Stomach It),” PETA Headlines. Accessed: Apr. 15, 2025. [Online]. Available: <a href="https://headlines.peta.org/diy-hermes-birkin-bag/">https://headlines.peta.org/diy-hermes-birkin-bag/</a></li>
+
+<li>B. C. September 2011, “Lycra,” Chemistry World. Accessed: Aug. 15, 2024. [Online]. Available: <a href="https://www.chemistryworld.com/podcasts/lycra/3005841.article">https://www.chemistryworld.com/podcasts/lycra/3005841.article</a></li>
+
+<li>S. S. March 2025, “New materials for sustainable fabrics,” Chemistry World. Accessed: Mar. 28, 2025. [Online]. Available: <a href="https://www.chemistryworld.com/opinion/new-materials-for-sustainable-fabrics/4021150.article">https://www.chemistryworld.com/opinion/new-materials-for-sustainable-fabrics/4021150.article</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Punjab: Slow Yet Steady, Farmers Pave Way for Revival of Organic Desi Cotton,” NewsClick. Accessed: Dec. 18, 2024. [Online]. Available: <a href="https://www.newsclick.in/punjab-slow-yet-steady-farmers-pave-way-revival-organic-desi-cotton">https://www.newsclick.in/punjab-slow-yet-steady-farmers-pave-way-revival-organic-desi-cotton</a></li>
+<li>P. Ferdinand, “Are your baby’s clothes toxic? New study finds harmful chemicals in infant textiles,” U.S. Right to Know. Accessed: Oct. 21, 2025. [Online]. Available: <a href="https://usrtk.org/healthwire/toxic-chemicals-in-baby-clothes/">https://usrtk.org/healthwire/toxic-chemicals-in-baby-clothes/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org106c6f4" class="outline-2">
+<h2 id="org106c6f4"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org5d37dbd" class="outline-3">
+<h3 id="org5d37dbd"><span class="section-number-3">3.1.</span> Special Groups</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgae55e4d" class="outline-4">
+<h4 id="orgae55e4d"><span class="section-number-4">3.1.1.</span> Women</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org387a155"></a>Lingerie<br />
+<div class="outline-text-5" id="text-3-1-1-1">
+<ul class="org-ul">
+<li>Lingerie: <a href="https://tinyurl.com/549ycz23">https://tinyurl.com/549ycz23</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgef8b892"></a>Blouse<br />
+<div class="outline-text-5" id="text-3-1-1-2">
+<ul class="org-ul">
+<li>“Blouse,” Wikipedia. Nov. 30, 2024. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Blouse&amp;oldid=1260426894">https://en.wikipedia.org/w/index.php?title=Blouse&amp;oldid=1260426894</a></li>
+
+<li>“Choli,” Wikipedia. Nov. 01, 2024. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Choli&amp;oldid=1254711176">https://en.wikipedia.org/w/index.php?title=Choli&amp;oldid=1254711176</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org555c24f"></a>Skirt<br />
+<div class="outline-text-5" id="text-3-1-1-3">
+<ul class="org-ul">
+<li>“Skirt,” Wikipedia. Dec. 27, 2024. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Skirt&amp;oldid=1265608497">https://en.wikipedia.org/w/index.php?title=Skirt&amp;oldid=1265608497</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5d4e293"></a>Misc<br />
+<div class="outline-text-5" id="text-3-1-1-4">
+<ul class="org-ul">
+<li>A. Jain, “‘The most beautiful sarae in Hindustan’: First impressions of princess Jahanara’s Begum ki Serai,” Scroll.in. Accessed: Jan. 09, 2026. [Online]. Available: <a href="https://scroll.in/article/1089018/the-most-beautiful-sarae-in-hindustan-first-impressions-of-princess-jahanaras-begum-ki-serai">https://scroll.in/article/1089018/the-most-beautiful-sarae-in-hindustan-first-impressions-of-princess-jahanaras-begum-ki-serai</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>C. Fox, Vogue Essentials: Little Black Dress, Illustrated edition. Conran, 2018.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgcc99791" class="outline-4">
+<h4 id="orgcc99791"><span class="section-number-4">3.1.2.</span> Kids</h4>
+</div>
+<div id="outline-container-org1375c82" class="outline-4">
+<h4 id="org1375c82"><span class="section-number-4">3.1.3.</span> Senior Citizens</h4>
+</div>
+</div>
+<div id="outline-container-orgd3f402c" class="outline-3">
+<h3 id="orgd3f402c"><span class="section-number-3">3.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>“It’s been 12 years since Rana Plaza. Why is Amazon still refusing to protect Bangladeshi garment workers?,” Progressive International. Accessed: Dec. 08, 2025. [Online]. Available: <a href="https://progressive.international/wire/2025-11-27-its-been-12-years-since-rana-plaza-why-is-amazon-still-refusing-to-protect-bangladeshi-garment-workers/en">https://progressive.international/wire/2025-11-27-its-been-12-years-since-rana-plaza-why-is-amazon-still-refusing-to-protect-bangladeshi-garment-workers/en</a></li>
+
+<li>“Decline of the Textile Industry and Its Impact on the Industrial Decline in Maharashtra | Economic and Political Weekly.” Accessed: Oct. 12, 2025. [Online]. Available: <a href="https://www.epw.in/journal/millworkers-strike-1982-83-and-its-aftermath/decline-textile-industry-and-its-impact-industrial.html">https://www.epw.in/journal/millworkers-strike-1982-83-and-its-aftermath/decline-textile-industry-and-its-impact-industrial.html</a></li>
+
+<li>“ओडिशा हैंडलूम और बुनकरों की आजीविका (in Hindi),” Vikalp Sangam. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://vikalpsangam.org/article/orissa-handloom-aur-bunkaron-ki-aajeevika-in-hindi/">https://vikalpsangam.org/article/orissa-handloom-aur-bunkaron-ki-aajeevika-in-hindi/</a></li>
+
+<li>our partner R. Romania, “How Europe’s Secondhand Clothes Are Trashing Romania,” OCCRP. Accessed: Dec. 05, 2025. [Online]. Available: <a href="https://www.occrp.org/en/investigation/how-europes-secondhand-clothes-are-trashing-romania">https://www.occrp.org/en/investigation/how-europes-secondhand-clothes-are-trashing-romania</a></li>
+
+<li>“Global garment industry profits from denial of right to unionize,” Amnesty International. Accessed: Nov. 27, 2025. [Online]. Available: <a href="https://www.amnesty.org/en/latest/news/2025/11/garment-industry-profits-from-denial-of-right-to-unionize/">https://www.amnesty.org/en/latest/news/2025/11/garment-industry-profits-from-denial-of-right-to-unionize/</a></li>
+
+<li>“The Mubarakpuri Saree: Tradition, Turmoil and the Shock of US Tariffs,” Countercurrents. Accessed: Sep. 07, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/09/the-mubarakpuri-saree-tradition-turmoil-and-the-shock-of-us-tariffs/">https://countercurrents.org/2025/09/the-mubarakpuri-saree-tradition-turmoil-and-the-shock-of-us-tariffs/</a></li>
+
+<li>“How Government Program of Garments for the Poor Can Also Help to Protect Tariff Affected Livelihoods in India,” Countercurrents. Accessed: Sep. 03, 2025. [Online]. Available: <a href="https://countercurrents.org/2025/09/how-government-program-of-garments-for-the-poor-can-also-help-to-protect-tariff-affected-livelihoods-in-india/">https://countercurrents.org/2025/09/how-government-program-of-garments-for-the-poor-can-also-help-to-protect-tariff-affected-livelihoods-in-india/</a></li>
+
+<li>A. Badhwar, “How can you be sure your clothing has been produced ethically?,” The Conversation. Accessed: Aug. 12, 2025. [Online]. Available: <a href="http://theconversation.com/how-can-you-be-sure-your-clothing-has-been-produced-ethically-262800">http://theconversation.com/how-can-you-be-sure-your-clothing-has-been-produced-ethically-262800</a></li>
+
+<li>D. T. E. Staff, “Stained waters: Silent cost of textile dyeing,” Down To Earth. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/water/stained-waters-silent-cost-of-textile-dyeing">https://www.downtoearth.org.in/water/stained-waters-silent-cost-of-textile-dyeing</a></li>
+
+<li>“Weaving traditions: how the women weavers of Adichilthotti sustain their craft,” Vikalp Sangam. Accessed: Mar. 19, 2025. [Online]. Available: <a href="https://vikalpsangam.org/article/weaving-traditions-how-the-women-weavers-of-adichilthotti-sustain-their-craft/">https://vikalpsangam.org/article/weaving-traditions-how-the-women-weavers-of-adichilthotti-sustain-their-craft/</a></li>
+
+<li>“Remembering Bim Bissell: The Force Behind FabIndia,” The Wire. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://thewire.in/culture/remembering-bim-bissell-the-force-behind-fabindia">https://thewire.in/culture/remembering-bim-bissell-the-force-behind-fabindia</a></li>
+
+<li>“When women’s needlework becomes an act of subversive protest | Aeon Essays,” Aeon. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://aeon.co/essays/when-womens-needlework-becomes-an-act-of-subversive-protest">https://aeon.co/essays/when-womens-needlework-becomes-an-act-of-subversive-protest</a></li>
+
+<li>“Earth’s Favorite™ Clothing Company,” Wear PACT. Accessed: Jan. 04, 2025. [Online]. Available: <a href="https://wearpact.com">https://wearpact.com</a></li>
+
+<li>“Six ways to use clothes to boost your confidence at work | Psyche Ideas,” Psyche. Accessed: Oct. 10, 2024. [Online]. Available: <a href="https://psyche.co/ideas/six-ways-to-use-clothes-to-boost-your-confidence-at-work">https://psyche.co/ideas/six-ways-to-use-clothes-to-boost-your-confidence-at-work</a></li>
+
+<li>“Just Transition and Decent Work for Garment Value Chain Workers - RLS Southasia.” Accessed: Feb. 13, 2024. [Online]. Available: <a href="https://www.rosalux.in/details-resources/1180.html">https://www.rosalux.in/details-resources/1180.html</a></li>
+<li>I. Chaboud and T. Conversation, “Counterfeit Chanel, Louis Vuitton and Hermès bags from China: An online phenomenon and its risks for consumers.” Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://phys.org/news/2025-09-counterfeit-chanel-louis-vuitton-herms.html">https://phys.org/news/2025-09-counterfeit-chanel-louis-vuitton-herms.html</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1222ae9" class="outline-2">
+<h2 id="org1222ae9"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgbb2ff8c" class="outline-3">
+<h3 id="orgbb2ff8c"><span class="section-number-3">4.1.</span> Education</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgf4c6745" class="outline-4">
+<h4 id="orgf4c6745"><span class="section-number-4">4.1.1.</span> Courses</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li><i>“Beginning Costume Design and Construction,”</i> MIT OpenCourseWare. <a href="https://ocw.mit.edu/courses/music-and-theater-arts/21m-732-beginning-costume-design-and-construction-fall-2008/">https://ocw.mit.edu/courses/music-and-theater-arts/21m-732-beginning-costume-design-and-construction-fall-2008/</a> (accessed Aug. 23, 2021).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org65f7ecf" class="outline-4">
+<h4 id="org65f7ecf"><span class="section-number-4">4.1.2.</span> Humble Book Bundles</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>“Humble Craft Book Bundle: Sewing for Gen Z by C&amp;T Publishing,” Humble Bundle. Accessed: Jul. 05, 2024. [Online]. Available: <a href="https://www.humblebundle.com/books/sewing-for-gen-z-ct-publishing-books">https://www.humblebundle.com/books/sewing-for-gen-z-ct-publishing-books</a></li>
+<li>“Humble Craft Book Bundle: Stitch &amp; Bitch by Insight Editions,” Humble Bundle. Accessed: Dec. 27, 2024. [Online]. Available: <a href="https://www.humblebundle.com/books/stitch-bitch-insight-editions-books">https://www.humblebundle.com/books/stitch-bitch-insight-editions-books</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga409baa" class="outline-3">
+<h3 id="orga409baa"><span class="section-number-3">4.2.</span> Handloom</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>“World Handloom Day: In Search of the Kollegala Saree,” NewsClick. Accessed: Aug. 08, 2024. [Online]. Available: <a href="https://www.newsclick.in/world-handloom-day-search-kollegala-saree">https://www.newsclick.in/world-handloom-day-search-kollegala-saree</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaedf69f" class="outline-3">
+<h3 id="orgaedf69f"><span class="section-number-3">4.3.</span> Fast Fashion</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>U. of Auckland, “How nature’s wow factor may curb fast fashion.” Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://phys.org/news/2025-10-nature-wow-factor-curb-fast.html">https://phys.org/news/2025-10-nature-wow-factor-curb-fast.html</a></li>
+
+<li>T. Editors, “Fast Fashion Must Go Out of Style,” Scientific American. Accessed: Sep. 17, 2025. [Online]. Available: <a href="https://www.scientificamerican.com/article/fast-fashion-is-a-bad-look-for-the-environment/">https://www.scientificamerican.com/article/fast-fashion-is-a-bad-look-for-the-environment/</a></li>
+
+<li>M. M. R. Shen Lisa Lake,Martina Linnenluecke,Yun, “How Trump’s trade war is supercharging the fast fashion industry,” Down To Earth. Accessed: Jun. 10, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/economy/how-trumps-trade-war-is-supercharging-the-fast-fashion-industry">https://www.downtoearth.org.in/economy/how-trumps-trade-war-is-supercharging-the-fast-fashion-industry</a></li>
+
+<li>M. C.-H. Conversation The, “How to avoid fast fashion’s disastrous carbon footprint and build a sustainable wardrobe,” Scroll.in. Accessed: Jul. 01, 2024. [Online]. Available: <a href="https://scroll.in/article/1069918/how-to-avoid-fast-fashions-disastrous-carbon-footprint-and-build-a-sustainable-wardrobe">https://scroll.in/article/1069918/how-to-avoid-fast-fashions-disastrous-carbon-footprint-and-build-a-sustainable-wardrobe</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Fast fashion: EU Europe plans fast fashion crackdown,” BBC News, Mar. 30, 2022. Accessed: Mar. 30, 2022. [Online]. Available: <a href="https://www.bbc.com/news/science-environment-60913226">https://www.bbc.com/news/science-environment-60913226</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0a83a22" class="outline-3">
+<h3 id="org0a83a22"><span class="section-number-3">4.4.</span> Khadi</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>Khadi: <a href="https://tinyurl.com/3b2dsvn3">https://tinyurl.com/3b2dsvn3</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfc4b815" class="outline-3">
+<h3 id="orgfc4b815"><span class="section-number-3">4.5.</span> Cotton</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>Cotton: <a href="https://tinyurl.com/49hy6j5k">https://tinyurl.com/49hy6j5k</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbfa5752" class="outline-3">
+<h3 id="orgbfa5752"><span class="section-number-3">4.6.</span> Laundry</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>Laundry: <a href="https://tinyurl.com/2hz3pcxu">https://tinyurl.com/2hz3pcxu</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0272824" class="outline-2">
+<h2 id="org0272824"><span class="section-number-2">5.</span> Special Topics</h2>
+</div>
+<div id="outline-container-org46296c2" class="outline-2">
+<h2 id="org46296c2"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>S. Vasudev, “Why attempts to stylise khadi for youth appeal or modern fashion sensibilities have fallen short,” Scroll.in. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://scroll.in/article/1089228/why-attempts-to-stylise-khadi-for-youth-appeal-or-modern-fashion-sensibilities-have-fallen-short">https://scroll.in/article/1089228/why-attempts-to-stylise-khadi-for-youth-appeal-or-modern-fashion-sensibilities-have-fallen-short</a></li>
+<li>S. Debnath, “‘Stories We Wear’: The ‘Indian look’ carries burdens of gender-caste and is impossible to categorise,” Scroll.in. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://scroll.in/article/1089699/stories-we-wear-the-indian-look-carries-burdens-of-gender-caste-and-is-impossible-to-categorise">https://scroll.in/article/1089699/stories-we-wear-the-indian-look-carries-burdens-of-gender-caste-and-is-impossible-to-categorise</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Vasudev, Stories We Wear: Status, Spectacle and the Politics of Appearance. Westland Non-Fiction.</li>
+
+<li>L. M. Puri, THE SARI ETERNAL: A Tribute. Aleph Book Company.</li>
+
+<li>“Humble Craft Book Bundle: Comfort Crochet, Amigurumi, and Knitting by Open Road Media,” Humble Bundle. Accessed: Aug. 08, 2025. [Online]. Available: <a href="https://www.humblebundle.com/books/comfort-crochet-amigurumi-and-knitting-open-road-media-books">https://www.humblebundle.com/books/comfort-crochet-amigurumi-and-knitting-open-road-media-books</a></li>
+
+<li>Paco, “Conductive Wool Replaces Wiring and Circuits,” Organic Consumers. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://organicconsumers.org/conductive-wool-replaces-wiring-and-circuits/">https://organicconsumers.org/conductive-wool-replaces-wiring-and-circuits/</a></li>
+
+<li>“Humble Craft Book Bundle: Amigurumi, Crochet, and More by Open Road Media,” Humble Bundle. Accessed: Apr. 25, 2025. [Online]. Available: <a href="https://www.humblebundle.com/books/amigurumi-crochet-and-more-open-road-media-books">https://www.humblebundle.com/books/amigurumi-crochet-and-more-open-road-media-books</a></li>
+
+<li>“Rina Dhaka,” Wikipedia. Mar. 20, 2025. Accessed: Mar. 30, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rina_Dhaka&amp;oldid=1281406912">https://en.wikipedia.org/w/index.php?title=Rina_Dhaka&amp;oldid=1281406912</a></li>
+
+<li>“Surat: Cost of a Billion-Dollar Textile Industry,” NewsClick. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://www.newsclick.in/surat-cost-billion-dollar-textile-industry">https://www.newsclick.in/surat-cost-billion-dollar-textile-industry</a></li>
+
+<li>Paco, “Why Natural Hollow Fibers Outperform Traditional Materials,” Organic Consumers. Accessed: Jan. 08, 2025. [Online]. Available: <a href="https://organicconsumers.org/why-natural-hollow-fibers-outperform-traditional-materials/">https://organicconsumers.org/why-natural-hollow-fibers-outperform-traditional-materials/</a></li>
+
+<li>“Along the Majuli silk route,” People’s Archive of Rural India. Accessed: Dec. 01, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/along-the-majuli-silk-route/">https://ruralindiaonline.org/en/articles/along-the-majuli-silk-route/</a></li>
+
+<li>“Why does philosophy hold clothes in such low regard? | Aeon Essays,” Aeon. Accessed: Jul. 10, 2024. [Online]. Available: <a href="https://aeon.co/essays/why-does-philosophy-hold-clothes-in-such-low-regard">https://aeon.co/essays/why-does-philosophy-hold-clothes-in-such-low-regard</a></li>
+
+<li>T. Lemp, “Chloé Bensahel: Weaving Memory into Textiles,” Arts at MIT. Accessed: Apr. 27, 2024. [Online]. Available: <a href="https://arts.mit.edu/weaving-memory-into-textiles/">https://arts.mit.edu/weaving-memory-into-textiles/</a></li>
+<li>“How luxury brands engineer desire with behavioural economics | Psyche Ideas.” Accessed: Oct. 04, 2025. [Online]. Available: <a href="https://psyche.co/ideas/how-luxury-brands-engineer-desire-with-behavioural-economics">https://psyche.co/ideas/how-luxury-brands-engineer-desire-with-behavioural-economics</a></li>
+<li>“Humble Book Bundle: Craft Your Cosplay Dreams,” Humble Bundle. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://www.humblebundle.com/books/craft-your-cosplay-dreams-books">https://www.humblebundle.com/books/craft-your-cosplay-dreams-books</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

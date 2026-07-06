@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Holi - Music</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Holi - Music</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgba7fb3a">1. Indian Classical Music</a>
+<ul>
+<li><a href="#org27e4baf">1.1. Hindustani Classical Music</a>
+<ul>
+<li><a href="#orgd09d40d">1.1.1. Dhrupad</a></li>
+<li><a href="#org833e382">1.1.2. Light</a></li>
+<li><a href="#orgc75d3d0">1.1.3. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgeb66ec1">2. Sufi</a>
+<ul>
+<li><a href="#org6d32adc">2.1. ARH</a>
+<ul>
+<li><a href="#org082a9a6">2.1.1. Nusrat Fateh Ali Khan</a></li>
+<li><a href="#orgf7c1b9d">2.1.2. Warsi Brothers</a></li>
+<li><a href="#org79cedeb">2.1.3. Abida Parveen</a></li>
+</ul>
+</li>
+<li><a href="#org07f8f32">2.2. Abida Parveen</a></li>
+<li><a href="#orga5d0578">2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbed0aa1">3. Films</a>
+<ul>
+<li><a href="#orgbfcd519">3.1. Collections</a></li>
+<li><a href="#orgba246e2">3.2. Solo</a>
+<ul>
+<li><a href="#org5c14265">3.2.1. K. L. Saigal</a></li>
+<li><a href="#org24a2b62">3.2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8694a81">3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6313719">4. Regional</a>
+<ul>
+<li><a href="#org04a3cb3">4.1. Bengal</a></li>
+<li><a href="#org03e3c90">4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc017e45">5. Devotional</a></li>
+<li><a href="#org629ba4b">6. Dance Party</a></li>
+<li><a href="#org2b77127">7. Playlists</a></li>
+<li><a href="#org8a99755">8. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgba7fb3a" class="outline-2">
+<h2 id="orgba7fb3a"><span class="section-number-2">1.</span> Indian Classical Music</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org27e4baf" class="outline-3">
+<h3 id="org27e4baf"><span class="section-number-3">1.1.</span> Hindustani Classical Music</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgd09d40d" class="outline-4">
+<h4 id="orgd09d40d"><span class="section-number-4">1.1.1.</span> Dhrupad</h4>
+<div class="outline-text-4" id="text-1-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org90fe2b0"></a>Dagar Brothers<br />
+<div class="outline-text-5" id="text-1-1-1-1">
+<ul class="org-ul">
+<li>Dagar Brothers, <b>Kafi Ki Hori</b>, 2009. Accessed March 15, 2021. <a href="https://www.discogs.com/Dagar-Brothers-2-Late-Khan-Sahib-Ustad-Nasir-Moinuddin-Dagar-Late-Khan-Sahib-Ustad-Nasir-Aminuddin-D/release/11250388">https://www.discogs.com/Dagar-Brothers-2-Late-Khan-Sahib-Ustad-Nasir-Moinuddin-Dagar-Late-Khan-Sahib-Ustad-Nasir-Aminuddin-D/release/11250388</a>.</li>
+</ul>
+</div>
+</li>
+<li><a id="org013cfd3"></a>Gundecha Brothers<br />
+<div class="outline-text-5" id="text-1-1-1-2">
+<ul class="org-ul">
+<li>Music Today, Raga Shyam Kalyan - Gundecha Brothers (Album: Young Masters) | Music Today, (Dec. 11, 2015). Accessed: Jul. 21, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_yqSD8Rtc5M">https://www.youtube.com/watch?v=_yqSD8Rtc5M</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc93a6da"></a>Uday Bhawalkar<br />
+<div class="outline-text-5" id="text-1-1-1-3">
+<ul class="org-ul">
+<li>Shri, “Raga Shri &amp; Raga Malkauns by VARIOUS ARTISTS on Amazon Prime Music.” Accessed: Aug. 25, 2025. [Online]. Available: <a href="https://music.amazon.in/albums/B01E8EQWPA">https://music.amazon.in/albums/B01E8EQWPA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb0e0d47"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org833e382" class="outline-4">
+<h4 id="org833e382"><span class="section-number-4">1.1.2.</span> Light</h4>
+<div class="outline-text-4" id="text-1-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org7fb9522"></a>Chhannulal Mishra<br />
+<div class="outline-text-5" id="text-1-1-2-1">
+<ul class="org-ul">
+<li>Chhannulal Mishra - Topic, Hori - Hori Khelat Nandkumar - Raga Kafi - Teentaal, (Jul. 25, 2020). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=C_1f3hdk-40">https://www.youtube.com/watch?v=C_1f3hdk-40</a></li>
+<li>Chhannulal Mishra - Topic, Hori - Aye Khelan Holi - Raga Yaman - Jhaptal, (Jul. 25, 2020). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=RQSwJht-WNo">https://www.youtube.com/watch?v=RQSwJht-WNo</a></li>
+
+<li>“Holi ke Rang Tesu ke Phool by Pandit Chhannulal Mishra on Prime Music.” <a href="https://music.amazon.in/albums/B07BTCQWTJ">https://music.amazon.in/albums/B07BTCQWTJ</a> (accessed Mar. 05, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org7628641"></a>Ashwini Bhide<br />
+<div class="outline-text-5" id="text-1-1-2-2">
+<ul class="org-ul">
+<li>Music Today, Kaisi Hori Machayi Kanhaiyi - Pandit Bhimsen Joshi, (Nov. 18, 2015). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=NuS-gbvxKwc">https://www.youtube.com/watch?v=NuS-gbvxKwc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org490aaba"></a>Girija Devi<br />
+<div class="outline-text-5" id="text-1-1-2-3">
+<ul class="org-ul">
+<li>Girija Devi - Topic, Hori In Mishra Pilu, (Feb. 21, 2015). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=APymNLQ5OPQ">https://www.youtube.com/watch?v=APymNLQ5OPQ</a></li>
+<li>Girija Devi - Topic, Raga Piloo - Hori Aisi Hori Na Khelo - Teen Taal, (Feb. 28, 2017). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=AQnElgDOVbc">https://www.youtube.com/watch?v=AQnElgDOVbc</a></li>
+<li>Girija Devi - Topic, Khel Rahe Rang Hori - Hori, (Jul. 18, 2019). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=PLUdQqHRAWg">https://www.youtube.com/watch?v=PLUdQqHRAWg</a></li>
+<li>Girija Devi - Topic, Rang Daroongi Nand Ke Lalan Pe - Hori, (Feb. 16, 2019). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=NF7w8bYWzcE">https://www.youtube.com/watch?v=NF7w8bYWzcE</a></li>
+
+<li>Music Today, Kaisi Dhoom Machai Hori Kafi | Girija Devi | ( Album: Songs Of The Seasons Vol 1 ) | Music Today, (Mar. 03, 2016). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=pyL08gxqQQ4">https://www.youtube.com/watch?v=pyL08gxqQQ4</a></li>
+
+<li>SonyMusicIndiaVEVO, Girija Devi - Hori in Raga Mishra Kafi (Deepchandi Taal (Pseudo Video)), (May 22, 2014). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=SQDAN4fD7Yo">https://www.youtube.com/watch?v=SQDAN4fD7Yo</a></li>
+
+<li>Prasar Bharati Archives, Girija Devi &amp; Birju Maharaj | Light Classical Music on Holi | Jugalbandi | Holi, (Mar. 20, 2019). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=dTz315LE9SI">https://www.youtube.com/watch?v=dTz315LE9SI</a></li>
+
+<li>Girija Devi &amp; Birju Maharaj | Light Classical Music on Holi | Jugalbandi | Holi, (Mar. 20, 2019). Accessed: Feb. 26, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dTz315LE9SI">https://www.youtube.com/watch?v=dTz315LE9SI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3290e9c"></a>Shobha Gurtu<br />
+<div class="outline-text-5" id="text-1-1-2-4">
+<ul class="org-ul">
+<li>Aaj Biraj Mein Holi Re Rasiya Rasiya | Shobha Gurtu | (Songs Of The Seasons Vol 2) | Music Today, (Mar. 03, 2016). Accessed: Mar. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Bx4DxKTLzHU">https://www.youtube.com/watch?v=Bx4DxKTLzHU</a></li>
+<li>AIR Raagam, Shobha Gurtu II Hori - Mishra Kafi. Accessed: Mar. 19, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0MpmpQc9Po0">https://www.youtube.com/watch?v=0MpmpQc9Po0</a></li>
+<li>Shobha Gurtu - Topic, Raga :Holi Pilu in “Holi Khelan Kaise Jaoon - Shobha Gurtu,” (Sep. 25, 2014). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=SoDgh13-b44">https://www.youtube.com/watch?v=SoDgh13-b44</a></li>
+<li>Music Today, Aaj Biraj Mein Holi Re Rasiya Rasiya | Shobha Gurtu | (Songs Of The Seasons Vol 2) | Music Today, (Mar. 03, 2016). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=Bx4DxKTLzHU">https://www.youtube.com/watch?v=Bx4DxKTLzHU</a></li>
+<li>AIR Raagam, Shobha Gurtu II Hori - Jhinjhoti. Accessed: Mar. 18, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=kP-35_9NGdA">https://www.youtube.com/watch?v=kP-35_9NGdA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6999320"></a>Shubha Mudgal<br />
+<div class="outline-text-5" id="text-1-1-2-5">
+<ul class="org-ul">
+<li>Music Today, Kanhaiya Ghar Chalo Mori ( Hori ) | Shubha Mudgal | ( Album: Songs Of The Seasons Vol 4 ), (Mar. 03, 2016). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=oScNA35Ge3I">https://www.youtube.com/watch?v=oScNA35Ge3I</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org93edb92"></a>Lakshmi Shankar<br />
+<div class="outline-text-5" id="text-1-1-2-6">
+<ul class="org-ul">
+<li>Music Today, Holi Khelat Banwari ( Hori ) | Lakshmi Shankar | ( Album: Songs Of The Seasons Vol 3 ) | Music Today, (Mar. 03, 2016). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=2kMsVSpxwqI">https://www.youtube.com/watch?v=2kMsVSpxwqI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge6ef05e"></a>Begum Akhtar<br />
+<div class="outline-text-5" id="text-1-1-2-7">
+<ul class="org-ul">
+<li>Begum Akhtar - Thumri - Kajri - Hori - Sawan - Dadra. 1981. Accessed: Mar. 06, 2023. [Online]. Available: <a href="https://www.discogs.com/release/20156122-Begum-Akhtar-Thumri-Kajri-Hori-Sawan-Dadra">https://www.discogs.com/release/20156122-Begum-Akhtar-Thumri-Kajri-Hori-Sawan-Dadra</a></li>
+
+<li>Begum Akhtar | होली मुबारक़ | Kajri | Thumri | Holi 2019, (Mar. 20, 2019). Accessed: Jun. 01, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=YcBrn0HtgFw">https://www.youtube.com/watch?v=YcBrn0HtgFw</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2d1d4d0"></a>Collections<br />
+<div class="outline-text-5" id="text-1-1-2-8">
+<ul class="org-ul">
+<li>Hori by Various Artists on Apple Music. 2008. Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://music.apple.com/in/album/hori/333014444">https://music.apple.com/in/album/hori/333014444</a></li>
+
+<li><i>Hori</i>, MusicToday.
+<ul class="org-ul">
+<li>“Hori | A collection of beautiful songs on Holi | Various Artistes | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=CxVnn2Z2qKU">https://www.youtube.com/watch?v=CxVnn2Z2qKU</a> (accessed Mar. 15, 2022).</li>
+</ul></li>
+
+<li><i>Rang Darungi</i>, MusicToday.
+<ul class="org-ul">
+<li>“Rang Darungi - Semi Classical Renditions on Holi by Chhannulal Mishra &amp; Girija Devi on Prime Music.” <a href="https://music.amazon.in/albums/B07BJ9VTXK">https://music.amazon.in/albums/B07BJ9VTXK</a> (accessed Mar. 19, 2022).</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org406ae36"></a>Misc<br />
+<div class="outline-text-5" id="text-1-1-2-9">
+<ul class="org-ul">
+<li>Holi Khele Raghuveera | Awadh Ki Mazedar Holi | Malini Awasthi | Energetic Performance, (Mar. 29, 2021). Accessed: Mar. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ZmCqLvw6mHA">https://www.youtube.com/watch?v=ZmCqLvw6mHA</a></li>
+
+<li>“Barjori Karo Na Mose Hori Mein | Hori | Savita Devi | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=sKHwuuPdhRo&amp;list=PL3fRBy5PCHGedvRP_nqdqA9g5p-ox1qvA&amp;index=3">https://www.youtube.com/watch?v=sKHwuuPdhRo&amp;list=PL3fRBy5PCHGedvRP_nqdqA9g5p-ox1qvA&amp;index=3</a> (accessed Mar. 04, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgc75d3d0" class="outline-4">
+<h4 id="orgc75d3d0"><span class="section-number-4">1.1.3.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeb66ec1" class="outline-2">
+<h2 id="orgeb66ec1"><span class="section-number-2">2.</span> Sufi</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org6d32adc" class="outline-3">
+<h3 id="org6d32adc"><span class="section-number-3">2.1.</span> ARH</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org082a9a6" class="outline-4">
+<h4 id="org082a9a6"><span class="section-number-4">2.1.1.</span> Nusrat Fateh Ali Khan</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li><i>Aaj Rang Hai</i>, Ustad Nusrat Fateh Ali Khan.
+<ul class="org-ul">
+<li>Navras Records, Ustad Nusrat Fateh Ali Khan ~ Aaj Rang Hai, (May 17, 2020). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=NI4jtyMP9j4">https://www.youtube.com/watch?v=NI4jtyMP9j4</a></li>
+<li>Nupur Audio Mehfil, Aaj Rang Hai Ri Maa | Nusrat Fateh Ali Khan | Latest Qawwali | Nupur Audio, (Jan. 08, 2020). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=8aHxOuEsOEA">https://www.youtube.com/watch?v=8aHxOuEsOEA</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf7c1b9d" class="outline-4">
+<h4 id="orgf7c1b9d"><span class="section-number-4">2.1.2.</span> Warsi Brothers</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>Rang Aaj Rang Hai - Warsi Brothers (Album: Qawwali - Warsi Brothers - Vol 2), (Dec. 11, 2015). Accessed: Mar. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=oM3ZozonjF0">https://www.youtube.com/watch?v=oM3ZozonjF0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org79cedeb" class="outline-4">
+<h4 id="org79cedeb"><span class="section-number-4">2.1.3.</span> Abida Parveen</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<ul class="org-ul">
+<li>Aaj Rang Hai - Abida Parveen (Album: Live concert Swarutsav 2000) | Music Today, (Dec. 24, 2015). Accessed: Feb. 26, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VAb0oe986zE">https://www.youtube.com/watch?v=VAb0oe986zE</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org07f8f32" class="outline-3">
+<h3 id="org07f8f32"><span class="section-number-3">2.2.</span> Abida Parveen</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li><i>Ji Chahe (&#x2026;Hori Ho Rahi Hai)</i>, Raqs-E-Bismil, Smt. Abida Parveen, MusicToday.
+<ul class="org-ul">
+<li>Music Today, Ji Chahe  | Abida Parveen (Album: Raqs E Bismil), (Mar. 18, 2016). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=v3kZlaH035E">https://www.youtube.com/watch?v=v3kZlaH035E</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga5d0578" class="outline-3">
+<h3 id="orga5d0578"><span class="section-number-3">2.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgbed0aa1" class="outline-2">
+<h2 id="orgbed0aa1"><span class="section-number-2">3.</span> Films</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgbfcd519" class="outline-3">
+<h3 id="orgbfcd519"><span class="section-number-3">3.1.</span> Collections</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Saregama Music, Holi Hai - Best Bollywood Holi Songs | HD Songs Jukebox, (Mar. 19, 2013). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=JKNcrJzjEWU">https://www.youtube.com/watch?v=JKNcrJzjEWU</a></li>
+<li>Saregama GenY, Holi Ki Dhoom | Non-stop Holi Special Songs | Rang Barse Bheege Chunarwali Rang Barse, (Mar. 11, 2014). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=WPFilOk8VmU">https://www.youtube.com/watch?v=WPFilOk8VmU</a></li>
+<li>Best of Bollywood Holi Songs |Top 25 Holi Songs|Non Stop Holi Playlist| Rang Barse |Aaj Na Chhodenge, (Mar. 18, 2022). Accessed: Feb. 26, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3RkceYMtPtM">https://www.youtube.com/watch?v=3RkceYMtPtM</a></li>
+<li>Saregama Music, Holi Special | Holi Re Holi  | Rang Barse Bheege Chunarwali | Nonstop, (Mar. 29, 2021). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=oYTiQ5EjdMs">https://www.youtube.com/watch?v=oYTiQ5EjdMs</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgba246e2" class="outline-3">
+<h3 id="orgba246e2"><span class="section-number-3">3.2.</span> Solo</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org5c14265" class="outline-4">
+<h4 id="org5c14265"><span class="section-number-4">3.2.1.</span> K. L. Saigal</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>K. L. Saigal - झुलना झुलाओ / होरी हो ब्रजराज - गित​. 1966. Accessed: Mar. 05, 2023. [Online]. Available: <a href="https://www.discogs.com/release/23636930-K-L-Saigal-%E0%A4%9D%E0%A4%B2%E0%A4%A8-%E0%A4%9D%E0%A4%B2%E0%A4%93-%E0%A4%B9%E0%A4%B0-%E0%A4%B9-%E0%A4%AC%E0%A4%B0%E0%A4%9C%E0%A4%B0%E0%A4%9C-%E0%A4%97%E0%A4%A4">https://www.discogs.com/release/23636930-K-L-Saigal-%E0%A4%9D%E0%A4%B2%E0%A4%A8-%E0%A4%9D%E0%A4%B2%E0%A4%93-%E0%A4%B9%E0%A4%B0-%E0%A4%B9-%E0%A4%AC%E0%A4%B0%E0%A4%9C%E0%A4%B0%E0%A4%9C-%E0%A4%97%E0%A4%A4</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org24a2b62" class="outline-4">
+<h4 id="org24a2b62"><span class="section-number-4">3.2.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>Hori Mein - Gulmohar | Manoj Bajpayee &amp; Sharmila Tagore | Kavita Seth, Siddhartha K, Alan D, Shellee, (Feb. 17, 2023). Accessed: Mar. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0SLMvbWrk5M">https://www.youtube.com/watch?v=0SLMvbWrk5M</a></li>
+<li>Hori Khele Raghuveera Full Song | Baghban | Amitabh Bachchan, Hema Malini, (Feb. 17, 2013). Accessed: Mar. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=87FYp3YLEBM">https://www.youtube.com/watch?v=87FYp3YLEBM</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8694a81" class="outline-3">
+<h3 id="org8694a81"><span class="section-number-3">3.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org6313719" class="outline-2">
+<h2 id="org6313719"><span class="section-number-2">4.</span> Regional</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org04a3cb3" class="outline-3">
+<h3 id="org04a3cb3"><span class="section-number-3">4.1.</span> Bengal</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>Saregama Bengali, Weekend Classic Radio Show | Holi Special Songs Of Tagore &amp; Nazrul | Phagun Hawoay | Aajke Doler |, (Mar. 21, 2019). Accessed: Mar. 21, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=elZleIFmCXE">https://www.youtube.com/watch?v=elZleIFmCXE</a></li>
+<li>Esho Kheli Holi | Holi Special Songs | Holi Songs Jukebox |  Bengali Movie Song | Sony Music East, (Feb. 28, 2018). Accessed: Mar. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=IDvN3-Ce0G0">https://www.youtube.com/watch?v=IDvN3-Ce0G0</a></li>
+<li>Rangiye Diye Jao | Holi Special Songs | Evergreen Bengali Songs, (Mar. 02, 2018). Accessed: Mar. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8TMMXakOq3E">https://www.youtube.com/watch?v=8TMMXakOq3E</a></li>
+<li>“Aaj Krishnachurar Aabir Niye | Hangsamithun | Hemanta Mukherjee and Sandhya Mukherjee | Audio - YouTube.” <a href="https://www.youtube.com/watch?v=aVCVIxk23j8&amp;list=PL3fRBy5PCHGedvRP_nqdqA9g5p-ox1qvA&amp;index=14">https://www.youtube.com/watch?v=aVCVIxk23j8&amp;list=PL3fRBy5PCHGedvRP_nqdqA9g5p-ox1qvA&amp;index=14</a> (accessed Mar. 04, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org03e3c90" class="outline-3">
+<h3 id="org03e3c90"><span class="section-number-3">4.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgc017e45" class="outline-2">
+<h2 id="orgc017e45"><span class="section-number-2">5.</span> Devotional</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>“Holi Pooja on Apple Music,” Apple Music - Web Player. Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://music.apple.com/in/playlist/holi-pooja/pl.ab4cf644f7fe40ffbe53ef66075e66ad">https://music.apple.com/in/playlist/holi-pooja/pl.ab4cf644f7fe40ffbe53ef66075e66ad</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org629ba4b" class="outline-2">
+<h2 id="org629ba4b"><span class="section-number-2">6.</span> Dance Party</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>“Holi Dance Party on Apple Music,” Apple Music - Web Player. Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://music.apple.com/in/playlist/holi-dance-party/pl.8bae63d6a7a84891bf723af6f628965f">https://music.apple.com/in/playlist/holi-dance-party/pl.8bae63d6a7a84891bf723af6f628965f</a></li>
+
+<li>Coke Studio Bharat | Holi Re Rasiya | Maithili Thakur x Seedhe Maut x Ravi Kishan x Mahan, (Feb. 21, 2023). Accessed: Mar. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=5QFL3JzEgrc">https://www.youtube.com/watch?v=5QFL3JzEgrc</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2b77127" class="outline-2">
+<h2 id="org2b77127"><span class="section-number-2">7.</span> Playlists</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>“SpiritualityHoli | Community Playlist on Prime Music.” <a href="https://music.amazon.in/user-playlists/50d31fa1817947ec973490af0d847821i8n0?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN">https://music.amazon.in/user-playlists/50d31fa1817947ec973490af0d847821i8n0?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN</a> (accessed Jun. 18, 2023).</li>
+
+<li>“Holi - YouTube.” <a href="https://www.youtube.com/playlist?list=PL3fRBy5PCHGedvRP_nqdqA9g5p-ox1qvA">https://www.youtube.com/playlist?list=PL3fRBy5PCHGedvRP_nqdqA9g5p-ox1qvA</a> (accessed Mar. 07, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8a99755" class="outline-2">
+<h2 id="org8a99755"><span class="section-number-2">8.</span> Misc</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>A. Pradhan, “Listen: Begum Akhtar and Shobha Gurtu perform Holi songs,” Scroll.in. Accessed: Mar. 23, 2024. [Online]. Available: <a href="https://scroll.in/article/1065671/listen-begum-akhtar-and-shobha-mudgal-perform-holi-songs">https://scroll.in/article/1065671/listen-begum-akhtar-and-shobha-mudgal-perform-holi-songs</a></li>
+<li>A. Pradhan, “Listen: As the festival of colours approaches, here is how tabla is used to accompany the holi form,” Scroll.in. Accessed: Mar. 16, 2024. [Online]. Available: <a href="https://scroll.in/article/1065246/listen-as-the-festival-of-colours-approaches-here-is-how-tabla-is-used-to-accompany-the-holi-form">https://scroll.in/article/1065246/listen-as-the-festival-of-colours-approaches-here-is-how-tabla-is-used-to-accompany-the-holi-form</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

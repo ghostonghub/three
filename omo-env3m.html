@@ -1,0 +1,2451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Environment - Music</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Environment - Music</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org77a316d">1. Elements</a>
+<ul>
+<li><a href="#org97c60c7">1.1. Fire</a></li>
+<li><a href="#orge06e720">1.2. Water</a></li>
+</ul>
+</li>
+<li><a href="#orgf40d94e">2. LandScapes</a>
+<ul>
+<li><a href="#orgaad7274">2.1. Desert</a></li>
+<li><a href="#orge01d8d1">2.2. Water Bodies</a>
+<ul>
+<li><a href="#org62250dc">2.2.1. Rivers - Music</a></li>
+<li><a href="#org5a79ab6">2.2.2. Water Bodies - Easy Listening Indian Music</a></li>
+<li><a href="#orgeba7c84">2.2.3. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9e4d560">3. Seasons</a>
+<ul>
+<li><a href="#org493896e">3.1. Spring</a></li>
+<li><a href="#org75564ad">3.2. Summer</a></li>
+<li><a href="#org126d39e">3.3. Monsoon</a></li>
+<li><a href="#org5f2c83b">3.4. Winter</a></li>
+<li><a href="#org87502c2">3.5. Light Hindustani Classical Music</a>
+<ul>
+<li><a href="#org618ba1d">3.5.1. Playlists</a></li>
+<li><a href="#org4c1ccc8">3.5.2. Albums</a></li>
+<li><a href="#org9b61db8">3.5.3. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga742989">4. Time</a>
+<ul>
+<li><a href="#org75da4fd">4.1. Months</a></li>
+<li><a href="#orgb77eee1">4.2. Chaiti</a>
+<ul>
+<li><a href="#orgc7b8e58">4.2.1. Recordings</a></li>
+<li><a href="#org7eb98a1">4.2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3a8878f">4.3. Kajri</a>
+<ul>
+<li><a href="#orgf9f76f6">4.3.1. Vocal Music</a></li>
+<li><a href="#org5e19422">4.3.2. Sarangi</a></li>
+<li><a href="#orgc4e5373">4.3.3. Bismillah Khan</a></li>
+</ul>
+</li>
+<li><a href="#orgbbd5bec">4.4. Time of Day - Indian Classical Music</a>
+<ul>
+<li><a href="#org15d9869">4.4.1. Morning</a></li>
+<li><a href="#org624cdc3">4.4.2. Afternoon</a></li>
+<li><a href="#orgb287c55">4.4.3. Evening</a></li>
+<li><a href="#org98901a0">4.4.4. Night</a></li>
+<li><a href="#orgc4d9ac1">4.4.5. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc1acf35">5. Special Topics</a>
+<ul>
+<li><a href="#orgc91763c">5.1. Indian Music</a>
+<ul>
+<li><a href="#orgb360df0">5.1.1. Easy Listening</a></li>
+<li><a href="#org50e5b3a">5.1.2. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org928b20c">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org77a316d" class="outline-2">
+<h2 id="org77a316d"><span class="section-number-2">1.</span> Elements</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org97c60c7" class="outline-3">
+<h3 id="org97c60c7"><span class="section-number-3">1.1.</span> Fire</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Fire - Music: <a href="https://tinyurl.com/4yaxtcjt">https://tinyurl.com/4yaxtcjt</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge06e720" class="outline-3">
+<h3 id="orge06e720"><span class="section-number-3">1.2.</span> Water</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Water - Music: <a href="https://tinyurl.com/36z57457">https://tinyurl.com/36z57457</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf40d94e" class="outline-2">
+<h2 id="orgf40d94e"><span class="section-number-2">2.</span> LandScapes</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgaad7274" class="outline-3">
+<h3 id="orgaad7274"><span class="section-number-3">2.1.</span> Desert</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Desert - Music: <a href="https://tinyurl.com/325yk7yu">https://tinyurl.com/325yk7yu</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge01d8d1" class="outline-3">
+<h3 id="orge01d8d1"><span class="section-number-3">2.2.</span> Water Bodies</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Water Bodies: <a href="https://tinyurl.com/yc6az2a">https://tinyurl.com/yc6az2a</a></li>
+</ul>
+</div>
+<div id="outline-container-org62250dc" class="outline-4">
+<h4 id="org62250dc"><span class="section-number-4">2.2.1.</span> Rivers - Music</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>Ganga - Music: <a href="https://tinyurl.com/2bsccv6a">https://tinyurl.com/2bsccv6a</a></li>
+<li>Yamuna - Music: <a href="https://tinyurl.com/2s4cdss2">https://tinyurl.com/2s4cdss2</a></li>
+<li>Saraswati - Music: <a href="https://tinyurl.com/mr28bd5r">https://tinyurl.com/mr28bd5r</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5a79ab6" class="outline-4">
+<h4 id="org5a79ab6"><span class="section-number-4">2.2.2.</span> Water Bodies - Easy Listening Indian Music</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li>Music Today, Sound Scapes - Music of the Seas | Audio Jukebox | World Music | Instrumental | Bhaskar Chandavarkar, (Aug. 27, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=LZ0kRgwSRi0">https://www.youtube.com/watch?v=LZ0kRgwSRi0</a></li>
+<li>Music Today, Sound Scapes - Music of the Rivers | Audio Jukebox | World Music | Instrumental | Hariprasad Chaurasia, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=DuTKvTDmJ1Q">https://www.youtube.com/watch?v=DuTKvTDmJ1Q</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeba7c84" class="outline-4">
+<h4 id="orgeba7c84"><span class="section-number-4">2.2.3.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org9e4d560" class="outline-2">
+<h2 id="org9e4d560"><span class="section-number-2">3.</span> Seasons</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org493896e" class="outline-3">
+<h3 id="org493896e"><span class="section-number-3">3.1.</span> Spring</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Spring - Music: <a href="https://tinyurl.com/2czrf5h2">https://tinyurl.com/2czrf5h2</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org75564ad" class="outline-3">
+<h3 id="org75564ad"><span class="section-number-3">3.2.</span> Summer</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Summers - Music: <a href="https://tinyurl.com/kxb6n46j">https://tinyurl.com/kxb6n46j</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org126d39e" class="outline-3">
+<h3 id="org126d39e"><span class="section-number-3">3.3.</span> Monsoon</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Monsoon - Music: <a href="https://tinyurl.com/46bsbfm7">https://tinyurl.com/46bsbfm7</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5f2c83b" class="outline-3">
+<h3 id="org5f2c83b"><span class="section-number-3">3.4.</span> Winter</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>Winter - Music: <a href="https://tinyurl.com/8shmbxpt">https://tinyurl.com/8shmbxpt</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org87502c2" class="outline-3">
+<h3 id="org87502c2"><span class="section-number-3">3.5.</span> Light Hindustani Classical Music</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org618ba1d" class="outline-4">
+<h4 id="org618ba1d"><span class="section-number-4">3.5.1.</span> Playlists</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ul class="org-ul">
+<li>“SeasonsHCML,” YouTube. Accessed: Jun. 30, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY">http://www.youtube.com/playlist?list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4c1ccc8" class="outline-4">
+<h4 id="org4c1ccc8"><span class="section-number-4">3.5.2.</span> Albums</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<ul class="org-ul">
+<li>Music Today, Songs Of The Seasons | Vol 1 | Audio Jukebox | Classical | Girija Devi | Music Today, (Sep. 02, 2015). Accessed: Jun. 30, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Dn3TtTq4KAA">https://www.youtube.com/watch?v=Dn3TtTq4KAA</a></li>
+<li>“Songs Of The Seasons | Vol 2 | Audio Jukebox | Vocal | Classical | Shobha Gurtu | Music Today - YouTube.” Accessed: Jun. 30, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=l2JVeDbEyTE&amp;list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY&amp;index=3">https://www.youtube.com/watch?v=l2JVeDbEyTE&amp;list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY&amp;index=3</a></li>
+<li>“Songs Of The Seasons | Vol 3 | Audio Jukebox | Vocal | Classical | Lakshmi Shankar | Music Today - YouTube.” Accessed: Jun. 30, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=L9Djd8_ujBU&amp;list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY&amp;index=4">https://www.youtube.com/watch?v=L9Djd8_ujBU&amp;list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY&amp;index=4</a></li>
+<li>“Songs Of The Seasons | Vol 4 | Audio Jukebox | Vocal | Classical | Shubha Mudgal - YouTube.” Accessed: Jun. 30, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=n01VP2P1JxE&amp;list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY&amp;index=5">https://www.youtube.com/watch?v=n01VP2P1JxE&amp;list=PLP8c3pohkJmkD6ShTwXhmGxC6G-JkxveY&amp;index=5</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9b61db8" class="outline-4">
+<h4 id="org9b61db8"><span class="section-number-4">3.5.3.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orga742989" class="outline-2">
+<h2 id="orga742989"><span class="section-number-2">4.</span> Time</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org75da4fd" class="outline-3">
+<h3 id="org75da4fd"><span class="section-number-3">4.1.</span> Months</h3>
+</div>
+<div id="outline-container-orgb77eee1" class="outline-3">
+<h3 id="orgb77eee1"><span class="section-number-3">4.2.</span> Chaiti</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgc7b8e58" class="outline-4">
+<h4 id="orgc7b8e58"><span class="section-number-4">4.2.1.</span> Recordings</h4>
+<div class="outline-text-4" id="text-4-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org606e5e8"></a>Vocal Music<br />
+<div class="outline-text-5" id="text-4-2-1-1">
+<ul class="org-ul">
+<li>Raat Ham Dekhelee Sapanwa Ho Rama Chaiti | Girija Devi | (Songs Of The Seasons Vol 1) | Music Today, (Mar. 03, 2016). Accessed: Mar. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=YVxmP-4dbJY">https://www.youtube.com/watch?v=YVxmP-4dbJY</a></li>
+<li>Chaitar Chunari Rangaa Dey O Piyawa Chaiti | Shobha Gurtu | (Songs OfThe Seasons Vol2) | Music Today, (Mar. 03, 2016). Accessed: Mar. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=e_qAxl8Yvf0">https://www.youtube.com/watch?v=e_qAxl8Yvf0</a></li>
+<li>Sutal Nindiya Jagaye ( Chaiti ) | Shubha Mudgal | ( Album: Songs Of The Seasons Vol 4 ), (Mar. 03, 2016). Accessed: Mar. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=iWfP9wIirD8">https://www.youtube.com/watch?v=iWfP9wIirD8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9272681"></a>Bismillah Khan<br />
+<div class="outline-text-5" id="text-4-2-1-2">
+<ul class="org-ul">
+<li>Chaiti Dhun In Raga Khamaj | Ustad Bismillah Khan (Album: Bharat Ratna-Bismillah Khan) | Music Today, (Feb. 17, 2016). Accessed: Mar. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2Ff9mgLmp1w">https://www.youtube.com/watch?v=2Ff9mgLmp1w</a></li>
+<li>Ustad Bismillah Khan | Musician: Shehnai | Chaiti Dhun | Akashvani Sangeet, (Sep. 22, 2021). Accessed: Mar. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=fjlEirMrGBo">https://www.youtube.com/watch?v=fjlEirMrGBo</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7eb98a1" class="outline-4">
+<h4 id="org7eb98a1"><span class="section-number-4">4.2.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<ul class="org-ul">
+<li>A. Pradhan, “Listen: How the tabla is used to accompany the chaiti folk form,” Scroll.in. Accessed: Mar. 04, 2024. [Online]. Available: <a href="https://scroll.in/article/1064576/listen-how-the-tabla-is-used-to-accompany-the-chaiti-folk-form">https://scroll.in/article/1064576/listen-how-the-tabla-is-used-to-accompany-the-chaiti-folk-form</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3a8878f" class="outline-3">
+<h3 id="org3a8878f"><span class="section-number-3">4.3.</span> Kajri</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-orgf9f76f6" class="outline-4">
+<h4 id="orgf9f76f6"><span class="section-number-4">4.3.1.</span> Vocal Music</h4>
+<div class="outline-text-4" id="text-4-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org9e9b0a8"></a>Folk Music<br />
+<div class="outline-text-5" id="text-4-3-1-1">
+<ul class="org-ul">
+<li>Music Today, Kajari | Reshma (Album: Songs of the Wandering Soul), (Mar. 10, 2016). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dCbOKh8hel0">https://www.youtube.com/watch?v=dCbOKh8hel0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf9886d9"></a>Light Hindustani Classical Music<br />
+<div class="outline-text-5" id="text-4-3-1-2">
+<ul class="org-ul">
+<li>Music Today, Kahanwa Mano Ho Radha Rani Kajri | Girija Devi | (Album: Songs Of The Seasons Vol 1) | Music Today, (Mar. 03, 2016). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CmtUoie3Rrk">https://www.youtube.com/watch?v=CmtUoie3Rrk</a></li>
+
+<li>Music Today, The Melody of Love | Saawan Ki Ritu - Kajri | Shobha Gurtu | Music Today, (Feb. 10, 2023). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PIu1KWKb4FU">https://www.youtube.com/watch?v=PIu1KWKb4FU</a></li>
+<li>Music Today, Sajnaa Baat Nirakhtaa Hari (Kajri) | Shobha Gurtu | ( Songs Of The Seasons Vol 2 ) | Music Today, (Mar. 03, 2016). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=j9ssLzLXqho">https://www.youtube.com/watch?v=j9ssLzLXqho</a></li>
+<li>Music Today, Sawan Ki Ritu Ayee Re Sajaniya ( Kajri ) | Shobha Gurtu | (Songs Of The Seasons Vol 2) | Music Today, (Mar. 03, 2016). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ejq8pIiyQNE">https://www.youtube.com/watch?v=ejq8pIiyQNE</a></li>
+
+<li>Music Today, Sawan Jhar Lagey Na Dhirey Dhirey ( Kajri ) | Shubha Mudgal | ( Album: Songs Of The Seasons Vol 4 ), (Mar. 03, 2016). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3gGNQ-OSGww">https://www.youtube.com/watch?v=3gGNQ-OSGww</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org5e19422" class="outline-4">
+<h4 id="org5e19422"><span class="section-number-4">4.3.2.</span> Sarangi</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<ul class="org-ul">
+<li>Music Today, Kajri | Ustad Sabri Khan (Album: Lifestory Of A Legend-Ustad Sabri Khan), (Mar. 09, 2016). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0nCUnJrgC78">https://www.youtube.com/watch?v=0nCUnJrgC78</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc4e5373" class="outline-4">
+<h4 id="orgc4e5373"><span class="section-number-4">4.3.3.</span> Bismillah Khan</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<ul class="org-ul">
+<li>Music Today, Kajri | Ustad Bismillah Khan | ( Album: Platinum Vol 1 ) | Music Today, (Mar. 15, 2016). Accessed: Apr. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9Kx_2MTQW0Y">https://www.youtube.com/watch?v=9Kx_2MTQW0Y</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbbd5bec" class="outline-3">
+<h3 id="orgbbd5bec"><span class="section-number-3">4.4.</span> Time of Day - Indian Classical Music</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org15d9869" class="outline-4">
+<h4 id="org15d9869"><span class="section-number-4">4.4.1.</span> Morning</h4>
+<div class="outline-text-4" id="text-4-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org87f0e4d"></a>0<br />
+<ol class="org-ol">
+<li><a id="orgfbeabd7"></a>Bilawal<br />
+<ul class="org-ul">
+<li><a id="org51f3258"></a>General<br />
+<div class="outline-text-7" id="text-org51f3258">
+<ul class="org-ul">
+<li>“On the Bilawal Trail,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bilawal/">https://www.parrikar.org/hindustani/bilawal/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org5f75f28"></a>Recordings<br />
+<div class="outline-text-7" id="text-org5f75f28">
+<ul class="org-ul">
+<li>Music Today, Raga Shukla Bilawal | Mallikarjun Mansur (Album: Thaat Bilawal) | Music Today, (Mar. 09, 2016). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=vaAaStofXjo">https://www.youtube.com/watch?v=vaAaStofXjo</a></li>
+
+<li>Music Today, Raga Kukubh Bilawal | Mallikarjun Mansur | ( Album: Morning Ragas Volume 4 ) | Music Today, (Mar. 02, 2016). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=sW2iFRGeGug">https://www.youtube.com/watch?v=sW2iFRGeGug</a></li>
+
+<li>Music Today, Raga Alhaiya Bilawal | Kishori Amonkar | ( Album: Live Concert Swar Utsav 2000 ) | Music Today, (Mar. 18, 2016). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=my5Zh8ze3eY">https://www.youtube.com/watch?v=my5Zh8ze3eY</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Raga - Devgiri Bilawal - Bana Pyara, (Apr. 30, 2022). Accessed: Jun. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=n1CQcafLMlo">https://www.youtube.com/watch?v=n1CQcafLMlo</a></li>
+<li>“1994 - Akashvani Sangeet Sammelan II N. Rajam II Violin II Devgiri Bilawal - YouTube.” <a href="https://www.youtube.com/watch?v=-uW8TtqYjj4">https://www.youtube.com/watch?v=-uW8TtqYjj4</a> (accessed Jun. 05, 2023).</li>
+<li>Ustad Nissar Hussain Khan | Raag : Devgiri Bilawal, (Sep. 30, 2020). Accessed: Jun. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=46dvppmBM8M">https://www.youtube.com/watch?v=46dvppmBM8M</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga5ad7ab"></a>Bhairavi<br />
+<ul class="org-ul">
+<li><a id="org7850130"></a>General<br /></li>
+<li><a id="org43e631b"></a>Theory<br />
+<ul class="org-ul">
+<li><a id="orgb737785"></a>Rajan Parrikar Music Archive<br />
+<div class="outline-text-8" id="text-orgb737785">
+<ul class="org-ul">
+<li>“Bhairavi (Part 1/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bhairavi/">https://www.parrikar.org/hindustani/bhairavi/</a> (accessed Oct. 09, 2021).</li>
+<li>“Bhairavi (Part 2/2) » Rajan Parrikar Music Archive.” <a href="https://www.parrikar.org/hindustani/bhairavi-page2/">https://www.parrikar.org/hindustani/bhairavi-page2/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org75fb13e"></a>Misc<br />
+<div class="outline-text-8" id="text-org75fb13e">
+<ul class="org-ul">
+<li>“Raag Bhairavi - Raag Details &amp; Bandishen - Tanarang Music.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://tanarang.com/raag-bhairavi/">https://tanarang.com/raag-bhairavi/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Bhairavi | SrgmPdnS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Feb. 25, 2025. [Online]. Available: <a href="https://ragajunglism.org/ragas/bhairavi/">https://ragajunglism.org/ragas/bhairavi/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org1e7914e"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org9032af7"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="org08a650f"></a>Vocal Music<br />
+<div class="outline-text-9" id="text-org08a650f">
+<ul class="org-ul">
+<li>Ustad Nasir Aminuddin Dagar - Ustad Nasir Aminuddin Dagar. 1983. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/6505493-Ustad-Nasir-Aminuddin-Dagar-Ustad-Nasir-Aminuddin-Dagar">https://www.discogs.com/release/6505493-Ustad-Nasir-Aminuddin-Dagar-Ustad-Nasir-Aminuddin-Dagar</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf6526a9"></a>Rudra Veena<br />
+<div class="outline-text-9" id="text-orgf6526a9">
+<ul class="org-ul">
+<li>Ustad Zia Mohiuddin Dagar - Ustad Zia Mohiuddin Dagar. 2001. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/10670179-Ustad-Zia-Mohiuddin-Dagar-Ustad-Zia-Mohiuddin-Dagar">https://www.discogs.com/release/10670179-Ustad-Zia-Mohiuddin-Dagar-Ustad-Zia-Mohiuddin-Dagar</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcc33e0c"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org0bfeaab"></a>Sindhu Bhairavi<br />
+<div class="outline-text-9" id="text-org0bfeaab">
+<ul class="org-ul">
+<li>Ravi Shankar &amp; Ali Akbar Khan, Alla Rakha - Shree / Sindhu Bhairavi. 1965. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/10599382-Ravi-Shankar-Ali-Akbar-Khan-Alla-Rakha-Shree-Sindhu-Bhairavi">https://www.discogs.com/release/10599382-Ravi-Shankar-Ali-Akbar-Khan-Alla-Rakha-Shree-Sindhu-Bhairavi</a></li>
+<li>Ali Akbar Khan - Then And Now. 1995. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/5701374-Ali-Akbar-Khan-Then-And-Now">https://www.discogs.com/release/5701374-Ali-Akbar-Khan-Then-And-Now</a>-</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org314c8d9"></a>Ram Narayan<br />
+<div class="outline-text-8" id="text-org314c8d9">
+<ul class="org-ul">
+<li>Music Today, <i>Mishra Bhairavi</i> - Pandit Ram Narayan (Album: Maestro’s Choice Series One) | Music Today, (Nov. 12, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Sth7iiFkY6k">https://www.youtube.com/watch?v=Sth7iiFkY6k</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfe07d5d"></a>Amjad Ali Khan<br />
+<ul class="org-ul">
+<li><a id="orgaec031d"></a>SaReGaMa<br />
+<div class="outline-text-9" id="text-orgaec031d">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Ustad Amjad Ali Khan | Each Dawn Renews Our Dream | Raag Bhairavi | Hindustani Classical Songs, (Apr. 17, 2023). Accessed: Aug. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Ft43CFfu-0k">https://www.youtube.com/watch?v=Ft43CFfu-0k</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org79258ce"></a>Sarod Records<br />
+<div class="outline-text-9" id="text-org79258ce">
+<ul class="org-ul">
+<li>Sarod Records, LIBRARY SESSIONS with Amjad Ali Khan - Raga Bhairavi, (Jun. 11, 2022). Accessed: Aug. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=V9f_EpZKFIY">https://www.youtube.com/watch?v=V9f_EpZKFIY</a></li>
+<li>Sarod Records, Sarod Virtuoso Amjad Ali Khan| Morning Raga | Raga Bhairavi | New Delhi | 9th February, 2014, (Feb. 26, 2014). Accessed: Aug. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=23DVkaIaa_M">https://www.youtube.com/watch?v=23DVkaIaa_M</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3950d45"></a>Films<br />
+<div class="outline-text-8" id="text-org3950d45">
+<ul class="org-ul">
+<li>“Film Songs in Rag Bhairavi (T-Z) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-t-z/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-t-z/</a></li>
+<li>“Film Songs in Rag Bhairavi (S) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-sz/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-sz/</a></li>
+<li>“Film Songs in Rag Bhairavi (N-R) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-n-r/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-n-r/</a></li>
+<li>“Film Songs in Rag Bhairavi (L-M) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-lr/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-lr/</a></li>
+<li>“Film Songs in Rag Bhairavi (K) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-k/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-k/</a></li>
+<li>“Film Songs in Rag Bhairavi (J) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-j/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-j/</a></li>
+<li>“Film Songs in Rag Bhairavi (E-I) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ek/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ek/</a></li>
+<li>“Film Songs in Rag Bhairavi (D) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-d/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-d/</a></li>
+<li>“Film Songs in Rag Bhairavi (C) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-c/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-c/</a></li>
+<li>“Film Songs in Rag Bhairavi (B) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-b/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-b/</a></li>
+<li>“Film Songs in Rag Bhairavi (A) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ad/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ad/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf4d2ab7"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0f4bbe7"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgfc64a28"></a>Ramkali<br />
+<ul class="org-ul">
+<li><a id="orgda65a73"></a>General<br />
+<div class="outline-text-7" id="text-orgda65a73">
+<ul class="org-ul">
+<li>“Ramkali,” Wikipedia. Nov. 06, 2021. Accessed: Mar. 19, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ramkali&amp;oldid=1053892607">https://en.wikipedia.org/w/index.php?title=Ramkali&amp;oldid=1053892607</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2b7f7d6"></a>Theory<br />
+<div class="outline-text-7" id="text-org2b7f7d6">
+<ul class="org-ul">
+<li>“Ramkali | SrGmMPdnNS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://ragajunglism.org/ragas/ramkali/">https://ragajunglism.org/ragas/ramkali/</a></li>
+
+<li>“Raag Ramkali - Details &amp; Bandishen - Tanarang Music.” Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://tanarang.com/raag-ramkali/">https://tanarang.com/raag-ramkali/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org92eb633"></a>Recordings<br />
+<div class="outline-text-7" id="text-org92eb633">
+<ul class="org-ul">
+<li>NCERT Official, Rag Ramkali /राग रामकली, (Aug. 12, 2016). Accessed: Mar. 19, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=e226dX82QUs">https://www.youtube.com/watch?v=e226dX82QUs</a></li>
+
+<li>AIR Raagam, Ustad Amir Khan II Raga - Ramkali, (Sep. 26, 2021). Accessed: Mar. 19, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ehyXq1n9iWU">https://www.youtube.com/watch?v=ehyXq1n9iWU</a></li>
+
+<li>Music Today, Raga Ramkali -  Bhimsen Joshi vocal song (Album: Maestro’s Choice Series One), (Nov. 12, 2015). Accessed: Mar. 19, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-nTdi-rMgVQ">https://www.youtube.com/watch?v=-nTdi-rMgVQ</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Ravi Shankar - Topic, Raga Ramkali (Digitally Remastered), (Jul. 10, 2015). Accessed: Mar. 19, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wp7wcDidWPA">https://www.youtube.com/watch?v=wp7wcDidWPA</a></li>
+
+<li>Music Today, Raga Ramkali | Amjad Ali Khan  (Album: Portrait of a Legend  - Amjad Ali Khan) | Music Today, (Mar. 19, 2016). Accessed: Mar. 19, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CyyjN5qOvk4">https://www.youtube.com/watch?v=CyyjN5qOvk4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2b4bfd8"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orga85f5f6"></a>Gunkali<br />
+<ul class="org-ul">
+<li><a id="org27fc5a2"></a>General<br /></li>
+<li><a id="orged41965"></a>Theory<br />
+<div class="outline-text-7" id="text-orged41965">
+<ul class="org-ul">
+<li>“Gunkali | SrmPdS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://ragajunglism.org/ragas/gunkali/">https://ragajunglism.org/ragas/gunkali/</a></li>
+
+<li>“Raag Gunkali.” Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://tanarang.com/raag-gunkali/">https://tanarang.com/raag-gunkali/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge148009"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org0aba2f6"></a>Dhrupad<br />
+<div class="outline-text-8" id="text-org0aba2f6">
+<ul class="org-ul">
+<li>AIR Raagam, Dagar Brothers | Classical Singer | Raag - Gunkali | Akashvani Sangeet, (Nov. 22, 2021). Accessed: Apr. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QTQpS9j3rOQ">https://www.youtube.com/watch?v=QTQpS9j3rOQ</a></li>
+
+<li>“Sangeet Sarita II Series : Dhrupad Dhamar Ka Surila Sansar II Pandit Uday Bhawalkar II Part - 03 - YouTube.” Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=nLC9yuPNT4w&amp;list=TLPQMzAwODIwMjWXlSsOBd_-ng&amp;index=4">https://www.youtube.com/watch?v=nLC9yuPNT4w&amp;list=TLPQMzAwODIwMjWXlSsOBd_-ng&amp;index=4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org09d63e0"></a>Misc<br />
+<div class="outline-text-8" id="text-org09d63e0">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Ustad Bismillah Khan | Gunkali | Shehnai Music | Indian Classical Instrumental Music, (Sep. 20, 2024). Accessed: Apr. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tOFaCU6WTMU">https://www.youtube.com/watch?v=tOFaCU6WTMU</a></li>
+<li>Saregama Hindustani Classical, Raga Gunkeli | Amazing Sarod By Ustad Amjad Ali Khan | Indian Classical Instrumental Soothing Music, (Sep. 14, 2023). Accessed: Apr. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uOPndw_J1YQ">https://www.youtube.com/watch?v=uOPndw_J1YQ</a></li>
+<li>Music Today, Raga Gunkali | Ustad Fateh Ali Khan (Album: Thaat Bhairav), (Mar. 09, 2016). Accessed: Apr. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yc9erge_nwo">https://www.youtube.com/watch?v=yc9erge_nwo</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4f74561"></a>Misc<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org17d12c7"></a>1<br />
+<ol class="org-ol">
+<li><a id="orgdae13a4"></a>Todi<br />
+<ul class="org-ul">
+<li><a id="orge2e3b55"></a>General<br />
+<div class="outline-text-7" id="text-orge2e3b55">
+<ul class="org-ul">
+<li><i>“Todi (thaat),”</i> Wikipedia. Feb. 13, 2021, Accessed: Apr. 29, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Todi_(thaat)&amp;oldid=1006523936">https://en.wikipedia.org/w/index.php?title=Todi_(thaat)&amp;oldid=1006523936</a>.</li>
+<li><i>“Todi (raga),”</i> Wikipedia. Feb. 13, 2021, Accessed: Apr. 29, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Todi_(raga)&amp;oldid=1006523638">https://en.wikipedia.org/w/index.php?title=Todi_(raga)&amp;oldid=1006523638</a>.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgeb90774"></a>Theory<br />
+<ul class="org-ul">
+<li><a id="org0b9a04d"></a>Rajan Parrikar Music Archive<br />
+<div class="outline-text-8" id="text-org0b9a04d">
+<ul class="org-ul">
+<li><i>“The Empire of Todi,”</i> Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/todi/">https://www.parrikar.org/hindustani/todi/</a> (accessed Apr. 29, 2021).</li>
+<li><i>“Short Takes: Desi,”</i> Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/desi/">https://www.parrikar.org/hindustani/desi/</a> (accessed Apr. 29, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orga216822"></a>Misc<br />
+<div class="outline-text-8" id="text-orga216822">
+<ul class="org-ul">
+<li>“Todi | SrgMPdNS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://ragajunglism.org/ragas/todi/">https://ragajunglism.org/ragas/todi/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgbf33f9a"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org87341e2"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="org8a2b027"></a>Rudra Veena<br />
+<div class="outline-text-9" id="text-org8a2b027">
+<ul class="org-ul">
+<li><i>Raga Shuddha Todi</i>, Ustad Z. M. Dagar, Nimbus Records</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf5c227b"></a>Vocal Music<br />
+<div class="outline-text-9" id="text-orgf5c227b">
+<ul class="org-ul">
+<li><i>Ragini Todi</i>, Ustad B. Dagar, Music Today</li>
+<li>“Sangeet Sarita II Series : Dhrupad Dhamar Ka Surila Sansar II Pandit Uday Bhawalkar II Part - 02 - YouTube.” Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=Hlff7cMsHYU&amp;list=TLPQMzAwODIwMjWXlSsOBd_-ng&amp;index=3">https://www.youtube.com/watch?v=Hlff7cMsHYU&amp;list=TLPQMzAwODIwMjWXlSsOBd_-ng&amp;index=3</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb8eba9b"></a>Ragini Todi<br />
+<div class="outline-text-8" id="text-orgb8eba9b">
+<ul class="org-ul">
+<li><i>Ragini Todi</i>, Ustad B. Dagar, Music Today</li>
+</ul>
+</div>
+</li>
+<li><a id="org9f5301d"></a>Shuddha Todi<br />
+<div class="outline-text-8" id="text-org9f5301d">
+<ul class="org-ul">
+<li><i>Raga Shuddha Todi</i>, Ustad Z. M. Dagar, Nimbus Records</li>
+</ul>
+</div>
+</li>
+<li><a id="orgce59795"></a>Mian Ki Todi<br />
+<div class="outline-text-8" id="text-orgce59795">
+<ul class="org-ul">
+<li><i>Raga Mian Ki Todi</i>, Ustad Amjad Ali Khan, Music Today</li>
+</ul>
+</div>
+</li>
+<li><a id="org22406c8"></a>Bilaskhani Todi<br />
+<ul class="org-ul">
+<li><a id="orgb498248"></a>General<br />
+<div class="outline-text-9" id="text-orgb498248">
+<ul class="org-ul">
+<li>“Bilaskhani Todi,” Wikipedia. Apr. 05, 2025. Accessed: May 12, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bilaskhani_Todi&amp;oldid=1284119615">https://en.wikipedia.org/w/index.php?title=Bilaskhani_Todi&amp;oldid=1284119615</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org12e8916"></a>Theory<br />
+<ul class="org-ul">
+<li><a id="orgcfcecde"></a>Rajan Parrikar Music Archive<br />
+<div class="outline-text-10" id="text-orgcfcecde">
+<ul class="org-ul">
+<li><i>“The Empire of Todi,”</i> Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/todi/">https://www.parrikar.org/hindustani/todi/</a> (accessed Apr. 29, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org8358d08"></a>Misc<br />
+<div class="outline-text-10" id="text-org8358d08">
+<ul class="org-ul">
+<li>“Bilaskhani Todi | SrgmPdnS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: May 12, 2025. [Online]. Available: <a href="https://ragajunglism.org/ragas/bilaskhani-todi/">https://ragajunglism.org/ragas/bilaskhani-todi/</a></li>
+
+<li>“Raag Bilaskhani Todi - Raag Details &amp; Bandishen - Tanarang Music.” Accessed: May 12, 2025. [Online]. Available: <a href="https://tanarang.com/raag-bilaskhani-todi/">https://tanarang.com/raag-bilaskhani-todi/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org79a86e1"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orgf61fd24"></a>Dhrupad<br />
+<div class="outline-text-10" id="text-orgf61fd24">
+<ul class="org-ul">
+<li>Pandit Dr. Ritwik Sanyal, Dhrupad | Raga Bilaskhani Todi | Pt. Ritwik Sanyal &amp; Us. Bahauddin Dagar, (Feb. 16, 2020). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=iK0BSMY-le4">https://www.youtube.com/watch?v=iK0BSMY-le4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8d49a6b"></a>Vocal Music<br />
+<ul class="org-ul">
+<li><a id="orgbf5ca35"></a>Misc<br />
+<div class="outline-text-11" id="text-orgbf5ca35">
+<ul class="org-ul">
+<li><b>Raga Bilaskhani Todi</b>, Pt. D. V. Paluskar, SaReGaMa
+<ul class="org-ul">
+<li>Pt. D. V. Paluskar - Topic, Bilaskhani Todi - Nike Ghunghariya, (Jul. 22, 2019). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=06tmDk0ENUQ">https://www.youtube.com/watch?v=06tmDk0ENUQ</a></li>
+</ul></li>
+
+<li>Music Today, Ja Ja Re Ja - Bilaskhani Todi | Pandit Jasraj | Music Today, (Mar. 11, 2016). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3c5_Sff7JVE">https://www.youtube.com/watch?v=3c5_Sff7JVE</a></li>
+
+<li>AIR Raagam, 1996 - Akashvani Sangeet Sammelan II Vocal by Malini Rajurkar II Raga - Bilaskhani Todi, (Aug. 05, 2022). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=aKfYlf_ophw">https://www.youtube.com/watch?v=aKfYlf_ophw</a></li>
+<li>AIR Raagam, Pandit Ajay Pohankar II Vocal II Raga - Bilaskhani Todi, (May 28, 2022). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=1xVLvwfB1OQ">https://www.youtube.com/watch?v=1xVLvwfB1OQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org23c060b"></a>Krishna<br />
+<div class="outline-text-11" id="text-org23c060b">
+<ul class="org-ul">
+<li>AIR Raagam, Bilaskhani Todi by Jnan Prakash Ghosh, (Jul. 30, 2020). Accessed: Jun. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=4TtOywba0QM">https://www.youtube.com/watch?v=4TtOywba0QM</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org440036f"></a>Instrumental Music<br />
+<ul class="org-ul">
+<li><a id="org7db450d"></a>Solo<br />
+<div class="outline-text-11" id="text-org7db450d">
+<ul class="org-ul">
+<li>AIR Raagam, Bilaskhani Todi by Jnan Prakash Ghosh, (Jul. 30, 2020). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=4TtOywba0QM">https://www.youtube.com/watch?v=4TtOywba0QM</a></li>
+
+<li><b>Raga Bilaskhani Todi</b>, Ustad Amjad Ali Khan, Music Today
+<ul class="org-ul">
+<li>Music Today, Raga Bilaskhani Todi | Ustad Amjad Ali Khan (Album: Sadabahar Todi) | Music Today, (Feb. 18, 2016). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=e5D1HvbzwOE">https://www.youtube.com/watch?v=e5D1HvbzwOE</a></li>
+</ul></li>
+
+<li>Saregama Hindustani Classical, Bilaskhani Todi | Sitar Saga | Ustad Ali Akbar Khan | Audio | Hindustani Classical Music, (May 10, 2024). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9BQ_aUnSXgY">https://www.youtube.com/watch?v=9BQ_aUnSXgY</a></li>
+
+<li>Saregama Hindustani Classical, Raga Bilaskhani Todi | Ustad Vilayat Khan | Soulful Sitar | Indian Classical Instrumental Music, (Feb. 08, 2025). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ZdWhrCHGt3I">https://www.youtube.com/watch?v=ZdWhrCHGt3I</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4709c0d"></a>JugalBandi<br />
+<div class="outline-text-11" id="text-org4709c0d">
+<ul class="org-ul">
+<li><b>Raga Bilaskhani Todi</b>, Pt. Ravi Shankar and Ustad Ali Akbar Khan, SaReGaMa
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Raga Bilaskhani Todi | Jugalbandi Of Pt. Ravi Shankar, Ustad Ali Akbar Khan | Indian Classical Music, (Sep. 12, 2023). Accessed: May 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=iFPn0QFJq2M">https://www.youtube.com/watch?v=iFPn0QFJq2M</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org59f3a9a"></a>Film Music<br />
+<div class="outline-text-10" id="text-org59f3a9a">
+<ul class="org-ul">
+<li>“Film Songs in Rag Bilaskhani Todi – chandrakantha.com.” Accessed: May 12, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-bilaskhani-todi/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-bilaskhani-todi/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org7eec158"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org6858e42"></a>Bahaduri Todi<br />
+<ul class="org-ul">
+<li><a id="org606c456"></a>Mallikarjun Mansur<br />
+<div class="outline-text-9" id="text-org606c456">
+<ul class="org-ul">
+<li><b>Ye Mahadev Devan Pate</b>, Raga Bahaduri Todi, Pt. Mallikarjun Mansur, SaReGaMa.
+<ul class="org-ul">
+<li>A hypnotic morning melody.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org5729986"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge4f6391"></a>Bhoopal Todi<br />
+<div class="outline-text-8" id="text-orge4f6391">
+<ul class="org-ul">
+<li>Bhupali Todi, Ali Akbar Khan, SaReGaMa.</li>
+
+<li><i>Raga Bhoopal Todi</i>, Pt. Shiv Kumar Sharma, Music Today
+<ul class="org-ul">
+<li>Music Today, Raga Bhoopal Todi -  Pandit ShivKumar Sharma (Album: Maestro’s Choice Series One), (Nov. 10, 2015). Accessed: Dec. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=kiDC8zTc168">https://www.youtube.com/watch?v=kiDC8zTc168</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Ustad Amjad Ali Khan | Raga Bhopal Todi | Indian Classical Music | Sarod Instrumental Music, (Mar. 01, 2023). Accessed: Dec. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cJVQwT_laVc">https://www.youtube.com/watch?v=cJVQwT_laVc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org11598ec"></a>Desi Todi<br />
+<ul class="org-ul">
+<li><a id="org5936dc7"></a>General<br />
+<div class="outline-text-9" id="text-org5936dc7">
+<ul class="org-ul">
+<li><i>“Short Takes: Desi,”</i> Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/desi/">https://www.parrikar.org/hindustani/desi/</a> (accessed Apr. 29, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org81cbeee"></a>Recordings<br />
+<div class="outline-text-9" id="text-org81cbeee">
+<ul class="org-ul">
+<li><i>Raga Desi Todi</i>, Pt. Hari Prasad Chaurasia, Music Today</li>
+
+<li><i>Raga Desi Todi</i>, Pt. Ravi Shankar, SaReGaMa</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfa5193a"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org88fc76f"></a>Art<br />
+<div class="outline-text-7" id="text-org88fc76f">
+<ul class="org-ul">
+<li>“Ragini Todi, from a Garland of Musical Modes (Ragamala) manuscript | Yale University Art Gallery.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://artgallery.yale.edu/collections/objects/83941">https://artgallery.yale.edu/collections/objects/83941</a></li>
+<li>“Todi Ragini.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="http://collections.mfa.org/objects/149719/todi-ragini;jsessionid=4362E20F97A7FF59F67E6CAC5F34E11A">http://collections.mfa.org/objects/149719/todi-ragini;jsessionid=4362E20F97A7FF59F67E6CAC5F34E11A</a></li>
+
+<li><b>“A Closer Look at Ragini Todi,”</b> Google Arts &amp; Culture. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://artsandculture.google.com/story/a-closer-look-at-ragini-todi/EQVRBtxXRRCLUQ">https://artsandculture.google.com/story/a-closer-look-at-ragini-todi/EQVRBtxXRRCLUQ</a></li>
+<li>“Ragini Todi,” Google Arts &amp; Culture. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://artsandculture.google.com/asset/ragini-todi/dgH6MzPNPrLbbA">https://artsandculture.google.com/asset/ragini-todi/dgH6MzPNPrLbbA</a></li>
+
+<li>“Todi Ragini, from a Ragamala Series | Cleveland Museum of Art.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://www.clevelandart.org/art/2012.297">https://www.clevelandart.org/art/2012.297</a></li>
+<li>“Todi Ragini.” Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://philamuseum.org/collection/object/88420">https://philamuseum.org/collection/object/88420</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge0341dc"></a>Miscellaneous<br /></li>
+</ul>
+</li>
+<li><a id="orgafc47df"></a>Bhairav<br />
+<ul class="org-ul">
+<li><a id="org8760d42"></a>General<br /></li>
+<li><a id="orgfdaf875"></a>Theory<br />
+<div class="outline-text-7" id="text-orgfdaf875">
+<ul class="org-ul">
+<li>“Bhairav – The Primordial Sound,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bhairav/">https://www.parrikar.org/hindustani/bhairav/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfd53849"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orge66dd5e"></a>Dhrupad<br />
+<div class="outline-text-8" id="text-orge66dd5e">
+<ul class="org-ul">
+<li>“Sangeet Sarita II Series : Dhrupad Dhamar Ka Surila Sansar II Pandit Uday Bhawalkar II Part - 01 - YouTube.” Accessed: Aug. 30, 2025. [Online]. Available: <a href="https://www.youtube.com/watch?v=9I9oqkgkm_Y&amp;list=TLPQMzAwODIwMjWXlSsOBd_-ng&amp;index=2">https://www.youtube.com/watch?v=9I9oqkgkm_Y&amp;list=TLPQMzAwODIwMjWXlSsOBd_-ng&amp;index=2</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org583076b"></a>Films<br />
+<div class="outline-text-8" id="text-org583076b">
+<ul class="org-ul">
+<li>“Film Songs in Rag Bhairav – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/bhairav/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/bhairav/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5d9ca2d"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org33c8726"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org7f8df2d"></a>Asavari<br />
+<ul class="org-ul">
+<li><a id="orgf64821d"></a>General<br />
+<div class="outline-text-7" id="text-orgf64821d">
+<ul class="org-ul">
+<li>“Asavari &amp; Associates,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/asavari/">https://www.parrikar.org/hindustani/asavari/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc4b21b3"></a>Recordings<br />
+<div class="outline-text-7" id="text-orgc4b21b3">
+<ul class="org-ul">
+<li>Pt. D. V. Paluskar - Topic, Asawari - Barhaiya Lao Lao Re, (Jul. 22, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9ROwwXXkb5A">https://www.youtube.com/watch?v=9ROwwXXkb5A</a></li>
+<li>Music Today, <i>Raga Asavari</i> - Asad Ali Khan (Album: Maestro’s Choice - Series One), (Nov. 30, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CSmR_IG97RA">https://www.youtube.com/watch?v=CSmR_IG97RA</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org67f8265"></a>Lalit<br />
+<ul class="org-ul">
+<li><a id="orgdf34a4c"></a>General<br />
+<div class="outline-text-7" id="text-orgdf34a4c">
+<ul class="org-ul">
+<li>“On Raga Lalita-Gouri,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/lalitagouri/">https://www.parrikar.org/hindustani/lalitagouri/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd8195cc"></a>Recordings<br />
+<div class="outline-text-7" id="text-orgd8195cc">
+<ul class="org-ul">
+<li>Pt. D. V. Paluskar, <i>Lalit</i>, Avat Mohan Dhenu Charane, SaReGaMa</li>
+<li>Music Today, Raga Lalit | Hariprasad Chaurasia | ( Album: Raga By Sunrise ) | Music Today, (Mar. 11, 2016). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=smYksULTb4I">https://www.youtube.com/watch?v=smYksULTb4I</a></li>
+<li>Music Today, Raga <i>Lalit</i> - N Zahiruddin Dagar &amp; F Wasifuddin Dagar (Album: Maestro’s Choice), (Nov. 10, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QB9wEDqRtoU">https://www.youtube.com/watch?v=QB9wEDqRtoU</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgbd39b50"></a>Vibhas<br />
+<ul class="org-ul">
+<li><a id="org0d44ffc"></a>General<br />
+<div class="outline-text-7" id="text-org0d44ffc">
+<ul class="org-ul">
+<li>“Bibhas - Wikipedia.” Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Bibhas">https://en.wikipedia.org/wiki/Bibhas</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org62e0b46"></a>Theory<br />
+<div class="outline-text-7" id="text-org62e0b46">
+<ul class="org-ul">
+<li>“Bibhas | SrGPdS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://ragajunglism.org/ragas/bibhas/">https://ragajunglism.org/ragas/bibhas/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Province of Poorvi (Part 2/2),” Rajan Parrikar Music Archive. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://www.parrikar.org/hindustani/poorvi-page2/">https://www.parrikar.org/hindustani/poorvi-page2/</a></li>
+<li>“The Marwa Matrix (Part 1/2),” Rajan Parrikar Music Archive. Accessed: Oct. 09, 2021. [Online]. Available: <a href="https://www.parrikar.org/hindustani/marwa/">https://www.parrikar.org/hindustani/marwa/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org13662d4"></a>Recordings<br />
+<div class="outline-text-7" id="text-org13662d4">
+<ul class="org-ul">
+<li>Pt. D. V. Paluskar - Topic, <i>Bibhas</i> - Kaisku Marva, (Jul. 22, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=OHMVGrHhoYs">https://www.youtube.com/watch?v=OHMVGrHhoYs</a></li>
+
+<li>Swaralankar, Raga Bibhas | Vidushi Dr. Ashwini Bhide Deshpande | He Narhar Narayan | Live at Odisha-2011, (Jan. 28, 2021). Accessed: Jan. 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qINe_MlOKz0">https://www.youtube.com/watch?v=qINe_MlOKz0</a></li>
+
+<li>Music Today, Raga Vibhas | Kishori Amonkar | ( Album: Live Concert Swar Utsav 2000 ) | Music Today, (Mar. 18, 2016). Accessed: Jan. 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ulXuz1sRLDg">https://www.youtube.com/watch?v=ulXuz1sRLDg</a></li>
+<li>Raga Vibhas - e Nara Hara Narayan | Kishori Amonkar | Sangeet Sartaj - Kishori Amonkar | Music Today, (Mar. 10, 2016). Accessed: Apr. 25, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=goTSsBzxGlY">https://www.youtube.com/watch?v=goTSsBzxGlY</a></li>
+
+<li>Music Today, Raga Vibhas | Shruti Sadolikar | ( Album: Morning Ragas Volume 2 ), (Mar. 02, 2016). Accessed: Jan. 12, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=EqTNRii6LRA">https://www.youtube.com/watch?v=EqTNRii6LRA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd863421"></a>Misc<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org459937a"></a>Miscellaneous<br /></li>
+</ol>
+</div>
+<div id="outline-container-org624cdc3" class="outline-4">
+<h4 id="org624cdc3"><span class="section-number-4">4.4.2.</span> Afternoon</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<ul class="org-ul">
+<li>Indian Classical Music - Afternoon: <a href="https://tinyurl.com/42b7wnjh">https://tinyurl.com/42b7wnjh</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb287c55" class="outline-4">
+<h4 id="orgb287c55"><span class="section-number-4">4.4.3.</span> Evening</h4>
+<div class="outline-text-4" id="text-4-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="org92f2f2c"></a>Kalyan<br />
+<ol class="org-ol">
+<li><a id="org6f0dea0"></a>General<br /></li>
+<li><a id="orgcb996be"></a>Theory<br />
+<div class="outline-text-6" id="text-4-4-3-1-2">
+<ul class="org-ul">
+<li>“Kalyan (Part 1/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kalyan/">https://www.parrikar.org/hindustani/kalyan/</a> (accessed Oct. 09, 2021).</li>
+<li>“Kalyan (Part 2/2) » Rajan Parrikar Music Archive.” <a href="https://www.parrikar.org/hindustani/kalyan-page2/">https://www.parrikar.org/hindustani/kalyan-page2/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org27c1a7f"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org10562c9"></a>Yaman<br />
+<ul class="org-ul">
+<li><a id="org64ee0c5"></a>General<br /></li>
+<li><a id="org4b3222a"></a>Theory<br />
+<div class="outline-text-8" id="text-org4b3222a">
+<ul class="org-ul">
+<li>“Kalyan (Part 1/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kalyan/">https://www.parrikar.org/hindustani/kalyan/</a> (accessed Oct. 09, 2021).</li>
+
+<li>“Kalyan (Part 2/2) » Rajan Parrikar Music Archive.” <a href="https://www.parrikar.org/hindustani/kalyan-page2/">https://www.parrikar.org/hindustani/kalyan-page2/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgad34c6a"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orgb6d380d"></a>Hindustani Classical Music<br />
+<ul class="org-ul">
+<li><a id="org8bb1632"></a>Dhrupad<br />
+<div class="outline-text-10" id="text-org8bb1632">
+<ul class="org-ul">
+<li><i>Raga Yaman</i>, Ustad Zia Mohiuddin Dagar, Nimbus Records, 2000.</li>
+
+<li><i>Adhar Lagayi</i>, <i>Raga Eman</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+</ul>
+</div>
+</li>
+<li><a id="org2f5dcf3"></a>Misc<br />
+<div class="outline-text-10" id="text-org2f5dcf3">
+<ul class="org-ul">
+<li>Sarod Ghar Museum, Pandit Bhimsen Joshi - Raga Yaman | Sarod Ghar Museum, (Feb. 27, 2021). Accessed: Aug. 05, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=7GLHx35ScoI">https://www.youtube.com/watch?v=7GLHx35ScoI</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org9c22bed"></a>Films<br />
+<div class="outline-text-9" id="text-org9c22bed">
+<ul class="org-ul">
+<li>“Film Songs in Rag Kalyan (Y-Z) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-s-z3/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-s-z3/</a></li>
+<li>“Film Songs in Rag Kalyan (T-X) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-s-z2/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-s-z2/</a></li>
+<li>“Film Songs in Rag Kalyan (S) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-s-z/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-s-z/</a></li>
+<li>“Film Songs in Rag Kalyan (N-R) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-k-r2/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-k-r2/</a></li>
+<li>“Film Songs in Rag Kalyan (K-M) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-k-r/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-k-r/</a></li>
+<li>“Film Songs in Rag Kalyan (I-J) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-i/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-i/</a></li>
+<li>“Film Songs in Rag Kalyan (D-H) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-d/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan-d/</a></li>
+<li>“Film Songs in Rag Kalyan (A-C) – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-kalyan/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org537462f"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge75982d"></a>Shyam Kalyan<br />
+<ul class="org-ul">
+<li><a id="org05dff40"></a>General<br /></li>
+<li><a id="org48222a7"></a>Theory<br />
+<div class="outline-text-8" id="text-org48222a7">
+<ul class="org-ul">
+<li>“Short Takes: Kamod and Shyam Kalyan,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kamod/">https://www.parrikar.org/hindustani/kamod/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org126ca60"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org4298f09"></a>Dhrupad<br />
+<div class="outline-text-9" id="text-org4298f09">
+<ul class="org-ul">
+<li>Music Today, Raga Shyam Kalyan - Gundecha Brothers (Album: Young Masters) | Music Today, (Dec. 11, 2015). Accessed: Jan. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_yqSD8Rtc5M">https://www.youtube.com/watch?v=_yqSD8Rtc5M</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org88d3e32"></a>Sarod<br />
+<div class="outline-text-9" id="text-org88d3e32">
+<ul class="org-ul">
+<li>Music Today, Raga <i>Shyam Kalyan</i> | Amjad Ali Khan (Album: Evening Ragas) | Music Today, (Mar. 02, 2016). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UPRluPCHGu8">https://www.youtube.com/watch?v=UPRluPCHGu8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgab333a6"></a>SurBahar<br />
+<div class="outline-text-9" id="text-orgab333a6">
+<ul class="org-ul">
+<li>Music Today, Raga <i>Shyam Kalyan</i>, Imrat Khan (Album: Maestro’s Choice), (Nov. 26, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=MIV7eEkLnz4">https://www.youtube.com/watch?v=MIV7eEkLnz4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org29ff5f5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8c7e9f7"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org133ca2e"></a>Shuddha Kalyan<br />
+<ul class="org-ul">
+<li><a id="org5178261"></a>Dhrupad<br />
+<div class="outline-text-8" id="text-org5178261">
+<ul class="org-ul">
+<li>Naad Lahari | Pt. Ramakant Gundecha &amp; Pt Umakant Gundecha | Indian Classical Singers, (Mar. 29, 2021). Accessed: Jan. 31, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=n-eAU9v09r8">https://www.youtube.com/watch?v=n-eAU9v09r8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge2eb2ed"></a>Misc<br />
+<div class="outline-text-8" id="text-orge2eb2ed">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Monder Baje | Khansahib Abdul Karim Khan | Hindustani Classical Music, (Jan. 14, 2025). Accessed: Jan. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UJ-Mq6RZ_eY">https://www.youtube.com/watch?v=UJ-Mq6RZ_eY</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org81e24dd"></a>Gorakh Kalyan<br />
+<ul class="org-ul">
+<li><a id="org04cb8ca"></a>General<br />
+<div class="outline-text-8" id="text-org04cb8ca">
+<ul class="org-ul">
+<li>“Gorakh Kalyan,” Wikipedia. Nov. 15, 2019. Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gorakh_Kalyan&amp;oldid=926307196">https://en.wikipedia.org/w/index.php?title=Gorakh_Kalyan&amp;oldid=926307196</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb5a7d65"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org3d55960"></a>Theory<br />
+<div class="outline-text-9" id="text-org3d55960">
+<ul class="org-ul">
+<li><b>“Short Takes – Narayani and Gorakh Kalyan,”</b> Rajan Parrikar Music Archive. Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/hindustani/narayani/">https://www.parrikar.org/hindustani/narayani/</a></li>
+<li>“Gorakh Kalyan | SRmPDnS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://ragajunglism.org/ragas/gorakh-kalyan/">https://ragajunglism.org/ragas/gorakh-kalyan/</a></li>
+<li>“Raag Gorakh Kalyan.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://tanarang.com/raag-gorakh-kalyan/">https://tanarang.com/raag-gorakh-kalyan/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org61d0abb"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org97bda3e"></a>Lata Mangeshkar<br />
+<div class="outline-text-10" id="text-org97bda3e">
+<ul class="org-ul">
+<li>“nazsal<sub>gorakhkalyan</sub><sub>live.mp3</sub>.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/music/narayani/nazsal_gorakhkalyan_live.mp3">https://www.parrikar.org/music/narayani/nazsal_gorakhkalyan_live.mp3</a></li>
+<li>“bhimsen<sub>gorakhkalyan.mp3</sub>.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/music/narayani/bhimsen_gorakhkalyan.mp3">https://www.parrikar.org/music/narayani/bhimsen_gorakhkalyan.mp3</a></li>
+<li>“nrajam<sub>gorakhkalyan.mp3</sub>.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/music/narayani/nrajam_gorakhkalyan.mp3">https://www.parrikar.org/music/narayani/nrajam_gorakhkalyan.mp3</a></li>
+<li>“lata<sub>palki.mp3</sub>.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/music/narayani/lata_palki.mp3">https://www.parrikar.org/music/narayani/lata_palki.mp3</a></li>
+<li>“lata<sub>ghalib.mp3</sub>.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/music/narayani/lata_ghalib.mp3">https://www.parrikar.org/music/narayani/lata_ghalib.mp3</a></li>
+<li>“lata<sub>mogara.mp3</sub>.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/music/narayani/lata_mogara.mp3">https://www.parrikar.org/music/narayani/lata_mogara.mp3</a></li>
+<li>“lata<sub>bhagavadgeeta.mp3</sub>.” Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://www.parrikar.org/music/narayani/lata_bhagavadgeeta.mp3">https://www.parrikar.org/music/narayani/lata_bhagavadgeeta.mp3</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgef1ae70"></a>Misc<br />
+<div class="outline-text-10" id="text-orgef1ae70">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, <b>Sajan Bin Bawri Bhai Ri</b> | Khayal | Pt. Rasiklal Andharia | Hindustani Classical Music, (Mar. 21, 2025). Accessed: Oct. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nclnLUkYtKY">https://www.youtube.com/watch?v=nclnLUkYtKY</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org666927b"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgf46228a"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org5d1c112"></a>Kamod<br />
+<ol class="org-ol">
+<li><a id="org4c9b943"></a>General<br />
+<div class="outline-text-6" id="text-4-4-3-2-1">
+<ul class="org-ul">
+<li>“Short Takes: Kamod and Shyam Kalyan,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kamod/">https://www.parrikar.org/hindustani/kamod/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org4c96df6"></a>Recordings<br />
+<div class="outline-text-6" id="text-4-4-3-2-2">
+<ul class="org-ul">
+<li>Pt. Mukul Shivputra, <i>Bamana Ek</i>, Tilak Kamod, Ninaad Music.</li>
+<li>Pt. Mallikarjun Mansur, <i>Sur Sangat Raga Vidya</i>, Raga Tilak Kamod.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org1199b19"></a>Khammaj<br />
+<ol class="org-ol">
+<li><a id="org066ef94"></a>General<br />
+<div class="outline-text-6" id="text-4-4-3-3-1">
+<ul class="org-ul">
+<li>“In the Khamaj Orchard,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/khamaj/">https://www.parrikar.org/hindustani/khamaj/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb44ebbb"></a>Recordings<br />
+<div class="outline-text-6" id="text-4-4-3-3-2">
+<ul class="org-ul">
+<li><i>Raga Manj Khammaj</i>, Pt. Nikhil Banerjee &amp; Ustad Ali Akbar Khan, AMMP Signature Series, Vol. 4, Music Today</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org8943fb3"></a>Bhoop<br />
+<ol class="org-ol">
+<li><a id="org6a9542f"></a>General<br />
+<div class="outline-text-6" id="text-4-4-3-4-1">
+<ul class="org-ul">
+<li>“Bhoopali,” Wikipedia. Oct. 07, 2021. Accessed: Oct. 08, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bhoopali&amp;oldid=1048664215">https://en.wikipedia.org/w/index.php?title=Bhoopali&amp;oldid=1048664215</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbf639f7"></a>Theory<br />
+<div class="outline-text-6" id="text-4-4-3-4-2">
+<ul class="org-ul">
+<li>“Short Takes: Bhoopali and Deshkar,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bhoopali/">https://www.parrikar.org/hindustani/bhoopali/</a> (accessed Oct. 08, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org3ae032d"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org0e79a35"></a>Dhrupad<br />
+<div class="outline-text-7" id="text-org0e79a35">
+<ul class="org-ul">
+<li>Raag Bhoop | Maestro of Dhrupad | Pt. Uday Bhawalkar, (Apr. 19, 2022). Accessed: Aug. 01, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=lRCJbAXsCuA">https://www.youtube.com/watch?v=lRCJbAXsCuA</a></li>
+
+<li>Umakant Ramakant Gundecha, Pandit Pushparaj Koshti, Pandit Manik Munde - Gurupath = गुरुपथ​ - Dhrupad Vocal And Surbahar: A Duet. 2007. Accessed: Jan. 30, 2024. [Online]. Available: <a href="https://www.discogs.com/release/24311663-Umakant-Ramakant-Gundecha-Pandit-Pushparaj-Koshti-Pandit-Manik-Munde-Gurupath-%E0%A4%97%E0%A4%B0%E0%A4%AA%E0%A4%A5-Dhrupad-V">https://www.discogs.com/release/24311663-Umakant-Ramakant-Gundecha-Pandit-Pushparaj-Koshti-Pandit-Manik-Munde-Gurupath-%E0%A4%97%E0%A4%B0%E0%A4%AA%E0%A4%A5-Dhrupad-V</a></li>
+
+<li>“ehcdBhoop | Community Playlist on Prime Music.” Accessed: Feb. 03, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/7b9581466b814e51bde06b0d7131723fi8n0">https://music.amazon.in/user-playlists/7b9581466b814e51bde06b0d7131723fi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2ce93ef"></a>Misc<br />
+<div class="outline-text-7" id="text-org2ce93ef">
+<ul class="org-ul">
+<li>Various Artists - Topic, <i>Call Of The Valley - Bhoop</i>, (Aug. 01, 2019). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=HO4rc6gwrKk">https://www.youtube.com/watch?v=HO4rc6gwrKk</a></li>
+
+<li>Music Today, Raga Bhoopali - Hariprasad Chaurasia (Album: Maestro’s Choice Series One), (Nov. 12, 2015). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gIf5D59HsGI">https://www.youtube.com/watch?v=gIf5D59HsGI</a></li>
+
+<li>Kumar Gandharva - Topic, <i>Chaiti Bhoop - Ni Mori Ka</i> - Pt. Kumar Gandharva, (May 18, 2018). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cod1_MiuKN0">https://www.youtube.com/watch?v=cod1_MiuKN0</a></li>
+
+<li>Kishori Amonkar - Topic, <i>Bhoop - Tarana - Live</i>, (Jul. 22, 2019). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=z2xzOAj2rRw">https://www.youtube.com/watch?v=z2xzOAj2rRw</a></li>
+
+<li>Kishori Amonkar - Topic, <i>Sahelare Aa Mil Gae - Bhoop</i> Drut, (Jul. 22, 2019). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=vkdba25JeB0">https://www.youtube.com/watch?v=vkdba25JeB0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org967bf88"></a>Films<br />
+<div class="outline-text-7" id="text-org967bf88">
+<ul class="org-ul">
+<li>“Film Songs in Rag Bhupali (K-Z) – chandrakantha.com.” Accessed: Jan. 19, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhupali-k-z/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhupali-k-z/</a></li>
+<li>“Film Songs in Rag Bhupali (A-J) – chandrakantha.com.” Accessed: Jan. 19, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/bhupali/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/bhupali/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgae48750"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org098cfc3"></a>Durga<br />
+<ol class="org-ol">
+<li><a id="org67f2a6b"></a>General<br />
+<div class="outline-text-6" id="text-4-4-3-5-1">
+<ul class="org-ul">
+<li><i>“Durga (raga),”</i> Wikipedia. Sep. 27, 2021. Accessed: Sep. 30, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Durga_(raga)&amp;oldid=1046790984">https://en.wikipedia.org/w/index.php?title=Durga_(raga)&amp;oldid=1046790984</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf25adf4"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orgcc017c8"></a>Hindustani Classical Music<br />
+<ul class="org-ul">
+<li><a id="orgc134f19"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="org8b6aedf"></a>Playlists<br />
+<div class="outline-text-9" id="text-org8b6aedf">
+<ul class="org-ul">
+<li>“ehcdDurga | Community Playlist on Prime Music.” Accessed: Jan. 28, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/f9f6a4eb80d44185842acb5dc0b86037i8n0">https://music.amazon.in/user-playlists/f9f6a4eb80d44185842acb5dc0b86037i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2dac7c0"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="org514f886"></a>F. W. Dagar<br />
+<div class="outline-text-10" id="text-org514f886">
+<ul class="org-ul">
+<li>Ustad F. Wasifuddin Dagar, <b>Raga Durga</b>, (Jun. 08, 2018). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pUn4PsCj5cg">https://www.youtube.com/watch?v=pUn4PsCj5cg</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1f2cf0a"></a>Gundecha Brothers<br />
+<div class="outline-text-10" id="text-org1f2cf0a">
+<ul class="org-ul">
+<li>Rang Dhanak Ke Gundecha Brothers (Episode 10), (Dec. 13, 2019). Accessed: Jan. 31, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cVlh5chGDFc">https://www.youtube.com/watch?v=cVlh5chGDFc</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org60fd58a"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org0b64f17"></a>Short Dhrupad Pieces<br />
+<ul class="org-ul">
+<li><a id="orgd47b18c"></a>F. W. Dagar<br />
+<div class="outline-text-11" id="text-orgd47b18c">
+<ul class="org-ul">
+<li>Ustad F. Wasifuddin Dagar, <b>Raga Durga</b>, (Jun. 08, 2018). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pUn4PsCj5cg">https://www.youtube.com/watch?v=pUn4PsCj5cg</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0d99769"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orge9cf071"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgae2418d"></a>Vocal Music<br />
+<ul class="org-ul">
+<li><a id="org99a9c45"></a>Mallikarjun Mansur<br />
+<div class="outline-text-9" id="text-org99a9c45">
+<ul class="org-ul">
+<li>Pt. Mallikarjun Mansur, <b>Chatur Sugara</b>, Raga Durga (Jul. 22, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=WP3GS_01vQs">https://www.youtube.com/watch?v=WP3GS_01vQs</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdd323d3"></a>Bhimsen Joshi<br />
+<div class="outline-text-9" id="text-orgdd323d3">
+<ul class="org-ul">
+<li>Pt. Bhimsen Joshi, <b>Too Ras Kan Re And Chatur Sugar Balamwa</b>, Raga Durga (Jul. 22, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8yM3_JSY0mI">https://www.youtube.com/watch?v=8yM3_JSY0mI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org266d346"></a>Rajan Mishra, Sajan Mishra<br />
+<div class="outline-text-9" id="text-org266d346">
+<ul class="org-ul">
+<li>AIR Raagam, 1987 -Akashvani Sangeet Sammelan II Pandit Rajan Mishra &amp; Sajan Mishra II Vocal Duet II Raga - Durga, (Dec. 25, 2021). Accessed: Sep. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=idC8IJ7BxxI">https://www.youtube.com/watch?v=idC8IJ7BxxI</a></li>
+<li>AIR Raagam, 1982 - Akashvani Sangeet Sammelan II Pandit Rajan Mishra &amp; Sajan Mishra II Raga - Durga, (Sep. 22, 2021). Accessed: Sep. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tDTCE_H-ufU">https://www.youtube.com/watch?v=tDTCE_H-ufU</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1c29f80"></a>Misc<br />
+<div class="outline-text-9" id="text-org1c29f80">
+<ul class="org-ul">
+<li>Smt. Kesarbai Kerkar, <b>Rasikan Re</b>, Raga Durga (Feb. 16, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Z6VABXtCDJU">https://www.youtube.com/watch?v=Z6VABXtCDJU</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcc43651"></a>Instrumental Music<br />
+<ul class="org-ul">
+<li><a id="org7a62958"></a>Amjad Ali Khan<br />
+<ul class="org-ul">
+<li><a id="org42cdbd8"></a>SaReGaMa<br /></li>
+<li><a id="org3a60891"></a>Music Today<br />
+<div class="outline-text-10" id="text-org3a60891">
+<ul class="org-ul">
+<li>Music Today, Raga Durga - Amjad Ali Khan (Album: Maestro’s Choice) | Music Today, (Nov. 26, 2015). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=hwEsGIP-7os">https://www.youtube.com/watch?v=hwEsGIP-7os</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd1fc6b5"></a>Sarod Records<br />
+<div class="outline-text-10" id="text-orgd1fc6b5">
+<ul class="org-ul">
+<li>Sarod Records, Tribute to Pandit Bhimsen Joshi by Sarod Virtuoso Amjad Ali Khan - Raga Durga, (Jun. 13, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=c2DXpIyqBH8">https://www.youtube.com/watch?v=c2DXpIyqBH8</a></li>
+<li>Sarod Records, Raga Durga by Sarod Virtuoso Amjad Ali Khan | New Delhi | 19th January, 2013, (Jan. 16, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=SJZT9GPyuqY">https://www.youtube.com/watch?v=SJZT9GPyuqY</a></li>
+<li>Sarod Records, Sarod Virtuoso Amjad Ali Khan| Singing Sarod | Raga Durga | New Delhi | 27th March, 2014, (Apr. 18, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=1pF19ICaqko">https://www.youtube.com/watch?v=1pF19ICaqko</a></li>
+<li>Sarod Records, Sarod Virtuoso Amjad Ali Khan | Raga Durga | Vijay Ghate Tabla | Sarod Records 2018, (Oct. 19, 2018). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=j5iy-I0R44Y">https://www.youtube.com/watch?v=j5iy-I0R44Y</a></li>
+<li>Sarod Records, Colours - Amjad Ali Khan (Sarod) - Raga Durga - 16 Beats Time Cycle, (Nov. 25, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_CYARxHwaNE">https://www.youtube.com/watch?v=_CYARxHwaNE</a></li>
+<li>Sarod Records, Raga Celebration Sarod Maestro - Amjad Ali Khan - Raga Durga, (Aug. 16, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-711rhql2L4">https://www.youtube.com/watch?v=-711rhql2L4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6b48f47"></a>Misc<br />
+<div class="outline-text-10" id="text-org6b48f47">
+<ul class="org-ul">
+<li>Art And Artistes, Raag Durga | Ustad Amjad Ali Khan | Instrumental - Hinduatani Classical | Art And Artistes, (Sep. 01, 2024). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=LefUR07LaAg">https://www.youtube.com/watch?v=LefUR07LaAg</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org2aeab4f"></a>Ali Akbar Khan, Ravi Shankar<br />
+<div class="outline-text-9" id="text-org2aeab4f">
+<ul class="org-ul">
+<li>Pt. Ravi Shankar and Ustad Ali Akbar Khan, <b>Raga Durga</b>, SaReGaMa</li>
+</ul>
+</div>
+</li>
+<li><a id="orgff0ffd1"></a>Shiv Kumar Sharma<br />
+<div class="outline-text-9" id="text-orgff0ffd1">
+<ul class="org-ul">
+<li>Pt. Shivkumar Sharma, <b>Raga Durga: Alaap, Jod, Jhala</b>, (Feb. 16, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=WJnbpI3e9YI">https://www.youtube.com/watch?v=WJnbpI3e9YI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4a450c1"></a>Misc<br />
+<div class="outline-text-9" id="text-org4a450c1">
+<ul class="org-ul">
+<li>Pandit Hariprasad Chaurasia, <b>Raga Durga</b>, (Feb. 22, 2015). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wd-BI0g5XBM">https://www.youtube.com/watch?v=wd-BI0g5XBM</a></li>
+<li>Ustad Bismillah Khan, Pt. V. G. Jog, <i>Raga Durga</i> (Sep. 25, 2014). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nBS576LrjpI">https://www.youtube.com/watch?v=nBS576LrjpI</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org85b4e98"></a>Playlists<br />
+<div class="outline-text-8" id="text-org85b4e98">
+<ul class="org-ul">
+<li>“ehcDurga | Community Playlist on Amazon Prime Music.” Accessed: Sep. 20, 2025. [Online]. Available: <a href="https://music.amazon.in/user-playlists/d8a55aebc170406292303abd9a6caae3i8n0">https://music.amazon.in/user-playlists/d8a55aebc170406292303abd9a6caae3i8n0</a></li>
+<li>“RagaDurga,” YouTube. Accessed: Sep. 20, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmmVu7kgiSUSLLw5EpW4IvJV">http://www.youtube.com/playlist?list=PLP8c3pohkJmmVu7kgiSUSLLw5EpW4IvJV</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7e8e11c"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgce87a78"></a>Films<br />
+<div class="outline-text-7" id="text-orgce87a78">
+<ul class="org-ul">
+<li>“Film Songs in Rag Durga – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-durga/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-durga/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org093fcc4"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org3c577e4"></a>Hansdhwani<br />
+<div class="outline-text-5" id="text-4-4-3-6">
+<ul class="org-ul">
+<li>Music Today, Raga <i>Hansdhwani</i> | Ustad Amjad Ali Khan (Album : Thaat Kafi &amp; Khamaj) | Music Today, (Mar. 09, 2016). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=MDzdT0ebLBY">https://www.youtube.com/watch?v=MDzdT0ebLBY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6a40fba"></a>Malgunji<br />
+<div class="outline-text-5" id="text-4-4-3-7">
+<ul class="org-ul">
+<li>“Malgunji,” Wikipedia. May 28, 2023. Accessed: Jul. 20, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Malgunji&amp;oldid=1157453535">https://en.wikipedia.org/w/index.php?title=Malgunji&amp;oldid=1157453535</a></li>
+<li>“Short Takes: Bageshree,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bageshree/">https://www.parrikar.org/hindustani/bageshree/</a> (accessed Jul. 20, 2023).</li>
+<li>“Raag Malgunji - Indian Classical Music - Tanarang.com.” <a href="http://www.tanarang.com/english/malgunji_eng.htm">http://www.tanarang.com/english/malgunji_eng.htm</a> (accessed Jul. 20, 2023).</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li><a href="https://music.apple.com/in/artist/pandit-nikhil-banerjee/20015636">https://music.apple.com/in/artist/pandit-nikhil-banerjee/20015636</a> and <a href="https://music.apple.com/in/artist/pandit-nikhil-banerjee/20015636">https://music.apple.com/in/artist/pandit-nikhil-banerjee/20015636</a>, Raga Malgunji - Live in Munich, 1980 by Pandit Nikhil Banerjee. 1996. Accessed: Jul. 20, 2023. [Online]. Available: <a href="https://music.apple.com/in/album/raga-malgunji-live-in-munich-1980/219699019">https://music.apple.com/in/album/raga-malgunji-live-in-munich-1980/219699019</a></li>
+<li><a href="https://music.apple.com/in/artist/ravi-shankar/13219">https://music.apple.com/in/artist/ravi-shankar/13219</a> and <a href="https://music.apple.com/in/artist/ravi-shankar/13219">https://music.apple.com/in/artist/ravi-shankar/13219</a>, Raga Malgunji by Ravi Shankar. 2012. Accessed: Jul. 20, 2023. [Online]. Available: <a href="https://music.apple.com/in/album/the-living-room-sessions-pt-1/507000400">https://music.apple.com/in/album/the-living-room-sessions-pt-1/507000400</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Film Songs in Rag Malgunji.” <a href="https://chandrakantha.com/raga_raag/film_song_raga/malgunji.shtml">https://chandrakantha.com/raga_raag/film_song_raga/malgunji.shtml</a> (accessed Jul. 20, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org9a5bf8f"></a>Marwa<br />
+<ol class="org-ol">
+<li><a id="org08d8f2b"></a>General<br />
+<div class="outline-text-6" id="text-4-4-3-8-1">
+<ul class="org-ul">
+<li>“Marva (raga),” Wikipedia. Aug. 19, 2021. Accessed: Oct. 09, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Marva_(raga)&amp;oldid=1039489934">https://en.wikipedia.org/w/index.php?title=Marva_(raga)&amp;oldid=1039489934</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org393084e"></a>Theory<br />
+<div class="outline-text-6" id="text-4-4-3-8-2">
+<ul class="org-ul">
+<li>“The Marwa Matrix (Part 1/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/marwa/">https://www.parrikar.org/hindustani/marwa/</a> (accessed Oct. 09, 2021).</li>
+<li>“The Marwa Matrix (Part 2/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/marwa-page2/">https://www.parrikar.org/hindustani/marwa-page2/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orge15fc56"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org11feab9"></a>Dhrupad<br />
+<div class="outline-text-7" id="text-org11feab9">
+<ul class="org-ul">
+<li>Ustad Z. M. Dagar - Topic, Marwa: Alap, (Mar. 17, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=YVcdxZzYOeg">https://www.youtube.com/watch?v=YVcdxZzYOeg</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org59bf070"></a>Misc<br />
+<div class="outline-text-7" id="text-org59bf070">
+<ul class="org-ul">
+<li>Ustad Amir Khan, <i>Raga Marwa</i>, SaReGaMa</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Music Today, Dekh Dekh Baat Marwa | Pandit Jasraj | Music Today, (Mar. 11, 2016). Accessed: Jun. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UPZiceVV7PY">https://www.youtube.com/watch?v=UPZiceVV7PY</a></li>
+<li>Music Today, Raga Marwa | Pandit Jasraj (Album: Evening Ragas) | Music Today, (Mar. 02, 2016). Accessed: Jun. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=z6-sLPDcT2M">https://www.youtube.com/watch?v=z6-sLPDcT2M</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org3464660"></a>Puriya<br />
+<div class="outline-text-5" id="text-4-4-3-9">
+<ul class="org-ul">
+<li>“Puriya,” Wikipedia. May 12, 2023. Accessed: Jul. 05, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Puriya&amp;oldid=1154411777">https://en.wikipedia.org/w/index.php?title=Puriya&amp;oldid=1154411777</a></li>
+<li>“Puriya Dhanashree,” Wikipedia. Mar. 02, 2023. Accessed: Jul. 05, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Puriya_Dhanashree&amp;oldid=1142503931">https://en.wikipedia.org/w/index.php?title=Puriya_Dhanashree&amp;oldid=1142503931</a></li>
+<li>“Raag Puriya Kalyan - Hindustani Classical Music - Tanarang.com.” <a href="http://www.tanarang.com/english/puriya-kalyan_eng.htm">http://www.tanarang.com/english/puriya-kalyan_eng.htm</a> (accessed Jul. 05, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>Pooria</b>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Chalo Chalo Ri - Din Ki Puriya | Pandit Jasraj | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=xhwJ_NEm7LM">https://www.youtube.com/watch?v=xhwJ_NEm7LM</a> (accessed Jul. 05, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Raga Puriya Dhanashri | Ustad Bismillah Khan (Thaat Instrumental Purvi &amp; Todi ) | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=GOdO8EKn-rs">https://www.youtube.com/watch?v=GOdO8EKn-rs</a> (accessed Jul. 05, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Raga Puriya Dhanashri | Rashid Khan (Album: Sangeet Sartaj) - YouTube.” <a href="https://www.youtube.com/watch?v=0VB7jujlb5o">https://www.youtube.com/watch?v=0VB7jujlb5o</a> (accessed Jul. 05, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Ab Thar Bin - Raga Puriya | Pandit Jasraj | ( Album: SwarUtsav 2002 ) | Music Today, (Mar. 17, 2016). Accessed: Jul. 05, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=46k99yh3SVs">https://www.youtube.com/watch?v=46k99yh3SVs</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Film Songs in Rag Puria Dhanashri.” <a href="http://chandrakantha.com/raga_raag/film_song_raga/puria_dhanashri.shtml">http://chandrakantha.com/raga_raag/film_song_raga/puria_dhanashri.shtml</a> (accessed Jul. 05, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb18fbe3"></a>Shree<br />
+<ol class="org-ol">
+<li><a id="org162fb53"></a>General<br /></li>
+<li><a id="org147aeab"></a>Theory<br />
+<ul class="org-ul">
+<li><a id="org287e5fd"></a>Rajan Parrikar Music Archive<br />
+<div class="outline-text-7" id="text-org287e5fd">
+<ul class="org-ul">
+<li>“Raga Shree: Close Encounters,” Rajan Parrikar Music Archive. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.parrikar.org/hindustani/shree/">https://www.parrikar.org/hindustani/shree/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga9fcd76"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org904f784"></a>Dhrupad<br />
+<div class="outline-text-7" id="text-org904f784">
+<ul class="org-ul">
+<li>AIR Raagam, Sangeet Sarita II Series : Dhrupad Dhamar Ka Surila Sansar II Pandit Uday Bhawalkar II Part - 06, (May 08, 2023). Accessed: Aug. 30, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Glua7LJ6FRo">https://www.youtube.com/watch?v=Glua7LJ6FRo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5853258"></a>Vocal Music<br />
+<ul class="org-ul">
+<li><a id="org835af84"></a>Mallikarjun Mansur<br />
+<div class="outline-text-8" id="text-org835af84">
+<ul class="org-ul">
+<li>Mallikarjun Mansur - Rare ragas Raag Shree. 2006. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/22524392-Mallikarjun-Mansur-Rare-ragas-Raag-Shree">https://www.discogs.com/release/22524392-Mallikarjun-Mansur-Rare-ragas-Raag-Shree</a></li>
+<li>Mallikarjun Mansur - Rare ragas Raag Shree. 2006. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/22524392-Mallikarjun-Mansur-Rare-ragas-Raag-Shree">https://www.discogs.com/release/22524392-Mallikarjun-Mansur-Rare-ragas-Raag-Shree</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb5c34d4"></a>Kumar Gandharva<br />
+<div class="outline-text-8" id="text-orgb5c34d4">
+<ul class="org-ul">
+<li>Kumar Gandharva - Baithak Vol. 2 - Raga Shree. 1993. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/7071645-Kumar-Gandharva-Baithak-Vol-2-Raga-Shree">https://www.discogs.com/release/7071645-Kumar-Gandharva-Baithak-Vol-2-Raga-Shree</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org60f827c"></a>Amir Khan<br /></li>
+<li><a id="org8bc36bc"></a>D. V. Paluskar<br />
+<div class="outline-text-8" id="text-org8bc36bc">
+<ul class="org-ul">
+<li>AIR Raagam, Pandit D.V. Paluskar | Raag : Shri, (Sep. 13, 2020). Accessed: Aug. 31, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=YyJuFUz-kro">https://www.youtube.com/watch?v=YyJuFUz-kro</a></li>
+<li>Saregama Hindustani Classical, Hari Ke Charan Kamal | Pt. D.V. Paluskar | Devotional Song | Hindustani Classical Music, (May 21, 2025). Accessed: Aug. 31, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=LKpW_cStsjk">https://www.youtube.com/watch?v=LKpW_cStsjk</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org06c7be9"></a>Misc<br />
+<div class="outline-text-8" id="text-org06c7be9">
+<ul class="org-ul">
+<li>Purvi Parikh - Classical Vocal. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/28560361-Purvi-Parikh-Classical-Vocal">https://www.discogs.com/release/28560361-Purvi-Parikh-Classical-Vocal</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd19c708"></a>I Music<br />
+<ul class="org-ul">
+<li><a id="orgdb56e80"></a>Shiv Kumar Sharma<br />
+<div class="outline-text-8" id="text-orgdb56e80">
+<ul class="org-ul">
+<li>Pt. Shiv Kumar Sharma - Sunset Melody On The Santoor. 1999. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/15406702-Pt-Shiv-Kumar-Sharma-Sunset-Melody-On-The-Santoor">https://www.discogs.com/release/15406702-Pt-Shiv-Kumar-Sharma-Sunset-Melody-On-The-Santoor</a></li>
+<li>Shiv Kumar Sharma - The Twilight Melodies On The Santoor LP: 2. 1991. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/master/1748709-Shiv-Kumar-Sharma-The-Twilight-Melodies-On-The-Santoor-LP-2">https://www.discogs.com/master/1748709-Shiv-Kumar-Sharma-The-Twilight-Melodies-On-The-Santoor-LP-2</a></li>
+<li>Saregama Hindustani Classical, Raga Shree | Pt. Shivkumar Sharma | Indian Classical Instrumental Music, (May 10, 2025). Accessed: Aug. 31, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=rrvmbkiVbzc">https://www.youtube.com/watch?v=rrvmbkiVbzc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgaebc009"></a>Nikhil Banerjee<br />
+<div class="outline-text-8" id="text-orgaebc009">
+<ul class="org-ul">
+<li>Nikhil Banerjee - Shree Rag. 2003. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/6776002-Nikhil-Banerjee-Shree-Rag">https://www.discogs.com/release/6776002-Nikhil-Banerjee-Shree-Rag</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org26092c8"></a>Vilayat Khan<br />
+<div class="outline-text-8" id="text-org26092c8">
+<ul class="org-ul">
+<li>Ustad Vilayat Khan, Akram Khan - Raga Shree. 1999. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/6705452-Ustad-Vilayat-Khan-Akram-Khan-Raga-Shree">https://www.discogs.com/release/6705452-Ustad-Vilayat-Khan-Akram-Khan-Raga-Shree</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga268d60"></a>Amjad Ali Khan<br />
+<div class="outline-text-8" id="text-orga268d60">
+<ul class="org-ul">
+<li>Ustad Amjad Ali Khan with Kishan Maharaj - Ragas Shree &amp; Khamaj. 1995. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/11948260-Ustad-Amjad-Ali-Khan-with-Kishan-Maharaj-Ragas-Shree-Khamaj">https://www.discogs.com/release/11948260-Ustad-Amjad-Ali-Khan-with-Kishan-Maharaj-Ragas-Shree-Khamaj</a></li>
+<li>Ustad Amjad Ali Khan - Raga Shree. 1976. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/master/551451-Ustad-Amjad-Ali-Khan-Raga-Shree">https://www.discogs.com/master/551451-Ustad-Amjad-Ali-Khan-Raga-Shree</a></li>
+<li>Amjad Ali Khan - Masterworks From The NCPA Archives. 2013. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/23632691-Amjad-Ali-Khan-Masterworks-From-The-NCPA-Archives">https://www.discogs.com/release/23632691-Amjad-Ali-Khan-Masterworks-From-The-NCPA-Archives</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Ustad Amjad Ali Khan - Singing Sarod. 1992. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/release/18310051-Ustad-Amjad-Ali-Khan-Singing-Sarod">https://www.discogs.com/release/18310051-Ustad-Amjad-Ali-Khan-Singing-Sarod</a></li>
+<li>Music Today, The Eccentric Raga Kamalshree | Ustad Amjad Ali Khan | Music Today, (Oct. 09, 2020). Accessed: Aug. 31, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UtFDAp6NlEQ">https://www.youtube.com/watch?v=UtFDAp6NlEQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6842654"></a>Ali Akbar Khan<br /></li>
+<li><a id="org450844d"></a>Imrat Khan<br />
+<div class="outline-text-8" id="text-org450844d">
+<ul class="org-ul">
+<li>Ustad Bismillah Khan, Pandit Pannalal Ghosh, Pandit Nikhil Banerjee, Ustad Imrat Khan, Ustad Abdul Halim Jaffer Khan, Pandit J.P. Ghosh, V. Balsara - “Morning To Midnight Ragas” – Vol. III (Classical Instrumental) - Melodies Of Noon &amp; Dusk. 1989. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://www.discogs.com/master/3784700-Ustad-Bismillah-Khan-Pandit-Pannalal-Ghosh-Pandit-Nikhil-Banerjee-Ustad-Imrat-Khan-Ustad-Abdul-Halim">https://www.discogs.com/master/3784700-Ustad-Bismillah-Khan-Pandit-Pannalal-Ghosh-Pandit-Nikhil-Banerjee-Ustad-Imrat-Khan-Ustad-Abdul-Halim</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org356e2e4"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgd86b4fa"></a>Films<br />
+<div class="outline-text-7" id="text-orgd86b4fa">
+<ul class="org-ul">
+<li>“Film Songs in Rag Shri – chandrakantha.com.” Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-shri/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-shri/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org8e324dd"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orga97ba28"></a>Miscellaneous<br /></li>
+</ol>
+</div>
+<div id="outline-container-org98901a0" class="outline-4">
+<h4 id="org98901a0"><span class="section-number-4">4.4.4.</span> Night</h4>
+<div class="outline-text-4" id="text-4-4-4">
+</div>
+<ol class="org-ol">
+<li><a id="org1bf5319"></a>0<br />
+<ol class="org-ol">
+<li><a id="org13de90c"></a>Hameer<br />
+<ul class="org-ul">
+<li><a id="orgc2edf21"></a>General<br />
+<div class="outline-text-7" id="text-orgc2edf21">
+<ul class="org-ul">
+<li>“Reflections on Raga Hameer,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/hameer/">https://www.parrikar.org/hindustani/hameer/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd6b3503"></a>Recordings<br />
+<div class="outline-text-7" id="text-orgd6b3503">
+<ul class="org-ul">
+<li>“Pt. Krishna Rao Shankar - Todi, Hameer by Traditional on Prime Music.” <a href="https://music.amazon.in/albums/B07567YZDF?marketplaceId=A21TJRUUN4KGV&amp;musicTerritory=IN&amp;ref=dm_sh_dEwYmE5SiUjI867iOJt3phjYb&amp;trackAsin=B07568J47K">https://music.amazon.in/albums/B07567YZDF?marketplaceId=A21TJRUUN4KGV&amp;musicTerritory=IN&amp;ref=dm_sh_dEwYmE5SiUjI867iOJt3phjYb&amp;trackAsin=B07568J47K</a> (accessed Jul. 20, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Pt. D. V. Paluskar - Topic, Hameer - <i>Surja Rahi Ho</i>, (Jul. 22, 2019). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=SfErr6fVyjU">https://www.youtube.com/watch?v=SfErr6fVyjU</a></li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>Ustad Amjad Ali Khan - Topic, Raga Hameer - <i>Hameer</i> - (alap), (Feb. 16, 2019). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2wk3NEAuTyU">https://www.youtube.com/watch?v=2wk3NEAuTyU</a></li>
+<li>Ustad Amjad Ali Khan - Topic, Raga Hameer - <i>Hameer</i> - Gat, (Feb. 16, 2019). Accessed: Oct. 08, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=38WYE4VmlL4">https://www.youtube.com/watch?v=38WYE4VmlL4</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Baithak - Raga Hamir - Volume 3 by Pandit Kumar Gandharva on Prime Music.” <a href="https://music.amazon.in/albums/B000QZXO4I">https://music.amazon.in/albums/B000QZXO4I</a> (accessed Jul. 20, 2023).
+<ul class="org-ul">
+<li>“Swar Samrat | Pandit Kumar Gandharva | Raga Hamir | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=DrfBlyngYe8">https://www.youtube.com/watch?v=DrfBlyngYe8</a> (accessed Jul. 20, 2023).</li>
+<li>Pandit Kumar Gandharva II Vocal Recital II Raga - Hamir, (May 22, 2022). Accessed: Jul. 20, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=P5VWrFc5mYg">https://www.youtube.com/watch?v=P5VWrFc5mYg</a></li>
+<li>“Raga Hamir | Kumar Gandharva | Sangeet Sartaj - Kumar Gandharva | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=ArXQd1M1rcU">https://www.youtube.com/watch?v=ArXQd1M1rcU</a> (accessed Jul. 20, 2023).</li>
+<li>Raga Hamir | Kumar Gandharva (Album: Thaat Kalyan) | Music Today, (Mar. 09, 2016). Accessed: Jul. 20, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BV5nvpdF3Xw">https://www.youtube.com/watch?v=BV5nvpdF3Xw</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org50016fe"></a>Kedar<br />
+<ul class="org-ul">
+<li><a id="org7382657"></a>General<br /></li>
+<li><a id="org03efb53"></a>Theory<br />
+<ul class="org-ul">
+<li><a id="org6d45359"></a>Rajan Parrikar Music Archive<br />
+<div class="outline-text-8" id="text-org6d45359">
+<ul class="org-ul">
+<li>“Raga Kedar – A Perspective,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kedar/">https://www.parrikar.org/hindustani/kedar/</a> (accessed Oct. 09, 2021).</li>
+<li>“On the Variants of Kedar,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/variants-kedar/">https://www.parrikar.org/hindustani/variants-kedar/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org6b62f2e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0e192f3"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org2b3117f"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="org9a6f1e3"></a>Gundecha Brothers<br />
+<div class="outline-text-9" id="text-org9a6f1e3">
+<ul class="org-ul">
+<li>Gundecha Brothers - Raga Kedar. 2008. Accessed: Jan. 30, 2024. [Online]. Available: <a href="https://www.discogs.com/release/13618469-Gundecha-Brothers-Raga-Kedar">https://www.discogs.com/release/13618469-Gundecha-Brothers-Raga-Kedar</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org88f9934"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org5b176d6"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="orgf918d74"></a>Kedar<br /></li>
+<li><a id="orgc86378c"></a>Chandni Kedar<br />
+<div class="outline-text-9" id="text-orgc86378c">
+<ul class="org-ul">
+<li><b>Raga Chandni Kedar</b>, Ustad Vilayat Khan and Ustad Imrat Khan, SaReGaMa.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb93f25b"></a>Adambari Kedar<br />
+<div class="outline-text-9" id="text-orgb93f25b">
+<ul class="org-ul">
+<li>Music Today, Raga Adambari Kedar | Mallikarjun Mansur | Music Today, (Dec. 30, 2022). Accessed: Feb. 22, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ekPB7c6hBz4">https://www.youtube.com/watch?v=ekPB7c6hBz4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7c54c43"></a>Basanti Kedar<br />
+<div class="outline-text-9" id="text-org7c54c43">
+<ul class="org-ul">
+<li>Music Today, Raga Basant Kedar - Shiv Kumar Sharma | Mallikarjun Mansur (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 22, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QtvfU6Ia8qA">https://www.youtube.com/watch?v=QtvfU6Ia8qA</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org6895630"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="orgf47f8d4"></a>D. V. Paluskar<br />
+<div class="outline-text-9" id="text-orgf47f8d4">
+<ul class="org-ul">
+<li>Pt. D. V. Paluskar - Topic, <i>Kedar</i> - Jare Kanre, (Jul. 22, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8c26v5HQncI">https://www.youtube.com/watch?v=8c26v5HQncI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5fab6a2"></a>Kishori Amonkar<br />
+<div class="outline-text-9" id="text-org5fab6a2">
+<ul class="org-ul">
+<li>“Paayo Paayo ~ Vidushi Kishori Amonkar ~ Raga Kedar- Vilambit Ektaal ~ BCMF 2014 - YouTube.” <a href="https://www.youtube.com/watch?v=xs6J6ysSJHc">https://www.youtube.com/watch?v=xs6J6ysSJHc</a> (accessed Jul. 24, 2023).
+<ul class="org-ul">
+<li>“Raga Kedar | Gansaraswati Kishori Amonkar | Payo Payo &amp; Kanha Re - YouTube.” <a href="https://www.youtube.com/watch?v=99StTwqiuR8">https://www.youtube.com/watch?v=99StTwqiuR8</a> (accessed Jul. 24, 2023).</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge2c7749"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge92fa33"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgad958d3"></a>BageShree<br />
+<ul class="org-ul">
+<li><a id="org8be5ce2"></a>General<br />
+<div class="outline-text-7" id="text-org8be5ce2">
+<ul class="org-ul">
+<li>“Short Takes: Bageshree,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bageshree/">https://www.parrikar.org/hindustani/bageshree/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbfc0c1b"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orgc4d96aa"></a>Dhrupad<br />
+<div class="outline-text-8" id="text-orgc4d96aa">
+<ul class="org-ul">
+<li>Wasif-Ud-Din-Dagar - Topic, Raga <i>Bageshree</i> - Raga Bageshree - Chontal, (Feb. 21, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DDYcPP4GD5c">https://www.youtube.com/watch?v=DDYcPP4GD5c</a></li>
+<li>Z. M. Dagar - Topic, <i>Bageshree</i>: Alap, (Mar. 17, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=eeErFOv-DwA">https://www.youtube.com/watch?v=eeErFOv-DwA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3cf9a9d"></a>Vocal<br />
+<div class="outline-text-8" id="text-org3cf9a9d">
+<ul class="org-ul">
+<li>Kishori Amonkar - Topic, <i>Aaj Sahiyo Na Jaya</i> - Bageswari Drut, (Jul. 22, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=K0TWjMmzJF0">https://www.youtube.com/watch?v=K0TWjMmzJF0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org747527c"></a>Instrumental<br />
+<div class="outline-text-8" id="text-org747527c">
+<ul class="org-ul">
+<li>Pt. Hari Prasad Chaurasia, <i>Raga Bageshree</i>, Music Today.</li>
+<li>Ustad Amjad Ali Khan - Topic, <i>Raga Rageshree</i> - Madhya, Drut - Teentaal Rageshree - Gat, (Feb. 16, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=fz6x09dp93Q">https://www.youtube.com/watch?v=fz6x09dp93Q</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org168f5ac"></a>Jog<br />
+<ul class="org-ul">
+<li><a id="orgdec8800"></a>General<br />
+<div class="outline-text-7" id="text-orgdec8800">
+<ul class="org-ul">
+<li>“Short Takes: Jog and Jogkauns,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/jog/">https://www.parrikar.org/hindustani/jog/</a> (accessed Oct. 10, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org93b978f"></a>Recordings<br />
+<div class="outline-text-7" id="text-org93b978f">
+<ul class="org-ul">
+<li>Ravi Shankar - Topic, Raga Jog (Remastered), (Aug. 12, 2015). Accessed: Oct. 10, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=aNKTWhcw5nI">https://www.youtube.com/watch?v=aNKTWhcw5nI</a></li>
+
+<li>Ustad Amjad Ali Khan - Topic, Raga Jog - Vilambit and Drut Gats In Teental, (Feb. 20, 2017). Accessed: Oct. 10, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3Gxybze-E_Y">https://www.youtube.com/watch?v=3Gxybze-E_Y</a></li>
+
+<li>Ustad Amjad Ali Khan - Topic, Raga Jog, Sarod Records. (with tabla, pakhawaj).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgfa0f4c4"></a>JaiJaiwanti<br />
+<div class="outline-text-6" id="text-4-4-4-1-5">
+<ul class="org-ul">
+<li>“Jaijaivanti,” Wikipedia. Jun. 05, 2023. Accessed: Jul. 22, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jaijaivanti&amp;oldid=1158661941">https://en.wikipedia.org/w/index.php?title=Jaijaivanti&amp;oldid=1158661941</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Millennium-Classical-9 by Traditional on Prime Music.” <a href="https://music.amazon.in/albums/B07565463N?marketplaceId=A21TJRUUN4KGV&amp;musicTerritory=IN&amp;trackAsin=B07568VYS2">https://music.amazon.in/albums/B07565463N?marketplaceId=A21TJRUUN4KGV&amp;musicTerritory=IN&amp;trackAsin=B07568VYS2</a> (accessed Jul. 21, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Raga Jaijaiwanti | Gangubai Hangal | ( Album: The Last Word In Hindustani Vocal Part II ), (Mar. 11, 2016). Accessed: Jul. 22, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UGOg6RKSHiE">https://www.youtube.com/watch?v=UGOg6RKSHiE</a></li>
+
+<li>Raga Jaijaiwanti Nat | Pandit Bhimsen Joshi | ( Rarely Heard Ragas - Bhimsen Joshi ) | Music Today, (Mar. 02, 2016). Accessed: Jul. 22, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=74Eh3LwtqcE">https://www.youtube.com/watch?v=74Eh3LwtqcE</a></li>
+
+<li>“Raga Jaijaiwanti Alap jod jhala | Amjad Ali Khan (Album: Saaz-Sarod) | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=xgs_sc2KIxM">https://www.youtube.com/watch?v=xgs_sc2KIxM</a> (accessed Jul. 22, 2023).</li>
+
+<li>Raga JaiJaiwanti | Ustad Bismillah Khan (Album: Thaat Kafi &amp; Khamaj) | Music Today, (Mar. 09, 2016). Accessed: Jul. 22, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=kUzUHLy7w7c">https://www.youtube.com/watch?v=kUzUHLy7w7c</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgb13382f"></a>1<br />
+<ol class="org-ol">
+<li><a id="org067355a"></a>Darbari<br />
+<ul class="org-ul">
+<li><a id="org6c9615d"></a>General<br />
+<div class="outline-text-7" id="text-org6c9615d">
+<ul class="org-ul">
+<li>“Darbari Kanada - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Darbari_Kanada">https://en.wikipedia.org/wiki/Darbari_Kanada</a> (accessed Oct. 09, 2021).</li>
+<li>“The Kanada Constellation (Part 1/3),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kanada/">https://www.parrikar.org/hindustani/kanada/</a> (accessed Oct. 09, 2021).</li>
+<li>“The Kanada Constellation (Part 2/3),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kanada-page2/">https://www.parrikar.org/hindustani/kanada-page2/</a> (accessed Oct. 09, 2021).</li>
+<li>“The Kanada Constellation (Part 3/3),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/kanada-page3/">https://www.parrikar.org/hindustani/kanada-page3/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org24d2884"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orgaebd215"></a>Dhrupad<br />
+<div class="outline-text-8" id="text-orgaebd215">
+<ul class="org-ul">
+<li><i>Raga Darbari Kanada</i>, Senior Dagar Brothers, SaReGaMa.</li>
+<li><i>Murari Tribhuvan</i>, <i>Raga Darbari Kanada</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+</ul>
+</div>
+</li>
+<li><a id="org18fc152"></a>Vocal<br />
+<div class="outline-text-8" id="text-org18fc152">
+<ul class="org-ul">
+<li>Ustad Amir Khan - Topic, <i>Kin Bairan Kan Bhare</i> Kheyal, (Jul. 22, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=t_LEnVw4-xc">https://www.youtube.com/watch?v=t_LEnVw4-xc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbbc6b47"></a>Instrumental<br />
+<div class="outline-text-8" id="text-orgbbc6b47">
+<ul class="org-ul">
+<li>Vilayat Khan, <i>Raga Darbari Kanada</i> - Gat - Teentaal Darbari Kanada, (Feb. 16, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=h-oNr8-hN2s">https://www.youtube.com/watch?v=h-oNr8-hN2s</a></li>
+<li>Music Today, <i>Raga Darbari</i> | Amjad Ali Khan | ( Album: Raga By Moonlight ), (Mar. 11, 2016). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=myBDUEvLIBs">https://www.youtube.com/watch?v=myBDUEvLIBs</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgae7a018"></a>Adana<br />
+<ul class="org-ul">
+<li><a id="org18a4bb4"></a>General<br />
+<div class="outline-text-7" id="text-org18a4bb4">
+<ul class="org-ul">
+<li>“The Kanada Constellation (Part 1/3),” Rajan Parrikar Music Archive. Accessed: Jul. 22, 2024. [Online]. Available: <a href="https://www.parrikar.org/hindustani/kanada/">https://www.parrikar.org/hindustani/kanada/</a></li>
+
+<li>“Adana | SRgmPdnS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Jul. 22, 2024. [Online]. Available: <a href="https://ragajunglism.org/ragas/adana/">https://ragajunglism.org/ragas/adana/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga8a2a11"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="orgb993df6"></a>F. W. Dagar<br />
+<div class="outline-text-8" id="text-orgb993df6">
+<ul class="org-ul">
+<li><i>Shiva Shiva Shiva</i>, <i>Raga Adana</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>Awesome Adana, with some 'damru' like vocals and 'pakhawaj'ing.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org8698d60"></a>Gundecha Brothers<br />
+<div class="outline-text-8" id="text-org8698d60">
+<ul class="org-ul">
+<li>ॐ नमः शिवाय | महाशिवरात्रि | भक्ति संगीत | Gundecha Brothers, (Mar. 04, 2019). Accessed: Jan. 31, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=atyGghM_6ZA">https://www.youtube.com/watch?v=atyGghM_6ZA</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org831861d"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org4803d47"></a>Shahana<br />
+<div class="outline-text-6" id="text-4-4-4-2-3">
+<ul class="org-ul">
+<li>Ustad Amjad Ali Khan - Topic, Raga : <i>Shahana</i> in Jhap Taal,Ek Taal and Tritaal “Shahana (Gat) - Ustad Amjad Ali Khan,” (Sep. 25, 2014). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=B9OLlvaYCoU">https://www.youtube.com/watch?v=B9OLlvaYCoU</a></li>
+<li>Music Today, Raga <i>Shahana Kanhara</i> | Biswajit Roy Chowdhury (Album:  Maestro’s Choice Series Three), (Mar. 04, 2016). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=D8ys1671p3Q">https://www.youtube.com/watch?v=D8ys1671p3Q</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9641458"></a>Malkauns<br />
+<ul class="org-ul">
+<li><a id="org9dcac64"></a>General<br /></li>
+<li><a id="orgade77c9"></a>Theory<br />
+<ul class="org-ul">
+<li><a id="orgc40e9c7"></a>Rajan Parrikar Music Archive<br />
+<div class="outline-text-8" id="text-orgc40e9c7">
+<ul class="org-ul">
+<li>“Short Takes: Malkauns,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/malkauns/">https://www.parrikar.org/hindustani/malkauns/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org5326400"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orgec2ad44"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="org22e8053"></a>Rudra Veena<br />
+<div class="outline-text-9" id="text-org22e8053">
+<ul class="org-ul">
+<li>Music Today, Raga <i>Malkaus</i> - Asad Ali Khan (Album: Maestro’s Choice - Series One), (Nov. 30, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_Hvaj31qdNE">https://www.youtube.com/watch?v=_Hvaj31qdNE</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgaf08a37"></a>Gundecha Brothers<br />
+<div class="outline-text-9" id="text-orgaf08a37">
+<ul class="org-ul">
+<li>Rang Dhanak Ke Gundecha Brothers (Episode 13), (Apr. 15, 2019). Accessed: Jan. 31, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UKCxO2T1XkI">https://www.youtube.com/watch?v=UKCxO2T1XkI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9e33dd7"></a>Uday Bhawalkar<br />
+<div class="outline-text-9" id="text-org9e33dd7">
+<ul class="org-ul">
+<li>AIR Raagam, Sangeet Sarita II Series : Dhrupad Dhamar Ka Surila Sansar II Pandit Uday Bhawalkar II Part - 08, (May 15, 2023). Accessed: Aug. 30, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ohZGHhJ6MH8">https://www.youtube.com/watch?v=ohZGHhJ6MH8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org26c1144"></a>Misc<br />
+<div class="outline-text-9" id="text-org26c1144">
+<ul class="org-ul">
+<li>Malkauns, “Raga Shri &amp; Raga Malkauns by VARIOUS ARTISTS on Amazon Prime Music.” Accessed: Aug. 25, 2025. [Online]. Available: <a href="https://music.amazon.in/albums/B01E8EQWPA?do=play&amp;trackAsin=B01E8ER73Q&amp;ts=1756043792">https://music.amazon.in/albums/B01E8EQWPA?do=play&amp;trackAsin=B01E8ER73Q&amp;ts=1756043792</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org16e82da"></a>Vocal<br />
+<div class="outline-text-8" id="text-org16e82da">
+<ul class="org-ul">
+<li>Various Artists - Topic, Raga Malkauns Nand Ke Chhaila Dhit - Malkauns, (Feb. 08, 2017). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=mYRU6AgS50k">https://www.youtube.com/watch?v=mYRU6AgS50k</a></li>
+
+<li>Music Today, Raga Sampurna Malkaus - Kishori Amonkar (Album: Maestro’s choice Series One) | Music Today, (Nov. 12, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0jOQ76aM3IE">https://www.youtube.com/watch?v=0jOQ76aM3IE</a></li>
+
+<li>Ustad Amir Khan - Topic, Jinke Man Ram Biraje Drut, (Jul. 22, 2019). Accessed: Nov. 27, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nHLBjAPA_oA">https://www.youtube.com/watch?v=nHLBjAPA_oA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org36e5ea7"></a>Instrumental<br />
+<div class="outline-text-8" id="text-org36e5ea7">
+<ul class="org-ul">
+<li>Ustad Amjad Ali Khan - Topic, <i>Raga Malkauns</i> - Jhaptaal Malkauns - Alaap, Jod, (Feb. 16, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=u2UUDUONNmo">https://www.youtube.com/watch?v=u2UUDUONNmo</a></li>
+
+<li>Music Today, Raga Malkauns | Hariprasad Chaurasia (Album: Sangeet Sartaj) | Music Today, (Mar. 10, 2016). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9TqCqkTmn8o">https://www.youtube.com/watch?v=9TqCqkTmn8o</a></li>
+
+<li>Ustad Bismillah Khan II Raga - Malkauns II Shehnai Recital, (Jan. 13, 2022). Accessed: Feb. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CTA116d7zRM">https://www.youtube.com/watch?v=CTA116d7zRM</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4b1ba2e"></a>Misc<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org5d08a64"></a>Sohni<br />
+<ol class="org-ol">
+<li><a id="orgd1ae4c5"></a>General<br />
+<div class="outline-text-6" id="text-4-4-4-3-1">
+<ul class="org-ul">
+<li>“The Marwa Matrix (Part 1/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/marwa/">https://www.parrikar.org/hindustani/marwa/</a> (accessed Oct. 09, 2021).</li>
+<li>“The Marwa Matrix (Part 2/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/marwa-page2/">https://www.parrikar.org/hindustani/marwa-page2/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org65ec8dc"></a>Recordings<br />
+<div class="outline-text-6" id="text-4-4-4-3-2">
+<ul class="org-ul">
+<li><i>Sun Ri Aali</i>, <i>Raga Sohni</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orge23d248"></a>Paraj<br />
+<ol class="org-ol">
+<li><a id="org31852bd"></a>General<br />
+<div class="outline-text-6" id="text-4-4-4-4-1">
+<ul class="org-ul">
+<li>“The Province of Poorvi (Part 1/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/poorvi/">https://www.parrikar.org/hindustani/poorvi/</a> (accessed Oct. 09, 2021).</li>
+<li>“The Province of Poorvi (Part 2/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/poorvi-page2/">https://www.parrikar.org/hindustani/poorvi-page2/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb0c690e"></a>Recordings<br />
+<div class="outline-text-6" id="text-4-4-4-4-2">
+<ul class="org-ul">
+<li>Bade Ghulam Ali Khan, <i>Latak Chale To Man</i> - Paraj, (Jul. 22, 2019). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=xFydjWNuPlU">https://www.youtube.com/watch?v=xFydjWNuPlU</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org6ca361c"></a>Bihag<br />
+<div class="outline-text-5" id="text-4-4-4-5">
+<ul class="org-ul">
+<li>“Bihag,” Wikipedia. Jun. 05, 2022. Accessed: Aug. 01, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bihag&amp;oldid=1091674384">https://en.wikipedia.org/w/index.php?title=Bihag&amp;oldid=1091674384</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“An Evening with Raga MaruBihag,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/marubihag/">https://www.parrikar.org/hindustani/marubihag/</a> (accessed Aug. 01, 2022).</li>
+
+<li>“Two Variants of Bihag and Thirakhwa’s Tabla Solo,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/variants-bihag/">https://www.parrikar.org/hindustani/variants-bihag/</a> (accessed Aug. 01, 2022).</li>
+
+<li>“Short Takes: Bihag,” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bihag/">https://www.parrikar.org/hindustani/bihag/</a> (accessed Aug. 01, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Dhrupad - Uday Bhawalkar | Classical | Vocal | Uday Bhawalkar, (Aug. 27, 2015). Accessed: Aug. 01, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=I3oiwuKoFc0">https://www.youtube.com/watch?v=I3oiwuKoFc0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdc3c2f4"></a>Tilang<br />
+<div class="outline-text-5" id="text-4-4-4-6">
+<ul class="org-ul">
+<li>“Tilang,” Wikipedia. Jul. 08, 2022. Accessed: Aug. 09, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Tilang&amp;oldid=1097037147">https://en.wikipedia.org/w/index.php?title=Tilang&amp;oldid=1097037147</a></li>
+<li>Ragas of Joy | Raga Tilang | Ustad Amjad Ali Khan | Music Today, (Jul. 27, 2022). Accessed: Aug. 09, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Mogof9z8L_U">https://www.youtube.com/watch?v=Mogof9z8L_U</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfb4f1dd"></a>Kambhoji<br />
+<ol class="org-ol">
+<li><a id="orge6561ea"></a>General<br />
+<div class="outline-text-6" id="text-4-4-4-7-1">
+<ul class="org-ul">
+<li><b>“In the Khamaj Orchard,”</b> Rajan Parrikar Music Archive. Accessed: Jul. 13, 2024. [Online]. Available: <a href="https://www.parrikar.org/hindustani/khamaj/">https://www.parrikar.org/hindustani/khamaj/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Kambhoji | SRGmPDnS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Jul. 13, 2024. [Online]. Available: <a href="https://ragajunglism.org/ragas/kambhoji/">https://ragajunglism.org/ragas/kambhoji/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4fb19c6"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org670ef43"></a>Dhrupad<br />
+<div class="outline-text-7" id="text-org670ef43">
+<ul class="org-ul">
+<li><b>“nhcdKambhoji | Community Playlist on Prime Music.”</b> Accessed: Jul. 16, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/b1b7e768b9ce48698bc29d8cb2f760afi8n0">https://music.amazon.in/user-playlists/b1b7e768b9ce48698bc29d8cb2f760afi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org65a43f8"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org3259b79"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org7268507"></a>Miscellaneous<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgc4d9ac1" class="outline-4">
+<h4 id="orgc4d9ac1"><span class="section-number-4">4.4.5.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc1acf35" class="outline-2">
+<h2 id="orgc1acf35"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgc91763c" class="outline-3">
+<h3 id="orgc91763c"><span class="section-number-3">5.1.</span> Indian Music</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgb360df0" class="outline-4">
+<h4 id="orgb360df0"><span class="section-number-4">5.1.1.</span> Easy Listening</h4>
+<div class="outline-text-4" id="text-5-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge2d22cb"></a>Sound Scapes<br />
+<ol class="org-ol">
+<li><a id="org06c95c0"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-1-1-1">
+<ul class="org-ul">
+<li>Music Today, Sound Scapes - Music of the Mountains | Audio Jukebox | Pandit Shivkumar Sharma | Music Today, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=ITCk6gbCuZk">https://www.youtube.com/watch?v=ITCk6gbCuZk</a></li>
+<li>Music Today, Sound Scapes - Music of the Deserts | Audio Jukebox | World Music | Instrumental | Zakir Hussain, (Aug. 27, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=vNycyVJx43s">https://www.youtube.com/watch?v=vNycyVJx43s</a></li>
+<li>Music Today, Sound Scapes - Music of the Seas | Audio Jukebox | World Music | Instrumental | Bhaskar Chandavarkar, (Aug. 27, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=LZ0kRgwSRi0">https://www.youtube.com/watch?v=LZ0kRgwSRi0</a></li>
+<li>Music Today, Sound Scapes - Music of the Rivers | Audio Jukebox | World Music | Instrumental | Hariprasad Chaurasia, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=DuTKvTDmJ1Q">https://www.youtube.com/watch?v=DuTKvTDmJ1Q</a></li>
+<li>Music Today, Sound Scapes - Music of the Valleys I Audio Jukebox I World Music I Hariprasad Chaurasia, (Aug. 31, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=G89p5mm8czQ">https://www.youtube.com/watch?v=G89p5mm8czQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgea674c5"></a>Mystic Soundscapes<br />
+<div class="outline-text-6" id="text-5-1-1-1-2">
+<ul class="org-ul">
+<li>Music Today, Mystic Soundscapes - Forest | Audio Jukebox | Instrumental | World Music | Taufiq Qureshi, (Sep. 03, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=lznVVTsX8Tk">https://www.youtube.com/watch?v=lznVVTsX8Tk</a></li>
+<li>Music Today, Mystic Soundscapes - Desert | Audio Jukebox | Instrumental | Amaan &amp; Ayaan, (Apr. 23, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=d8S1dg-X2Iw">https://www.youtube.com/watch?v=d8S1dg-X2Iw</a></li>
+<li>Music Today, Mystic Soundscapes - Wind | Audio Jukebox | World Music | Instrumental | Rakesh Chaurasia, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=CR6vKt5UxXI">https://www.youtube.com/watch?v=CR6vKt5UxXI</a></li>
+<li>Music Today, Mystic Soundscapes - Mountain | Audio Jukebox | Instrumental | Rahul Sharma &amp; Pt. Shivkumar Sharma, (Apr. 23, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=JVRYSBNUnRI">https://www.youtube.com/watch?v=JVRYSBNUnRI</a></li>
+<li>Music Today, Mystic Soundscapes - Water | Audio Jukebox | Instrumental | World Music | Rahul Sharma, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=jrL5fUhK4sI">https://www.youtube.com/watch?v=jrL5fUhK4sI</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgaf9d796"></a>Elements<br />
+<ol class="org-ol">
+<li><a id="orgd441129"></a>Water<br />
+<div class="outline-text-6" id="text-5-1-1-2-1">
+<ul class="org-ul">
+<li>Music Today, Mystic Soundscapes - Water | Audio Jukebox | Instrumental | World Music | Rahul Sharma, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=jrL5fUhK4sI">https://www.youtube.com/watch?v=jrL5fUhK4sI</a></li>
+<li>Music Today, The Elements: Water | Audio Jukebox | Instrumental &amp; Vocal | Pt. Shiv Kumar Sharma | Music Today, (Jul. 07, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=aO0UaDJBMCk">https://www.youtube.com/watch?v=aO0UaDJBMCk</a></li>
+<li>Music Today, Sound Scapes - Music of the Seas | Audio Jukebox | World Music | Instrumental | Bhaskar Chandavarkar, (Aug. 27, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=LZ0kRgwSRi0">https://www.youtube.com/watch?v=LZ0kRgwSRi0</a></li>
+<li>Music Today, Sound Scapes - Music of the Rivers | Audio Jukebox | World Music | Instrumental | Hariprasad Chaurasia, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=DuTKvTDmJ1Q">https://www.youtube.com/watch?v=DuTKvTDmJ1Q</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfb26711"></a>Fire<br />
+<div class="outline-text-6" id="text-5-1-1-2-2">
+<ul class="org-ul">
+<li>Music Today, The Elements: Fire | Audio Jukebox | Instrumental | Bhaskar Chandavarkar, (Jul. 07, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=dIXdC0hwcfk">https://www.youtube.com/watch?v=dIXdC0hwcfk</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org16803be"></a>Music Today - Elements<br />
+<div class="outline-text-6" id="text-5-1-1-2-3">
+<ul class="org-ul">
+<li>Music Today, The Elements: Wind | Audio Jukebox | Instrumental | World Music | Hariprasad Chaurasia | Music Today, (Sep. 02, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=1x71Q7RTw2U">https://www.youtube.com/watch?v=1x71Q7RTw2U</a></li>
+<li>Music Today, The Elements: Water | Audio Jukebox | Instrumental &amp; Vocal | Pt. Shiv Kumar Sharma | Music Today, (Jul. 07, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=aO0UaDJBMCk">https://www.youtube.com/watch?v=aO0UaDJBMCk</a></li>
+<li>Music Today, The Elements: Space | Audio Jukebox | Instrumental &amp; Vocal | Zakir Hussain, (Jul. 07, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=xQtswoNMeK8">https://www.youtube.com/watch?v=xQtswoNMeK8</a></li>
+<li>Music Today, The Elements: Fire | Audio Jukebox | Instrumental | Bhaskar Chandavarkar, (Jul. 07, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=dIXdC0hwcfk">https://www.youtube.com/watch?v=dIXdC0hwcfk</a></li>
+<li>Music Today, The Elements: Earth | Instrumental | Audio Jukebox | Vanraj Bhatia, (Jul. 07, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=1FtFIbCeybk">https://www.youtube.com/watch?v=1FtFIbCeybk</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org7c1b77c"></a>LandScapes<br />
+<ol class="org-ol">
+<li><a id="orga3db4f7"></a>Desert - Easy Listening Indian Music<br />
+<div class="outline-text-6" id="text-5-1-1-3-1">
+<ul class="org-ul">
+<li>Music Today, Sound Scapes - Music of the Deserts | Audio Jukebox | World Music | Instrumental | Zakir Hussain, (Aug. 27, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=vNycyVJx43s">https://www.youtube.com/watch?v=vNycyVJx43s</a></li>
+<li>Music Today, Mystic Soundscapes - Desert | Audio Jukebox | Instrumental | Amaan &amp; Ayaan, (Apr. 23, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=d8S1dg-X2Iw">https://www.youtube.com/watch?v=d8S1dg-X2Iw</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf7aea5b"></a>Water Bodies - Easy Listening Indian Music<br />
+<div class="outline-text-6" id="text-5-1-1-3-2">
+<ul class="org-ul">
+<li>Music Today, Sound Scapes - Music of the Seas | Audio Jukebox | World Music | Instrumental | Bhaskar Chandavarkar, (Aug. 27, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=LZ0kRgwSRi0">https://www.youtube.com/watch?v=LZ0kRgwSRi0</a></li>
+<li>Music Today, Sound Scapes - Music of the Rivers | Audio Jukebox | World Music | Instrumental | Hariprasad Chaurasia, (Sep. 01, 2015). Accessed: Feb. 25, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=DuTKvTDmJ1Q">https://www.youtube.com/watch?v=DuTKvTDmJ1Q</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org3d8958b"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org50e5b3a" class="outline-4">
+<h4 id="org50e5b3a"><span class="section-number-4">5.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>“The wayfaring musician of West Bengal, who protects the environment,” Mongabay-India, Jan. 24, 2022. <a href="https://india.mongabay.com/2022/01/the-wayfaring-musician-conservationist-of-west-bengal/">https://india.mongabay.com/2022/01/the-wayfaring-musician-conservationist-of-west-bengal/</a> (accessed Jan. 25, 2022).</li>
+
+<li><i>Soumik Datta / Arts, Soumik Datta - Songs Of The Earth</i>, (Nov. 02, 2021). Accessed: Nov. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UerChOwsjq0">https://www.youtube.com/watch?v=UerChOwsjq0</a></li>
+
+<li>“Songs for the earth: Music and environmental protests in India,” Mintlounge, Aug. 05, 2022. <a href="https://lifestyle.livemint.com//news/big-story/songs-for-the-earth-music-and-environmental-protests-in-india-111659697366583.html">https://lifestyle.livemint.com//news/big-story/songs-for-the-earth-music-and-environmental-protests-in-india-111659697366583.html</a> (accessed Aug. 07, 2022).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org928b20c" class="outline-2">
+<h2 id="org928b20c"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>B. Weir et al., “Bob Weir, a musician who took the environment seriously,” Conservation news. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://news.mongabay.com/short-article/bob-weir-a-musician-who-took-the-environment-seriously/">https://news.mongabay.com/short-article/bob-weir-a-musician-who-took-the-environment-seriously/</a></li>
+
+<li>“Earth Eclectic – music that celebrates Earth and speaks to the heart.” Accessed: Nov. 16, 2025. [Online]. Available: <a href="https://eartheclectic.org/">https://eartheclectic.org/</a></li>
+
+<li>A. Tandon, “Global seabird records guide us where to look next,” Mongabay-India. Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://india.mongabay.com/2025/10/global-seabird-records-guide-us-where-to-look-next/">https://india.mongabay.com/2025/10/global-seabird-records-guide-us-where-to-look-next/</a></li>
+
+<li>T. Editors, “Birding by Ear,” JSTOR Daily. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://daily.jstor.org/birding-by-ear/">https://daily.jstor.org/birding-by-ear/</a></li>
+
+<li>Tracy Chapman, The Rape of the World, (Apr. 08, 2017). Accessed: Aug. 17, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BUkKl3FDlyw">https://www.youtube.com/watch?v=BUkKl3FDlyw</a></li>
+
+<li>“ecoanthem,” Artists Project Earth. Accessed: Aug. 08, 2025. [Online]. Available: <a href="https://www.apeuk.org/ecoanthem">https://www.apeuk.org/ecoanthem</a></li>
+<li>“‘The Earth is calling.’” Accessed: Aug. 08, 2025. [Online]. Available: <a href="https://theecologist.org/2025/aug/05/earth-calling">https://theecologist.org/2025/aug/05/earth-calling</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Lee, “What singing lemurs can tell us about the origin of music,” Mongabay Environmental News. Accessed: Jan. 09, 2025. [Online]. Available: <a href="https://news.mongabay.com/video/2025/01/what-singing-lemurs-can-tell-us-about-the-origin-of-music/">https://news.mongabay.com/video/2025/01/what-singing-lemurs-can-tell-us-about-the-origin-of-music/</a></li>
+
+<li>B. Green, C. Strong, L. Rickards, and T. Denham, “Preparation, cooperation, adaptation: what Australia’s music festivals are thinking about in an era of climate change,” The Conversation. Accessed: Aug. 21, 2024. [Online]. Available: <a href="http://theconversation.com/preparation-cooperation-adaptation-what-australias-music-festivals-are-thinking-about-in-an-era-of-climate-change-237124">http://theconversation.com/preparation-cooperation-adaptation-what-australias-music-festivals-are-thinking-about-in-an-era-of-climate-change-237124</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>P. Shankar, “[Podcast] Wild Frequencies: Find Them,” Mongabay-India. Accessed: Jul. 25, 2024. [Online]. Available: <a href="https://india.mongabay.com/2024/07/podcast-wild-frequencies-find-wildlfe-with-bioacoustics/">https://india.mongabay.com/2024/07/podcast-wild-frequencies-find-wildlfe-with-bioacoustics/</a></li>
+<li>P. Shankar, “[Podcast] Wild Frequencies: Know Them,” Mongabay-India. Accessed: Jul. 25, 2024. [Online]. Available: <a href="https://india.mongabay.com/2024/07/podcast-wild-frequencies-know-them/">https://india.mongabay.com/2024/07/podcast-wild-frequencies-know-them/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“The Nightingale’s Song – by Adam Loften &amp; Emmanuel Vaughan-Lee,” Emergence Magazine. Accessed: Jun. 14, 2024. [Online]. Available: <a href="https://emergencemagazine.org/film/the-nightingales-song/">https://emergencemagazine.org/film/the-nightingales-song/</a></li>
+<li>“The Nightingale’s Song – by Adam Loften &amp; Emmanuel Vaughan-Lee,” Emergence Magazine. Accessed: Aug. 01, 2024. [Online]. Available: <a href="https://emergencemagazine.org/film/the-nightingales-song/">https://emergencemagazine.org/film/the-nightingales-song/</a></li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>“Orchestra plays Beethoven at Extinction Rebellion protest on A12 - YouTube.” Accessed: May 30, 2024. [Online]. Available: <a href="https://www.youtube.com/watch?v=F4WLANQi41w&amp;list=WL&amp;index=33">https://www.youtube.com/watch?v=F4WLANQi41w&amp;list=WL&amp;index=33</a></li>
+
+<li>“We find several connections of sound to the environment: Radha Kapuria.” Accessed: Feb. 11, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/interviews/environment/we-find-several-connections-of-sound-to-the-environment-radha-kapuria-94379">https://www.downtoearth.org.in/interviews/environment/we-find-several-connections-of-sound-to-the-environment-radha-kapuria-94379</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><i>“If I can’t dance, I don’t want your revolution! 50 years of Greenpeace and Music,”</i> Greenpeace International. <a href="https://www.greenpeace.org/international/story/50469/50-years-of-greenpeace-and-music">https://www.greenpeace.org/international/story/50469/50-years-of-greenpeace-and-music</a> (accessed Nov. 08, 2021).</li>
+</ul>
+
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:10</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

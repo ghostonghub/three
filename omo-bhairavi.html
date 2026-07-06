@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bhairavi</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bhairavi</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfd2bdd9">1. General</a></li>
+<li><a href="#org56fd683">2. Theory</a>
+<ul>
+<li><a href="#org5cae032">2.1. Rajan Parrikar Music Archive</a></li>
+<li><a href="#org665e9ec">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb3cb8dc">3. Recordings</a>
+<ul>
+<li><a href="#org7034d86">3.1. Dhrupad</a>
+<ul>
+<li><a href="#org74c15d2">3.1.1. Vocal Music</a></li>
+<li><a href="#org8d46cc2">3.1.2. Rudra Veena</a></li>
+</ul>
+</li>
+<li><a href="#org1349dec">3.2. Variants</a>
+<ul>
+<li><a href="#org34ee660">3.2.1. Sindhu Bhairavi</a></li>
+</ul>
+</li>
+<li><a href="#orgc8412d9">3.3. Ram Narayan</a></li>
+<li><a href="#orga9d9009">3.4. Amjad Ali Khan</a>
+<ul>
+<li><a href="#org5faa4f3">3.4.1. SaReGaMa</a></li>
+<li><a href="#org147e838">3.4.2. Sarod Records</a></li>
+</ul>
+</li>
+<li><a href="#org146170f">3.5. Films</a></li>
+<li><a href="#orge6b73ea">3.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgdc66408">4. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgfd2bdd9" class="outline-2">
+<h2 id="orgfd2bdd9"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org56fd683" class="outline-2">
+<h2 id="org56fd683"><span class="section-number-2">2.</span> Theory</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5cae032" class="outline-3">
+<h3 id="org5cae032"><span class="section-number-3">2.1.</span> Rajan Parrikar Music Archive</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>“Bhairavi (Part 1/2),” Rajan Parrikar Music Archive. <a href="https://www.parrikar.org/hindustani/bhairavi/">https://www.parrikar.org/hindustani/bhairavi/</a> (accessed Oct. 09, 2021).</li>
+<li>“Bhairavi (Part 2/2) » Rajan Parrikar Music Archive.” <a href="https://www.parrikar.org/hindustani/bhairavi-page2/">https://www.parrikar.org/hindustani/bhairavi-page2/</a> (accessed Oct. 09, 2021).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org665e9ec" class="outline-3">
+<h3 id="org665e9ec"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>“Raag Bhairavi - Raag Details &amp; Bandishen - Tanarang Music.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://tanarang.com/raag-bhairavi/">https://tanarang.com/raag-bhairavi/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Bhairavi | SrgmPdnS | Hindustani Raga Index | 365+ Ragas,” —Rāga Junglism—. Accessed: Feb. 25, 2025. [Online]. Available: <a href="https://ragajunglism.org/ragas/bhairavi/">https://ragajunglism.org/ragas/bhairavi/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb3cb8dc" class="outline-2">
+<h2 id="orgb3cb8dc"><span class="section-number-2">3.</span> Recordings</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org7034d86" class="outline-3">
+<h3 id="org7034d86"><span class="section-number-3">3.1.</span> Dhrupad</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org74c15d2" class="outline-4">
+<h4 id="org74c15d2"><span class="section-number-4">3.1.1.</span> Vocal Music</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>Ustad Nasir Aminuddin Dagar - Ustad Nasir Aminuddin Dagar. 1983. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/6505493-Ustad-Nasir-Aminuddin-Dagar-Ustad-Nasir-Aminuddin-Dagar">https://www.discogs.com/release/6505493-Ustad-Nasir-Aminuddin-Dagar-Ustad-Nasir-Aminuddin-Dagar</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8d46cc2" class="outline-4">
+<h4 id="org8d46cc2"><span class="section-number-4">3.1.2.</span> Rudra Veena</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>Ustad Zia Mohiuddin Dagar - Ustad Zia Mohiuddin Dagar. 2001. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/10670179-Ustad-Zia-Mohiuddin-Dagar-Ustad-Zia-Mohiuddin-Dagar">https://www.discogs.com/release/10670179-Ustad-Zia-Mohiuddin-Dagar-Ustad-Zia-Mohiuddin-Dagar</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1349dec" class="outline-3">
+<h3 id="org1349dec"><span class="section-number-3">3.2.</span> Variants</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org34ee660" class="outline-4">
+<h4 id="org34ee660"><span class="section-number-4">3.2.1.</span> Sindhu Bhairavi</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>Ravi Shankar &amp; Ali Akbar Khan, Alla Rakha - Shree / Sindhu Bhairavi. 1965. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/10599382-Ravi-Shankar-Ali-Akbar-Khan-Alla-Rakha-Shree-Sindhu-Bhairavi">https://www.discogs.com/release/10599382-Ravi-Shankar-Ali-Akbar-Khan-Alla-Rakha-Shree-Sindhu-Bhairavi</a></li>
+<li>Ali Akbar Khan - Then And Now. 1995. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://www.discogs.com/release/5701374-Ali-Akbar-Khan-Then-And-Now">https://www.discogs.com/release/5701374-Ali-Akbar-Khan-Then-And-Now</a>-</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc8412d9" class="outline-3">
+<h3 id="orgc8412d9"><span class="section-number-3">3.3.</span> Ram Narayan</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Music Today, <i>Mishra Bhairavi</i> - Pandit Ram Narayan (Album: Maestro’s Choice Series One) | Music Today, (Nov. 12, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Sth7iiFkY6k">https://www.youtube.com/watch?v=Sth7iiFkY6k</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga9d9009" class="outline-3">
+<h3 id="orga9d9009"><span class="section-number-3">3.4.</span> Amjad Ali Khan</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org5faa4f3" class="outline-4">
+<h4 id="org5faa4f3"><span class="section-number-4">3.4.1.</span> SaReGaMa</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Ustad Amjad Ali Khan | Each Dawn Renews Our Dream | Raag Bhairavi | Hindustani Classical Songs, (Apr. 17, 2023). Accessed: Aug. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Ft43CFfu-0k">https://www.youtube.com/watch?v=Ft43CFfu-0k</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org147e838" class="outline-4">
+<h4 id="org147e838"><span class="section-number-4">3.4.2.</span> Sarod Records</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ul class="org-ul">
+<li>Sarod Records, LIBRARY SESSIONS with Amjad Ali Khan - Raga Bhairavi, (Jun. 11, 2022). Accessed: Aug. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=V9f_EpZKFIY">https://www.youtube.com/watch?v=V9f_EpZKFIY</a></li>
+<li>Sarod Records, Sarod Virtuoso Amjad Ali Khan| Morning Raga | Raga Bhairavi | New Delhi | 9th February, 2014, (Feb. 26, 2014). Accessed: Aug. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=23DVkaIaa_M">https://www.youtube.com/watch?v=23DVkaIaa_M</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org146170f" class="outline-3">
+<h3 id="org146170f"><span class="section-number-3">3.5.</span> Films</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>“Film Songs in Rag Bhairavi (T-Z) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-t-z/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-t-z/</a></li>
+<li>“Film Songs in Rag Bhairavi (S) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-sz/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-sz/</a></li>
+<li>“Film Songs in Rag Bhairavi (N-R) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-n-r/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-n-r/</a></li>
+<li>“Film Songs in Rag Bhairavi (L-M) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-lr/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-lr/</a></li>
+<li>“Film Songs in Rag Bhairavi (K) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-k/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-k/</a></li>
+<li>“Film Songs in Rag Bhairavi (J) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-j/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-j/</a></li>
+<li>“Film Songs in Rag Bhairavi (E-I) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ek/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ek/</a></li>
+<li>“Film Songs in Rag Bhairavi (D) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-d/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-d/</a></li>
+<li>“Film Songs in Rag Bhairavi (C) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-c/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-c/</a></li>
+<li>“Film Songs in Rag Bhairavi (B) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-b/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-b/</a></li>
+<li>“Film Songs in Rag Bhairavi (A) – chandrakantha.com.” Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ad/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-in-rag-bhairavi-ad/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge6b73ea" class="outline-3">
+<h3 id="orge6b73ea"><span class="section-number-3">3.6.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgdc66408" class="outline-2">
+<h2 id="orgdc66408"><span class="section-number-2">4.</span> Misc</h2>
+<div class="outline-text-2" id="text-4">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:10</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

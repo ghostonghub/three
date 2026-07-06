@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cotton</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Cotton</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfb30286">1. General</a></li>
+<li><a href="#org318cdf3">2. STEMM</a>
+<ul>
+<li><a href="#org35e8a60">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf0acec0">3. Worldly Matters</a>
+<ul>
+<li><a href="#orgdc3b4f8">3.1. India</a>
+<ul>
+<li><a href="#org2f3691a">3.1.1. General</a></li>
+<li><a href="#org9df3a64">3.1.2. STEMM</a></li>
+<li><a href="#orgcb1821d">3.1.3. Worldly Matters</a></li>
+<li><a href="#org6e8b374">3.1.4. Arts</a></li>
+<li><a href="#orgbca920f">3.1.5. Special Topics</a></li>
+<li><a href="#org44a8fee">3.1.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb783cfe">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9359ff4">4. Arts</a>
+<ul>
+<li><a href="#orgf37e832">4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge927a81">5. Special Topics</a>
+<ul>
+<li><a href="#org0c05993">5.1. BT Cotton</a>
+<ul>
+<li><a href="#org508ddb4">5.1.1. Misc</a></li>
+<li><a href="#orgda951f3">5.1.2. <b>GM Watch</b></a></li>
+<li><a href="#orgf2bb4a0">5.1.3. La Via Campesina</a></li>
+<li><a href="#org599dfda">5.1.4. Down To Earth</a></li>
+<li><a href="#org966a0b5">5.1.5. KK</a></li>
+<li><a href="#orgcbbb0b8">5.1.6. Organic Cotton</a></li>
+</ul>
+</li>
+<li><a href="#org30a7c9d">5.2. Texts</a></li>
+</ul>
+</li>
+<li><a href="#org9d47e8e">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgfb30286" class="outline-2">
+<h2 id="orgfb30286"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org318cdf3" class="outline-2">
+<h2 id="org318cdf3"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org35e8a60" class="outline-3">
+<h3 id="org35e8a60"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgf0acec0" class="outline-2">
+<h2 id="orgf0acec0"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgdc3b4f8" class="outline-3">
+<h3 id="orgdc3b4f8"><span class="section-number-3">3.1.</span> India</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org2f3691a" class="outline-4">
+<h4 id="org2f3691a"><span class="section-number-4">3.1.1.</span> General</h4>
+</div>
+<div id="outline-container-org9df3a64" class="outline-4">
+<h4 id="org9df3a64"><span class="section-number-4">3.1.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-3-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org7e214b3"></a>Systems Sciences, Misc<br />
+<ol class="org-ol">
+<li><a id="org847abae"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org6e41f3e"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgcb1821d" class="outline-4">
+<h4 id="orgcb1821d"><span class="section-number-4">3.1.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-3-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org24aec9d"></a>Misc<br />
+<div class="outline-text-5" id="text-3-1-3-1">
+<ul class="org-ul">
+<li>“Import, Swadeshi or Shift to Organic? Decoding India’s Cotton Dilemma,” The Wire. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://thewire.in/agriculture/import-swadeshi-or-shift-to-organic-decoding-indias-cotton-dilemma">https://thewire.in/agriculture/import-swadeshi-or-shift-to-organic-decoding-indias-cotton-dilemma</a></li>
+
+<li>“Cotton Farmers Protest Tariff Withdrawal, Betrayal by Modi,” NewsClick. Accessed: Sep. 07, 2025. [Online]. Available: <a href="https://www.newsclick.in/cotton-farmers-protest-tariff-withdrawal-betrayal-modi">https://www.newsclick.in/cotton-farmers-protest-tariff-withdrawal-betrayal-modi</a></li>
+<li>“AIKS Calls Upon Farmers to Protest Decision to Scrap 11% Import Duty on Raw Cotton,” NewsClick. Accessed: Aug. 26, 2025. [Online]. Available: <a href="https://www.newsclick.in/aiks-calls-upon-farmers-protest-decision-scrap-11-import-duty-raw-cotton">https://www.newsclick.in/aiks-calls-upon-farmers-protest-decision-scrap-11-import-duty-raw-cotton</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org6e8b374" class="outline-4">
+<h4 id="org6e8b374"><span class="section-number-4">3.1.4.</span> Arts</h4>
+<div class="outline-text-4" id="text-3-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgdbd1a57"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgbca920f" class="outline-4">
+<h4 id="orgbca920f"><span class="section-number-4">3.1.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-3-1-5">
+</div>
+<ol class="org-ol">
+<li><a id="org2234e48"></a>Kala Cotton<br />
+<div class="outline-text-5" id="text-3-1-5-1">
+<ul class="org-ul">
+<li>“Kala cotton is pure magic,” The Week. Accessed: Mar. 04, 2025. [Online]. Available: <a href="https://www.theweek.in/columns/namrata-zakaria/2025/03/01/kala-cotton-is-pure-magic.html">https://www.theweek.in/columns/namrata-zakaria/2025/03/01/kala-cotton-is-pure-magic.html</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org44a8fee" class="outline-4">
+<h4 id="org44a8fee"><span class="section-number-4">3.1.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-1-6">
+<ul class="org-ul">
+<li>A. Riar et al., “Long-term economic and yield comparison of organic and conventional cotton-based production systems with wheat and soybean rotations in central India,” European Journal of Agronomy, vol. 171, p. 127814, Oct. 2025, doi: 10.1016/j.eja.2025.127814.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb783cfe" class="outline-3">
+<h3 id="orgb783cfe"><span class="section-number-3">3.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>“Cotton Farmers Protest Tariff Withdrawal, Betrayal by Modi,” NewsClick. Accessed: Sep. 08, 2025. [Online]. Available: <a href="https://www.newsclick.in/cotton-farmers-protest-tariff-withdrawal-betrayal-modi">https://www.newsclick.in/cotton-farmers-protest-tariff-withdrawal-betrayal-modi</a></li>
+
+<li>M. M. Sems, “Native Colored Cotton Rescue Project in Mexico,” Local Futures. Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://www.localfutures.org/native-colored-cotton-rescue-project-in-mexico/">https://www.localfutures.org/native-colored-cotton-rescue-project-in-mexico/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9359ff4" class="outline-2">
+<h2 id="org9359ff4"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf37e832" class="outline-3">
+<h3 id="orgf37e832"><span class="section-number-3">4.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orge927a81" class="outline-2">
+<h2 id="orge927a81"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org0c05993" class="outline-3">
+<h3 id="org0c05993"><span class="section-number-3">5.1.</span> BT Cotton</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org508ddb4" class="outline-4">
+<h4 id="org508ddb4"><span class="section-number-4">5.1.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>A. P. Gutierrez, P. E. Kenmore, and L. Ponti, “Hybrid Bt cotton is failing in India: cautions for Africa,” Environmental Sciences Europe, vol. 35, no. 1, p. 93, Nov. 2023, doi: 10.1186/s12302-023-00804-6.</li>
+
+<li>Editor2, “Silent spread: How weak regulation enables illegal GM cotton to proliferate locally in India.” Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://www.gmwatch.org/en/106-news/latest-news/20585-silent-spread">https://www.gmwatch.org/en/106-news/latest-news/20585-silent-spread</a></li>
+
+<li>J. Choubey, “Plans afoot to legalise HtBt to double cotton production,” The New Indian Express. Accessed: Aug. 02, 2025. [Online]. Available: <a href="https://www.newindianexpress.com/nation/2025/Jul/10/plans-afoot-to-legalise-htbt-to-double-cotton-production">https://www.newindianexpress.com/nation/2025/Jul/10/plans-afoot-to-legalise-htbt-to-double-cotton-production</a></li>
+
+<li>“Unravelling the Bt bind: Desi cotton weaves a new future for Punjab farmers - Hindustan Times.” Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://www.hindustantimes.com/cities/chandigarh-news/unravelling-the-bt-bind-desi-cotton-weaves-a-new-future-for-punjab-farmers-101753643822953.html">https://www.hindustantimes.com/cities/chandigarh-news/unravelling-the-bt-bind-desi-cotton-weaves-a-new-future-for-punjab-farmers-101753643822953.html</a></li>
+
+<li>D. V. S. Lather, “Herbicide tolerant cotton not a panacea, only ecological disaster,” The New Indian Express. Accessed: Jul. 27, 2025. [Online]. Available: <a href="https://www.newindianexpress.com/xplore/2025/Jul/25/herbicide-tolerant-cotton-not-a-panacea-only-ecological-disaster">https://www.newindianexpress.com/xplore/2025/Jul/25/herbicide-tolerant-cotton-not-a-panacea-only-ecological-disaster</a></li>
+
+<li>J. Choubey, “Plans afoot to legalise HtBt to double cotton production,” The New Indian Express. Accessed: Jul. 24, 2025. [Online]. Available: <a href="https://www.newindianexpress.com/nation/2025/Jul/10/plans-afoot-to-legalise-htbt-to-double-cotton-production">https://www.newindianexpress.com/nation/2025/Jul/10/plans-afoot-to-legalise-htbt-to-double-cotton-production</a></li>
+
+<li>Editor2, “Bt cotton in India is a monumental catastrophic failure.” Accessed: Jul. 22, 2025. [Online]. Available: <a href="https://gmwatch.org/en/106-news/latest-news/20575-bt-cotton-in-india-is-a-monumental-catastrophic-failure">https://gmwatch.org/en/106-news/latest-news/20575-bt-cotton-in-india-is-a-monumental-catastrophic-failure</a></li>
+
+<li>J. Choubey, “Plans afoot to legalise HtBt to double cotton production,” The New Indian Express. Accessed: Jul. 11, 2025. [Online]. Available: <a href="https://www.newindianexpress.com/nation/2025/Jul/10/plans-afoot-to-legalise-htbt-to-double-cotton-production">https://www.newindianexpress.com/nation/2025/Jul/10/plans-afoot-to-legalise-htbt-to-double-cotton-production</a></li>
+
+<li>“Punjab wants approval to BG-3 cotton seeds to curb pest attacks - The Week.” Accessed: Jul. 21, 2024. [Online]. Available: <a href="https://www.theweek.in/wire-updates/business/2024/07/18/nrg12-pb-cotton-seed.html">https://www.theweek.in/wire-updates/business/2024/07/18/nrg12-pb-cotton-seed.html</a></li>
+
+<li>A. P. Gutierrez, P. E. Kenmore, and L. Ponti, “Hybrid Bt cotton is failing in India: cautions for Africa,” Environmental Sciences Europe, vol. 35, no. 1, p. 93, Nov. 2023, doi: 10.1186/s12302-023-00804-6.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgda951f3" class="outline-4">
+<h4 id="orgda951f3"><span class="section-number-4">5.1.2.</span> <b>GM Watch</b></h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>Editor2, “Experts debunk false claims that GM Bt cotton in India has been a grand success.” Accessed: Jun. 14, 2025. [Online]. Available: <a href="https://gmwatch.org/en/main-menu/news-menu-title/archive/100-2020/19502-experts-debunk-false-claims-that-gm-bt-cotton-in-india-has-been-a-grand-success">https://gmwatch.org/en/main-menu/news-menu-title/archive/100-2020/19502-experts-debunk-false-claims-that-gm-bt-cotton-in-india-has-been-a-grand-success</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf2bb4a0" class="outline-4">
+<h4 id="orgf2bb4a0"><span class="section-number-4">5.1.3.</span> La Via Campesina</h4>
+<div class="outline-text-4" id="text-5-1-3">
+<ul class="org-ul">
+<li>AB, “India: Karnataka Farmers Protest Proposed Field Trials of Genetically Modified Maize and Cotton,” La Via Campesina - EN. Accessed: Mar. 13, 2024. [Online]. Available: <a href="https://viacampesina.org/en/india-karnataka-farmers-protest-proposed-field-trials-genetically-modified-maize-and-cotton/">https://viacampesina.org/en/india-karnataka-farmers-protest-proposed-field-trials-genetically-modified-maize-and-cotton/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org599dfda" class="outline-4">
+<h4 id="org599dfda"><span class="section-number-4">5.1.4.</span> Down To Earth</h4>
+<div class="outline-text-4" id="text-5-1-4">
+<ul class="org-ul">
+<li>Shagun, “Bt cotton seed price hike: Experts call for review as yields decline and pest attacks rise,” Down To Earth. Accessed: Apr. 06, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/agriculture/bt-cotton-seed-price-hike-experts-call-for-review-as-yields-decline-and-pest-attacks-rise">https://www.downtoearth.org.in/agriculture/bt-cotton-seed-price-hike-experts-call-for-review-as-yields-decline-and-pest-attacks-rise</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org966a0b5" class="outline-4">
+<h4 id="org966a0b5"><span class="section-number-4">5.1.5.</span> KK</h4>
+<div class="outline-text-4" id="text-5-1-5">
+<ul class="org-ul">
+<li>ASHA Kisan Swaraj, Dr Keshav Kranthi - International Webinar on Bt Cotton in India: Myths &amp; Realities - 2020, (Aug. 26, 2020). Accessed: Apr. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=s1tgVZKVqX0">https://www.youtube.com/watch?v=s1tgVZKVqX0</a></li>
+<li>Dr Keshav Kranthi - International Webinar on Bt Cotton in India: Myths &amp; Realities - 2020, (Aug. 26, 2020). Accessed: Apr. 07, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=s1tgVZKVqX0">https://www.youtube.com/watch?v=s1tgVZKVqX0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcbbb0b8" class="outline-4">
+<h4 id="orgcbbb0b8"><span class="section-number-4">5.1.6.</span> Organic Cotton</h4>
+<div class="outline-text-4" id="text-5-1-6">
+<ul class="org-ul">
+<li>“Punjab: Slow Yet Steady, Farmers Pave Way for Revival of Organic Desi Cotton,” NewsClick. Accessed: Dec. 18, 2024. [Online]. Available: <a href="https://www.newsclick.in/punjab-slow-yet-steady-farmers-pave-way-revival-organic-desi-cotton">https://www.newsclick.in/punjab-slow-yet-steady-farmers-pave-way-revival-organic-desi-cotton</a></li>
+<li>N. Murthy, “Weavers design the Sonthanga collection with locally sourced organic cotton,” The Hindu, Jun. 06, 2024. Accessed: Jun. 07, 2024. [Online]. Available: <a href="https://www.thehindu.com/life-and-style/the-sonthanga-collection-is-an-initiative-by-malkha-commons-in-hyderabad/article68210799.ece">https://www.thehindu.com/life-and-style/the-sonthanga-collection-is-an-initiative-by-malkha-commons-in-hyderabad/article68210799.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org30a7c9d" class="outline-3">
+<h3 id="org30a7c9d"><span class="section-number-3">5.2.</span> Texts</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>S. Yafa, Cotton: The Biography of a Revolutionary Fiber. Penguin, 2006.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9d47e8e" class="outline-2">
+<h2 id="org9d47e8e"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>R. V. Vora, “ICAC elevates Keshav Kranthi as Chief Scientist,” BusinessLine. Accessed: Apr. 07, 2024. [Online]. Available: <a href="https://www.thehindubusinessline.com/economy/agri-business/icac-elevates-keshav-kranthi-as-chief-scientist/article33666241.ece">https://www.thehindubusinessline.com/economy/agri-business/icac-elevates-keshav-kranthi-as-chief-scientist/article33666241.ece</a></li>
+<li>“ICAC.” Accessed: Apr. 07, 2024. [Online]. Available: <a href="https://icac.org/Awards/AwardsDetails?AwardId=EAAAAC4UsZW023%2Fmag77lVtzR3lNig6z6LmmF4KJQaJ2q6uE">https://icac.org/Awards/AwardsDetails?AwardId=EAAAAC4UsZW023%2Fmag77lVtzR3lNig6z6LmmF4KJQaJ2q6uE</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

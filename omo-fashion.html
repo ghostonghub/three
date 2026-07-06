@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 19:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fashion</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Fashion</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgda812d7">1. General</a></li>
+<li><a href="#org5ed2d71">2. STEMM</a>
+<ul>
+<li><a href="#org97ab424">2.1. Environment</a>
+<ul>
+<li><a href="#org652e126">2.1.1. United Nations</a></li>
+<li><a href="#org46a8b4c">2.1.2. GreenPeace International</a></li>
+<li><a href="#org0ad3385">2.1.3. Mongabay</a></li>
+<li><a href="#orgbaccb16">2.1.4. Extinction Rebellion</a></li>
+<li><a href="#org242bc2f">2.1.5. The Ecologist</a></li>
+<li><a href="#org2900486">2.1.6. Democracy Now</a></li>
+<li><a href="#orge9e21ad">2.1.7. Down To Earth</a></li>
+<li><a href="#org3251b77">2.1.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org01557b5">2.2. CSE</a>
+<ul>
+<li><a href="#org238e21d">2.2.1. BlockChains</a></li>
+<li><a href="#org301ca8b">2.2.2. Internet Of Things</a></li>
+<li><a href="#orga32e1d5">2.2.3. Digital Privacy and Security</a></li>
+<li><a href="#org94b7082">2.2.4. Artificial Intelligence</a></li>
+<li><a href="#org8ead3cf">2.2.5. Quantum Computing</a></li>
+<li><a href="#org21a7050">2.2.6. Special Topics</a></li>
+<li><a href="#orgd98f0de">2.2.7. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9f31cea">2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9dc206a">3. Worldly Matters</a>
+<ul>
+<li><a href="#org46ef4b6">3.1. Space and Time</a></li>
+<li><a href="#org774dd3e">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#orge09dbca">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#orga95e3f0">3.4. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org23865fe">3.4.1. Orgs</a></li>
+<li><a href="#orgf6b0193">3.4.2. Feminism</a></li>
+<li><a href="#org34d274f">3.4.3. Nation States</a></li>
+<li><a href="#org289e2cb">3.4.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge86676c">3.5. Business Studies, Misc</a>
+<ul>
+<li><a href="#org537126b">3.5.1. Book Series</a></li>
+<li><a href="#org65d940e">3.5.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org20079f1">3.6. Management, Misc</a>
+<ul>
+<li><a href="#org0529720">3.6.1. Misc</a></li>
+<li><a href="#org189b829">3.6.2. General</a></li>
+<li><a href="#org93f3528">3.6.3. Special Topics</a></li>
+</ul>
+</li>
+<li><a href="#orga42d07c">3.7. Humanities, Misc</a></li>
+<li><a href="#orgb4afe06">3.8. Security Studies, Misc</a></li>
+<li><a href="#orgc0ef93d">3.9. Communication, Misc</a></li>
+<li><a href="#orgaf1015b">3.10. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org08e3211">4. Core</a>
+<ul>
+<li><a href="#org0f4b4e5">4.1. Gender Classes</a>
+<ul>
+<li><a href="#orgda72842">4.1.1. All Genders</a></li>
+<li><a href="#org00e35ec">4.1.2. Men</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd58578e">5. Arts</a>
+<ul>
+<li><a href="#orgdcf6022">5.1. Music</a></li>
+<li><a href="#org8e3db23">5.2. Videos</a></li>
+<li><a href="#orgee7a689">5.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb6f7c64">6. Special Topics</a>
+<ul>
+<li><a href="#orgdf1b3ec">6.1. Nudity</a></li>
+</ul>
+</li>
+<li><a href="#org267199f">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgda812d7" class="outline-2">
+<h2 id="orgda812d7"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>R. Arnold, <i>Fashion: A Very Short Introduction.</i> OUP Oxford, 2009.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5ed2d71" class="outline-2">
+<h2 id="org5ed2d71"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org97ab424" class="outline-3">
+<h3 id="org97ab424"><span class="section-number-3">2.1.</span> Environment</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org652e126" class="outline-4">
+<h4 id="org652e126"><span class="section-number-4">2.1.1.</span> United Nations</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>“(R)evolution,” undp. Accessed: Jun. 03, 2024. [Online]. Available: <a href="https://feature.undp.org/fashion-revolution/">https://feature.undp.org/fashion-revolution/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org46a8b4c" class="outline-4">
+<h4 id="org46a8b4c"><span class="section-number-4">2.1.2.</span> GreenPeace International</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>“4 African activists taking on fast fashion,” Greenpeace International. Accessed: Sep. 13, 2024. [Online]. Available: <a href="https://www.greenpeace.org/international/story/69641/4-african-activists-taking-on-fast-fashion/">https://www.greenpeace.org/international/story/69641/4-african-activists-taking-on-fast-fashion/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0ad3385" class="outline-4">
+<h4 id="org0ad3385"><span class="section-number-4">2.1.3.</span> Mongabay</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<ul class="org-ul">
+<li>P. Ford, “Fashion has a coal problem, but the solutions are electrifying (commentary),” Mongabay Environmental News. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://news.mongabay.com/2025/01/fashion-has-a-coal-problem-but-the-solutions-are-increasingly-electric-commentary/">https://news.mongabay.com/2025/01/fashion-has-a-coal-problem-but-the-solutions-are-increasingly-electric-commentary/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbaccb16" class="outline-4">
+<h4 id="orgbaccb16"><span class="section-number-4">2.1.4.</span> Extinction Rebellion</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<ul class="org-ul">
+<li><i>“What is wrong with the fashion industry, and how can we fix it?,”</i> Extinction Rebellion. <a href="https://rebellion.global/blog/2021/07/26/fast-fashion/">https://rebellion.global/blog/2021/07/26/fast-fashion/</a> (accessed Jul. 29, 2021).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org242bc2f" class="outline-4">
+<h4 id="org242bc2f"><span class="section-number-4">2.1.5.</span> The Ecologist</h4>
+<div class="outline-text-4" id="text-2-1-5">
+<ul class="org-ul">
+<li>“Can we slow fashion?” Accessed: Jan. 30, 2025. [Online]. Available: <a href="https://theecologist.org/2025/jan/28/can-we-slow-fashion">https://theecologist.org/2025/jan/28/can-we-slow-fashion</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2900486" class="outline-4">
+<h4 id="org2900486"><span class="section-number-4">2.1.6.</span> Democracy Now</h4>
+<div class="outline-text-4" id="text-2-1-6">
+<ul class="org-ul">
+<li>“France Pushes Law to Curb Devastating Impacts of Fast Fashion,” Democracy Now! Accessed: Mar. 23, 2024. [Online]. Available: <a href="https://www.democracynow.org/2024/3/22/headlines/france_pushes_law_to_curb_devastating_impacts_of_fast_fashion">https://www.democracynow.org/2024/3/22/headlines/france_pushes_law_to_curb_devastating_impacts_of_fast_fashion</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge9e21ad" class="outline-4">
+<h4 id="orge9e21ad"><span class="section-number-4">2.1.7.</span> Down To Earth</h4>
+<div class="outline-text-4" id="text-2-1-7">
+<ul class="org-ul">
+<li>“Trendy fashion is not always great for the planet, but circular fashion choices can help.” Accessed: Mar. 14, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/news/waste/trendy-fashion-is-not-always-great-for-the-planet-but-circular-fashion-choices-can-help-94990">https://www.downtoearth.org.in/news/waste/trendy-fashion-is-not-always-great-for-the-planet-but-circular-fashion-choices-can-help-94990</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3251b77" class="outline-4">
+<h4 id="org3251b77"><span class="section-number-4">2.1.8.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-8">
+</div>
+<ol class="org-ol">
+<li><a id="org461019c"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-8-1">
+<ul class="org-ul">
+<li>P. Das, “Fashion’s dirty secret: Brands lag on clean heat despite looming climate risks,” Down To Earth. Accessed: Oct. 02, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/energy/fashions-dirty-secret-brands-lag-on-clean-heat-despite-looming-climate-risks">https://www.downtoearth.org.in/energy/fashions-dirty-secret-brands-lag-on-clean-heat-despite-looming-climate-risks</a></li>
+
+<li>“Report: Fashion Giants are Fueling Amazon Deforestation,” OCCRP. Accessed: Sep. 29, 2025. [Online]. Available: <a href="https://www.occrp.org/en/news/report-fashion-giants-are-fueling-amazon-deforestation">https://www.occrp.org/en/news/report-fashion-giants-are-fueling-amazon-deforestation</a></li>
+
+<li>P. Saha, “Right Angle: Sustainable fashion is an oxymoron,” Down To Earth. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/right-angle-sustainable-fashion-is-an-oxymoron">https://www.downtoearth.org.in/waste/right-angle-sustainable-fashion-is-an-oxymoron</a></li>
+
+<li>“As Africa pays the price for rich world’s fast fashion fix, new French bill targets brands,” Mongabay Environmental News. Accessed: Aug. 10, 2025. [Online]. Available: <a href="https://news.mongabay.com/2025/08/as-africa-pays-the-price-for-rich-worlds-fast-fashion-fix-new-french-bill-targets-brands/">https://news.mongabay.com/2025/08/as-africa-pays-the-price-for-rich-worlds-fast-fashion-fix-new-french-bill-targets-brands/</a></li>
+
+<li>Paco, “10 Ways To Build a More Sustainable Wardrobe,” Organic Consumers. Accessed: Jul. 16, 2025. [Online]. Available: <a href="https://organicconsumers.org/10-ways-to-build-a-more-sustainable-wardrobe/">https://organicconsumers.org/10-ways-to-build-a-more-sustainable-wardrobe/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org760dcc5"></a>Texts<br /></li>
+<li><a id="orgd4ffd66"></a>Articles, Essays<br />
+<ol class="org-ol">
+<li><a id="org2f087d2"></a>Journals<br />
+<div class="outline-text-6" id="text-2-1-8-3-1">
+<ul class="org-ul">
+<li>K. Gulliver, “Fashion’s Flaws,” JSTOR Daily. Accessed: Apr. 13, 2025. [Online]. Available: <a href="https://daily.jstor.org/fashions-flaws/">https://daily.jstor.org/fashions-flaws/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1a9ea97"></a>Misc<br />
+<div class="outline-text-6" id="text-2-1-8-3-2">
+<ul class="org-ul">
+<li>C. Nast, <b>“Degrowth: The future that fashion has been looking for?,”</b> Vogue Business, Jan. 27, 2022. <a href="https://www.voguebusiness.com/sustainability/degrowth-the-future-that-fashion-has-been-looking-for">https://www.voguebusiness.com/sustainability/degrowth-the-future-that-fashion-has-been-looking-for</a> (accessed Feb. 12, 2022).</li>
+<li>“Fashion ‘lays waste to wetlands.’” Accessed: Jul. 02, 2025. [Online]. Available: <a href="https://theecologist.org/2025/jul/01/fashion-lays-waste-wetlands">https://theecologist.org/2025/jul/01/fashion-lays-waste-wetlands</a></li>
+
+<li>E. Wenzel, “Fashion’s addiction to polyester helps Big Oil, hurts the rest of us: New report,” Trellis. Accessed: Oct. 06, 2024. [Online]. Available: <a href="https://trellis.net/article/fashions-addiction-to-polyester-helps-big-oil-hurts-the-rest-of-us-new-report/">https://trellis.net/article/fashions-addiction-to-polyester-helps-big-oil-hurts-the-rest-of-us-new-report/</a></li>
+<li>S. Karnal, “More Than Fifty Top Indian Fashion Designers Pledge To Be Feather-Free Through Stella McCartney &amp; PETA India Joint Appeal Just In Time For Fashion Day - Blog,” PETA India. Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/more-than-fifty-top-indian-fashion-designers-pledge-to-be-feather-free-through-stella-mccartney-peta-india-joint-appeal-just-in-time-for-fashion-day/">https://www.petaindia.com/blog/more-than-fifty-top-indian-fashion-designers-pledge-to-be-feather-free-through-stella-mccartney-peta-india-joint-appeal-just-in-time-for-fashion-day/</a></li>
+
+<li>J. Hullinger, “Ditch Fast Fashion and Give Your Wardrobe a Sustainable Glow-Up,” Scientific American. Accessed: Jun. 25, 2025. [Online]. Available: <a href="https://www.scientificamerican.com/article/the-fast-fashion-backlash-is-fueling-a-sustainability-revolution/">https://www.scientificamerican.com/article/the-fast-fashion-backlash-is-fueling-a-sustainability-revolution/</a></li>
+<li>L. P. Hobbs Jen Christiansen, Amanda, “A Fashionista’s Scientific Guide to Building a Sustainable Wardrobe,” Scientific American. Accessed: Jun. 25, 2025. [Online]. Available: <a href="https://www.scientificamerican.com/article/a-beginners-guide-to-ethical-and-sustainable-fashion/">https://www.scientificamerican.com/article/a-beginners-guide-to-ethical-and-sustainable-fashion/</a></li>
+
+<li>S. Oliver, “The Big Faux Pas at New York Fashion Week 2025,” PETA. Accessed: Jun. 19, 2025. [Online]. Available: <a href="https://www.peta.org/news/new-york-fashion-week-2025/">https://www.peta.org/news/new-york-fashion-week-2025/</a></li>
+
+<li>S. Yan, “A beginner’s guide to vegan fashion (and how to spot ‘greenwashing’),” The Conversation. Accessed: May 09, 2025. [Online]. Available: <a href="http://theconversation.com/a-beginners-guide-to-vegan-fashion-and-how-to-spot-greenwashing-253770">http://theconversation.com/a-beginners-guide-to-vegan-fashion-and-how-to-spot-greenwashing-253770</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org01557b5" class="outline-3">
+<h3 id="org01557b5"><span class="section-number-3">2.2.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org238e21d" class="outline-4">
+<h4 id="org238e21d"><span class="section-number-4">2.2.1.</span> BlockChains</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>S. S. Muthu, Ed., Blockchain Technologies in the Textile and Fashion Industry, 1st ed. 2022 edition. Springer Verlag, Singapore, 2023.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org301ca8b" class="outline-4">
+<h4 id="org301ca8b"><span class="section-number-4">2.2.2.</span> Internet Of Things</h4>
+</div>
+<div id="outline-container-orga32e1d5" class="outline-4">
+<h4 id="orga32e1d5"><span class="section-number-4">2.2.3.</span> Digital Privacy and Security</h4>
+</div>
+<div id="outline-container-org94b7082" class="outline-4">
+<h4 id="org94b7082"><span class="section-number-4">2.2.4.</span> Artificial Intelligence</h4>
+<div class="outline-text-4" id="text-2-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="org3b6efc2"></a>Misc<br /></li>
+<li><a id="org79ba49a"></a>Texts<br />
+<div class="outline-text-5" id="text-2-2-4-2">
+<ul class="org-ul">
+<li>L. Luce, Artificial Intelligence for Fashion: How AI is Revolutionizing the Fashion Industry, 1st ed. edition. Apress, 2018.</li>
+<li>S. Thomassey and X. Zeng, Eds., Artificial Intelligence for Fashion Industry in the Big Data Era, 1st ed. 2018 edition. New York, NY: Springer, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="org6c32ac1"></a>Articles, Essays<br />
+<div class="outline-text-5" id="text-2-2-4-3">
+<ul class="org-ul">
+<li>M. Raut, “LLM-Driven Semantic Reasoning for Fashion Cold Start,” IEEE Computer Society. Accessed: Feb. 21, 2026. [Online]. Available: <a href="https://www.computer.org/publications/tech-news/trends/llm-semantic">https://www.computer.org/publications/tech-news/trends/llm-semantic</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org8ead3cf" class="outline-4">
+<h4 id="org8ead3cf"><span class="section-number-4">2.2.5.</span> Quantum Computing</h4>
+</div>
+<div id="outline-container-org21a7050" class="outline-4">
+<h4 id="org21a7050"><span class="section-number-4">2.2.6.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-2-2-6">
+</div>
+<ol class="org-ol">
+<li><a id="orgc7c9f46"></a>Everyday Computing<br />
+<ol class="org-ol">
+<li><a id="org0557d2d"></a>Apparel<br />
+<ul class="org-ul">
+<li><a id="org5dec4cf"></a>India<br />
+<ul class="org-ul">
+<li><a id="orga0cdeb9"></a>Apps<br />
+<ul class="org-ul">
+<li><a id="org6cb26cc"></a>Traditional<br />
+<div class="outline-text-9" id="text-org6cb26cc">
+<ul class="org-ul">
+<li>“‎Fabindia Online Shopping,” App Store, Jun. 27, 2023. <a href="https://apps.apple.com/in/app/fabindia-online-shopping/id1479713062">https://apps.apple.com/in/app/fabindia-online-shopping/id1479713062</a> (accessed Jul. 03, 2023).</li>
+
+<li>“‎eKhadi India,” App Store, Apr. 18, 2023. <a href="https://apps.apple.com/in/app/ekhadi-india/id1548746830">https://apps.apple.com/in/app/ekhadi-india/id1548746830</a> (accessed Jul. 03, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org28125f8"></a>Misc<br />
+<div class="outline-text-9" id="text-org28125f8">
+<ul class="org-ul">
+<li>“‎M&amp;S India,” App Store, Jun. 08, 2023. <a href="https://apps.apple.com/in/app/m-s-india/id1493509178">https://apps.apple.com/in/app/m-s-india/id1493509178</a> (accessed Jul. 03, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‎Tata CLiQ Luxury Shopping App,” App Store, Jun. 22, 2023. <a href="https://apps.apple.com/in/app/tata-cliq-luxury-shopping-app/id1281494666">https://apps.apple.com/in/app/tata-cliq-luxury-shopping-app/id1281494666</a> (accessed Jul. 03, 2023).</li>
+<li>“‎Tata CLiQ Online Shopping App,” App Store, Jun. 28, 2023. <a href="https://apps.apple.com/in/app/tata-cliq-online-shopping-app/id1101619385">https://apps.apple.com/in/app/tata-cliq-online-shopping-app/id1101619385</a> (accessed Jul. 03, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“‎Myntra - Fashion Shopping App,” App Store, Jun. 30, 2023. <a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059">https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059</a> (accessed Jul. 03, 2023).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org07bc37d"></a>Misc<br />
+<div class="outline-text-8" id="text-org07bc37d">
+<ul class="org-ul">
+<li>A. B. World Rest of World &amp;. Kunal Purohit, Rest of, “Shein power does little to help Reliance crack e-commerce,” Scroll.in. Accessed: Jun. 03, 2025. [Online]. Available: <a href="https://scroll.in/article/1082915/shein-power-does-little-to-help-reliance-crack-e-commerce">https://scroll.in/article/1082915/shein-power-does-little-to-help-reliance-crack-e-commerce</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgf20c546"></a>Misc<br />
+<div class="outline-text-7" id="text-orgf20c546">
+<ul class="org-ul">
+<li>“Temu,” Wikipedia. Aug. 22, 2024. Accessed: Aug. 25, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Temu&amp;oldid=1241597536">https://en.wikipedia.org/w/index.php?title=Temu&amp;oldid=1241597536</a></li>
+<li>“Shein,” Wikipedia. Aug. 16, 2024. Accessed: Aug. 25, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Shein&amp;oldid=1240684813">https://en.wikipedia.org/w/index.php?title=Shein&amp;oldid=1240684813</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge745aad"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd98f0de" class="outline-4">
+<h4 id="orgd98f0de"><span class="section-number-4">2.2.7.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-2-7">
+<ul class="org-ul">
+<li>V. N. Ruzive and P. J. H. Tsang, Fashion Tech Applied: Exploring Augmented Reality, Artificial Intelligence, Virtual Reality, NFTs, Body Scanning, 3D Digital Design, and More, 1st ed. edition. Apress, 2023.</li>
+<li>A. Tuncdogan, “How M&amp;S responds to its cyber-attack could have a serious impact on its future – and its customers,” The Conversation. Accessed: Jul. 10, 2025. [Online]. Available: <a href="http://theconversation.com/how-mands-responds-to-its-cyber-attack-could-have-a-serious-impact-on-its-future-and-its-customers-260429">http://theconversation.com/how-mands-responds-to-its-cyber-attack-could-have-a-serious-impact-on-its-future-and-its-customers-260429</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9f31cea" class="outline-3">
+<h3 id="org9f31cea"><span class="section-number-3">2.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>C. Mello-Klein, “Fashion beauty standards have changed little in 25 years, study finds,” Northeastern Global News. Accessed: Jun. 26, 2026. [Online]. Available: <a href="https://news.northeastern.edu/2026/06/23/fashion-beauty-standards-research/">https://news.northeastern.edu/2026/06/23/fashion-beauty-standards-research/</a></li>
+
+<li>N. University, “Bell-bottoms today, miniskirts tomorrow: Math reveals fashion’s 20-year cycle.” Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://phys.org/news/2026-03-bell-bottoms-today-miniskirts-tomorrow.html">https://phys.org/news/2026-03-bell-bottoms-today-miniskirts-tomorrow.html</a></li>
+
+<li>M. Banks, “Physics meets fashion as bioluminescent dress debuts at Paris Haute Couture Week,” Physics World. Accessed: Jul. 14, 2025. [Online]. Available: <a href="https://physicsworld.com/physics-meets-fashion-as-bioluminescent-dress-debuts-at-paris-haute-couture-week/">https://physicsworld.com/physics-meets-fashion-as-bioluminescent-dress-debuts-at-paris-haute-couture-week/</a></li>
+
+<li>I. N. for N. 8 July 2025, “Science on the catwalk: Iris van Herpen gives gowns a glow up.” Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://www.nature.com/immersive/d41586-025-02068-x/index.html">https://www.nature.com/immersive/d41586-025-02068-x/index.html</a></li>
+
+<li>H. Vicdan, “Degrowth and fashion: how upcycling innovators show us how to rethink and reuse waste,” The Conversation. Accessed: Jun. 20, 2025. [Online]. Available: <a href="http://theconversation.com/degrowth-and-fashion-how-upcycling-innovators-show-us-how-to-rethink-and-reuse-waste-258869">http://theconversation.com/degrowth-and-fashion-how-upcycling-innovators-show-us-how-to-rethink-and-reuse-waste-258869</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9dc206a" class="outline-2">
+<h2 id="org9dc206a"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org46ef4b6" class="outline-3">
+<h3 id="org46ef4b6"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-org774dd3e" class="outline-3">
+<h3 id="org774dd3e"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-orge09dbca" class="outline-3">
+<h3 id="orge09dbca"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-orga95e3f0" class="outline-3">
+<h3 id="orga95e3f0"><span class="section-number-3">3.4.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org23865fe" class="outline-4">
+<h4 id="org23865fe"><span class="section-number-4">3.4.1.</span> Orgs</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li><b>“Patagonia, Inc.,”</b> Wikipedia. Sep. 15, 2021. Accessed: Oct. 11, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Patagonia,_Inc.&amp;oldid=1044559834">https://en.wikipedia.org/w/index.php?title=Patagonia,_Inc.&amp;oldid=1044559834</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf6b0193" class="outline-4">
+<h4 id="orgf6b0193"><span class="section-number-4">3.4.2.</span> Feminism</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ul class="org-ul">
+<li>A. Sharma, “Does Feminist Fashion Come With Privilege?,” Feminism in India. Accessed: Jan. 08, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/01/08/does-feminist-fashion-come-with-privilege/">https://feminisminindia.com/2025/01/08/does-feminist-fashion-come-with-privilege/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org34d274f" class="outline-4">
+<h4 id="org34d274f"><span class="section-number-4">3.4.3.</span> Nation States</h4>
+<div class="outline-text-4" id="text-3-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="org317bf20"></a>India<br />
+<ol class="org-ol">
+<li><a id="orgf6633ee"></a>General<br /></li>
+<li><a id="org7fae642"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orge5fdf72"></a>Misc<br />
+<div class="outline-text-7" id="text-orge5fdf72">
+<ul class="org-ul">
+<li>K. G. Verma Pooja, “India’s fashion paradox: As the industry booms, it is being buried under heap of its own waste,” Down To Earth. Accessed: Jun. 06, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/waste/indias-fashion-paradox-as-the-industry-booms-it-is-being-buried-under-heap-of-its-own-waste">https://www.downtoearth.org.in/waste/indias-fashion-paradox-as-the-industry-booms-it-is-being-buried-under-heap-of-its-own-waste</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org9cf3823"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org00dc83e"></a>Feminism<br />
+<div class="outline-text-7" id="text-org00dc83e">
+<ul class="org-ul">
+<li>M. Laing, Picturing the Woman-Child: Fashion, Feminism and the Female Gaze. London ; New York: Bloomsbury Visual Arts, 2021.</li>
+<li>M. Bhattacharjya, Mannequin: Working Women in India’s Glamour Industry Bhattacharjya, Manjima, First Edition. New Delhi : Bangalore: Zubaan, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgcfc17b0"></a>Misc<br />
+<div class="outline-text-7" id="text-orgcfc17b0">
+<ul class="org-ul">
+<li>S. Staff, “Eco India: How Navi Mumbai is turning fast fashion into circular economy success,” Scroll.in. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://scroll.in/video/1089911/eco-india-how-navi-mumbai-is-turning-fast-fashion-into-circular-economy-success">https://scroll.in/video/1089911/eco-india-how-navi-mumbai-is-turning-fast-fashion-into-circular-economy-success</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org7faedc6"></a>Core<br />
+<div class="outline-text-6" id="text-3-4-3-1-4">
+<ul class="org-ul">
+<li>A. Sandhu, Indian Fashion: Tradition, Innovation, Style, Illustrated edition. London ; New Delhi ; New York ; Sydney: Bloomsbury India, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1641462"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org29394d5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgb5a49d9"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org6dc3403"></a>Magazines<br />
+<ul class="org-ul">
+<li><a id="org45eeba1"></a>General<br /></li>
+<li><a id="orga6edd82"></a>Women<br />
+<div class="outline-text-8" id="text-orga6edd82">
+<ul class="org-ul">
+<li>“Femina: Women’s Magazine for Fashion, Beauty, Lifestyle, Relationships, Health &amp; More.” Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.femina.in">https://www.femina.in</a></li>
+<li>“Woman’s era Magazine,” Woman’s era Magazine. Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.womansera.com/">https://www.womansera.com/</a></li>
+
+<li>“Grihshobha - India’s best Hindi Women’s Magazine| Romantic, Crime, Family, Audio Stories in Hindi,” Grihshobha. Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.grihshobha.in/">https://www.grihshobha.in/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org148f08a"></a>Men<br />
+<div class="outline-text-8" id="text-org148f08a">
+<ul class="org-ul">
+<li>“<a href="https://www.mansworldindia.com/">https://www.mansworldindia.com/</a>,” Man’s World India. Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.mansworldindia.com/">https://www.mansworldindia.com/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7c62111"></a>Misc<br />
+<div class="outline-text-8" id="text-org7c62111">
+<ul class="org-ul">
+<li>“Cosmopolitan India: Celebrities Lifestyle News, Beauty, Fashion and Relationship Tips.” Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.cosmopolitan.in/">https://www.cosmopolitan.in/</a></li>
+<li>“Homepage,” Elle India. Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://elle.in/">https://elle.in/</a></li>
+<li>C. Nast, “VOGUE India: Women’s Magazine for Beauty, Fashion, Lifestyle &amp; Entertainment,” Vogue India. Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.vogue.in/">https://www.vogue.in/</a></li>
+<li>“Latest News From Harpers Bazaar, Breaking News Today Headlines Updates | Harpers Bazaar,” Harper Bazar. Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.harpersbazaar.in">https://www.harpersbazaar.in</a></li>
+<li>“Fashion Magazine: Celebrity Fashion, Beauty &amp; Lifestyle Trends | Grazia India.” Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.grazia.co.in">https://www.grazia.co.in</a></li>
+
+<li>“Hello Magazine India: Fashion, Beauty, Food, Celebrities, Health &amp; Fitness and Lifestyle News,” Hello Magazine. Accessed: Jun. 02, 2026. [Online]. Available: <a href="https://www.hellomagazine.in/">https://www.hellomagazine.in/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org21b2c91"></a>Misc<br />
+<div class="outline-text-6" id="text-3-4-3-1-7">
+<ul class="org-ul">
+<li>K. Babbar, “The Crown And The Cage: Rethinking Power In Beauty Pageants,” Feminism in India. Accessed: Jun. 06, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/06/05/the-crown-and-the-cage-rethinking-power-in-beauty-pageants/">https://feminisminindia.com/2025/06/05/the-crown-and-the-cage-rethinking-power-in-beauty-pageants/</a></li>
+
+<li>“Global Luxury’s India Call,” Jun. 02, 2023. <a href="https://www.fortuneindia.com/long-reads/global-luxurys-india-call/112990">https://www.fortuneindia.com/long-reads/global-luxurys-india-call/112990</a> (accessed Jul. 02, 2023).</li>
+
+<li>PTI, “Fashion designer Rohit Bal passes away,” The Hindu, Nov. 01, 2024. Accessed: Nov. 02, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/fashion-designer-rohit-bal-is-dead/article68820683.ece">https://www.thehindu.com/news/national/fashion-designer-rohit-bal-is-dead/article68820683.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org289e2cb" class="outline-4">
+<h4 id="org289e2cb"><span class="section-number-4">3.4.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orge86676c" class="outline-3">
+<h3 id="orge86676c"><span class="section-number-3">3.5.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org537126b" class="outline-4">
+<h4 id="org537126b"><span class="section-number-4">3.5.1.</span> Book Series</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ul class="org-ul">
+<li>“Springer Series in Fashion Business.” <a href="http://www.amazon.in/-/dp/B09CQ4P7ML?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/-/dp/B09CQ4P7ML?ref=dbs_m_mng_rwt_0000_share</a> (accessed Jul. 15, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org65d940e" class="outline-4">
+<h4 id="org65d940e"><span class="section-number-4">3.5.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org20079f1" class="outline-3">
+<h3 id="org20079f1"><span class="section-number-3">3.6.</span> Management, Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+<div id="outline-container-org0529720" class="outline-4">
+<h4 id="org0529720"><span class="section-number-4">3.6.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-6-1">
+<ul class="org-ul">
+<li>E. Bazaki and V. Wanick, Eds., Reinventing Fashion Retailing: Digitalising, Gamifying, Entrepreneuring, 1st ed. 2023 edition. Cham: Palgrave Macmillan, 2023.</li>
+<li>G. J. Sherman and S. Perlman, The Real World Guide to Fashion Selling and Management, 2nd edition. New York, NY: Bloomsbury Publishing India Private Limited, 2014.</li>
+<li>S. Dillon, The Fundamentals of Fashion Management, 2nd edition. New York: Bloomsbury Visual Arts, 2018.</li>
+
+<li>K. K. Hameide, Managing Fashion: A Management Perspective, 1st edition. New York, NY: Routledge, 2020.</li>
+
+<li>D. Shaw and D. Koumbis, Fashion Buying: From Trend Forecasting to Shop Floor. Fairchild Books India, 2018.</li>
+<li>D. Golizia, The Fashion Business: Theory and Cases on Strategic Fashion Management and Marketing, 1st edition. Milton Park, Abingdon New York: Routledge, 2021.</li>
+
+<li>B. Alexander, Ed., Customer Experience in Fashion Retailing: Merging Theory and Practice, 1st edition. London ; New York: Routledge, 2024.</li>
+
+<li>D. Koumbis, FASHION RETAILING: FROM MANAGING TO MERCHANDISING. Fairchild Books India, 2018.</li>
+
+<li>O. Mitterfellner, Fashion Marketing and Communication: Theory and Practice Across the Fashion Industry, 1st edition. Abingdon, Oxon New York, NY: Routledge, 2019.</li>
+
+<li>D. N. Miglani, A Handbook Of Fashion Management. Author’s Ink Publications, 2018.</li>
+
+<li>N. Karra, Fashion Entrepreneurship: The Creation of the Global Fashion Business, 1st edition. Routledge, 2021.</li>
+
+<li>R. Boardman, R. Parker-Strak, and C. E. Henninger, FASHION BUYING AND MERCHANDISING : THE FASHION BUYER IN A DIGITAL SOCIETY, 1st edition. London New York: Routledge, 2020.</li>
+<li>V. Grose, PRACTICAL GUIDE TO THE FASHION INDUSTRY: Concept to Customer, 2nd edition. New York: Bloomsbury Visual Arts, 2021.</li>
+<li>R. Varley, A. Roncha, N. Radclyffe-thomas, and L. Gee, Fashion Management: A Strategic Approach, 1st ed. 2019 edition. London: Bloomsbury USA Academic, 2018.</li>
+
+<li>M. A. Borza, Fashion Figures: How Missy the Mathlete Made the Cut, 1st ed. edition. Apress, 2017.</li>
+
+<li>A. Lowe, Fashion Brand Management: Plan, Scale and Market a Successful Fashion Business, 1st edition. New York: Kogan Page Ltd, 2023.</li>
+<li>M. Londrigan and J. M. Jenkins, FASHION SUPPLY CHAIN MANAGEMENT, 1ST EDITION. New York: Fairchild Books, 2018.</li>
+<li>R. Varley, A. Roncha, N. Radclyffe-thomas, and L. Gee, Fashion Management: A Strategic Approach, 2nd edition. London New York, NY: Bloomsbury USA Academic, 2024.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org189b829" class="outline-4">
+<h4 id="org189b829"><span class="section-number-4">3.6.2.</span> General</h4>
+</div>
+<div id="outline-container-org93f3528" class="outline-4">
+<h4 id="org93f3528"><span class="section-number-4">3.6.3.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-3-6-3">
+</div>
+<ol class="org-ol">
+<li><a id="org3f7772f"></a>Innovation, Misc<br />
+<div class="outline-text-5" id="text-3-6-3-1">
+<ul class="org-ul">
+<li>B. E. Jin and E. Cedrola, Eds., Process Innovation in the Global Fashion Industry, 1st ed. 2019 edition. New York, NY: Palgrave Pivot, 2019.</li>
+<li>H. Goworek and F. Bailey, Creativity and Innovation in the Fashion Business: Contemporary Issues in Fashion Design and Product Development, 1st edition. Routledge, 2024.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf8579d6"></a>Sustainability, Misc<br />
+<div class="outline-text-5" id="text-3-6-3-2">
+<ul class="org-ul">
+<li>V. Grose and N. Mansfield, Fashion Supply Chain Management: Integrating Sustainability through the Fashion Supply Chain, 1st edition. London New York, NY: Routledge, 2023.</li>
+<li>O. Mitterfellner, Luxury Fashion Brand Management: Unifying Fashion With Sustainability, 1st edition. London New York: Routledge, 2023.</li>
+<li>C. E. Henninger, K. Niinimäki, M. Blazquez, and C. Jones, Sustainable Fashion Management, 1st edition. Routledge, 2022.</li>
+<li>S. M. Jastram and A.-M. Schneider, Eds., Sustainable Fashion: Governance and New Management Approaches, 1st ed. 2018 edition. Springer, 2018.</li>
+<li>S. Heale and S. Ghebreab, Responsible Fashion Business in Practice: Sustainable Concepts and Cases across the Fashion Industry, 1st edition. London New York: Taylor &amp; Francis Ltd, 2023.</li>
+</ul>
+</div>
+</li>
+<li><a id="org9709862"></a>Luxury<br />
+<div class="outline-text-5" id="text-3-6-3-3">
+<ul class="org-ul">
+<li>Choi, Luxury Fashion Retail Management, 1st ed. 2017 edition. Springer, 2016.</li>
+<li>A. Dallabona, Luxury Fashion Marketing and Branding: A Strategic Approach, 1st edition. Routledge, 2024.</li>
+<li>O. Mitterfellner, Luxury Fashion Brand Management: Unifying Fashion With Sustainability, 1st edition. London New York: Routledge, 2023.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga42d07c" class="outline-3">
+<h3 id="orga42d07c"><span class="section-number-3">3.7.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-orgb4afe06" class="outline-3">
+<h3 id="orgb4afe06"><span class="section-number-3">3.8.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orgc0ef93d" class="outline-3">
+<h3 id="orgc0ef93d"><span class="section-number-3">3.9.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-orgaf1015b" class="outline-3">
+<h3 id="orgaf1015b"><span class="section-number-3">3.10.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-10">
+<ul class="org-ul">
+<li>L. Gershon, “The Nineteenth-Century Science of Fashion,” JSTOR Daily. Accessed: Feb. 06, 2026. [Online]. Available: <a href="https://daily.jstor.org/the-nineteenth-century-science-of-fashion/">https://daily.jstor.org/the-nineteenth-century-science-of-fashion/</a></li>
+
+<li>T. M. P. Reader, “The Year When Pregnancy Was a Fashion Statement,” The MIT Press Reader. Accessed: Jul. 15, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/the-year-when-pregnancy-was-a-fashion-statement/">https://thereader.mitpress.mit.edu/the-year-when-pregnancy-was-a-fashion-statement/</a></li>
+
+<li>M. Marsden, “From Kabul to the catwalk – the surprising global history behind fashion’s fur revival,” The Conversation. Accessed: Jul. 10, 2025. [Online]. Available: <a href="http://theconversation.com/from-kabul-to-the-catwalk-the-surprising-global-history-behind-fashions-fur-revival-256382">http://theconversation.com/from-kabul-to-the-catwalk-the-surprising-global-history-behind-fashions-fur-revival-256382</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org08e3211" class="outline-2">
+<h2 id="org08e3211"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org0f4b4e5" class="outline-3">
+<h3 id="org0f4b4e5"><span class="section-number-3">4.1.</span> Gender Classes</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgda72842" class="outline-4">
+<h4 id="orgda72842"><span class="section-number-4">4.1.1.</span> All Genders</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org696ffe8"></a>Perfume<br />
+<div class="outline-text-5" id="text-4-1-1-1">
+<ul class="org-ul">
+<li>Perfumes: <a href="https://tinyurl.com/2w7hfs6t">https://tinyurl.com/2w7hfs6t</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0cd791a"></a>Jewelry<br />
+<div class="outline-text-5" id="text-4-1-1-2">
+<ul class="org-ul">
+<li>Jewelry: <a href="https://tinyurl.com/yhkb8ctv">https://tinyurl.com/yhkb8ctv</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5a72bcd"></a>Apparel<br />
+<div class="outline-text-5" id="text-4-1-1-3">
+<ul class="org-ul">
+<li>Apparel: <a href="https://tinyurl.com/thk2xw6r">https://tinyurl.com/thk2xw6r</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org697ef10"></a>Footwear<br />
+<div class="outline-text-5" id="text-4-1-1-4">
+<ul class="org-ul">
+<li>Footwear: <a href="https://tinyurl.com/429v49dv">https://tinyurl.com/429v49dv</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org00e35ec" class="outline-4">
+<h4 id="org00e35ec"><span class="section-number-4">4.1.2.</span> Men</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd58578e" class="outline-2">
+<h2 id="orgd58578e"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgdcf6022" class="outline-3">
+<h3 id="orgdcf6022"><span class="section-number-3">5.1.</span> Music</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>J. Strähle, Ed., Fashion &amp; Music, 1st ed. 2018 edition. New York, NY: Springer, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e3db23" class="outline-3">
+<h3 id="org8e3db23"><span class="section-number-3">5.2.</span> Videos</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“FF Channel - YouTube.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.youtube.com/@FFChannel_Official">https://www.youtube.com/@FFChannel_Official</a></li>
+
+<li>“FashionTV - YouTube.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.youtube.com/@ftv">https://www.youtube.com/@ftv</a></li>
+
+<li>“Fashion Channel - YouTube.” Accessed: Feb. 09, 2024. [Online]. Available: <a href="https://www.youtube.com/@FashionChannel">https://www.youtube.com/@FashionChannel</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgee7a689" class="outline-3">
+<h3 id="orgee7a689"><span class="section-number-3">5.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>633 Views 5 Months Ago 20, “FF Channel,” YouTube. Accessed: Sep. 26, 2025. [Online]. Available: <a href="https://www.youtube.com/channel/UC3T5fmgL4Kvk3kG1kF6JFeA">https://www.youtube.com/channel/UC3T5fmgL4Kvk3kG1kF6JFeA</a></li>
+<li>681 Views 2 Days Ago, “Fashion Channel,” YouTube. Accessed: Sep. 26, 2025. [Online]. Available: <a href="https://www.youtube.com/channel/UCepVy23t8l-CEaASZzfo9Jg">https://www.youtube.com/channel/UCepVy23t8l-CEaASZzfo9Jg</a></li>
+<li>352 Views 11 Months Ago 34, “FashionTV,” YouTube. Accessed: Sep. 26, 2025. [Online]. Available: <a href="https://www.youtube.com/channel/UCqzju-_WMKsgNx8R3QwupQQ">https://www.youtube.com/channel/UCqzju-_WMKsgNx8R3QwupQQ</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Toxic (2024 film),” Wikipedia. Apr. 27, 2025. Accessed: Jul. 29, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Toxic_(2024_film)&amp;oldid=1287694280">https://en.wikipedia.org/w/index.php?title=Toxic_(2024_film)&amp;oldid=1287694280</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb6f7c64" class="outline-2">
+<h2 id="orgb6f7c64"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgdf1b3ec" class="outline-3">
+<h3 id="orgdf1b3ec"><span class="section-number-3">6.1.</span> Nudity</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>Nudity: <a href="https://tinyurl.com/zfhwbefa">https://tinyurl.com/zfhwbefa</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org267199f" class="outline-2">
+<h2 id="org267199f"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>castify, “FashionTV+,” FashionTV+. Accessed: Aug. 08, 2025. [Online]. Available: <a href="https://www.fashiontv.com/watch/97563349">https://www.fashiontv.com/watch/97563349</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Richmond, “A Philosopher Looks at Clothes by Kate Moran is engaging and unpretentious – we need more philosophy books like this,” The Conversation. Accessed: Jul. 23, 2025. [Online]. Available: <a href="http://theconversation.com/a-philosopher-looks-at-clothes-by-kate-moran-is-engaging-and-unpretentious-we-need-more-philosophy-books-like-this-260473">http://theconversation.com/a-philosopher-looks-at-clothes-by-kate-moran-is-engaging-and-unpretentious-we-need-more-philosophy-books-like-this-260473</a></li>
+<li>R. Maguire, “Ultra fast fashion could be taxed to oblivion in France. Could Australia follow suit?,” The Conversation. Accessed: Jul. 23, 2025. [Online]. Available: <a href="http://theconversation.com/ultra-fast-fashion-could-be-taxed-to-oblivion-in-france-could-australia-follow-suit-259559">http://theconversation.com/ultra-fast-fashion-could-be-taxed-to-oblivion-in-france-could-australia-follow-suit-259559</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>N. Braithwaite, “Outlaws: Fashion Renegades of 80s London celebrates the optimism, hedonism and style of the new romantics,” The Conversation. Accessed: Nov. 07, 2024. [Online]. Available: <a href="http://theconversation.com/outlaws-fashion-renegades-of-80s-london-celebrates-the-optimism-hedonism-and-style-of-the-new-romantics-242424">http://theconversation.com/outlaws-fashion-renegades-of-80s-london-celebrates-the-optimism-hedonism-and-style-of-the-new-romantics-242424</a></li>
+
+<li>“Luxury fashion in the artisanal tradition is a good thing | Aeon Essays,” Aeon. Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://aeon.co/essays/luxury-fashion-in-the-artisanal-tradition-is-a-good-thing">https://aeon.co/essays/luxury-fashion-in-the-artisanal-tradition-is-a-good-thing</a></li>
+
+<li>R. D. Kish Matthew, “Nike Shareholders Want to Force Actions on Environmental and Worker Protections. They Face Long Odds.,” ProPublica. Accessed: Sep. 07, 2024. [Online]. Available: <a href="https://www.propublica.org/article/nike-shareholders-annual-meeting-climate-worker-protections">https://www.propublica.org/article/nike-shareholders-annual-meeting-climate-worker-protections</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Beauty &amp; Fashion: The rise of the fashion industry in the 20th century (part 2),” Radical Ecological Democracy. Accessed: Jun. 06, 2024. [Online]. Available: <a href="https://radicalecologicaldemocracy.org/beauty-fashion-the-rise-of-the-fashion-industry-in-the-20th-century-part-2/">https://radicalecologicaldemocracy.org/beauty-fashion-the-rise-of-the-fashion-industry-in-the-20th-century-part-2/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“New Victoria’s Secret Campaign Features Images Of Real Women From Fitting Room Security Cameras,” The Onion. Accessed: Jun. 06, 2024. [Online]. Available: <a href="https://www.theonion.com/new-victoria-s-secret-campaign-features-images-of-real-1847186375">https://www.theonion.com/new-victoria-s-secret-campaign-features-images-of-real-1847186375</a></li>
+
+<li>“Beauty &amp; Fashion: Confronting Commodification, Advancing Alternative (Part 1),” Radical Ecological Democracy. Accessed: Apr. 17, 2024. [Online]. Available: <a href="https://radicalecologicaldemocracy.org/beauty-fashion-confronting-commodification-advancing-alternatives-part-1/">https://radicalecologicaldemocracy.org/beauty-fashion-confronting-commodification-advancing-alternatives-part-1/</a></li>
+<li>“Confronting Beauty: A Comic Book Adaptation,” Vikalp Sangam. Accessed: Apr. 17, 2024. [Online]. Available: <a href="https://vikalpsangam.org/article/confronting-beauty-a-comic-book-adaptation/">https://vikalpsangam.org/article/confronting-beauty-a-comic-book-adaptation/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Cosmopolitan - YouTube.” Accessed: Mar. 11, 2024. [Online]. Available: <a href="https://www.youtube.com/c/cosmopolitan">https://www.youtube.com/c/cosmopolitan</a></li>
+<li>“Cosmopolitan India - YouTube.” Accessed: Mar. 11, 2024. [Online]. Available: <a href="https://www.youtube.com/channel/UCWa49CC5_KhNyzQjioBOsBw">https://www.youtube.com/channel/UCWa49CC5_KhNyzQjioBOsBw</a></li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>A. France-Presse, “France’s lower house votes to limit ‘excesses’ of fast fashion with environmental surcharge,” The Guardian, Mar. 15, 2024. Accessed: Mar. 18, 2024. [Online]. Available: <a href="https://www.theguardian.com/world/2024/mar/15/france-fast-fashion-law-environmental-surcharge-lower-house-votes">https://www.theguardian.com/world/2024/mar/15/france-fast-fashion-law-environmental-surcharge-lower-house-votes</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 19:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
