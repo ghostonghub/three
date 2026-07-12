@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Photography</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Photography</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7ef629e">1. General</a></li>
+<li><a href="#orgd67c2da">2. Philosophy</a></li>
+<li><a href="#org2b40fa9">3. STEMM</a>
+<ul>
+<li><a href="#org793b26c">3.1. CSE</a>
+<ul>
+<li><a href="#org4464d26">3.1.1. Everyday Computing</a></li>
+</ul>
+</li>
+<li><a href="#orgd0973ea">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc4ee2cf">4. Worldly Matters</a>
+<ul>
+<li><a href="#orge7c7e07">4.1. Orgs</a></li>
+<li><a href="#orgcb1eb42">4.2. Nation States</a>
+<ul>
+<li><a href="#orgcc3cae1">4.2.1. India</a></li>
+</ul>
+</li>
+<li><a href="#orgc832f58">4.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb057ca2">5. Core</a>
+<ul>
+<li><a href="#org659a4c7">5.1. Education</a></li>
+<li><a href="#orgaf03cb6">5.2. Themes</a>
+<ul>
+<li><a href="#orgf9451f4">5.2.1. Nature</a></li>
+<li><a href="#orga9eb3fa">5.2.2. Food</a></li>
+<li><a href="#orge01f700">5.2.3. People</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org2b67967">6. Special Topics</a>
+<ul>
+<li><a href="#org06dde24">6.1. Nudity</a></li>
+</ul>
+</li>
+<li><a href="#org81f90a8">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org7ef629e" class="outline-2">
+<h2 id="org7ef629e"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><i>“Photography,”</i> Wikipedia. Mar. 22, 2021, Accessed: Mar. 26, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Photography&amp;oldid=1013650722">https://en.wikipedia.org/w/index.php?title=Photography&amp;oldid=1013650722</a>.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd67c2da" class="outline-2">
+<h2 id="orgd67c2da"><span class="section-number-2">2.</span> Philosophy</h2>
+</div>
+<div id="outline-container-org2b40fa9" class="outline-2">
+<h2 id="org2b40fa9"><span class="section-number-2">3.</span> STEMM</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org793b26c" class="outline-3">
+<h3 id="org793b26c"><span class="section-number-3">3.1.</span> CSE</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org4464d26" class="outline-4">
+<h4 id="org4464d26"><span class="section-number-4">3.1.1.</span> Everyday Computing</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgd495eb3"></a>General<br /></li>
+<li><a id="orgd816c5f"></a>FLOSS<br />
+<div class="outline-text-5" id="text-3-1-1-2">
+<ul class="org-ul">
+<li>“GIMP,” GIMP. <a href="https://www.gimp.org/">https://www.gimp.org/</a> (accessed May 06, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orga4e721e"></a>Big Tech<br />
+<ol class="org-ol">
+<li><a id="org5f7990f"></a>Apple<br />
+<div class="outline-text-6" id="text-3-1-1-3-1">
+<ul class="org-ul">
+<li>“Photos - Official Apple Support.” <a href="https://support.apple.com/photos">https://support.apple.com/photos</a> (accessed May 06, 2023).</li>
+<li>“View photos in the Photos app on iPhone,” Apple Support. <a href="https://support.apple.com/en-in/guide/iphone/iph3d267610/ios">https://support.apple.com/en-in/guide/iphone/iph3d267610/ios</a> (accessed May 06, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org508e0dc"></a>Misc<br />
+<div class="outline-text-5" id="text-3-1-1-4">
+<ul class="org-ul">
+<li>B. Schneier, “Trojans Embedded in .svg Files,” Schneier on Security. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://www.schneier.com/blog/archives/2025/08/trojans-embedded-in-svg-files.html">https://www.schneier.com/blog/archives/2025/08/trojans-embedded-in-svg-files.html</a></li>
+
+<li>“EXIF data in shared photos may compromise your privacy,” Proton. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://proton.me/blog/exif-data">https://proton.me/blog/exif-data</a></li>
+
+<li>B. Schneier, “Privacy of Photos.app’s Enhanced Visual Search,” Schneier on Security. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://www.schneier.com/blog/archives/2025/01/privacy-of-photos-apps-enhanced-visual-search.html">https://www.schneier.com/blog/archives/2025/01/privacy-of-photos-apps-enhanced-visual-search.html</a></li>
+
+<li>“Image editing in Gemini just got a major upgrade,” Google. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://blog.google/products/gemini/updated-image-editing-model/">https://blog.google/products/gemini/updated-image-editing-model/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd0973ea" class="outline-3">
+<h3 id="orgd0973ea"><span class="section-number-3">3.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>F. Frankel, “Clarity or accuracy — what makes a good scientific image?,” Nature, vol. 645, no. 8079, pp. 30–31, Sep. 2025, doi: 10.1038/d41586-025-02757-7.</li>
+
+<li>“A Camera the Size of a Grain of Salt Could Change Imaging as We Know It – Communications of the ACM.” Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://cacm.acm.org/news/a-camera-the-size-of-a-grain-of-salt-could-change-imaging-as-we-know-it/">https://cacm.acm.org/news/a-camera-the-size-of-a-grain-of-salt-could-change-imaging-as-we-know-it/</a></li>
+<li>“Princeton Engineering - Researchers shrink camera to the size of a salt grain,” Princeton Engineering. Accessed: Jul. 30, 2025. [Online]. Available: <a href="https://engineering.princeton.edu/news/2021/11/29/researchers-shrink-camera-size-salt-grain">https://engineering.princeton.edu/news/2021/11/29/researchers-shrink-camera-size-salt-grain</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>A. McRobie, <b>The Seduction of Curves: The Lines of Beauty That Connect Mathematics, Art, and the Nude.</b> Princeton University Press, 2017.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc4ee2cf" class="outline-2">
+<h2 id="orgc4ee2cf"><span class="section-number-2">4.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge7c7e07" class="outline-3">
+<h3 id="orge7c7e07"><span class="section-number-3">4.1.</span> Orgs</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>“Royal Photographic Society,” Wikipedia. Nov. 12, 2023. Accessed: Jan. 09, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Royal_Photographic_Society&amp;oldid=1184708328">https://en.wikipedia.org/w/index.php?title=Royal_Photographic_Society&amp;oldid=1184708328</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcb1eb42" class="outline-3">
+<h3 id="orgcb1eb42"><span class="section-number-3">4.2.</span> Nation States</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgcc3cae1" class="outline-4">
+<h4 id="orgcc3cae1"><span class="section-number-4">4.2.1.</span> India</h4>
+<div class="outline-text-4" id="text-4-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org56d2132"></a>General<br />
+<div class="outline-text-5" id="text-4-2-1-1">
+<ul class="org-ul">
+<li>N. Gaskell and D. Gujral, Photography in India: A Visual History from the 1850s to the Present. Munich ; London ; New York: Prestel, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org06b5630"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="orgfc386d1"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgf79bc1a"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="orgf7ba552"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org5735792"></a>Core<br />
+<ol class="org-ol">
+<li><a id="orga0b5979"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="org1b8e967"></a>Raghu Rai<br />
+<div class="outline-text-7" id="text-org1b8e967">
+<ul class="org-ul">
+<li>R. Rai, Raghu Rai’s India: Reflections in Black &amp; White. Penguin, Viking, 2007.</li>
+<li>R. Rai, Raghu Rai’s Delhi. Thames &amp; Hudson, 2009.</li>
+<li>R. Rai, People: His Finest Portraits. Aleph, 2016.</li>
+<li>R. Rai, Raghu Rai’s India: Reflections in Colour. Haus Books, 2008.</li>
+<li>R. Rai and V. Sanghvi, Mumbai, where Dreams Don’t Die. Om Books International, 2010.</li>
+
+<li>Picturing Time: The Greatest Photographs of Raghu Rai. Aleph, 2015.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org26f89f2"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org2f26508"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgaa834d0"></a>Special Topics<br /></li>
+<li><a id="org3cacc9b"></a>Misc<br />
+<div class="outline-text-5" id="text-4-2-1-7">
+<ul class="org-ul">
+<li>M. Nair, “Over 60 years, a photographer in Delhi has single-handedly archived India’s cultural history,” Scroll.in. Accessed: Feb. 25, 2024. [Online]. Available: <a href="https://scroll.in/magazine/1064035/over-60-years-a-photographer-in-delhi-has-single-handedly-archived-indias-cultural-history">https://scroll.in/magazine/1064035/over-60-years-a-photographer-in-delhi-has-single-handedly-archived-indias-cultural-history</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Indians and their Selfies,” The India Forum. Accessed: Sep. 25, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/tiffin/indians-and-their-selfies">https://www.theindiaforum.in/tiffin/indians-and-their-selfies</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc832f58" class="outline-3">
+<h3 id="orgc832f58"><span class="section-number-3">4.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>S. D. Dundoo, “World Photography Day: Hyderabad exhibition to spotlight works of 44 photographers,” The Hindu, Aug. 19, 2025. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Hyderabad/world-photography-day-state-gallery-of-art-hyderabad-exhibition-to-spotlight-works-of-44-photographers/article69946492.ece">https://www.thehindu.com/news/cities/Hyderabad/world-photography-day-state-gallery-of-art-hyderabad-exhibition-to-spotlight-works-of-44-photographers/article69946492.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb057ca2" class="outline-2">
+<h2 id="orgb057ca2"><span class="section-number-2">5.</span> Core</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org659a4c7" class="outline-3">
+<h3 id="org659a4c7"><span class="section-number-3">5.1.</span> Education</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>“Photography and Related Media | Architecture,” MIT OpenCourseWare. Accessed: Jul. 23, 2024. [Online]. Available: <a href="https://ocw.mit.edu/courses/4-343-photography-and-related-media-fall-2002/">https://ocw.mit.edu/courses/4-343-photography-and-related-media-fall-2002/</a></li>
+<li>“Introduction to Photography | Architecture,” MIT OpenCourseWare. Accessed: Jul. 23, 2024. [Online]. Available: <a href="https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/">https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaf03cb6" class="outline-3">
+<h3 id="orgaf03cb6"><span class="section-number-3">5.2.</span> Themes</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-orgf9451f4" class="outline-4">
+<h4 id="orgf9451f4"><span class="section-number-4">5.2.1.</span> Nature</h4>
+</div>
+<div id="outline-container-orga9eb3fa" class="outline-4">
+<h4 id="orga9eb3fa"><span class="section-number-4">5.2.2.</span> Food</h4>
+</div>
+<div id="outline-container-orge01f700" class="outline-4">
+<h4 id="orge01f700"><span class="section-number-4">5.2.3.</span> People</h4>
+<div class="outline-text-4" id="text-5-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org2a569f3"></a>Women<br />
+<div class="outline-text-5" id="text-5-2-3-1">
+<ul class="org-ul">
+<li>“Exploring the feminine sublime and the passage of time with photographer Maryam Eisler,” Global Voices. Accessed: Dec. 27, 2024. [Online]. Available: <a href="https://globalvoices.org/2024/12/27/exploring-the-feminine-sublime-and-the-passage-of-time-with-photographer-maryam-eisler/">https://globalvoices.org/2024/12/27/exploring-the-feminine-sublime-and-the-passage-of-time-with-photographer-maryam-eisler/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb04e1e7"></a>Nude Photography<br />
+<ol class="org-ol">
+<li><a id="orge9c49c3"></a>General<br />
+<div class="outline-text-6" id="text-5-2-3-2-1">
+<ul class="org-ul">
+<li>P. Baetens, Nude Photography: The Art and the Craft. Dorling Kindersley Limited, 2008.</li>
+<li>L. Benjamin, The Naked and the Lens: A Guide to Nude Photography. Taylor &amp; Francis, 2012.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3e07e29"></a>Female<br />
+<ul class="org-ul">
+<li><a id="orgd909814"></a>Breasts<br />
+<div class="outline-text-7" id="text-orgd909814">
+<ul class="org-ul">
+<li>“TASCHEN Books: The Little Big Book of Breasts.” <a href="https://www.taschen.com/en/books/photography/44012/the-little-big-book-of-breasts">https://www.taschen.com/en/books/photography/44012/the-little-big-book-of-breasts</a> (accessed May 27, 2023).</li>
+<li>“TASCHEN Books: Nature knows best: The Big Book of Breasts.” <a href="https://www.taschen.com/en/books/photography/03848/the-big-book-of-breasts">https://www.taschen.com/en/books/photography/03848/the-big-book-of-breasts</a> (accessed May 27, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orga320ad3"></a>Butt<br />
+<div class="outline-text-7" id="text-orga320ad3">
+<ul class="org-ul">
+<li>D. Hanson, The Little Big Butt Book, Multilingual edition. Köln Paris: Taschen, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf7dc26d"></a>Legs<br />
+<div class="outline-text-7" id="text-orgf7dc26d">
+<ul class="org-ul">
+<li>D. Hanson, The Little Big Book of Legs, Multilingual edition. Köln Paris: Taschen GmbH, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgb95d13a"></a>Pussy<br />
+<div class="outline-text-7" id="text-orgb95d13a">
+<ul class="org-ul">
+<li>“TASCHEN Books: Viva la Vulva with The Big Book of Pussy by.” <a href="https://www.taschen.com/en/books/photography/05741/the-big-book-of-pussy">https://www.taschen.com/en/books/photography/05741/the-big-book-of-pussy</a> (accessed May 27, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org1f97418"></a>Misc<br />
+<div class="outline-text-7" id="text-org1f97418">
+<ul class="org-ul">
+<li>“Venus Birth, c.1900 - c.1910 - Konstantin Makovsky - WikiArt.org,” www.wikiart.org. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.wikiart.org/en/konstantin-makovsky/venus-birth">https://www.wikiart.org/en/konstantin-makovsky/venus-birth</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org94bb6c5"></a>Male<br />
+<ul class="org-ul">
+<li><a id="orgf1feffd"></a>Penis<br />
+<div class="outline-text-7" id="text-orgf1feffd">
+<ul class="org-ul">
+<li>“TASCHEN Books: The Little Big Penis Book.” <a href="https://www.taschen.com/en/books/photography/44013/the-little-big-penis-book">https://www.taschen.com/en/books/photography/44013/the-little-big-penis-book</a> (accessed May 27, 2023).</li>
+<li>“TASCHEN Books: Undressed to impress: The Big Penis Book by.” <a href="https://www.taschen.com/en/books/photography/05703/the-big-penis-book">https://www.taschen.com/en/books/photography/05703/the-big-penis-book</a> (accessed May 27, 2023).</li>
+<li>D. Hanson, Ed., The Big Penis Book. Hong Kong Köln Paris etc.: Taschen GmbH, 2022.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1534a03"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org6280929"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org2b67967" class="outline-2">
+<h2 id="org2b67967"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org06dde24" class="outline-3">
+<h3 id="org06dde24"><span class="section-number-3">6.1.</span> Nudity</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>Nudity: <a href="https://tinyurl.com/zfhwbefa">https://tinyurl.com/zfhwbefa</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org81f90a8" class="outline-2">
+<h2 id="org81f90a8"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>N. Author, “Lens breakthrough paves the way for ultrathin cameras,” Physics World. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://physicsworld.com/a/lens-breakthrough-paves-the-way-for-ultrathin-cameras/">https://physicsworld.com/a/lens-breakthrough-paves-the-way-for-ultrathin-cameras/</a></li>
+
+<li>“How should we look at images of horror and suffering? | Aeon Essays,” Aeon. Accessed: Sep. 16, 2024. [Online]. Available: <a href="https://aeon.co/essays/how-should-we-look-at-images-of-horror-and-suffering">https://aeon.co/essays/how-should-we-look-at-images-of-horror-and-suffering</a></li>
+
+<li>“How to take better photos | Psyche Guides,” Psyche. Accessed: Jan. 18, 2024. [Online]. Available: <a href="https://psyche.co/guides/how-to-use-composition-and-empathy-to-take-better-photos">https://psyche.co/guides/how-to-use-composition-and-empathy-to-take-better-photos</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Berger, <i>Understanding a Photograph.</i> Penguin UK, 2013.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Edward Weston,” Wikipedia. Feb. 28, 2022. Accessed: Mar. 25, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Edward_Weston&amp;oldid=1074399654">https://en.wikipedia.org/w/index.php?title=Edward_Weston&amp;oldid=1074399654</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:08</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

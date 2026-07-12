@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shiva - Music</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Shiva - Music</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb29e1d0">1. Indian Classical Music</a>
+<ul>
+<li><a href="#org9854175">1.1. Hindustani Classical Music</a>
+<ul>
+<li><a href="#org6542ebe">1.1.1. Dhrupad</a></li>
+<li><a href="#org2a2c612">1.1.2. Ragas</a></li>
+<li><a href="#org539c6df">1.1.3. Instruments</a></li>
+<li><a href="#org1757f36">1.1.4. Playlists</a></li>
+<li><a href="#org67f7df0">1.1.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgdbbd31d">1.2. Karnatic Classical Music</a></li>
+</ul>
+</li>
+<li><a href="#orgcb9cad5">2. Traditional Music</a>
+<ul>
+<li><a href="#org0e5ba4c">2.1. General</a></li>
+<li><a href="#orgd420d9e">2.2. Mantras</a></li>
+<li><a href="#org9aaf2b4">2.3. Music Today: BhaktiMala</a></li>
+<li><a href="#org395683c">2.4. Bhajans</a></li>
+<li><a href="#orgfe6a7a3">2.5. Kirtans</a></li>
+<li><a href="#org3cc30fb">2.6. Aarti</a></li>
+<li><a href="#org205aa68">2.7. Aradhana</a></li>
+<li><a href="#org9aa5e44">2.8. Prarthana</a></li>
+<li><a href="#orgbf6a7f8">2.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc0aae7f">3. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgb29e1d0" class="outline-2">
+<h2 id="orgb29e1d0"><span class="section-number-2">1.</span> Indian Classical Music</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org9854175" class="outline-3">
+<h3 id="org9854175"><span class="section-number-3">1.1.</span> Hindustani Classical Music</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org6542ebe" class="outline-4">
+<h4 id="org6542ebe"><span class="section-number-4">1.1.1.</span> Dhrupad</h4>
+<div class="outline-text-4" id="text-1-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org7f05342"></a>Playlists<br />
+<div class="outline-text-5" id="text-1-1-1-1">
+<ul class="org-ul">
+<li>“ShivaHCMD | Community Playlist on Prime Music.” Accessed: Jan. 28, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/2155307c87d64a1890549336ff582185i8n0">https://music.amazon.in/user-playlists/2155307c87d64a1890549336ff582185i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1c88213"></a>Artists<br />
+<ol class="org-ol">
+<li><a id="orga1e65eb"></a>Gundecha Brothers<br />
+<ul class="org-ul">
+<li><a id="org5a97899"></a>Playlists<br />
+<div class="outline-text-7" id="text-org5a97899">
+<ul class="org-ul">
+<li>“ShivaHCMDgbros | Community Playlist on Prime Music.” Accessed: Jan. 30, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/9149bb977c3e434aa229b83a2958eccei8n0">https://music.amazon.in/user-playlists/9149bb977c3e434aa229b83a2958eccei8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5af7d61"></a>Misc<br />
+<div class="outline-text-7" id="text-org5af7d61">
+<ul class="org-ul">
+<li>Shiva Shiva Shiva Shankara | Gundecha Brothers | Dhrupad | Idea Jalsa | Art and Artistes, (Feb. 16, 2015). Accessed: Jan. 28, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wdnq5YZHlK4">https://www.youtube.com/watch?v=wdnq5YZHlK4</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgc07b85e"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgef2f26c"></a>Short Dhrupad Pieces<br />
+<ul class="org-ul">
+<li><a id="org67245d8"></a>F. W. Dagar<br />
+<div class="outline-text-7" id="text-org67245d8">
+<ul class="org-ul">
+<li>Raga Pooria, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>“Raga Pooria (Dhrupad) song by Ustad Faiyaz Wasifuddin Dagar feat. Sarberi Mukherjee, Tanya Mohan &amp; Praveen Arya from The Art of Dagarvani Dhrupad (9 Ragas Of Night And Day) on Amazon Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/tracks/B01FGE8XQC">https://music.amazon.in/tracks/B01FGE8XQC</a></li>
+</ul></li>
+
+<li><b>Adana</b>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>“Raga Adana (Dhrupad) song by Ustad Faiyaz Wasifuddin Dagar feat. Sarberi Mukherjee, Tanya Mohan &amp; Praveen Arya from The Art of Dagarvani Dhrupad (9 Ragas Of Night And Day) on Amazon Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/tracks/B01FGE93GG">https://music.amazon.in/tracks/B01FGE93GG</a>
+<ul class="org-ul">
+<li>"Includes some awesome, powerful 'damru' like vocals and 'pakhawaj'ing!"</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb6cb1c9"></a>Uday Bhawalkar<br />
+<div class="outline-text-7" id="text-orgb6cb1c9">
+<ul class="org-ul">
+<li><b>Suprabhat | Pt. Uday Bhawalkar | Bhajan, (Feb. 10, 2021).</b> Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GHq6jPhjnog">https://www.youtube.com/watch?v=GHq6jPhjnog</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org469e253"></a>Gundecha Brothers<br />
+<ul class="org-ul">
+<li><a id="org1def431"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-8" id="text-org1def431">
+<ul class="org-ul">
+<li>Mahadeva Deva - Various Artists (Album: Bhaktimala - Shiva Vol 1), (Dec. 08, 2015). Accessed: Jan. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9HEie4rcTP8">https://www.youtube.com/watch?v=9HEie4rcTP8</a></li>
+
+<li>Shiva Shambho Mahadeva - Various Artists (Album: Bhaktimala - Shiva Vol 1), (Dec. 08, 2015). Accessed: Jan. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=S7F5h12hckU">https://www.youtube.com/watch?v=S7F5h12hckU</a></li>
+
+<li>Shankar Panch Vadan | Gundecha Brothers | ( Album: The Best Of Shiv Bhajans ) | Music Today, (Mar. 18, 2016). Accessed: Jan. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=O-QTxRg0ZpM">https://www.youtube.com/watch?v=O-QTxRg0ZpM</a></li>
+
+<li>Mahakal | Gundecha Brothers | ( Album: The Best Of Shiv Bhajans ) | Music Today, (Mar. 18, 2016). Accessed: Jan. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=LUwpC6QlwvM">https://www.youtube.com/watch?v=LUwpC6QlwvM</a></li>
+
+<li>Shiva Shiva Shiva - Various Artists (Album: Bhaktimala - Shiva Vol 1), (Dec. 08, 2015). Accessed: Jan. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=zX_xxoW4a2Y">https://www.youtube.com/watch?v=zX_xxoW4a2Y</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org3d433ca"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org2a2c612" class="outline-4">
+<h4 id="org2a2c612"><span class="section-number-4">1.1.2.</span> Ragas</h4>
+<div class="outline-text-4" id="text-1-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org1335302"></a>Bhairav, Misc<br />
+<div class="outline-text-5" id="text-1-1-2-1">
+<ul class="org-ul">
+<li>Raga Bhairav, Misc: <a href="https://tinyurl.com/yzk8493x">https://tinyurl.com/yzk8493x</a>
+<ul class="org-ul">
+<li>Raga Bhairav: <a href="https://tinyurl.com/2ve8826r">https://tinyurl.com/2ve8826r</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgec1a2af"></a>Kedar<br />
+<div class="outline-text-5" id="text-1-1-2-2">
+<ul class="org-ul">
+<li>Raga Kedar: <a href="https://tinyurl.com/ycyye9u9">https://tinyurl.com/ycyye9u9</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0341cf4"></a>Shankara<br />
+<div class="outline-text-5" id="text-1-1-2-3">
+<ul class="org-ul">
+<li>Raga Shankara: <a href="https://tinyurl.com/4z64jc3v">https://tinyurl.com/4z64jc3v</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3614b62"></a>Bahaduri Todi<br />
+<div class="outline-text-5" id="text-1-1-2-4">
+<ul class="org-ul">
+<li><b>Ye Mahadev Devan Pate</b>, Raga Bahaduri Todi, Pt. Mallikarjun Mansur, SaReGaMa.
+<ul class="org-ul">
+<li>A hypnotic morning melody.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org1c86e92"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org539c6df" class="outline-4">
+<h4 id="org539c6df"><span class="section-number-4">1.1.3.</span> Instruments</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org7693994"></a>Rudra Veena<br />
+<div class="outline-text-5" id="text-1-1-3-1">
+<ul class="org-ul">
+<li>Rudra Veena: <a href="https://tinyurl.com/yve3d4b2">https://tinyurl.com/yve3d4b2</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org16d9d37"></a>Damru<br />
+<ol class="org-ol">
+<li><a id="org18e926b"></a>General<br />
+<div class="outline-text-6" id="text-1-1-3-2-1">
+<ul class="org-ul">
+<li>“Damaru,” Wikipedia. Jul. 13, 2024. Accessed: Jul. 21, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Damaru&amp;oldid=1234228715">https://en.wikipedia.org/w/index.php?title=Damaru&amp;oldid=1234228715</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfbb8987"></a>Misc<br />
+<div class="outline-text-6" id="text-1-1-3-2-2">
+<ul class="org-ul">
+<li><i>Shiva Shiva Shiva</i>, <i>Raga Adana</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>Awesome Adana, with some 'damru' like vocals and 'pakhawaj'ing.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org1757f36" class="outline-4">
+<h4 id="org1757f36"><span class="section-number-4">1.1.4.</span> Playlists</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<ul class="org-ul">
+<li>“SpiritualityShiva | Community Playlist on Prime Music.” <a href="https://music.amazon.in/user-playlists/cd1768de59d346ed973bf3a7310f0926i8n0?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN">https://music.amazon.in/user-playlists/cd1768de59d346ed973bf3a7310f0926i8n0?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN</a> (accessed Jun. 18, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org67f7df0" class="outline-4">
+<h4 id="org67f7df0"><span class="section-number-4">1.1.5.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgdbbd31d" class="outline-3">
+<h3 id="orgdbbd31d"><span class="section-number-3">1.2.</span> Karnatic Classical Music</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>M.S. Subbulakshmi | Carnatic | Sambho Mahadeva | Akashvani Sangeet, (Jul. 21, 2021). Accessed: Feb. 18, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3PkR1L3HTtQ">https://www.youtube.com/watch?v=3PkR1L3HTtQ</a></li>
+
+<li>Sambho Mahadeva | Audio Song | M S Subbulakshmi | Carnatic | Classical Music, (Dec. 17, 2022). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pzgWZd38miE">https://www.youtube.com/watch?v=pzgWZd38miE</a></li>
+
+<li>Siva Siva Siva Bho | M. S. Subbulakshmi | Radha Vishwanathan | Carnatic Classical Music, (Feb. 05, 2023). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=giFsovYg0co">https://www.youtube.com/watch?v=giFsovYg0co</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb9cad5" class="outline-2">
+<h2 id="orgcb9cad5"><span class="section-number-2">2.</span> Traditional Music</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0e5ba4c" class="outline-3">
+<h3 id="org0e5ba4c"><span class="section-number-3">2.1.</span> General</h3>
+</div>
+<div id="outline-container-orgd420d9e" class="outline-3">
+<h3 id="orgd420d9e"><span class="section-number-3">2.2.</span> Mantras</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Music Today, Shri Shiva Mantra Shakti | Audio Jukebox | Devotional | Pandit Hariprasad Chaurasia | Ravindra Sathe, (Jul. 07, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yOvunGbX2n8">https://www.youtube.com/watch?v=yOvunGbX2n8</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9aaf2b4" class="outline-3">
+<h3 id="org9aaf2b4"><span class="section-number-3">2.3.</span> Music Today: BhaktiMala</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>Music Today, Bhaktimala Shiva | Vol 1 | Audio Jukebox | Vocal | Devotional | Various Artists, (Sep. 21, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=6_myPA_01WY">https://www.youtube.com/watch?v=6_myPA_01WY</a></li>
+
+<li>Music Today, Bhaktimala - Shiva | Vol 2 | Audio Jukebox | Devotional | Veena Sahasrabuddhe | Umakant Gundecha, (Sep. 11, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Y4fER4-oFGE">https://www.youtube.com/watch?v=Y4fER4-oFGE</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org395683c" class="outline-3">
+<h3 id="org395683c"><span class="section-number-3">2.4.</span> Bhajans</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>Music Today, The Best Of Shiv Bhajans | Audio Jukebox | Vocal | Devotional | Veena Sahasrabuddhe, (Aug. 31, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=aZkEglvcXIs">https://www.youtube.com/watch?v=aZkEglvcXIs</a></li>
+
+<li>|| शिव माला || शिव पुष्पांजलि | Shiv Bhajan Playlist |Devotional Bhajan Playlist|Shiv Tandav Stotram, (Feb. 28, 2022). Accessed: Feb. 18, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8D31BEz-k5k">https://www.youtube.com/watch?v=8D31BEz-k5k</a></li>
+
+<li>2022 के नए शिव भजन | Shiv Shambho | Shiv Dhun | Om Jai Shiv Omkara | Shiv Bhajan Playlist, (Jun. 06, 2022). Accessed: Feb. 18, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CGS9bZrMgx8">https://www.youtube.com/watch?v=CGS9bZrMgx8</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfe6a7a3" class="outline-3">
+<h3 id="orgfe6a7a3"><span class="section-number-3">2.5.</span> Kirtans</h3>
+</div>
+<div id="outline-container-org3cc30fb" class="outline-3">
+<h3 id="org3cc30fb"><span class="section-number-3">2.6.</span> Aarti</h3>
+</div>
+<div id="outline-container-org205aa68" class="outline-3">
+<h3 id="org205aa68"><span class="section-number-3">2.7.</span> Aradhana</h3>
+</div>
+<div id="outline-container-org9aa5e44" class="outline-3">
+<h3 id="org9aa5e44"><span class="section-number-3">2.8.</span> Prarthana</h3>
+<div class="outline-text-3" id="text-2-8">
+<ul class="org-ul">
+<li>Music Today, Prarthana - Shri Shiva | Vol 1&amp; 2| Audio Jukebox | Vocal | Devotional | Ravindra Sathe | Music Today, (Aug. 31, 2015). Accessed: Apr. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tekafCKYpcI">https://www.youtube.com/watch?v=tekafCKYpcI</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbf6a7f8" class="outline-3">
+<h3 id="orgbf6a7f8"><span class="section-number-3">2.9.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgc0aae7f" class="outline-2">
+<h2 id="orgc0aae7f"><span class="section-number-2">3.</span> Misc</h2>
+<div class="outline-text-2" id="text-3">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:07</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

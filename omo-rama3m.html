@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rama - Music</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Rama - Music</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org34541cc">1. Genres</a>
+<ul>
+<li><a href="#org9b7e21f">1.1. Indian Classical Music</a>
+<ul>
+<li><a href="#orgb761b5a">1.1.1. Hindustani Classical Music</a></li>
+<li><a href="#org70673c4">1.1.2. Karnatic Classical Music</a></li>
+<li><a href="#org01c6f67">1.1.3. Collections</a></li>
+<li><a href="#org859cb54">1.1.4. Solos</a></li>
+<li><a href="#org64fcc15">1.1.5. Special Topics</a></li>
+<li><a href="#orgc5dc049">1.1.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3c31361">1.2. Traditional Music</a></li>
+<li><a href="#org65f807e">1.3. Ghazals</a>
+<ul>
+<li><a href="#org5314626">1.3.1. Jagjit Singh</a></li>
+</ul>
+</li>
+<li><a href="#orgd16b3a7">1.4. Fusion</a></li>
+<li><a href="#org97e3379">1.5. Films</a>
+<ul>
+<li><a href="#org6376fc1">1.5.1. K. L. Saigal</a></li>
+<li><a href="#orgaf04feb">1.5.2. Manna Dey</a></li>
+<li><a href="#org5bbae70">1.5.3. Lata Mangeshkar</a></li>
+<li><a href="#org95f37e6">1.5.4. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9f06166">2. Collections</a>
+<ul>
+<li><a href="#org962b456">2.1. Playlists</a></li>
+<li><a href="#orge99c865">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8e17581">3. Special Topics</a>
+<ul>
+<li><a href="#org00d7a28">3.1. Hindi</a></li>
+<li><a href="#org4465755">3.2. ISKCON</a></li>
+<li><a href="#org4cb53a9">3.3. Meera</a></li>
+</ul>
+</li>
+<li><a href="#org2522018">4. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org34541cc" class="outline-2">
+<h2 id="org34541cc"><span class="section-number-2">1.</span> Genres</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org9b7e21f" class="outline-3">
+<h3 id="org9b7e21f"><span class="section-number-3">1.1.</span> Indian Classical Music</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgb761b5a" class="outline-4">
+<h4 id="orgb761b5a"><span class="section-number-4">1.1.1.</span> Hindustani Classical Music</h4>
+<div class="outline-text-4" id="text-1-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgd9b95de"></a>Dhrupad<br />
+<ol class="org-ol">
+<li><a id="org065cf5f"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="org309d914"></a>F. W. Dagar<br />
+<div class="outline-text-7" id="text-org309d914">
+<ul class="org-ul">
+<li>“RamaFWD | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/74e00edc35ab4506a25c7cd280ece73ai8n0">https://music.amazon.in/user-playlists/74e00edc35ab4506a25c7cd280ece73ai8n0</a>
+<ul class="org-ul">
+<li><b>Aaj Badhai</b>, Raga <i>Shuddh Saarang</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc1976ad"></a>Uday Bhawalkar<br />
+<div class="outline-text-7" id="text-orgc1976ad">
+<ul class="org-ul">
+<li>Uday Bhawalkar, <b>Ram Stuti | Vijayadashmi | Uday Bhawalkar, (Oct. 08, 2019).</b> Accessed: Dec. 22, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PBza0Ru1d_0">https://www.youtube.com/watch?v=PBza0Ru1d_0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6c9aa6c"></a>Gundecha Brothers<br />
+<ul class="org-ul">
+<li><a id="org1cabfe6"></a>Misc<br />
+<div class="outline-text-8" id="text-org1cabfe6">
+<ul class="org-ul">
+<li>“RamaGBros | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/082db5aa99e6494bbbf2857b69a856c3i8n0">https://music.amazon.in/user-playlists/082db5aa99e6494bbbf2857b69a856c3i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb711805"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-8" id="text-orgb711805">
+<ul class="org-ul">
+<li>Jab Hi Raghupati Sangh Siya Chali - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DCh43o0_rog">https://www.youtube.com/watch?v=DCh43o0_rog</a></li>
+<li>Rann Jeeti Rama Raoo Aya - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8xtX8HJNK5U">https://www.youtube.com/watch?v=8xtX8HJNK5U</a></li>
+<li>Raghuvar Doori Jayi Mriga Maryo - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qFiSTHF8hHM">https://www.youtube.com/watch?v=qFiSTHF8hHM</a></li>
+<li>Chitrakoot Ati Vichitra - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=en733hLlqOQ">https://www.youtube.com/watch?v=en733hLlqOQ</a></li>
+<li>Ghana Ghamand Nabh Garajat Ghora - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=820h4OZXTRk">https://www.youtube.com/watch?v=820h4OZXTRk</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org9bf2560"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org364281e"></a>Short Dhrupad Pieces<br />
+<ul class="org-ul">
+<li><a id="org5304bc9"></a>F. W. Dagar<br />
+<div class="outline-text-8" id="text-org5304bc9">
+<ul class="org-ul">
+<li><b>Aaj Badhai</b>, Raga <i>Shuddh Saarang</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>“Raga Shuddh Saarang (Dhrupad) song by Ustad Faiyaz Wasifuddin Dagar feat. Sarberi Mukherjee, Tanya Mohan &amp; Praveen Arya from The Art of Dagarvani Dhrupad (9 Ragas Of Night And Day) on Amazon Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/tracks/B01FGE8WCW">https://music.amazon.in/tracks/B01FGE8WCW</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orge49f371"></a>Uday Bhawalkar<br />
+<div class="outline-text-8" id="text-orge49f371">
+<ul class="org-ul">
+<li>Uday Bhawalkar, <b>Ram Stuti | Vijayadashmi | Uday Bhawalkar, (Oct. 08, 2019).</b> Accessed: Dec. 22, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PBza0Ru1d_0">https://www.youtube.com/watch?v=PBza0Ru1d_0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org23e74b4"></a>Gundecha Brothers<br />
+<ul class="org-ul">
+<li><a id="org9992f36"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-9" id="text-org9992f36">
+<ul class="org-ul">
+<li>Jab Hi Raghupati Sangh Siya Chali - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DCh43o0_rog">https://www.youtube.com/watch?v=DCh43o0_rog</a></li>
+<li>Raghuvar Doori Jayi Mriga Maryo - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qFiSTHF8hHM">https://www.youtube.com/watch?v=qFiSTHF8hHM</a></li>
+<li>Chitrakoot Ati Vichitra - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=en733hLlqOQ">https://www.youtube.com/watch?v=en733hLlqOQ</a></li>
+<li>Ghana Ghamand Nabh Garajat Ghora - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=820h4OZXTRk">https://www.youtube.com/watch?v=820h4OZXTRk</a></li>
+<li>Rann Jeeti Rama Raoo Aya - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8xtX8HJNK5U">https://www.youtube.com/watch?v=8xtX8HJNK5U</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org1a57ec0"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgcc826c5"></a>Vocal Music<br />
+<ol class="org-ol">
+<li><a id="orgd863b7a"></a>Kishori Amonkar<br />
+<div class="outline-text-6" id="text-1-1-1-2-1">
+<ul class="org-ul">
+<li>“Paayo Paayo ~ Vidushi Kishori Amonkar ~ Raga Kedar- Vilambit Ektaal ~ BCMF 2014 - YouTube.” <a href="https://www.youtube.com/watch?v=xs6J6ysSJHc">https://www.youtube.com/watch?v=xs6J6ysSJHc</a> (accessed Jul. 24, 2023).
+<ul class="org-ul">
+<li>“Raga Kedar | Gansaraswati Kishori Amonkar | Payo Payo &amp; Kanha Re - YouTube.” <a href="https://www.youtube.com/watch?v=99StTwqiuR8">https://www.youtube.com/watch?v=99StTwqiuR8</a> (accessed Jul. 24, 2023).</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org66c1c3b"></a>Amir Khan<br />
+<div class="outline-text-6" id="text-1-1-1-2-2">
+<ul class="org-ul">
+<li>“RamaAmirKhan | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/fb3a4ed324fa46cd8cc11b8915dbe041i8n0">https://music.amazon.in/user-playlists/fb3a4ed324fa46cd8cc11b8915dbe041i8n0</a></li>
+
+<li>Saregama Hindustani Classical, Jinke Man Ram Biraje | Raag - Malkauns |  Masterpieces Of Ustad Amir Khan | Indian Classical  Music, (Sep. 09, 2023). Accessed: Jan. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2ZkrJSeX3bk">https://www.youtube.com/watch?v=2ZkrJSeX3bk</a></li>
+<li>Ustad Amir Khan - Topic, <b>Jinke Man Ram Biraje</b> Drut, (Jul. 22, 2019). Accessed: Nov. 27, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nHLBjAPA_oA">https://www.youtube.com/watch?v=nHLBjAPA_oA</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Rama Kalyan, Amir Khan, SaReGaMa</li>
+</ul>
+</div>
+</li>
+<li><a id="orgec81e2b"></a>Bade Ghulam Ali Khan<br />
+<div class="outline-text-6" id="text-1-1-1-2-3">
+<ul class="org-ul">
+<li>“RamaBGAK | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/5259facf3e2b4b1f984c60c4314b6a07i8n0">https://music.amazon.in/user-playlists/5259facf3e2b4b1f984c60c4314b6a07i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9de1b0e"></a>Kumar Gandharva<br />
+<div class="outline-text-6" id="text-1-1-1-2-4">
+<ul class="org-ul">
+<li>आज मुझे रघुवर की सुध आई&#x2026; | श्री राम भजन | स्वर - कुमार गन्धर्व, (Jan. 22, 2024). Accessed: Apr. 08, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QQsVO9W7Ims">https://www.youtube.com/watch?v=QQsVO9W7Ims</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3164c12"></a>Bhimsen Joshi<br />
+<div class="outline-text-6" id="text-1-1-1-2-5">
+<ul class="org-ul">
+<li>“RamaBJoshi | Community Playlist on Prime Music.” Accessed: Jan. 22, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/486abdb4c82646e98e927802ce64e2ddi8n0">https://music.amazon.in/user-playlists/486abdb4c82646e98e927802ce64e2ddi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf08fd6a"></a>Veena S<br />
+<div class="outline-text-6" id="text-1-1-1-2-6">
+<ul class="org-ul">
+<li>“RamaVeenaS | Community Playlist on Prime Music.” Accessed: Jan. 22, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/1dcc461e90cc429ca43af8cf92941132i8n0">https://music.amazon.in/user-playlists/1dcc461e90cc429ca43af8cf92941132i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1e5aad0"></a>Mishra Brothers<br />
+<div class="outline-text-6" id="text-1-1-1-2-7">
+<ul class="org-ul">
+<li>“RamaRSMishra | Community Playlist on Prime Music.” Accessed: Jan. 22, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/9a78d90377a64e2d95351fe2d6506afbi8n0">https://music.amazon.in/user-playlists/9a78d90377a64e2d95351fe2d6506afbi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org72b8309"></a>Chhannulal Mishra<br />
+<div class="outline-text-6" id="text-1-1-1-2-8">
+<ul class="org-ul">
+<li>“RamaCMishra | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/4c2139b0e01a4c40b4d4b21c1430109di8n0">https://music.amazon.in/user-playlists/4c2139b0e01a4c40b4d4b21c1430109di8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org75373e7"></a>D. V. Paluskar<br />
+<ul class="org-ul">
+<li><a id="org115c2fb"></a>Playlists<br />
+<div class="outline-text-7" id="text-org115c2fb">
+<ul class="org-ul">
+<li>“RamaDVP | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/5d50f71300a64fd5afda77bb6d8007cai8n0">https://music.amazon.in/user-playlists/5d50f71300a64fd5afda77bb6d8007cai8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5824665"></a>Apple Music<br />
+<div class="outline-text-7" id="text-org5824665">
+<ul class="org-ul">
+<li>Nirbal Ke Balram by Bapurao Paluskar on Apple Music. 1982. Accessed: Jan. 23, 2024. [Online]. Available: <a href="https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920">https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920</a></li>
+
+<li>Bhaj Man Ram by Bapurao Paluskar on Apple Music. 1982. Accessed: Jan. 23, 2024. [Online]. Available: <a href="https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920">https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org50dde03"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org9925374"></a>Rama Dhun<br />
+<div class="outline-text-8" id="text-org9925374">
+<ul class="org-ul">
+<li><b>Raghupati Raghav Raja Raam</b>, Pt. D. V. Paluskar, SaReGaMa
+<ul class="org-ul">
+<li>Pandit D V Paluskar - Topic, <b>Ram Dhun</b>, (Jul. 23, 2019). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=D1NvEEEkb_E">https://www.youtube.com/watch?v=D1NvEEEkb_E</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org19cffc1"></a>Misc<br />
+<div class="outline-text-7" id="text-org19cffc1">
+<ul class="org-ul">
+<li><b>Thumak Chalat Ramchandra</b>, Pt. D. V. Paluskar, SaReGaMa</li>
+
+<li><b>Payo Ji Maine Ram Rattan</b>, Pt. D. V. Paluskar, SaReGaMa</li>
+
+<li><i>Bhajamon Ram Charan Sukhadai</i>, Pt. D. V. Paluskar, SaReGaMa</li>
+
+<li>Saregama Hindustani Classical, Diwali Special Ram Bhajan | D.V. Paluskar | Thumak Chalat Ranchandra | Hindustani Classical Music, (Oct. 31, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=k4CuY_QrRPY">https://www.youtube.com/watch?v=k4CuY_QrRPY</a></li>
+
+<li>Prasar Bharati Archives, मनुवा रामनाम रस पीजै&#x2026; | श्री राम भजन | स्वर - D. V. Paluskar, (Jan. 22, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=fIEk2C9MIEg">https://www.youtube.com/watch?v=fIEk2C9MIEg</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org78e8587"></a>Misc<br />
+<div class="outline-text-6" id="text-1-1-1-2-10">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Are Man Ram Too Jap | Khayal | Pt. Rasiklal Andharia | Hindustani Classical Music, (Mar. 21, 2025). Accessed: Oct. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=1bbLl4Llq7Y">https://www.youtube.com/watch?v=1bbLl4Llq7Y</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org0086cd6"></a>Instrumental Music<br />
+<ol class="org-ol">
+<li><a id="org2ca3a65"></a>Sarod<br />
+<ul class="org-ul">
+<li><a id="org446f47a"></a>Playlists<br />
+<div class="outline-text-7" id="text-org446f47a">
+<ul class="org-ul">
+<li>“RamaSarod | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/165abd3593094c559553e422293b5e4ci8n0">https://music.amazon.in/user-playlists/165abd3593094c559553e422293b5e4ci8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org795750c"></a>Amjad Ali Khan<br />
+<ul class="org-ul">
+<li><a id="org8824327"></a>Rama Dhun<br />
+<div class="outline-text-8" id="text-org8824327">
+<ul class="org-ul">
+<li>Amjad Ali Khan [@AAKSarod], “Wish you are blessed with peace, prosperity, happiness, good health and grand success. I also hope for peace and oneness to prevail with kinder and happier times ahead for the world. Happy Diwali #HappyDiwali <a href="https://t.co/TjEAuoJGsZ">https://t.co/TjEAuoJGsZ</a>,” Twitter. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://x.com/AAKSarod/status/1327162294036439042">https://x.com/AAKSarod/status/1327162294036439042</a>
+<ul class="org-ul">
+<li>Amjad Ali Khan, <b><a href="https://twitter.com/aaksarod/status/1327162294036439042?s=21">Happy Diwali!</a></b></li>
+</ul></li>
+<li>Saregama GenY, Raghupati Raghav Raja Ram | Instrumental | Ustad Amjad Ali Khan, Amaan Ali &amp; Ayaan Ali Bangash, (Oct. 01, 2015). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KkwqVRGU-Mo">https://www.youtube.com/watch?v=KkwqVRGU-Mo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc7bc8bc"></a>Payo Ji Maine<br />
+<div class="outline-text-8" id="text-orgc7bc8bc">
+<ul class="org-ul">
+<li>AIR Raagam, “Payo Ji Maine” by Ustad Amjad Ali Khan II Sarod Recital II Azadi Sangeet Sammelan, (Aug. 29, 2024). Accessed: Sep. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VTEVJbO8Y-A">https://www.youtube.com/watch?v=VTEVJbO8Y-A</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Payo Ji Maine” by Ustad Amjad Ali Khan II Sarod Recital II Azadi Sangeet Sammelan. Accessed: Sep. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VTEVJbO8Y-A">https://www.youtube.com/watch?v=VTEVJbO8Y-A</a></li>
+<li>AIR Raagam, “Payo Ji Maine” by Ustad Amjad Ali Khan II Sarod Recital II Azadi Sangeet Sammelan, (Aug. 29, 2024). Accessed: Sep. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VTEVJbO8Y-A">https://www.youtube.com/watch?v=VTEVJbO8Y-A</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb196e22"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgc3e66cd"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org5c943e5"></a>Violin<br /></li>
+</ol>
+</li>
+<li><a id="org8eaba24"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org70673c4" class="outline-4">
+<h4 id="org70673c4"><span class="section-number-4">1.1.2.</span> Karnatic Classical Music</h4>
+<div class="outline-text-4" id="text-1-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org302dcf4"></a>M. S. Subbulakshmi<br />
+<ol class="org-ol">
+<li><a id="org040971d"></a>Playlists<br />
+<div class="outline-text-6" id="text-1-1-2-1-1">
+<ul class="org-ul">
+<li>“RamaMSS | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/ca7bd525d9fe4bb294776bda9a47412fi8n0">https://music.amazon.in/user-playlists/ca7bd525d9fe4bb294776bda9a47412fi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org978270a"></a>Misc<br />
+<div class="outline-text-6" id="text-1-1-2-1-2">
+<ul class="org-ul">
+<li>Raghuvamsa Sudha | Audio Song | M S Subbulakshmi | Carnatic | Classical Music, (Dec. 15, 2022). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wqhByXPebNI">https://www.youtube.com/watch?v=wqhByXPebNI</a></li>
+<li>Raghuvamsa Sudha song By MS Subbulakshmi, (Aug. 19, 2014). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=a0DxyTE7IUY">https://www.youtube.com/watch?v=a0DxyTE7IUY</a></li>
+
+<li>Saregama Carnatic Classical, Nama Ramayana | M.S. Subbulakshmi | Ram Bhajan | Sri Tulsidas | Carnatic Classical Song, (Nov. 12, 2023). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FAHkjc39mu4">https://www.youtube.com/watch?v=FAHkjc39mu4</a></li>
+<li>Saregama Carnatic Classical, Nama Ramayanam - Lyrical | M.S. Subbulakshmi | Ram Bhajan | Carnatic Music | Carnatic Classical Song, (May 28, 2023). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gCXIUgHPdaM">https://www.youtube.com/watch?v=gCXIUgHPdaM</a></li>
+
+<li>Saregama Carnatic Classical, Shuddha Brahma Paratpara Ram | M.S. Subbulakshmi | Ram Bhajan | Tulsidas | Carnatic Classical Music, (Oct. 31, 2024). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QdAt2_b8Vk8">https://www.youtube.com/watch?v=QdAt2_b8Vk8</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Saregama Carnatic Classical, Dussehra Special | Ram Bhajans | M.S. Subbulakshmi | Nama Ramayana | Yaro Ivar Yaro | Carnatic Music, (Oct. 12, 2024). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=EJA1ycLjmAY">https://www.youtube.com/watch?v=EJA1ycLjmAY</a></li>
+
+<li>Saregama Carnatic Classical, Rama Nama Sankeertanam | M.S. Amma | Nama Ramayana | Sree Raghukula | Carnatic Classical Music, (Jan. 21, 2024). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VsNerAjPQzU">https://www.youtube.com/watch?v=VsNerAjPQzU</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgfde8515"></a>M. Balamuralikrishna<br />
+<div class="outline-text-5" id="text-1-1-2-2">
+<ul class="org-ul">
+<li>Saregama Carnatic Classical, Popular Shri Ram Bhajans | Dr. M. Balamuralikrishna | Ramachandrulu Napai | Carnatic Classical Music, (Jan. 19, 2024). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uqRffVqxeYY">https://www.youtube.com/watch?v=uqRffVqxeYY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3413749"></a>L. Subramaniam<br />
+<div class="outline-text-5" id="text-1-1-2-3">
+<ul class="org-ul">
+<li>“RamaLSub | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/7ba920f2901443c48e596905b7ffa001i8n0">https://music.amazon.in/user-playlists/7ba920f2901443c48e596905b7ffa001i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org37b8d10"></a>Misc<br />
+<div class="outline-text-5" id="text-1-1-2-4">
+<ul class="org-ul">
+<li>Nama Ramayana, (Feb. 16, 2019). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=LWDbWNBrGD8">https://www.youtube.com/watch?v=LWDbWNBrGD8</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org01c6f67" class="outline-4">
+<h4 id="org01c6f67"><span class="section-number-4">1.1.3.</span> Collections</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgbbe8b94"></a>Bhajans<br />
+<div class="outline-text-5" id="text-1-1-3-1">
+<ul class="org-ul">
+<li>Music Today, The Best Of Rama Bhajans | AudioJukebox | Devotional | Bhimsen Joshi | Veena Sahasrabuddhe MusicToday, (Sep. 02, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=HCZGHE8lwdE">https://www.youtube.com/watch?v=HCZGHE8lwdE</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc12500b"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-5" id="text-1-1-3-2">
+<ul class="org-ul">
+<li>Music Today, Bhaktimala Rama | Vol 1 | Audio Jukebox | Vocal | Devotional | Bhimsen Joshi, (Sep. 01, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=mxZWEUtyDRQ">https://www.youtube.com/watch?v=mxZWEUtyDRQ</a></li>
+<li>Music Today, Bhaktimala Rama | Vol 2 | Audio Jukebox | Vocal | Devotional | Rajan &amp; Sajan Mishra, (Sep. 01, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Rf3h8mXpPZM">https://www.youtube.com/watch?v=Rf3h8mXpPZM</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org859cb54" class="outline-4">
+<h4 id="org859cb54"><span class="section-number-4">1.1.4.</span> Solos</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<ul class="org-ul">
+<li>Ram Bhajo Ram Bhajo | Raag Jaijaiwanti | Bani Guru Guru Hai Bani | Akashvani Sangeet, (Jan. 10, 2022). Accessed: Nov. 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=futjM_vexss">https://www.youtube.com/watch?v=futjM_vexss</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org64fcc15" class="outline-4">
+<h4 id="org64fcc15"><span class="section-number-4">1.1.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-1-1-5">
+</div>
+<ol class="org-ol">
+<li><a id="org811938f"></a>Ram Dhun<br />
+<ol class="org-ol">
+<li><a id="org94be686"></a>Vocal Music<br />
+<div class="outline-text-6" id="text-1-1-5-1-1">
+<ul class="org-ul">
+<li><b>Raghupati Raghav Raja Raam</b>, Pt. D. V. Paluskar, SaReGaMa
+<ul class="org-ul">
+<li>Pandit D V Paluskar - Topic, <b>Ram Dhun</b>, (Jul. 23, 2019). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=D1NvEEEkb_E">https://www.youtube.com/watch?v=D1NvEEEkb_E</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org6c96f9f"></a>Instrumental Music<br />
+<ul class="org-ul">
+<li><a id="org286f10f"></a>Bismillah Khan<br />
+<div class="outline-text-7" id="text-org286f10f">
+<ul class="org-ul">
+<li>Ustad Bismillah Khan - Topic, <b>Ram Dhun On Shehnai</b>, (Aug. 01, 2019). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=srX6C-299Ig">https://www.youtube.com/watch?v=srX6C-299Ig</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org27e1b66"></a>Amjad Ali Khan<br />
+<div class="outline-text-7" id="text-org27e1b66">
+<ul class="org-ul">
+<li>Amjad Ali Khan [@AAKSarod], “Wish you are blessed with peace, prosperity, happiness, good health and grand success. I also hope for peace and oneness to prevail with kinder and happier times ahead for the world. Happy Diwali #HappyDiwali <a href="https://t.co/TjEAuoJGsZ">https://t.co/TjEAuoJGsZ</a>,” Twitter. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://x.com/AAKSarod/status/1327162294036439042">https://x.com/AAKSarod/status/1327162294036439042</a>
+<ul class="org-ul">
+<li>Amjad Ali Khan, <b><a href="https://twitter.com/aaksarod/status/1327162294036439042?s=21">Happy Diwali!</a></b></li>
+</ul></li>
+<li>Saregama GenY, Raghupati Raghav Raja Ram | Instrumental | Ustad Amjad Ali Khan, Amaan Ali &amp; Ayaan Ali Bangash, (Oct. 01, 2015). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KkwqVRGU-Mo">https://www.youtube.com/watch?v=KkwqVRGU-Mo</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgdc5454b"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgc7105d1"></a>Epics - Ramayana<br />
+<ol class="org-ol">
+<li><a id="org28b3e2e"></a>Chhannulal Mishra<br />
+<div class="outline-text-6" id="text-1-1-5-2-1">
+<ul class="org-ul">
+<li>“RamaTulsiDasRamCharitmanasCMishra | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/3a366bf82d4b4813b9fead683db54a3ci8n0">https://music.amazon.in/user-playlists/3a366bf82d4b4813b9fead683db54a3ci8n0</a>
+<ul class="org-ul">
+<li>Ramcharitmanas | Volume 1&amp;2 | Audio Jukebox | Devotional | Vocal | Chhannulal Mishra | Music Today, (Sep. 02, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PK3JdTjMzEs">https://www.youtube.com/watch?v=PK3JdTjMzEs</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Music Today, Ramcharitmanas | Volume 1&amp;2 | Audio Jukebox | Devotional | Vocal | Chhannulal Mishra, (Sep. 02, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PK3JdTjMzEs">https://www.youtube.com/watch?v=PK3JdTjMzEs</a></li>
+<li>Music Today, Ramcharitmanas | Volume 1&amp;2 | Audio Jukebox | Devotional | Vocal | Chhannulal Mishra, (Sep. 02, 2015). Accessed: Feb. 02, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=PK3JdTjMzEs">https://www.youtube.com/watch?v=PK3JdTjMzEs</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgc5dc049" class="outline-4">
+<h4 id="orgc5dc049"><span class="section-number-4">1.1.6.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org3c31361" class="outline-3">
+<h3 id="org3c31361"><span class="section-number-3">1.2.</span> Traditional Music</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Rama - Traditional Music: <a href="https://tinyurl.com/3t8js5e6">https://tinyurl.com/3t8js5e6</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org65f807e" class="outline-3">
+<h3 id="org65f807e"><span class="section-number-3">1.3.</span> Ghazals</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org5314626" class="outline-4">
+<h4 id="org5314626"><span class="section-number-4">1.3.1.</span> Jagjit Singh</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ul class="org-ul">
+<li>“RamaJagjitSingh | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/040f52b514d44fb18cd58738b3a51523i8n0">https://music.amazon.in/user-playlists/040f52b514d44fb18cd58738b3a51523i8n0</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd16b3a7" class="outline-3">
+<h3 id="orgd16b3a7"><span class="section-number-3">1.4.</span> Fusion</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>“RamaFusion | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/30d7463f818a484b913b91441d546381i8n0">https://music.amazon.in/user-playlists/30d7463f818a484b913b91441d546381i8n0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org97e3379" class="outline-3">
+<h3 id="org97e3379"><span class="section-number-3">1.5.</span> Films</h3>
+<div class="outline-text-3" id="text-1-5">
+</div>
+<div id="outline-container-org6376fc1" class="outline-4">
+<h4 id="org6376fc1"><span class="section-number-4">1.5.1.</span> K. L. Saigal</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<ul class="org-ul">
+<li>“RamaKLS | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/e649d8d776314b718f8fbb63a20ac69di8n0">https://music.amazon.in/user-playlists/e649d8d776314b718f8fbb63a20ac69di8n0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaf04feb" class="outline-4">
+<h4 id="orgaf04feb"><span class="section-number-4">1.5.2.</span> Manna Dey</h4>
+<div class="outline-text-4" id="text-1-5-2">
+<ul class="org-ul">
+<li><b>“RamaMDey | Community Playlist on Prime Music.”</b> Accessed: Jan. 20, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/69ae5625550e4ad3b1b6df2a8cf10d0di8n0">https://music.amazon.in/user-playlists/69ae5625550e4ad3b1b6df2a8cf10d0di8n0</a></li>
+<li>#ShriRamBhajan | भजन संध्या - राम नाम सुखदाई | Manna Dey Playlist | Ram Bhajan, (Dec. 27, 2021). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=I1NT0rj6FS0">https://www.youtube.com/watch?v=I1NT0rj6FS0</a></li>
+<li>#ShriRamBhajan | He Ram | हे राम  | Guide | Manna Dey | S.D Burman | Ram Bhajan | Saregama Bhakti, (Jun. 15, 2019). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=zQ5IPO4BEAY">https://www.youtube.com/watch?v=zQ5IPO4BEAY</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5bbae70" class="outline-4">
+<h4 id="org5bbae70"><span class="section-number-4">1.5.3.</span> Lata Mangeshkar</h4>
+<div class="outline-text-4" id="text-1-5-3">
+<ul class="org-ul">
+<li>Saregama Bhakti, Ram Shyam Gun Gan Lata Ji - Lata Mangeshkar - Pt. Bhimsen Joshi - Devotional Songs, (Sep. 25, 2013). Accessed: Feb. 09, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=VF8RMZZXlWg">https://www.youtube.com/watch?v=VF8RMZZXlWg</a></li>
+
+<li>Saregama Bhakti, Ram Bhajans by Lata Mangeshkar | राम भजन - लता मंगेशकर | Ram Ka Gun Gaan Kariye | Shriram Jairam, (Sep. 09, 2019). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2tySxSs70TI">https://www.youtube.com/watch?v=2tySxSs70TI</a></li>
+
+<li>“RamaLataM | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/02ebab006f5d4d6a81f47fb8515ce2f3i8n0">https://music.amazon.in/user-playlists/02ebab006f5d4d6a81f47fb8515ce2f3i8n0</a></li>
+
+<li>#ShriRamBhajan |श्री राम भजन | राम का गुण गान करिये | Lata Mangeshkar | Pt. Bhimsen Joshi, (Aug. 13, 2023). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-aYrXVlKCr4">https://www.youtube.com/watch?v=-aYrXVlKCr4</a></li>
+<li>Lata Mangeshkar - Shree Ram Dhun, (Mar. 24, 2014). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=jv1R5-tp4_0">https://www.youtube.com/watch?v=jv1R5-tp4_0</a></li>
+<li>श्री राम रमा रमणम् | Ram Bhajan | Lata Mangeshkar, (Oct. 06, 2019). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=bYC1VMsJChI">https://www.youtube.com/watch?v=bYC1VMsJChI</a></li>
+<li>Shree Ram Chandra Kripalu Bhajman | Ram Bhajan | Lata Mangeshkar, (Jan. 22, 2024). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Y-oXpXh6g5c">https://www.youtube.com/watch?v=Y-oXpXh6g5c</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>#ShriRamBhajan  |  Bhajans by Lata Mangeshkar | राम भजन - लता मंगेशकर | Ram Ka Gun Gaan Kariye, (Sep. 09, 2019). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2tySxSs70TI">https://www.youtube.com/watch?v=2tySxSs70TI</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org95f37e6" class="outline-4">
+<h4 id="org95f37e6"><span class="section-number-4">1.5.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-1-5-4">
+<ul class="org-ul">
+<li>“RamaLeelaFilms | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/a6ee655273234d8b8ca4cb0688b622bci8n0">https://music.amazon.in/user-playlists/a6ee655273234d8b8ca4cb0688b622bci8n0</a></li>
+
+<li>Saregama Bhakti, जय रघुनंदन जय सियाराम | Jai Raghunandan Jai Siyaram | Ram Bhajan From Films | Mohd Rafi | Nonstop, (May 23, 2021). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ri4BzotE21s">https://www.youtube.com/watch?v=ri4BzotE21s</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9f06166" class="outline-2">
+<h2 id="org9f06166"><span class="section-number-2">2.</span> Collections</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org962b456" class="outline-3">
+<h3 id="org962b456"><span class="section-number-3">2.1.</span> Playlists</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>“RamaRMS | Community Playlist on Prime Music.” Accessed: Jan. 20, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/dd52bae3e7c24002814085489dc4e131i8n0">https://music.amazon.in/user-playlists/dd52bae3e7c24002814085489dc4e131i8n0</a></li>
+
+<li>“Rama | Community Playlist on Prime Music.” Accessed: Jan. 20, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/401d4553129240f6862195f1bbe176aei8n0">https://music.amazon.in/user-playlists/401d4553129240f6862195f1bbe176aei8n0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge99c865" class="outline-3">
+<h3 id="orge99c865"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Music Today, Sangaman - Tulsidas | Audio Jukebox | Devotional | Vocal | Various Artists, (Sep. 01, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yDhb_oGJ0n4">https://www.youtube.com/watch?v=yDhb_oGJ0n4</a></li>
+
+<li>“Shri Ram - YouTube.” Accessed: Dec. 22, 2023. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLqtVCj5iilH6U4xOYpl24wyYJEwXf5e91">https://www.youtube.com/playlist?list=PLqtVCj5iilH6U4xOYpl24wyYJEwXf5e91</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8e17581" class="outline-2">
+<h2 id="org8e17581"><span class="section-number-2">3.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org00d7a28" class="outline-3">
+<h3 id="org00d7a28"><span class="section-number-3">3.1.</span> Hindi</h3>
+</div>
+<div id="outline-container-org4465755" class="outline-3">
+<h3 id="org4465755"><span class="section-number-3">3.2.</span> ISKCON</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>ISKCON Bangalore, Sri Nama Ramayana – The Glories of Lord Rama | ISKCON Bangalore, (Jan. 21, 2024). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ONW0xl3BPVw">https://www.youtube.com/watch?v=ONW0xl3BPVw</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4cb53a9" class="outline-3">
+<h3 id="org4cb53a9"><span class="section-number-3">3.3.</span> Meera</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>SonyMusicIndiaVEVO, Lagi Mohi Ram - Meera Ke Ram | Kavita Krishnamurthy | Official Audio Song, (Aug. 29, 2017). Accessed: Apr. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=la77_nEFXok">https://www.youtube.com/watch?v=la77_nEFXok</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2522018" class="outline-2">
+<h2 id="org2522018"><span class="section-number-2">4.</span> Misc</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Jnan Prokash Ghosh - Ramcharitmanas - Balkand - Vol. 1. 1978. Accessed: Jun. 01, 2025. [Online]. Available: <a href="https://www.discogs.com/release/7883608-Jnan-Prokash-Ghosh-Ramcharitmanas-Balkand-Vol-1">https://www.discogs.com/release/7883608-Jnan-Prokash-Ghosh-Ramcharitmanas-Balkand-Vol-1</a></li>
+
+<li>P. Srihari, “Prasanna Venkatraman curated an interesting list of songs dedicated to Rama,” The Hindu, Apr. 23, 2025. Accessed: Apr. 24, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/music/prasanna-venkatraman-curated-an-interesting-list-of-songs-dedicated-to-rama/article69482076.ece">https://www.thehindu.com/entertainment/music/prasanna-venkatraman-curated-an-interesting-list-of-songs-dedicated-to-rama/article69482076.ece</a></li>
+
+<li>Khoto Kharo Ravro Kaun | Hindi Devotional Song | Shri Ram Darbar Gayak, Pt. Gopal Sharma, (Sep. 12, 2014). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=6in_rn4Ak98">https://www.youtube.com/watch?v=6in_rn4Ak98</a></li>
+
+<li>Ablaun Nasani Ab Na Nasaihon | अब लौं नसानी, अब न नसैहों | राम भजन | Goswami Tulsidas Ji| Ram Bhajan, (Jun. 29, 2019). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Vxoegp8-2xQ">https://www.youtube.com/watch?v=Vxoegp8-2xQ</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:06</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
