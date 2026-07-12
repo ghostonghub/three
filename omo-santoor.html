@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Santoor</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Santoor</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb679d7c">1. General</a></li>
+<li><a href="#orgfcb87eb">2. Artists</a>
+<ul>
+<li><a href="#orgf45e089">2.1. Shiv Kumar Sharma</a>
+<ul>
+<li><a href="#orgd0c434f">2.1.1. General</a></li>
+<li><a href="#orgf21a180">2.1.2. World</a></li>
+<li><a href="#org70add49">2.1.3. Core</a></li>
+<li><a href="#org4a95bd3">2.1.4. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1779996">3. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgb679d7c" class="outline-2">
+<h2 id="orgb679d7c"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-orgfcb87eb" class="outline-2">
+<h2 id="orgfcb87eb"><span class="section-number-2">2.</span> Artists</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgf45e089" class="outline-3">
+<h3 id="orgf45e089"><span class="section-number-3">2.1.</span> Shiv Kumar Sharma</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgd0c434f" class="outline-4">
+<h4 id="orgd0c434f"><span class="section-number-4">2.1.1.</span> General</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li><i>“Shivkumar Sharma,”</i> Wikipedia. May 10, 2022. Accessed: May 10, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Shivkumar_Sharma&amp;oldid=1087092071">https://en.wikipedia.org/w/index.php?title=Shivkumar_Sharma&amp;oldid=1087092071</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf21a180" class="outline-4">
+<h4 id="orgf21a180"><span class="section-number-4">2.1.2.</span> World</h4>
+<div class="outline-text-4" id="text-2-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org274ce88"></a>Biographies<br />
+<div class="outline-text-5" id="text-2-1-2-1">
+<ul class="org-ul">
+<li>I. Puri, <i>Journey With A Hundred Strings: My Life in Music.</i> Penguin Random House India Private Limited, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga71e554"></a>Documentaries<br />
+<ul class="org-ul">
+<li><a id="org56ffa48"></a>Prasar Bharati Archives<br />
+<div class="outline-text-7" id="text-org56ffa48">
+<ul class="org-ul">
+<li>Prasar Bharati Archives, Anugoonj | Episode 40 | Pt Shivkumar Sharma, (May 15, 2020). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Bct-5h1rdNE">https://www.youtube.com/watch?v=Bct-5h1rdNE</a></li>
+<li>Prasar Bharati Archives, Pt. Shivkumar Sharma | Music Composer &amp; Santoor Maestro, (May 10, 2022). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=m9IXWJ2gW6g">https://www.youtube.com/watch?v=m9IXWJ2gW6g</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga5d8d72"></a>Interviews<br />
+<div class="outline-text-5" id="text-2-1-2-3">
+<ul class="org-ul">
+<li>AIR Raagam, Shivkumar Sharma II Series - Santoor Yatra II Sangeet Sarita II EP #01. Accessed: May 13, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=6mMz0UiEKTU">https://www.youtube.com/watch?v=6mMz0UiEKTU</a></li>
+
+<li>AIR Raagam, Exclusive interview with Pandit Shivkumar Sharma || AIR archives, (May 11, 2022). Accessed: May 13, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DGgRMhTVNV0">https://www.youtube.com/watch?v=DGgRMhTVNV0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org40fd64f"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org70add49" class="outline-4">
+<h4 id="org70add49"><span class="section-number-4">2.1.3.</span> Core</h4>
+<div class="outline-text-4" id="text-2-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org5a38241"></a>Discography<br />
+<div class="outline-text-5" id="text-2-1-3-1">
+<ul class="org-ul">
+<li>“Pandit Shiv Kumar Sharma,” Discogs. <a href="https://www.discogs.com/artist/65626-Pandit-Shiv-Kumar-Sharma">https://www.discogs.com/artist/65626-Pandit-Shiv-Kumar-Sharma</a> (accessed Dec. 12, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org4191779"></a>Recordings<br />
+<ol class="org-ol">
+<li><a id="org6621304"></a>Traditional<br />
+<ul class="org-ul">
+<li><a id="org560ecce"></a>Classical<br />
+<ul class="org-ul">
+<li><a id="org44af26a"></a>Air Raagam<br />
+<div class="outline-text-8" id="text-org44af26a">
+<ul class="org-ul">
+<li>“Pandit Shivkumar Sharma - YouTube.” Accessed: Jan. 13, 2025. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLsgcggrrPOHskEc7fRYQNrMD_KDnFYdEd">https://www.youtube.com/playlist?list=PLsgcggrrPOHskEc7fRYQNrMD_KDnFYdEd</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc73a335"></a>SaReGaMa<br />
+<div class="outline-text-8" id="text-orgc73a335">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, A Tribute To Pt. Shiv Kumar Sharma | A Collection of his Best Instrumental | Classical Music, (May 11, 2022). Accessed: May 13, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cTGwZPjGbq0">https://www.youtube.com/watch?v=cTGwZPjGbq0</a></li>
+<li>Saregama Hindustani Classical, Santoor Maestro Pt. Shivkumar Sharma | Relaxing Music For Stress Relief | Indian Classical Music, (Oct. 22, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QoTiYdapjtg">https://www.youtube.com/watch?v=QoTiYdapjtg</a></li>
+<li>Saregama Hindustani Classical, Best of P.T Shivkumar Sharma | Surya Namaskar | Raga Mishra Pahadi |   Himalayan Prayer | Jukebox, (Apr. 08, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yv2uQ_EdppY">https://www.youtube.com/watch?v=yv2uQ_EdppY</a></li>
+<li>Saregama Hindustani Classical, Pandit ShivKumar Sharma’s Eternal Melodies | Kirwani | Mishra Shivrajani | Indian Classical Music, (Jan. 13, 2025). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=apYIP43AxMY">https://www.youtube.com/watch?v=apYIP43AxMY</a></li>
+<li>Saregama Hindustani Classical, Durga Puja Special Classical Raag | Pt. Shivkumar Sharma | Indian Classical Instrumental Music, (Oct. 07, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=eFe-D-eVK0g">https://www.youtube.com/watch?v=eFe-D-eVK0g</a></li>
+<li>Saregama Hindustani Classical, Sunset Melodies On Santoor | Pt. Shivkumar Sharma | Indian Classical Instrumental Music, (Oct. 24, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=vH0fDp7IR7U">https://www.youtube.com/watch?v=vH0fDp7IR7U</a></li>
+<li>Saregama Hindustani Classical, Santoor Legend Pandit Shivkumar Sharma | Indian Classical Instrumental Music | Audio Jukebox, (Aug. 14, 2023). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-mDOB_0Ku2c">https://www.youtube.com/watch?v=-mDOB_0Ku2c</a></li>
+<li>Saregama Hindustani Classical, Unforgettable Melodies of Pt. Shiv Kumar Sharma Vol 3 | Ragas | Indian Classical Music | Bageshwari, (Jul. 19, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PfujZ7hR2eI">https://www.youtube.com/watch?v=PfujZ7hR2eI</a></li>
+<li>Saregama Hindustani Classical, Best of Shiv Kumar Sharma &amp; Hariprasad Chaurasia | Santoor &amp; Flute | Classical Instrumental Music, (Dec. 26, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=jMcKOeK0b3A">https://www.youtube.com/watch?v=jMcKOeK0b3A</a></li>
+<li>Saregama Hindustani Classical, A Tribute To PT. Shivkumar Sharma | A Collection of his Best Instrumental | Classical Music, (May 11, 2022). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cTGwZPjGbq0">https://www.youtube.com/watch?v=cTGwZPjGbq0</a></li>
+<li>Saregama Hindustani Classical, Classical Melodies On Santoor | Pt. Shiv Kumar Sharma | Indian Classical Instrumental Music, (Oct. 25, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qwz-Mlw95lI">https://www.youtube.com/watch?v=qwz-Mlw95lI</a></li>
+<li>Saregama Hindustani Classical, Unforgettable Melodies of PT. Shiv Kumar Sharma | Surya Namaskar | Raga Mishra Pahadi | Rageshwari, (Apr. 26, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=T3H244HN9kY">https://www.youtube.com/watch?v=T3H244HN9kY</a></li>
+<li>Saregama Hindustani Classical, Santoor Relaxing Music | Pt. Shivkumar Sharma A Living Legend | Indian Classical Instrumental Music, (Nov. 17, 2023). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0-19bzs5NoM">https://www.youtube.com/watch?v=0-19bzs5NoM</a></li>
+
+<li>Saregama Hindustani Classical, <b>Call Of The Valley</b> | Hindustani Classical Instrumental (Santoor,Flute &amp; Guitar) Audio Jukebox, (Mar. 18, 2014). Accessed: May 10, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=O1zzVqrCEeU">https://www.youtube.com/watch?v=O1zzVqrCEeU</a>
+<ul class="org-ul">
+<li>The best selling Hindustani classical music album of all time.</li>
+</ul></li>
+<li>Saregama Hindustani Classical
+<ul class="org-ul">
+<li>Raga Shree
+<ul class="org-ul">
+<li>Shivkumar Sharma - Topic, Raga Shree - Jod, Jhala Shree - Alaap, Jod, Jhala, (Feb. 16, 2019). Accessed: May 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=EVFpdzVsogs">https://www.youtube.com/watch?v=EVFpdzVsogs</a></li>
+<li>Shivkumar Sharma - Topic, Raga Shree - Jhaptaal, Drut Ektaal Shree - Gat In Jhaptaal, Teentaal, (Feb. 16, 2019). Accessed: May 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tzP6wcWxqas">https://www.youtube.com/watch?v=tzP6wcWxqas</a></li>
+</ul></li>
+<li>Raga Durga
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Sublime Moments | Pandit Shiv Kumar Sharma | Hindustani Classical Audio Jukebox | Santoor, (Dec. 24, 2013). Accessed: May 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3_93Kh3AIww">https://www.youtube.com/watch?v=3_93Kh3AIww</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgeda901c"></a>Music Today<br />
+<div class="outline-text-8" id="text-orgeda901c">
+<ul class="org-ul">
+<li>Music Today, Raga Bhoopal Todi -  Pandit ShivKumar Sharma (Album: Maestro’s Choice Series One), (Nov. 10, 2015). Accessed: May 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=kiDC8zTc168">https://www.youtube.com/watch?v=kiDC8zTc168</a></li>
+<li>Music Today, Raga Basant - Peace | Pandit Shiv Kumar Sharma | (Ragas For Relaxation) | Music Today, (Mar. 18, 2016). Accessed: May 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=eapl_XTpfBU">https://www.youtube.com/watch?v=eapl_XTpfBU</a></li>
+<li>Music Today, Raga Megh | (Album: The Last Word in Santoor - Pandit Shiv Kumar Sharma) | Music Today, (Mar. 04, 2016). Accessed: May 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=AAr6OG2PFJA">https://www.youtube.com/watch?v=AAr6OG2PFJA</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Antardhwani - The Song Within | Shiv Kumar Sharma | Audio Jukebox | Instrumental | Music Today, (Sep. 01, 2015). Accessed: May 13, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Sox3izCXNlE">https://www.youtube.com/watch?v=Sox3izCXNlE</a></li>
+<li>Antardhwani:The Song Within - Shivkumar Sharma | Volume 2 | Audio Jukebox | Classical | Instrumental, (Sep. 01, 2015). Accessed: May 13, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=RBUKRx53Uno">https://www.youtube.com/watch?v=RBUKRx53Uno</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Music Today, Raga Charukesi | Pandit Shiv Kumar Sharma (Album: Thaat Bilawal &amp; Kalyan) | Music Today, (Mar. 09, 2016). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=vZpYtVORZX0">https://www.youtube.com/watch?v=vZpYtVORZX0</a></li>
+<li>Music Today, Maestro’s Choice -Shiv Kumar Sharma | Vol1 | Audio Jukebox | Classical | Instrumental | Music Today, (Sep. 02, 2015). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=SyWT_RIlTik">https://www.youtube.com/watch?v=SyWT_RIlTik</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org16f8b85"></a>Light Classical<br /></li>
+<li><a id="org58b94e3"></a>Folk<br /></li>
+</ul>
+</li>
+<li><a id="orgfcadcd7"></a>Fusion<br /></li>
+<li><a id="org5ee0dca"></a>Films<br /></li>
+<li><a id="orgec0d17f"></a>Easy Listening<br />
+<div class="outline-text-6" id="text-2-1-3-2-4">
+<ul class="org-ul">
+<li>Music Today, Sound Scapes - <b>Music of the Mountains</b> | Audio Jukebox | Pandit Shivkumar Sharma | Music Today, (Sep. 01, 2015). Accessed: May 10, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ITCk6gbCuZk">https://www.youtube.com/watch?v=ITCk6gbCuZk</a>
+<ul class="org-ul">
+<li>A very famous 'easy listening' album by Pt. Shiv Kumar Sharma.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org6fa5d7f"></a>Misc<br />
+<div class="outline-text-6" id="text-2-1-3-2-5">
+<ul class="org-ul">
+<li>T-Series Classical, Tribute To PT. Shiv Kumar Sharma | Superhit Collection | Classcial Instrumental  (Audio Jukebox), (May 11, 2022). Accessed: Dec. 02, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=hOVLQVAWICU">https://www.youtube.com/watch?v=hOVLQVAWICU</a></li>
+<li>“SANTOOR : PT. Shiv Kumar Sharma (Immortal Series Rajnigandha) || Video Jukebox || T-SeriesClassics - YouTube.” Accessed: May 19, 2024. [Online]. Available: <a href="https://www.youtube.com/watch?v=oqihTh0LkRw">https://www.youtube.com/watch?v=oqihTh0LkRw</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org4a95bd3" class="outline-4">
+<h4 id="org4a95bd3"><span class="section-number-4">2.1.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<ul class="org-ul">
+<li>A. Pradhan, “Listen: Zakir Hussain’s tabla responds to the cross-rhythmic sections of Shivkumar Sharma’s santoor,” Scroll.in. Accessed: Oct. 21, 2024. [Online]. Available: <a href="https://scroll.in/article/1074365/listen-zakir-hussains-tabla-respond-to-the-cross-rhythmic-sections-of-shivkumar-sharmas-santoor">https://scroll.in/article/1074365/listen-zakir-hussains-tabla-respond-to-the-cross-rhythmic-sections-of-shivkumar-sharmas-santoor</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1779996" class="outline-2">
+<h2 id="org1779996"><span class="section-number-2">3.</span> Misc</h2>
+<div class="outline-text-2" id="text-3">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

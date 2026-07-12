@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kabir - Music</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Kabir - Music</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgaca7be8">1. Collections</a></li>
+<li><a href="#org07d78e3">2. Hindustani Classical Music</a>
+<ul>
+<li><a href="#org8828627">2.1. Dhrupad</a>
+<ul>
+<li><a href="#orgeec2d99">2.1.1. Playlists</a></li>
+<li><a href="#orgf7da9e8">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org562c622">2.2. Kumar Gandharva</a>
+<ul>
+<li><a href="#org9681d46">2.2.1. Texts</a></li>
+<li><a href="#org3068c3a">2.2.2. Recordings</a></li>
+<li><a href="#orga71b6e2">2.2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0615329">2.3. Omkarnath Thakur</a></li>
+<li><a href="#org30e9f53">2.4. Mallikarjun Mansur</a></li>
+<li><a href="#org5abd1f6">2.5. Kishori Amonkar</a></li>
+<li><a href="#orgcfbc5b4">2.6. C R Vyas</a></li>
+<li><a href="#org74b16fe">2.7. Chhannulal Mishra</a></li>
+<li><a href="#org9b0df09">2.8. Shubha Mudgal</a></li>
+<li><a href="#org668ed77">2.9. Ashwini Bhide Deshpande</a></li>
+</ul>
+</li>
+<li><a href="#org38e9239">3. Karnatic Classical Music</a></li>
+<li><a href="#orge9476c9">4. Sufi</a>
+<ul>
+<li><a href="#orgdb93558">4.1. Abida Parveen</a></li>
+</ul>
+</li>
+<li><a href="#orgdd9d530">5. Ghazal</a>
+<ul>
+<li><a href="#org35f4051">5.1. Jagjit Singh</a></li>
+</ul>
+</li>
+<li><a href="#orga3d0b8a">6. Jashn-e-Rekhta</a></li>
+<li><a href="#org8271965">7. Films</a>
+<ul>
+<li><a href="#org1d82678">7.1. Lata Mangeshkar</a></li>
+</ul>
+</li>
+<li><a href="#org81709f7">8. VNK</a></li>
+<li><a href="#org3698030">9. Pop</a></li>
+<li><a href="#org25c399e">10. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgaca7be8" class="outline-2">
+<h2 id="orgaca7be8"><span class="section-number-2">1.</span> Collections</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Prasar Bharati Archives, कबीर भजन | संत रविदास जयंती, (Feb. 09, 2020). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=W6eWUGX5b_Y">https://www.youtube.com/watch?v=W6eWUGX5b_Y</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M.S. Subbulakshmi • Haimanti Shukla • Pt. Kumar Gandharva • Vasundhara Komkali &amp; Lata Mangeshkar - Best of Kabeer Bhajans. 2010. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://www.discogs.com/release/32818788-MS-Subbulakshmi-Haimanti-Shukla-Pt-Kumar-Gandharva-Vasundhara-Komkali-Lata-Mangeshkar-Best-of-Kabeer">https://www.discogs.com/release/32818788-MS-Subbulakshmi-Haimanti-Shukla-Pt-Kumar-Gandharva-Vasundhara-Komkali-Lata-Mangeshkar-Best-of-Kabeer</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org07d78e3" class="outline-2">
+<h2 id="org07d78e3"><span class="section-number-2">2.</span> Hindustani Classical Music</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org8828627" class="outline-3">
+<h3 id="org8828627"><span class="section-number-3">2.1.</span> Dhrupad</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgeec2d99" class="outline-4">
+<h4 id="orgeec2d99"><span class="section-number-4">2.1.1.</span> Playlists</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>“litKabirGBros | Community Playlist on Prime Music.” Accessed: Feb. 03, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/28e4da12ce5842178e4cb803669ee573i8n0">https://music.amazon.in/user-playlists/28e4da12ce5842178e4cb803669ee573i8n0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf7da9e8" class="outline-4">
+<h4 id="orgf7da9e8"><span class="section-number-4">2.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>Rang Dhanak Ke Gundecha Brothers (Episode 10), (Dec. 13, 2019). Accessed: Jan. 31, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cVlh5chGDFc">https://www.youtube.com/watch?v=cVlh5chGDFc</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org562c622" class="outline-3">
+<h3 id="org562c622"><span class="section-number-3">2.2.</span> Kumar Gandharva</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org9681d46" class="outline-4">
+<h4 id="org9681d46"><span class="section-number-4">2.2.1.</span> Texts</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>L. Hess, Singing Emptiness. Seagull Books, 2021.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3068c3a" class="outline-4">
+<h4 id="org3068c3a"><span class="section-number-4">2.2.2.</span> Recordings</h4>
+<div class="outline-text-4" id="text-2-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgb2eed14"></a>Collections<br />
+<div class="outline-text-5" id="text-2-2-2-1">
+<ul class="org-ul">
+<li>Hindusthan Evergreen, Pandit Kumar Gandharva Nirguni Bhajans | Kabir Bhajans | Hindusthani Classical | Vocal, (Jun. 20, 2016). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=6CAFRYsNXXM">https://www.youtube.com/watch?v=6CAFRYsNXXM</a></li>
+<li>“Bhajan Triveni - YouTube.” <a href="https://www.youtube.com/playlist?list=OLAK5uy_lgq70A0f21FUwA4cJShuZT6Rl1BO6sEdI">https://www.youtube.com/playlist?list=OLAK5uy_lgq70A0f21FUwA4cJShuZT6Rl1BO6sEdI</a> (accessed Mar. 16, 2022).</li>
+<li>Saregama Hindustani Classical, संत कबीर की अमृतवाणी | Ud Jayega Hans Akela | Nirbhay Nirgun | Kabir Vani | Indian Classical Songs, (Dec. 22, 2023). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gW89MMml_Oo">https://www.youtube.com/watch?v=gW89MMml_Oo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd347f9e"></a>Solo<br />
+<div class="outline-text-5" id="text-2-2-2-2">
+<ul class="org-ul">
+<li>Kumar Gandharva - Topic, Nirbhay Nirgun Re Gaoonga (kabir - Bhajan) - Pt. Kumar Gandharva, (Feb. 16, 2019). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=XAIWBW_22f8">https://www.youtube.com/watch?v=XAIWBW_22f8</a></li>
+<li>Saregama Hindustani Classical, <b>Ud Jayega Hans Akela</b> with lyrics | उड़ जाएगा हंस अकेला | Pt. Kumar Gandharva | Indian Classical Song, (Jan. 27, 2024). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=X8n-G1ZJUSE">https://www.youtube.com/watch?v=X8n-G1ZJUSE</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orga71b6e2" class="outline-4">
+<h4 id="orga71b6e2"><span class="section-number-4">2.2.3.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<ul class="org-ul">
+<li>AIR Raagam, Kumar Gandharva | Classical Singer | Bheehad Bhairav | Akashvani Sangeet, (Sep. 02, 2021). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=AOsv9OI2ocI">https://www.youtube.com/watch?v=AOsv9OI2ocI</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0615329" class="outline-3">
+<h3 id="org0615329"><span class="section-number-3">2.3.</span> Omkarnath Thakur</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>AIR Raagam, Pandit Omkarnath Thakur | Din Ka Karih Jatan Batayi Jaire | Kabir Bhajan | Akashvani Sangeet, (Jul. 05, 2021). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Wb_cjl6ATRI">https://www.youtube.com/watch?v=Wb_cjl6ATRI</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org30e9f53" class="outline-3">
+<h3 id="org30e9f53"><span class="section-number-3">2.4.</span> Mallikarjun Mansur</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>AIR Raagam, Pt. Mallikarjun Mansur | Jaipur Atrauli Gharana | Raag: Kabiri Bahirav |  Akashvani Sangeet, (Aug. 05, 2021). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=zIWk5s2vGys">https://www.youtube.com/watch?v=zIWk5s2vGys</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5abd1f6" class="outline-3">
+<h3 id="org5abd1f6"><span class="section-number-3">2.5.</span> Kishori Amonkar</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>Swaralankar, Main Kese Aavungi | Kabir Bhajan | Gaansarasvati Kishori Amonkar | 1987, (May 17, 2021). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UoPvOX3Yd4M">https://www.youtube.com/watch?v=UoPvOX3Yd4M</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Bhakti Sangeet | Kishori Amonkar, (Apr. 27, 2020). Accessed: Apr. 01, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BYtGE7kpZe8">https://www.youtube.com/watch?v=BYtGE7kpZe8</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcfbc5b4" class="outline-3">
+<h3 id="orgcfbc5b4"><span class="section-number-3">2.6.</span> C R Vyas</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>AIR Raagam, 1996 - Akashvani Sangeet Sammelan II Vocal by C. R. Vyas II Raga - Bhairavi (Bhajan Kabir), (Jul. 31, 2022). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=39gO3CHiBgg">https://www.youtube.com/watch?v=39gO3CHiBgg</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org74b16fe" class="outline-3">
+<h3 id="org74b16fe"><span class="section-number-3">2.7.</span> Chhannulal Mishra</h3>
+<div class="outline-text-3" id="text-2-7">
+<ul class="org-ul">
+<li>“Play Kabir by Pandit Chhannulal Mishra on Prime Music.” Accessed: Jan. 19, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B07BTPJFHL?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN">https://music.amazon.com/albums/B07BTPJFHL?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9b0df09" class="outline-3">
+<h3 id="org9b0df09"><span class="section-number-3">2.8.</span> Shubha Mudgal</h3>
+<div class="outline-text-3" id="text-2-8">
+<ul class="org-ul">
+<li>No Stranger Here (feat. Ursula Rucker &amp; Business Class Refugees) by Shubha Mudgal, Ursula Rucker &amp; Business Class Refugees on Apple Music. 2011. Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://music.apple.com/in/album/no-stranger-here-feat-ursula-rucker-business-class/712968978">https://music.apple.com/in/album/no-stranger-here-feat-ursula-rucker-business-class/712968978</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org668ed77" class="outline-3">
+<h3 id="org668ed77"><span class="section-number-3">2.9.</span> Ashwini Bhide Deshpande</h3>
+<div class="outline-text-3" id="text-2-9">
+<ul class="org-ul">
+<li>Swaralankar, Chadar Ho Gayi Bahut Purani | Kabir Bhajan | Vidushi Dr. Ashwini Bhide Deshpande, (Aug. 02, 2020). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=XB920VoLPEo">https://www.youtube.com/watch?v=XB920VoLPEo</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org38e9239" class="outline-2">
+<h2 id="org38e9239"><span class="section-number-2">3.</span> Karnatic Classical Music</h2>
+</div>
+<div id="outline-container-orge9476c9" class="outline-2">
+<h2 id="orge9476c9"><span class="section-number-2">4.</span> Sufi</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgdb93558" class="outline-3">
+<h3 id="orgdb93558"><span class="section-number-3">4.1.</span> Abida Parveen</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>Times Music Spiritual, Kabir By Abida Parveen | Jukebox | Abida Parveen | Gulzar | Kabir Ke Dohe | Kabir Special Songs 2024, (Dec. 07, 2024). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=IU9uBMPqQdE">https://www.youtube.com/watch?v=IU9uBMPqQdE</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdd9d530" class="outline-2">
+<h2 id="orgdd9d530"><span class="section-number-2">5.</span> Ghazal</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org35f4051" class="outline-3">
+<h3 id="org35f4051"><span class="section-number-3">5.1.</span> Jagjit Singh</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Kabir by Jagjit Singh on Apple Music. 2006. Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://music.apple.com/in/album/kabir/373432057">https://music.apple.com/in/album/kabir/373432057</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga3d0b8a" class="outline-2">
+<h2 id="orga3d0b8a"><span class="section-number-2">6.</span> Jashn-e-Rekhta</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Jashn-e-Rekhta, Tu Kisi Rail Si Guzarti Hai | Indian Ocean | Jashn-e-Rekhta 2023, (Jan. 18, 2024). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qt9u034aZMI">https://www.youtube.com/watch?v=qt9u034aZMI</a></li>
+
+<li>Jashn-e-Rekhta, Soulful Kabir Bhajan | Kalaam-e-Kabir with Shabnam Virmani | Jashn-e-Rekhta, (Feb. 02, 2020). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wpGOMJP2ges">https://www.youtube.com/watch?v=wpGOMJP2ges</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8271965" class="outline-2">
+<h2 id="org8271965"><span class="section-number-2">7.</span> Films</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org1d82678" class="outline-3">
+<h3 id="org1d82678"><span class="section-number-3">7.1.</span> Lata Mangeshkar</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>Meera Soor Kabira by Lata Mangeshkar &amp; Roop Kumar Rathod on Apple Music. 2001. Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://music.apple.com/in/album/meera-soor-kabira/1329162510">https://music.apple.com/in/album/meera-soor-kabira/1329162510</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org81709f7" class="outline-2">
+<h2 id="org81709f7"><span class="section-number-2">8.</span> VNK</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>“litKabirVNK | Community Playlist on Prime Music.” Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://music.amazon.in/user-playlists/33f1a5367cbd4c03889601d0257d3b45i8n0">https://music.amazon.in/user-playlists/33f1a5367cbd4c03889601d0257d3b45i8n0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3698030" class="outline-2">
+<h2 id="org3698030"><span class="section-number-2">9.</span> Pop</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>Kabir Cafe Official, Mat Kar Maya Ko Ahankar - Panchrang - Kabir Cafe, (Dec. 01, 2023). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=MZgd3YQz7kU">https://www.youtube.com/watch?v=MZgd3YQz7kU</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org25c399e" class="outline-2">
+<h2 id="org25c399e"><span class="section-number-2">10.</span> Misc</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>“Jhini,” Wikipedia. Jul. 04, 2024. Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jhini&amp;oldid=1232541044">https://en.wikipedia.org/w/index.php?title=Jhini&amp;oldid=1232541044</a></li>
+
+<li>“Our band’s first member is Kabir: Neeraj Arya’s Kabir Café,” Hindustan Times. Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://www.hindustantimes.com/entertainment/our-band-s-first-member-is-kabir-neeraj-arya-s-kabir-cafe/story-MSBwRyh0z9kAPtk1bMvEOL.html">https://www.hindustantimes.com/entertainment/our-band-s-first-member-is-kabir-neeraj-arya-s-kabir-cafe/story-MSBwRyh0z9kAPtk1bMvEOL.html</a></li>
+
+<li>“Bhakta Kabir,” Wikipedia. Jul. 06, 2024. Accessed: Jan. 14, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bhakta_Kabir&amp;oldid=1232878893">https://en.wikipedia.org/w/index.php?title=Bhakta_Kabir&amp;oldid=1232878893</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:05</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alla Rakha</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Alla Rakha</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4c2104a">1. General</a></li>
+<li><a href="#org3e10279">2. Worldly Matters</a>
+<ul>
+<li><a href="#org71e4f0c">2.1. Biographies</a></li>
+<li><a href="#orgc94fe53">2.2. Commentaries, Opinions</a></li>
+<li><a href="#org160e91c">2.3. Interviews</a></li>
+<li><a href="#org680f8bf">2.4. Contact Info</a></li>
+<li><a href="#org9922c62">2.5. Orgs</a></li>
+<li><a href="#org833d06f">2.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgfe80f82">3. Core</a>
+<ul>
+<li><a href="#orgce6daea">3.1. Discography</a></li>
+<li><a href="#orgc21d0f7">3.2. Recordings</a>
+<ul>
+<li><a href="#org647d81c">3.2.1. Talas</a></li>
+<li><a href="#orgdf9c829">3.2.2. Collections</a></li>
+<li><a href="#org7868311">3.2.3. Solo</a></li>
+<li><a href="#orgec95a89">3.2.4. Collaborations</a></li>
+<li><a href="#org86961bd">3.2.5. Religions, Spirituality, Misc</a></li>
+<li><a href="#org48c3b0d">3.2.6. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7014639">4. Arts</a>
+<ul>
+<li><a href="#orgd145760">4.1. Art</a>
+<ul>
+<li><a href="#org218606d">4.1.1. Pictures</a></li>
+</ul>
+</li>
+<li><a href="#org50e9595">4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2315b53">5. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org4c2104a" class="outline-2">
+<h2 id="org4c2104a"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Alla Rakha,” Wikipedia. Apr. 27, 2025. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Alla_Rakha&amp;oldid=1287628776">https://en.wikipedia.org/w/index.php?title=Alla_Rakha&amp;oldid=1287628776</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3e10279" class="outline-2">
+<h2 id="org3e10279"><span class="section-number-2">2.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org71e4f0c" class="outline-3">
+<h3 id="org71e4f0c"><span class="section-number-3">2.1.</span> Biographies</h3>
+</div>
+<div id="outline-container-orgc94fe53" class="outline-3">
+<h3 id="orgc94fe53"><span class="section-number-3">2.2.</span> Commentaries, Opinions</h3>
+</div>
+<div id="outline-container-org160e91c" class="outline-3">
+<h3 id="org160e91c"><span class="section-number-3">2.3.</span> Interviews</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>AIR Raagam, An interview with Ustad Alla Rakha, (Apr. 29, 2021). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0bQcfIRZko4">https://www.youtube.com/watch?v=0bQcfIRZko4</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org680f8bf" class="outline-3">
+<h3 id="org680f8bf"><span class="section-number-3">2.4.</span> Contact Info</h3>
+</div>
+<div id="outline-container-org9922c62" class="outline-3">
+<h3 id="org9922c62"><span class="section-number-3">2.5.</span> Orgs</h3>
+</div>
+<div id="outline-container-org833d06f" class="outline-3">
+<h3 id="org833d06f"><span class="section-number-3">2.6.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgfe80f82" class="outline-2">
+<h2 id="orgfe80f82"><span class="section-number-2">3.</span> Core</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgce6daea" class="outline-3">
+<h3 id="orgce6daea"><span class="section-number-3">3.1.</span> Discography</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“Alla Rakha,” Discogs. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://www.discogs.com/artist/486432-Alla-Rakha">https://www.discogs.com/artist/486432-Alla-Rakha</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc21d0f7" class="outline-3">
+<h3 id="orgc21d0f7"><span class="section-number-3">3.2.</span> Recordings</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org647d81c" class="outline-4">
+<h4 id="org647d81c"><span class="section-number-4">3.2.1.</span> Talas</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Teentaal - Tabla | Ustad Alla Rakha, Ustad Zakir Hussain | Indian Classical Instrumental Music, (Sep. 13, 2023). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=e1225MYhh9A">https://www.youtube.com/watch?v=e1225MYhh9A</a></li>
+
+<li>Saregama Hindustani Classical, Chaar Taalki  Sawari | Ustad Alla Rakha, Ustad Zakir Hussain |  Indian Classical Instrumental Music, (Sep. 22, 2023). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=xEAXlOIXjuc">https://www.youtube.com/watch?v=xEAXlOIXjuc</a></li>
+
+<li>AIR Raagam, Alla Rakha &amp; Zakir Hussain II Tabla Duet II Taal - Matt, (Mar. 11, 2022). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=jZofFFa-yxc">https://www.youtube.com/watch?v=jZofFFa-yxc</a></li>
+<li>AIR Raagam, Alla Rakha &amp; Zakir Hussain II Tabla Duet II Taal - Pashto, (Mar. 13, 2022). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UPq_abjm82o">https://www.youtube.com/watch?v=UPq_abjm82o</a></li>
+<li>AIR Raagam, Alla Rakha &amp; Zakir Hussain II Tabla Duet II Taal - Jai, (Mar. 11, 2022). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=G3OtHLGuYGo">https://www.youtube.com/watch?v=G3OtHLGuYGo</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Taalmala : Ustad Alla Rakha | Ustad Zakir Hussain |  Tabla Magic | Tabla Duet |  Tabla Jukebox, (May 05, 2024). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=aGyCpD8WsE0">https://www.youtube.com/watch?v=aGyCpD8WsE0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdf9c829" class="outline-4">
+<h4 id="orgdf9c829"><span class="section-number-4">3.2.2.</span> Collections</h4>
+</div>
+<div id="outline-container-org7868311" class="outline-4">
+<h4 id="org7868311"><span class="section-number-4">3.2.3.</span> Solo</h4>
+</div>
+<div id="outline-container-orgec95a89" class="outline-4">
+<h4 id="orgec95a89"><span class="section-number-4">3.2.4.</span> Collaborations</h4>
+<div class="outline-text-4" id="text-3-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="org4cf921d"></a>Asian Music<br />
+<ol class="org-ol">
+<li><a id="org8e32b8a"></a>South Asian Music<br />
+<ul class="org-ul">
+<li><a id="org5cec54c"></a>JugalBandi<br /></li>
+<li><a id="org93dff0a"></a>Light Hindustani Classical Music<br /></li>
+<li><a id="org855e264"></a>Indian Folk<br /></li>
+<li><a id="org263b9a1"></a>Karnatic Classical Music<br /></li>
+<li><a id="org1797d37"></a>Films<br /></li>
+<li><a id="orgc6dd36e"></a>Sufi<br /></li>
+<li><a id="orga694168"></a>Ghazal<br /></li>
+<li><a id="orgb7160f4"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgb424c34"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org009d07a"></a>Middle Eastern Music<br />
+<ol class="org-ol">
+<li><a id="org4be7141"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org06c5a43"></a>Western Music<br />
+<ol class="org-ol">
+<li><a id="org1fd1edf"></a>Western Classical Music<br /></li>
+<li><a id="org59e5cbd"></a>Pop<br /></li>
+<li><a id="orgbde8224"></a>Jazz<br />
+<div class="outline-text-6" id="text-3-2-4-3-3">
+<ul class="org-ul">
+<li>“Rich à la Rakha,” Wikipedia. Jan. 21, 2021. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rich_%C3%A0_la_Rakha&amp;oldid=1001854724">https://en.wikipedia.org/w/index.php?title=Rich_%C3%A0_la_Rakha&amp;oldid=1001854724</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org33e2f88"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org33ab129"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org86961bd" class="outline-4">
+<h4 id="org86961bd"><span class="section-number-4">3.2.5.</span> Religions, Spirituality, Misc</h4>
+</div>
+<div id="outline-container-org48c3b0d" class="outline-4">
+<h4 id="org48c3b0d"><span class="section-number-4">3.2.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-2-6">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Best of Ustad Alla Rakha and Ustad Zakir Hussian |, (Apr. 13, 2024). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=bCYWh8CI0gY">https://www.youtube.com/watch?v=bCYWh8CI0gY</a></li>
+<li>Saregama Hindustani Classical, Best Tabla Music - Ustad Alla Rakha, Ustad Zakir Hussain | Tabla Music | Indian Classical Music, (Jul. 06, 2024). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Ufo8l2UOmgE">https://www.youtube.com/watch?v=Ufo8l2UOmgE</a></li>
+<li>Saregama Hindustani Classical, The Legend Ustad alla Rakha | Ustad Alla Rakha | Birthday Special | Hindustani Classical Music, (Apr. 29, 2024). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3_ccPAZV_cg">https://www.youtube.com/watch?v=3_ccPAZV_cg</a></li>
+<li>Saregama Hindustani Classical, The Timeless Legacy Of Ustad Alla Rakha &amp; Ustad Zakir Hussain | Indian Classical Tabla Music, (Oct. 05, 2023). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wSO_RZ_JMQE">https://www.youtube.com/watch?v=wSO_RZ_JMQE</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, The Magical Tabla Duets of Alla Rakha &amp; Zakir Hussain | Indian Classical Instrumental Music, (Dec. 08, 2024). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pr0QV_3Rf_A">https://www.youtube.com/watch?v=pr0QV_3Rf_A</a></li>
+<li>Saregama Hindustani Classical, Tabla Jugalbandi (Pancham Sawari) | Ustad Alla Rakha, Ustad Zakir Hussain | Indian Classical Music, (Nov. 23, 2023). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=u9THuUJkM44">https://www.youtube.com/watch?v=u9THuUJkM44</a></li>
+
+<li>Saregama Hindustani Classical, Ustad Alla Rakha And Ustad Zakir Hussain | Hindustani Classical Instrumental “Tabla” Audio Jukebox, (Feb. 20, 2014). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=TPZ7gjSIxjI">https://www.youtube.com/watch?v=TPZ7gjSIxjI</a></li>
+
+<li>Saregama Hindustani Classical, Surphakta | Ustad Alla Rakha | Tabla Maestro’s Masterpiece | Indian Classical Instrumental Music, (Dec. 13, 2024). Accessed: Apr. 29, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=iLb1b0AgenY">https://www.youtube.com/watch?v=iLb1b0AgenY</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7014639" class="outline-2">
+<h2 id="org7014639"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgd145760" class="outline-3">
+<h3 id="orgd145760"><span class="section-number-3">4.1.</span> Art</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org218606d" class="outline-4">
+<h4 id="org218606d"><span class="section-number-4">4.1.1.</span> Pictures</h4>
+</div>
+</div>
+<div id="outline-container-org50e9595" class="outline-3">
+<h3 id="org50e9595"><span class="section-number-3">4.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org2315b53" class="outline-2">
+<h2 id="org2315b53"><span class="section-number-2">5.</span> Misc</h2>
+<div class="outline-text-2" id="text-5">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

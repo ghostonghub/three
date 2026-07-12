@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sarangi</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Sarangi</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org33e5d35">1. General</a>
+<ul>
+<li><a href="#org04dd18d">1.1. Wikipedia</a></li>
+<li><a href="#org71cfc55">1.2. Internet Resources</a></li>
+</ul>
+</li>
+<li><a href="#orgb2be992">2. Worldly Matters</a>
+<ul>
+<li><a href="#org4dd4a1c">2.1. History</a></li>
+</ul>
+</li>
+<li><a href="#orgfe2efdf">3. Core</a>
+<ul>
+<li><a href="#org7b91072">3.1. People</a>
+<ul>
+<li><a href="#orgddaa4c2">3.1.1. Artists</a></li>
+<li><a href="#org6f980d5">3.1.2. Sarangi Makers</a></li>
+<li><a href="#org8ab6393">3.1.3. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org23fe02a">4. Special Topics</a></li>
+<li><a href="#org4e09b83">5. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org33e5d35" class="outline-2">
+<h2 id="org33e5d35"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org04dd18d" class="outline-3">
+<h3 id="org04dd18d"><span class="section-number-3">1.1.</span> Wikipedia</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>“Sarangi,” Wikipedia. May 31, 2024. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sarangi&amp;oldid=1226517439">https://en.wikipedia.org/w/index.php?title=Sarangi&amp;oldid=1226517439</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org71cfc55" class="outline-3">
+<h3 id="org71cfc55"><span class="section-number-3">1.2.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>“sarangi.info,” sarangi.info. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://sarangi.wordpress.com/">https://sarangi.wordpress.com/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb2be992" class="outline-2">
+<h2 id="orgb2be992"><span class="section-number-2">2.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org4dd4a1c" class="outline-3">
+<h3 id="org4dd4a1c"><span class="section-number-3">2.1.</span> History</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>“The Sarangi: A Historical Sketch, by Joep Bor,” Sahapedia. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://www.sahapedia.org/the-sarangi-historical-sketch-joep-bor">https://www.sahapedia.org/the-sarangi-historical-sketch-joep-bor</a></li>
+<li>A. Ranade, “Joep Bor. The Voice of the Sarangi: An Illustrated History of Bowing in India. 154 pp., discography, notes, illustrations, photographs. National Centre for the Performing Arts: Quarterly Journal XV 3-4; XVI 1.,” Yearbook for Traditional Music, vol. 21, pp. 121–122, Jan. 1989, doi: 10.2307/767775.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfe2efdf" class="outline-2">
+<h2 id="orgfe2efdf"><span class="section-number-2">3.</span> Core</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org7b91072" class="outline-3">
+<h3 id="org7b91072"><span class="section-number-3">3.1.</span> People</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgddaa4c2" class="outline-4">
+<h4 id="orgddaa4c2"><span class="section-number-4">3.1.1.</span> Artists</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgd0d9a2f"></a>Ram Narayan<br />
+<ol class="org-ol">
+<li><a id="orgea51ca7"></a>General<br />
+<div class="outline-text-6" id="text-3-1-1-1-1">
+<ul class="org-ul">
+<li>“Ram Narayan,” Wikipedia. Nov. 14, 2024. Accessed: Nov. 16, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ram_Narayan&amp;oldid=1257451346">https://en.wikipedia.org/w/index.php?title=Ram_Narayan&amp;oldid=1257451346</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org47c414d"></a>World<br />
+<ul class="org-ul">
+<li><a id="org0b5283e"></a>Biographies<br />
+<div class="outline-text-7" id="text-org0b5283e">
+<ul class="org-ul">
+<li>Prasar Bharati Archives, Anugoonj | Episode-13 | Ram Narayan, (Apr. 18, 2020). Accessed: Nov. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3-WWS1KyZnY">https://www.youtube.com/watch?v=3-WWS1KyZnY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org148e307"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org936472c"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org8382cb9"></a>Discography<br />
+<div class="outline-text-7" id="text-org8382cb9">
+<ul class="org-ul">
+<li>“Ram Narayan,” Discogs. <a href="https://www.discogs.com/artist/918502-Ram-Narayan">https://www.discogs.com/artist/918502-Ram-Narayan</a> (accessed Dec. 12, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org78b0376"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="orge007880"></a>Playlists<br />
+<div class="outline-text-8" id="text-orge007880">
+<ul class="org-ul">
+<li>“SarangiRN | Community Playlist on Prime Music.” Accessed: Nov. 18, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/0a8f6645a12742c091be2758c41b2e7bi8n0">https://music.amazon.in/user-playlists/0a8f6645a12742c091be2758c41b2e7bi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf134650"></a>Prasar Bharati Archives, Air Raagam<br />
+<div class="outline-text-8" id="text-orgf134650">
+<ul class="org-ul">
+<li>Prasar Bharati Archives, Suprabhat | Pt Ram Narayan | Sarangi | Morning Raga, (Apr. 30, 2020). Accessed: Nov. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=IhRaW4kgKJw">https://www.youtube.com/watch?v=IhRaW4kgKJw</a></li>
+<li>Prasar Bharati Archives, Relax with Evening Ragas | Pt  Ram Narayan | Sarangi | Naad Lahari, (May 15, 2020). Accessed: Nov. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ovgzFVXqQ3o">https://www.youtube.com/watch?v=ovgzFVXqQ3o</a></li>
+
+<li>AIR Raagam, Pt. Ram Narayan | Sarangi | Raag Malkauns | Akashvani Sangeet, (Nov. 16, 2021). Accessed: Nov. 26, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=jCvFcA8xunI">https://www.youtube.com/watch?v=jCvFcA8xunI</a></li>
+<li>AKASHVANI MUMBAI, Sarangi Player / Pandit Ram Narayan / Sakshatkar Part- 1, (Nov. 25, 2024). Accessed: Nov. 26, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=kLb-CjZ9x3Y">https://www.youtube.com/watch?v=kLb-CjZ9x3Y</a></li>
+<li>AKASHVANI MUMBAI, Sarangi Player / Pandit Ram Narayan / Sakshatkar Part- 2, (Nov. 25, 2024). Accessed: Nov. 26, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=BJZrRKdOr90">https://www.youtube.com/watch?v=BJZrRKdOr90</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org67cb09d"></a>SaReGaMa<br /></li>
+<li><a id="orgaafd552"></a>Music Today<br />
+<div class="outline-text-8" id="text-orgaafd552">
+<ul class="org-ul">
+<li>Music Today, Maestro’s Choice - Ram Narayan I Vol 1 I Audio Jukebox I Classical I Ram Narayan | Music Today, (Sep. 02, 2015). Accessed: Nov. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FXZ8_W5o06w">https://www.youtube.com/watch?v=FXZ8_W5o06w</a>
+<ul class="org-ul">
+<li>Music Today, Raga Marwa - Pandit Ram Narayan (Album: Maestro’s Choice) | Music Today, (Nov. 10, 2015). Accessed: Nov. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=SXKRCJ98gVM">https://www.youtube.com/watch?v=SXKRCJ98gVM</a></li>
+<li>Music Today, Mishra Bhairavi - Pandit Ram Narayan (Album: Maestro’s Choice Series One) | Music Today, (Nov. 12, 2015). Accessed: Nov. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Sth7iiFkY6k">https://www.youtube.com/watch?v=Sth7iiFkY6k</a></li>
+<li>Music Today, Mishra Des | Ram Narayan (Album: Romantic Raga) | Music Today, (Mar. 02, 2016). Accessed: Nov. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DVYiYZ-Hif8">https://www.youtube.com/watch?v=DVYiYZ-Hif8</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgaa7b5dc"></a>Misc<br />
+<div class="outline-text-8" id="text-orgaa7b5dc">
+<ul class="org-ul">
+<li>“Amazon.in.” Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://www.amazon.in/Rag-Shankara-Mala-Jogia/dp/B0000037DE">https://www.amazon.in/Rag-Shankara-Mala-Jogia/dp/B0000037DE</a></li>
+<li>“Amazon.in.” Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://www.amazon.in/Greatest-Hits-Pandit-Ram-Narayan/dp/B09V84DGFM">https://www.amazon.in/Greatest-Hits-Pandit-Ram-Narayan/dp/B09V84DGFM</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgb908d99"></a>Misc<br />
+<div class="outline-text-6" id="text-3-1-1-1-4">
+<ul class="org-ul">
+<li>A. Pradhan, “Listen: Two different tabla approaches to accompanying sarangi maestro Ram Narayan,” Scroll.in. Accessed: Nov. 16, 2024. [Online]. Available: <a href="https://scroll.in/article/1075659/listen-two-different-tabla-approaches-to-accompanying-sarangi-maestro-ram-narayan">https://scroll.in/article/1075659/listen-two-different-tabla-approaches-to-accompanying-sarangi-maestro-ram-narayan</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org3b9724e"></a>Bundu Khan<br />
+<div class="outline-text-5" id="text-3-1-1-2">
+<ul class="org-ul">
+<li>“Bundu Khan,” Discogs. <a href="https://www.discogs.com/artist/1812793-Bundu-Khan">https://www.discogs.com/artist/1812793-Bundu-Khan</a> (accessed Dec. 12, 2021).</li>
+
+<li>Das Piya Music, Ustad Bundu Khan | Sarangi | Kedar | Classical | Instrumental, (Mar. 04, 2025). Accessed: Sep. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=TzpRCMgWmSU">https://www.youtube.com/watch?v=TzpRCMgWmSU</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdc34bf1"></a>Sabri Khan<br /></li>
+<li><a id="org27ef22f"></a>Sultan Khan<br /></li>
+<li><a id="orgbc8d52e"></a>Misc<br />
+<div class="outline-text-5" id="text-3-1-1-5">
+<ul class="org-ul">
+<li>R. B. Qureshi, Master Musicians of India: Hereditary Sarangi Players Speak, 1st edition. New York: Routledge, 2007.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org6f980d5" class="outline-4">
+<h4 id="org6f980d5"><span class="section-number-4">3.1.2.</span> Sarangi Makers</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>M. Nair, “In Meerut, one man is on a quest to recreate the magic of a legendary sarangi maker,” Scroll.in. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://scroll.in/magazine/1028123/in-meerut-one-man-is-on-a-quest-to-recreate-the-magic-of-a-legendary-sarangi-maker">https://scroll.in/magazine/1028123/in-meerut-one-man-is-on-a-quest-to-recreate-the-magic-of-a-legendary-sarangi-maker</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8ab6393" class="outline-4">
+<h4 id="org8ab6393"><span class="section-number-4">3.1.3.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<ul class="org-ul">
+<li>“Joep Bor,” Leiden University. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://www.universiteitleiden.nl/en/staffmembers/joep-bor">https://www.universiteitleiden.nl/en/staffmembers/joep-bor</a>
+<ul class="org-ul">
+<li>“Welcome to the website of JOEP BOR.” Accessed: Jul. 17, 2024. [Online]. Available: <a href="http://joepbor.com/">http://joepbor.com/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org23fe02a" class="outline-2">
+<h2 id="org23fe02a"><span class="section-number-2">4.</span> Special Topics</h2>
+</div>
+<div id="outline-container-org4e09b83" class="outline-2">
+<h2 id="org4e09b83"><span class="section-number-2">5.</span> Misc</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>“The Indian Sarangi: Sound of Affect, Site of Contest on JSTOR.” Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://www.jstor.org/stable/768295">https://www.jstor.org/stable/768295</a></li>
+
+<li>A. Blogs, “The Sarangi: A Case Study In Colonialist Texts,” AMIS. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://www.amis.org/post/the-sarangi-a-case-study-in-colonialist-texts">https://www.amis.org/post/the-sarangi-a-case-study-in-colonialist-texts</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

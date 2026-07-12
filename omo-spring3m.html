@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spring - Music</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Spring - Music</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4eb09e6">1. Indian Music</a>
+<ul>
+<li><a href="#orgc0a5931">1.1. Indian Classical Music</a>
+<ul>
+<li><a href="#org4ffc86a">1.1.1. Hindustani Classical Music</a></li>
+<li><a href="#org3fa8f6b">1.1.2. Karnatic Classical Music</a></li>
+<li><a href="#orgad374be">1.1.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org1b1c8e6">1.2. Events</a>
+<ul>
+<li><a href="#org42205cb">1.2.1. Basant Panchami</a></li>
+</ul>
+</li>
+<li><a href="#orgb9661cd">1.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org199d284">2. Western Classical Music</a>
+<ul>
+<li><a href="#org6bd5014">2.1. Playlists</a></li>
+<li><a href="#org0d16f56">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2105e06">3. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org4eb09e6" class="outline-2">
+<h2 id="org4eb09e6"><span class="section-number-2">1.</span> Indian Music</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgc0a5931" class="outline-3">
+<h3 id="orgc0a5931"><span class="section-number-3">1.1.</span> Indian Classical Music</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org4ffc86a" class="outline-4">
+<h4 id="org4ffc86a"><span class="section-number-4">1.1.1.</span> Hindustani Classical Music</h4>
+<div class="outline-text-4" id="text-1-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge733275"></a>Playlists<br />
+<div class="outline-text-5" id="text-1-1-1-1">
+<ul class="org-ul">
+<li>“BasantBaharMT - YouTube.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLP8c3pohkJmku1fYLawNTQRgQLPPQyqQ0">https://www.youtube.com/playlist?list=PLP8c3pohkJmku1fYLawNTQRgQLPPQyqQ0</a></li>
+
+<li>“BasantBaharAR - YouTube.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLP8c3pohkJmkSNbXxV4ZiVnzLStoU7LNy">https://www.youtube.com/playlist?list=PLP8c3pohkJmkSNbXxV4ZiVnzLStoU7LNy</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgde3ab6c"></a>Music Today<br />
+<ol class="org-ol">
+<li><a id="org30f663b"></a>Collections<br />
+<ul class="org-ul">
+<li><a id="org101f305"></a>Music Today, Basant Bahar<br />
+<div class="outline-text-7" id="text-org101f305">
+<ul class="org-ul">
+<li>Music Today, Basant Bahar | Volume 1 | Audio Jukebox | Classical | Vocal and Instrumental | Kishori Amonkar, (Sep. 02, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Kw3g5mHMSpM">https://www.youtube.com/watch?v=Kw3g5mHMSpM</a></li>
+
+<li>Music Today, Basant Bahar | Volume 2 | Audio Jukebox | Classical | Vocal And Instrumental | Ravi Shankar, (Sep. 02, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dTchp72BhJE">https://www.youtube.com/watch?v=dTchp72BhJE</a></li>
+
+<li>Music Today, Basant Bahar | Volume 3 | Audio Jukebox | Classical | Instrumental &amp; Vocal | Mallikarjun Mansur, (Sep. 02, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=HhoCBYtnMZk">https://www.youtube.com/watch?v=HhoCBYtnMZk</a></li>
+
+<li>Music Today, Basant Bahar | Volume 4 | Audio Jukebox | Classsical | Vocal &amp; Instrumental | Pandit Jasraj, (Sep. 02, 2015). Accessed: Oct. 09, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3a5vejMmWDI">https://www.youtube.com/watch?v=3a5vejMmWDI</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org58fb733"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="orgbef772b"></a>Mallikarjun Mansur<br />
+<div class="outline-text-7" id="text-orgbef772b">
+<ul class="org-ul">
+<li>Raga Basanti Kanhra - Shiv Kumar Sharma | Mallikarjun Mansur (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GySF265U5e4">https://www.youtube.com/watch?v=GySF265U5e4</a></li>
+<li>Raga Basant Kedar - Shiv Kumar Sharma | Mallikarjun Mansur (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QtvfU6Ia8qA">https://www.youtube.com/watch?v=QtvfU6Ia8qA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org337be7f"></a>Kishori Amonkar<br />
+<div class="outline-text-7" id="text-org337be7f">
+<ul class="org-ul">
+<li>Raga Basant Bahar |  Kishori Amonkar |  Sangeet Sartaj - Kishori Amonkar | Music Today, (Mar. 10, 2016). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=M7HVgAmYi9s">https://www.youtube.com/watch?v=M7HVgAmYi9s</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge652736"></a>Bhimsen Joshi<br />
+<div class="outline-text-7" id="text-orge652736">
+<ul class="org-ul">
+<li>Raga Hindol Bahar - Bhimsen Joshi | Ravi Shankar (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gRV2zzRsUV4">https://www.youtube.com/watch?v=gRV2zzRsUV4</a></li>
+<li>Raga Bahar - Bhimsen Joshi | Ravi Shankar (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=b890qC7mgDY">https://www.youtube.com/watch?v=b890qC7mgDY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org401551d"></a>Jasraj<br />
+<div class="outline-text-7" id="text-org401551d">
+<ul class="org-ul">
+<li>Raga Bhavani Bahar -  - Pandit Jasraj | Hariprasad Chaurasia (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uuqevQD8b-o">https://www.youtube.com/watch?v=uuqevQD8b-o</a></li>
+<li>Raga Adi Basant - Pandit Jasraj | Hariprasad Chaurasia (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CytTTITGwQ4">https://www.youtube.com/watch?v=CytTTITGwQ4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgca08dfe"></a>Shiv Kumar Sharma<br />
+<div class="outline-text-7" id="text-orgca08dfe">
+<ul class="org-ul">
+<li>Raga Basant - Shiv Kumar Sharma | Mallikarjun Mansur (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=HJ3EwI06GUQ">https://www.youtube.com/watch?v=HJ3EwI06GUQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf96263f"></a>Hariprasad Chaurasia<br />
+<div class="outline-text-7" id="text-orgf96263f">
+<ul class="org-ul">
+<li>Raga Shahana Bahar - Pandit Jasraj | Hariprasad Chaurasia (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tTALFzUx8og">https://www.youtube.com/watch?v=tTALFzUx8og</a></li>
+
+<li>Pahadi Dhun - Pandit Jasraj | Hariprasad Chaurasia (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=JCS7j8avTh4">https://www.youtube.com/watch?v=JCS7j8avTh4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbff2df5"></a>Bismillah Khan<br />
+<div class="outline-text-7" id="text-orgbff2df5">
+<ul class="org-ul">
+<li>Raga Hamir Bahar -  Ustad Bismillah Khan | Kishori Amonkar (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=trNbIAqB_dQ">https://www.youtube.com/watch?v=trNbIAqB_dQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4040f32"></a>Ravi Shankar<br />
+<div class="outline-text-7" id="text-org4040f32">
+<ul class="org-ul">
+<li>Raga Mishra Kafi - Bhimsen Joshi | Ravi Shankar (Album: Basant Bahar), (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Y35ptWMhDiU">https://www.youtube.com/watch?v=Y35ptWMhDiU</a></li>
+
+<li>Raga Sindhura - Bhimsen Joshi | Ravi Shankar (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=hn7VL92G998">https://www.youtube.com/watch?v=hn7VL92G998</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org88a9b30"></a>Basant Variants<br />
+<ol class="org-ol">
+<li><a id="org0917e36"></a>Playlists<br />
+<div class="outline-text-6" id="text-1-1-1-3-1">
+<ul class="org-ul">
+<li>“SeasonsSpringBasantMisc | Community Playlist on Prime Music.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/291a7c6f8e484329815628a454b9ecbbi8n0">https://music.amazon.in/user-playlists/291a7c6f8e484329815628a454b9ecbbi8n0</a></li>
+
+<li>“SeasonsSpringBasant | Community Playlist on Prime Music.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/05a673a7db934433be26109dc34caeb8i8n0">https://music.amazon.in/user-playlists/05a673a7db934433be26109dc34caeb8i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc973d95"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="orgb70e940"></a>Rudra Veena<br />
+<div class="outline-text-7" id="text-orgb70e940">
+<ul class="org-ul">
+<li>Raag Adi Basant | Ustad Bahauddin Dagar | Darbar VR360, (Dec. 25, 2019). Accessed: Feb. 15, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=UncpoczPK9I">https://www.youtube.com/watch?v=UncpoczPK9I</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6d30e9a"></a>Playlists<br />
+<div class="outline-text-7" id="text-org6d30e9a">
+<ul class="org-ul">
+<li>“ahcdBasant | Community Playlist on Prime Music.” Accessed: Jan. 28, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/98ba1b0a0fe34f97af2a19947025aadei8n0">https://music.amazon.in/user-playlists/98ba1b0a0fe34f97af2a19947025aadei8n0</a></li>
+
+<li>“BasantHCMD - YouTube.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLP8c3pohkJmlMrsr1IyZ-ip-7Pzxj6vOk">https://www.youtube.com/playlist?list=PLP8c3pohkJmlMrsr1IyZ-ip-7Pzxj6vOk</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org18a384d"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org7a1fb01"></a>Raga Basant<br />
+<ul class="org-ul">
+<li><a id="org1bf92f2"></a>General<br />
+<div class="outline-text-8" id="text-org1bf92f2">
+<ul class="org-ul">
+<li>“Basant (raga),” Wikipedia. Oct. 29, 2022. Accessed: Feb. 16, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Basant_(raga)&amp;oldid=1118926956">https://en.wikipedia.org/w/index.php?title=Basant_(raga)&amp;oldid=1118926956</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8d29dab"></a>Theory<br />
+<ul class="org-ul">
+<li><a id="org9799cb1"></a>Rajan Parrikar Music Archive<br />
+<div class="outline-text-9" id="text-org9799cb1">
+<ul class="org-ul">
+<li><b>“The Province of Poorvi (Part 1/2),”</b> Rajan Parrikar Music Archive. Accessed: Feb. 16, 2024. [Online]. Available: <a href="https://www.parrikar.org/hindustani/poorvi/">https://www.parrikar.org/hindustani/poorvi/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga657a91"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org8f7d8bf"></a>Shiv Kumar Sharma<br />
+<div class="outline-text-9" id="text-org8f7d8bf">
+<ul class="org-ul">
+<li>Raga Basant - Shiv Kumar Sharma | Mallikarjun Mansur (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=HJ3EwI06GUQ">https://www.youtube.com/watch?v=HJ3EwI06GUQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org98a00b7"></a>D. V. Paluskar<br />
+<div class="outline-text-9" id="text-org98a00b7">
+<ul class="org-ul">
+<li>Pandit D.V. Paluskar | Raag : Basant, (Sep. 22, 2020). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=hysLENtHRak">https://www.youtube.com/watch?v=hysLENtHRak</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orged4c4fd"></a>Religions, Spirituality, Misc<br />
+<div class="outline-text-9" id="text-orged4c4fd">
+<ul class="org-ul">
+<li>Gurbani | Aaj Hamare Mangalchar | Raag Basant | Bhai Gurdayal Singh Raagi and Sathi, (Nov. 15, 2019). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PhbWs9yDLyY">https://www.youtube.com/watch?v=PhbWs9yDLyY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org28dbd7a"></a>Films<br />
+<div class="outline-text-9" id="text-org28dbd7a">
+<ul class="org-ul">
+<li>“Raag Basant - Hindustani Classical Music - Tanarang.com.” Accessed: Feb. 16, 2024. [Online]. Available: <a href="http://www.tanarang.com/english/basant_eng.htm">http://www.tanarang.com/english/basant_eng.htm</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgee4ef5c"></a>Misc<br />
+<div class="outline-text-9" id="text-orgee4ef5c">
+<ul class="org-ul">
+<li>Gangubai Hangal | Singer | Hindustani Classical | Raag: Basant | Akashvani Sangeet, (Sep. 30, 2021). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ijt4nSV6uXs">https://www.youtube.com/watch?v=ijt4nSV6uXs</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org77a235e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0346637"></a>Raga Basant Mukhari<br />
+<div class="outline-text-7" id="text-org0346637">
+<ul class="org-ul">
+<li>“SeasonsSpringBasantMukhari | Community Playlist on Prime Music.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/c5792f182d6f4540983f551058a7e4b1i8n0">https://music.amazon.in/user-playlists/c5792f182d6f4540983f551058a7e4b1i8n0</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org390946f"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="orga8347a7"></a>Allauddin Khan<br />
+<div class="outline-text-7" id="text-orga8347a7">
+<ul class="org-ul">
+<li>Baba Allauddin Khan | Sarod Player &amp; Composer | Raag Paraj Basant | Akashvani Sangeet, (Sep. 06, 2021). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Nb6Bsh97Z4g">https://www.youtube.com/watch?v=Nb6Bsh97Z4g</a></li>
+<li>Baba Allauddin Khan | Sarod Player &amp; Composer | Raag Shuddha Basant | Akashvani Sangeet, (Sep. 06, 2021). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=l8lFesjEcr4">https://www.youtube.com/watch?v=l8lFesjEcr4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4a3c786"></a>Shiv Kumar Sharma<br />
+<div class="outline-text-7" id="text-org4a3c786">
+<ul class="org-ul">
+<li>Raga Basanti Kanhra - Shiv Kumar Sharma | Mallikarjun Mansur (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GySF265U5e4">https://www.youtube.com/watch?v=GySF265U5e4</a></li>
+<li>Raga Basant Kedar - Shiv Kumar Sharma | Mallikarjun Mansur (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QtvfU6Ia8qA">https://www.youtube.com/watch?v=QtvfU6Ia8qA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge671c2d"></a>Jasraj<br />
+<div class="outline-text-7" id="text-orge671c2d">
+<ul class="org-ul">
+<li>Raga Adi Basant - Pandit Jasraj | Hariprasad Chaurasia (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CytTTITGwQ4">https://www.youtube.com/watch?v=CytTTITGwQ4</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org7b33049"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgd97745f"></a>Bahar Variants<br />
+<ol class="org-ol">
+<li><a id="org92fd6fd"></a>Playlists<br />
+<div class="outline-text-6" id="text-1-1-1-4-1">
+<ul class="org-ul">
+<li>“SeasonsSpringBaharMisc | Community Playlist on Prime Music.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/eae6d860ffca4c54a9719b05330c3a2ai8n0">https://music.amazon.in/user-playlists/eae6d860ffca4c54a9719b05330c3a2ai8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1cf343c"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org81112c7"></a>Raga Basant Bahar<br />
+<ul class="org-ul">
+<li><a id="org1ad3472"></a>Kishori Amonkar<br />
+<div class="outline-text-8" id="text-org1ad3472">
+<ul class="org-ul">
+<li>Raga Basant Bahar |  Kishori Amonkar |  Sangeet Sartaj - Kishori Amonkar | Music Today, (Mar. 10, 2016). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=M7HVgAmYi9s">https://www.youtube.com/watch?v=M7HVgAmYi9s</a></li>
+<li>Raga Basant Bahar by Kishori Amonkar, (Apr. 10, 2022). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Z9pbsnh72XA">https://www.youtube.com/watch?v=Z9pbsnh72XA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org76b2a40"></a>Playlists<br />
+<div class="outline-text-8" id="text-org76b2a40">
+<ul class="org-ul">
+<li>“SeasonsSpringBaharBasant | Community Playlist on Prime Music.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/268742ef4bca4542b929fe77c65f2b18i8n0">https://music.amazon.in/user-playlists/268742ef4bca4542b929fe77c65f2b18i8n0</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga61b356"></a>Raga Bahar<br />
+<ul class="org-ul">
+<li><a id="org737f372"></a>Playlists<br />
+<div class="outline-text-8" id="text-org737f372">
+<ul class="org-ul">
+<li>“SeasonsSpringBahar | Community Playlist on Prime Music.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/f6cf17ff51184d04943e9acd13fa3e19i8n0">https://music.amazon.in/user-playlists/f6cf17ff51184d04943e9acd13fa3e19i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org266653f"></a>Misc<br />
+<div class="outline-text-8" id="text-org266653f">
+<ul class="org-ul">
+<li>Ustad Bismillah Khan II Raga - Bahar II Shehnai Recital, (Jan. 14, 2022). Accessed: Feb. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gQOpOokrHRk">https://www.youtube.com/watch?v=gQOpOokrHRk</a></li>
+<li>Raga Bahar | Ustad Amjad Ali Khan | Sarod Records, (Oct. 22, 2019). Accessed: Feb. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CsVy9GcCtug">https://www.youtube.com/watch?v=CsVy9GcCtug</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org463cb7f"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="orge8ecf05"></a>Jasraj<br />
+<div class="outline-text-7" id="text-orge8ecf05">
+<ul class="org-ul">
+<li>Raga Shahana Bahar - Pandit Jasraj | Hariprasad Chaurasia (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tTALFzUx8og">https://www.youtube.com/watch?v=tTALFzUx8og</a></li>
+<li>Raga Bhavani Bahar -  - Pandit Jasraj | Hariprasad Chaurasia (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uuqevQD8b-o">https://www.youtube.com/watch?v=uuqevQD8b-o</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd6fc9a8"></a>Bismillah Khan<br />
+<div class="outline-text-7" id="text-orgd6fc9a8">
+<ul class="org-ul">
+<li>Raga Hamir Bahar -  Ustad Bismillah Khan | Kishori Amonkar (Album: Basant Bahar) | Music Today, (Nov. 24, 2015). Accessed: Feb. 16, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=trNbIAqB_dQ">https://www.youtube.com/watch?v=trNbIAqB_dQ</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org40d7dc0"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org3d1e174"></a>Sarod<br />
+<ol class="org-ol">
+<li><a id="orgbef97a3"></a>Allauddin Khan<br />
+<div class="outline-text-6" id="text-1-1-1-5-1">
+<ul class="org-ul">
+<li>Baba Allauddin Khan | Sarod Player &amp; Composer | Raag Paraj Basant | Akashvani Sangeet, (Sep. 06, 2021). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Nb6Bsh97Z4g">https://www.youtube.com/watch?v=Nb6Bsh97Z4g</a></li>
+<li>Baba Allauddin Khan | Sarod Player &amp; Composer | Raag Shuddha Basant | Akashvani Sangeet, (Sep. 06, 2021). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=l8lFesjEcr4">https://www.youtube.com/watch?v=l8lFesjEcr4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org49e76b4"></a>Amjad Ali Khan<br />
+<div class="outline-text-6" id="text-1-1-1-5-2">
+<ul class="org-ul">
+<li>Raga Bahar | Ustad Amjad Ali Khan | Sarod Records, (Oct. 22, 2019). Accessed: Feb. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CsVy9GcCtug">https://www.youtube.com/watch?v=CsVy9GcCtug</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1281b00"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org5d7bfbf"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org3fa8f6b" class="outline-4">
+<h4 id="org3fa8f6b"><span class="section-number-4">1.1.2.</span> Karnatic Classical Music</h4>
+</div>
+<div id="outline-container-orgad374be" class="outline-4">
+<h4 id="orgad374be"><span class="section-number-4">1.1.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org1b1c8e6" class="outline-3">
+<h3 id="org1b1c8e6"><span class="section-number-3">1.2.</span> Events</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org42205cb" class="outline-4">
+<h4 id="org42205cb"><span class="section-number-4">1.2.1.</span> Basant Panchami</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org97b5966"></a>Prasar Bharati Archives<br />
+<div class="outline-text-5" id="text-1-2-1-1">
+<ul class="org-ul">
+<li>Aayi Basant Bahar | Basant Panchami, (Feb. 10, 2019). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ylp3dWdOMJI">https://www.youtube.com/watch?v=ylp3dWdOMJI</a></li>
+<li>Rituraj Basant | Basant Panchami, (Jan. 29, 2020). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=f5SpesM7_eI">https://www.youtube.com/watch?v=f5SpesM7_eI</a></li>
+<li>उड़ी जाय रे बसंती चुनर सर से | Song | Basant Panchami, (Jan. 29, 2020). Accessed: Feb. 17, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Rd96KMO6EFE">https://www.youtube.com/watch?v=Rd96KMO6EFE</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfc47b37"></a>DD<br />
+<div class="outline-text-5" id="text-1-2-1-2">
+<ul class="org-ul">
+<li>Basant Panchami. Accessed: Feb. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/shorts/CqQwfI9pSX0">https://www.youtube.com/shorts/CqQwfI9pSX0</a></li>
+
+<li>Rhythm of Raga Basant in Khajuraho #khajurahotemples #unesco #unescoworldheritage. Accessed: Feb. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/shorts/cDc0QePZcl8">https://www.youtube.com/shorts/cDc0QePZcl8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org536ebbe"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb9661cd" class="outline-3">
+<h3 id="orgb9661cd"><span class="section-number-3">1.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org199d284" class="outline-2">
+<h2 id="org199d284"><span class="section-number-2">2.</span> Western Classical Music</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org6bd5014" class="outline-3">
+<h3 id="org6bd5014"><span class="section-number-3">2.1.</span> Playlists</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>“SeasonsSpringWCM | Community Playlist on Prime Music.” Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/58937deaad1c4918bdf44e7a18d32ff5i8n0">https://music.amazon.in/user-playlists/58937deaad1c4918bdf44e7a18d32ff5i8n0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0d16f56" class="outline-3">
+<h3 id="org0d16f56"><span class="section-number-3">2.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org2105e06" class="outline-2">
+<h2 id="org2105e06"><span class="section-number-2">3.</span> Misc</h2>
+<div class="outline-text-2" id="text-3">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:06</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

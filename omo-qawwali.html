@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-12 Sun 16:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Qawwali</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Qawwali</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgaab92ab">1. General</a></li>
+<li><a href="#orgacef65e">2. Artists</a></li>
+<li><a href="#orgd92b92d">3. Recordings</a>
+<ul>
+<li><a href="#orgcf5e49a">3.1. Collections</a></li>
+<li><a href="#org09ee2cb">3.2. Artists</a>
+<ul>
+<li><a href="#org0455800">3.2.1. Jafar Hussain Khan Badauni</a></li>
+<li><a href="#org3fc1990">3.2.2. Warsi Brothers</a></li>
+<li><a href="#orgecc1228">3.2.3. Wadali Brothers</a></li>
+<li><a href="#orgf07b740">3.2.4. Nusrat Fateh Ali Khan</a></li>
+</ul>
+</li>
+<li><a href="#orgeda9c65">3.3. Air Raagam, Prasar Bharati Archives</a>
+<ul>
+<li><a href="#org327b514">3.3.1. Collections</a></li>
+<li><a href="#orgd883d3e">3.3.2. Solo</a></li>
+</ul>
+</li>
+<li><a href="#org75969d8">3.4. SaReGaMa</a>
+<ul>
+<li><a href="#org2fcfd9a">3.4.1. Collections</a></li>
+<li><a href="#orge324db8">3.4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3223c70">3.5. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#orge26bec3">3.5.1. Sufi</a></li>
+</ul>
+</li>
+<li><a href="#orgef41859">3.6. Rural Music</a></li>
+<li><a href="#org9d7b41c">3.7. Films</a>
+<ul>
+<li><a href="#org257912f">3.7.1. Solo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd670433">4. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgaab92ab" class="outline-2">
+<h2 id="orgaab92ab"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Qawwali,” Wikipedia. Nov. 15, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Qawwali&amp;oldid=1121978630">https://en.wikipedia.org/w/index.php?title=Qawwali&amp;oldid=1121978630</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgacef65e" class="outline-2">
+<h2 id="orgacef65e"><span class="section-number-2">2.</span> Artists</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>“Qawwal Bahauddin Khan - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Qawwal_Bahauddin_Khan">https://en.wikipedia.org/wiki/Qawwal_Bahauddin_Khan</a> (accessed Nov. 29, 2022).</li>
+
+<li>“Nizami Bandhu,” Wikipedia. Jun. 20, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Nizami_Bandhu&amp;oldid=1094113249">https://en.wikipedia.org/w/index.php?title=Nizami_Bandhu&amp;oldid=1094113249</a></li>
+
+<li>“Amjad Sabri,” Wikipedia. Nov. 18, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Amjad_Sabri&amp;oldid=1122581504">https://en.wikipedia.org/w/index.php?title=Amjad_Sabri&amp;oldid=1122581504</a></li>
+
+<li>“Qutbi Brothers,” Wikipedia. Jul. 18, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Qutbi_Brothers&amp;oldid=1099071355">https://en.wikipedia.org/w/index.php?title=Qutbi_Brothers&amp;oldid=1099071355</a></li>
+
+<li>“Rizwan-Muazzam,” Wikipedia. May 08, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rizwan-Muazzam&amp;oldid=1086817550">https://en.wikipedia.org/w/index.php?title=Rizwan-Muazzam&amp;oldid=1086817550</a></li>
+
+<li>“Badar Miandad - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Badar_Miandad">https://en.wikipedia.org/wiki/Badar_Miandad</a> (accessed Nov. 29, 2022).</li>
+
+<li>“Fareed Ayaz,” Wikipedia. Oct. 02, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Fareed_Ayaz&amp;oldid=1113691939">https://en.wikipedia.org/w/index.php?title=Fareed_Ayaz&amp;oldid=1113691939</a></li>
+
+<li>“Aziz Mian,” Wikipedia. Sep. 28, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Aziz_Mian&amp;oldid=1112845107">https://en.wikipedia.org/w/index.php?title=Aziz_Mian&amp;oldid=1112845107</a></li>
+
+<li>“Wadali Brothers,” Wikipedia. Jun. 26, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Wadali_Brothers&amp;oldid=1095067117">https://en.wikipedia.org/w/index.php?title=Wadali_Brothers&amp;oldid=1095067117</a></li>
+
+<li>“Sabri Brothers,” Wikipedia. Nov. 08, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sabri_Brothers&amp;oldid=1120765976">https://en.wikipedia.org/w/index.php?title=Sabri_Brothers&amp;oldid=1120765976</a></li>
+
+<li>“Nusrat Fateh Ali Khan,” Wikipedia. Nov. 28, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Nusrat_Fateh_Ali_Khan&amp;oldid=1124302368">https://en.wikipedia.org/w/index.php?title=Nusrat_Fateh_Ali_Khan&amp;oldid=1124302368</a></li>
+
+<li>“Rahat Fateh Ali Khan,” Wikipedia. Nov. 12, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rahat_Fateh_Ali_Khan&amp;oldid=1121436262">https://en.wikipedia.org/w/index.php?title=Rahat_Fateh_Ali_Khan&amp;oldid=1121436262</a></li>
+
+<li>“Lal Shahbaz Qalandar,” Wikipedia. Oct. 07, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Lal_Shahbaz_Qalandar&amp;oldid=1114683021">https://en.wikipedia.org/w/index.php?title=Lal_Shahbaz_Qalandar&amp;oldid=1114683021</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd92b92d" class="outline-2">
+<h2 id="orgd92b92d"><span class="section-number-2">3.</span> Recordings</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgcf5e49a" class="outline-3">
+<h3 id="orgcf5e49a"><span class="section-number-3">3.1.</span> Collections</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>The Best of Qawwali | Audio Jukebox | Sufi | Vocal | Various Artists, (Aug. 27, 2015). Accessed: Mar. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=oqrI8UkBQSU">https://www.youtube.com/watch?v=oqrI8UkBQSU</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org09ee2cb" class="outline-3">
+<h3 id="org09ee2cb"><span class="section-number-3">3.2.</span> Artists</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org0455800" class="outline-4">
+<h4 id="org0455800"><span class="section-number-4">3.2.1.</span> Jafar Hussain Khan Badauni</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>Qawwali: Jafar Hussain Khan Badauni &amp; Party | Vol 1 | Audio Jukebox | Vocal | Sufi, (Sep. 01, 2015). Accessed: Mar. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9WE1yxqB48I">https://www.youtube.com/watch?v=9WE1yxqB48I</a></li>
+<li>Qawwali: Jafar Hussain Khan Badauni &amp; Party | Vol 2 | Audio Jukebox | Vocal | Sufi, (Sep. 01, 2015). Accessed: Mar. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KZwtWKxtjT4">https://www.youtube.com/watch?v=KZwtWKxtjT4</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3fc1990" class="outline-4">
+<h4 id="org3fc1990"><span class="section-number-4">3.2.2.</span> Warsi Brothers</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>Qawwali: Warsi Brothers | Vol 1 | Audio Jukebox | Vocal | Qawwali, (Sep. 01, 2015). Accessed: Mar. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2muLnVIKVI8">https://www.youtube.com/watch?v=2muLnVIKVI8</a></li>
+<li>Qawwali: Warsi Brothers | Vol 2 | Audio Jukebox | Vocal | Qawwali, (Sep. 01, 2015). Accessed: Mar. 06, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ZSLfdM3Y2vI">https://www.youtube.com/watch?v=ZSLfdM3Y2vI</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgecc1228" class="outline-4">
+<h4 id="orgecc1228"><span class="section-number-4">3.2.3.</span> Wadali Brothers</h4>
+<div class="outline-text-4" id="text-3-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org146daa0"></a>Collections<br />
+<div class="outline-text-5" id="text-3-2-3-1">
+<ul class="org-ul">
+<li>Treasured Moments With Wadali Brothers I Audio Jukebox I Vocal | Sufi | Music Today, (Aug. 24, 2015). Accessed: Jun. 29, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=HXC7r4np51I">https://www.youtube.com/watch?v=HXC7r4np51I</a></li>
+<li>“The Best of Wadali Brothers | Audio Jukebox | Vocal | Sufi | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=Kny_8KRgKMA">https://www.youtube.com/watch?v=Kny_8KRgKMA</a> (accessed Jun. 29, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgaeca20e"></a>Solo<br />
+<div class="outline-text-5" id="text-3-2-3-2">
+<ul class="org-ul">
+<li>“Dama Dam Mast Qalandar | Wadali Brothers (Album: Tu Mane Ya Na Mane) | Music Today - YouTube.” <a href="https://www.youtube.com/watch?v=qFPLex1CTCY">https://www.youtube.com/watch?v=qFPLex1CTCY</a> (accessed Jun. 29, 2023).</li>
+<li>Tu Mane Ya Na Mane,Wadali Brothers,Coke Studio @ MTV,S01,E03, (Jul. 20, 2011). Accessed: Jun. 29, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tL5sYdlk20I">https://www.youtube.com/watch?v=tL5sYdlk20I</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf07b740" class="outline-4">
+<h4 id="orgf07b740"><span class="section-number-4">3.2.4.</span> Nusrat Fateh Ali Khan</h4>
+<div class="outline-text-4" id="text-3-2-4">
+<ul class="org-ul">
+<li>Nusrat Fateh Ali Khan, <i>Ali Dum Dum De Ander</i>, (Aug. 06, 2019). Accessed: Oct. 06, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GdGQD546BN4">https://www.youtube.com/watch?v=GdGQD546BN4</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeda9c65" class="outline-3">
+<h3 id="orgeda9c65"><span class="section-number-3">3.3.</span> Air Raagam, Prasar Bharati Archives</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org327b514" class="outline-4">
+<h4 id="org327b514"><span class="section-number-4">3.3.1.</span> Collections</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ul class="org-ul">
+<li>“Sufiana Qawwali - YouTube.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLqtVCj5iilH6fGyHIc5LtMsxpz7Uiy3Is">https://www.youtube.com/playlist?list=PLqtVCj5iilH6fGyHIc5LtMsxpz7Uiy3Is</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd883d3e" class="outline-4">
+<h4 id="orgd883d3e"><span class="section-number-4">3.3.2.</span> Solo</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ul class="org-ul">
+<li>AIR Raagam, Ustad Aziz Ahmed Khan Warsi | Dahag - Tu To Allah Ka | Akashvani Sangeet, (May 20, 2021). Accessed: Jan. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=bdmHAoI30_Q">https://www.youtube.com/watch?v=bdmHAoI30_Q</a></li>
+<li>AIR Raagam, Aziz Ahmed khan Warsi | Qawwali | Bahut Kathin Hai (Amir Khusro)| Akashvani Sangeet, (Oct. 28, 2021). Accessed: Jan. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8A9hJ1cEqcU">https://www.youtube.com/watch?v=8A9hJ1cEqcU</a></li>
+<li>AIR Raagam, Ustad Aziz Ahmed Khan Warsi | Qawwali - Kab Aye Ambia | Akashvani Sangeet, (May 12, 2021). Accessed: Jan. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=mWhF7Q994n0">https://www.youtube.com/watch?v=mWhF7Q994n0</a></li>
+<li>AIR Raagam, Ustad Aziz Ahmed Khan Warsi | Ghazal - Dil Hi To Hai | Akashvani Sangeet, (May 18, 2021). Accessed: Jan. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=xcQJXTc6qEo">https://www.youtube.com/watch?v=xcQJXTc6qEo</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org75969d8" class="outline-3">
+<h3 id="org75969d8"><span class="section-number-3">3.4.</span> SaReGaMa</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org2fcfd9a" class="outline-4">
+<h4 id="org2fcfd9a"><span class="section-number-4">3.4.1.</span> Collections</h4>
+<div class="outline-text-4" id="text-3-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org1e27d75"></a>Hits<br />
+<div class="outline-text-5" id="text-3-4-1-1">
+<ul class="org-ul">
+<li>“Play Laajawab Qawwalian Compilation by Aziz Nazan Qawwal, Bulo C. Rani, Jai Kumar on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B074XK9FSR">https://music.amazon.com/albums/B074XK9FSR</a></li>
+
+<li>“Play Qawwali Hits by VARIOUS ARTISTS on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B09ZDPV659">https://music.amazon.com/albums/B09ZDPV659</a></li>
+
+<li>“Play Favourite Qawwalis by Traditional on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B07568H9GB">https://music.amazon.com/albums/B07568H9GB</a></li>
+<li>“Play Favourite Qawwalis by Traditional on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B07568H9GB">https://music.amazon.com/albums/B07568H9GB</a></li>
+
+<li>“Play Qawwali Hits Vol - 1 by Pyare Timu Qawwal, Jaipuri on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B09ZF5P2SN">https://music.amazon.com/albums/B09ZF5P2SN</a></li>
+<li>“Play Qawwali Hits Vol-2 by VARIOUS ARTISTS on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B09ZDNZCTP">https://music.amazon.com/albums/B09ZDNZCTP</a></li>
+<li>“Play Qawwali Hits Vol-3 by VARIOUS ARTISTS on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B0BXJBKDTY">https://music.amazon.com/albums/B0BXJBKDTY</a></li>
+<li>“Play Qawwali Hits Vol-4 by VARIOUS ARTISTS on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B0BXJBK7FZ">https://music.amazon.com/albums/B0BXJBK7FZ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgead8237"></a>Romantic<br />
+<div class="outline-text-5" id="text-3-4-1-2">
+<ul class="org-ul">
+<li>“Play A Collection Of Twelve Romantic Qawwalis by Mami Bhachu on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B0752VC2F2">https://music.amazon.com/albums/B0752VC2F2</a></li>
+<li>“Play Romantic Qawwalis by Yusuf Azad Qawwal on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B08B5VDW6G">https://music.amazon.com/albums/B08B5VDW6G</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge0f95a6"></a>Muqabila<br />
+<div class="outline-text-5" id="text-3-4-1-3">
+<ul class="org-ul">
+<li>“Play Shandar Qawwali Muqabila by Mami Bhachu on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B07568ZR81">https://music.amazon.com/albums/B07568ZR81</a></li>
+<li>“Play Chhed Chhed Qawwali Muqabla by Ustad Abdul Gafoor, Mami Bhachu, Shabbir Hussain on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B0752NKLVQ">https://music.amazon.com/albums/B0752NKLVQ</a></li>
+<li>“Play Muqabila-E-Qawwali by VARIOUS ARTISTS on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B0752WCMPC">https://music.amazon.com/albums/B0752WCMPC</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orge324db8" class="outline-4">
+<h4 id="orge324db8"><span class="section-number-4">3.4.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org3223c70" class="outline-3">
+<h3 id="org3223c70"><span class="section-number-3">3.5.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-orge26bec3" class="outline-4">
+<h4 id="orge26bec3"><span class="section-number-4">3.5.1.</span> Sufi</h4>
+<div class="outline-text-4" id="text-3-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgd6ae1d1"></a>SaReGaMa<br />
+<div class="outline-text-5" id="text-3-5-1-1">
+<ul class="org-ul">
+<li>“Play Sufiyana Qawwali by Mami Bhachu, Yusuf Azad Qawwal, Jani Babu Qawwal on Prime Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B07525RB6Q">https://music.amazon.com/albums/B07525RB6Q</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org280ca5f"></a>Prasar Bharati Archives<br />
+<div class="outline-text-5" id="text-3-5-1-2">
+<ul class="org-ul">
+<li>“Sufiana Qawwali - YouTube.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLqtVCj5iilH6fGyHIc5LtMsxpz7Uiy3Is">https://www.youtube.com/playlist?list=PLqtVCj5iilH6fGyHIc5LtMsxpz7Uiy3Is</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org363dd7e"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgef41859" class="outline-3">
+<h3 id="orgef41859"><span class="section-number-3">3.6.</span> Rural Music</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>“Amjad Gond sings qawwali,” People’s Archive of Rural India. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali/">https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali/</a></li>
+<li>“दरगाह से दिल तक पहुंचे वाला अमजद गोंड के कव्वाली,” People’s Archive of Rural India. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali-bho/">https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali-bho/</a></li>
+<li>“‘कव्वाली भगवान बर गा, धन नबी बर, हिरदे ला छू जाए बस!,’” People’s Archive of Rural India. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali-chh/">https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali-chh/</a></li>
+<li>“हिंदू न मुसलमान, ये हैं अमजद क़व्वाल,” People’s Archive of Rural India. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali-hi/">https://ruralindiaonline.org/en/articles/amjad-gond-sings-qawwali-hi/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9d7b41c" class="outline-3">
+<h3 id="org9d7b41c"><span class="section-number-3">3.7.</span> Films</h3>
+<div class="outline-text-3" id="text-3-7">
+</div>
+<div id="outline-container-org257912f" class="outline-4">
+<h4 id="org257912f"><span class="section-number-4">3.7.1.</span> Solo</h4>
+<div class="outline-text-4" id="text-3-7-1">
+<ul class="org-ul">
+<li>“Yari Hai Imaan Mera song by Manna Dey from Legends-Kalyanji-Anandji - Vol. 4 on Amazon Music.” Accessed: Jan. 20, 2025. [Online]. Available: <a href="https://music.amazon.com/tracks/B082PMK8MK?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN">https://music.amazon.com/tracks/B082PMK8MK?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd670433" class="outline-2">
+<h2 id="orgd670433"><span class="section-number-2">4.</span> Misc</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>“Pakistan: The Music of the Qawal,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian">https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian</a></li>
+
+<li>“Dama Dam Mast Qalandar,” Wikipedia. Aug. 21, 2022. Accessed: Nov. 29, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dama_Dam_Mast_Qalandar&amp;oldid=1105612943">https://en.wikipedia.org/w/index.php?title=Dama_Dam_Mast_Qalandar&amp;oldid=1105612943</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-12 Sun 16:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
